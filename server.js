@@ -1,10 +1,10 @@
 var express = require('express');
+var morgan = require('morgan');
 var app = express();
-
-app.use(express.static('ui'));
+app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
-  res.sendFile('./ui/index.html');
+  res.sendFile('./app/index.html');
 });
 
 app.listen(80, function () {
