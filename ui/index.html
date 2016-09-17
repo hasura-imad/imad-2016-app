@@ -19,3 +19,27 @@
     </body>
 </html>
 -->
+<html>
+ <body>
+ <script language="Javascript"> 
+
+ var x;
+ x = window.prompt("Enter a no. to find Factorial ?", "0" );
+ x=Number(x);
+
+function fact(t)
+{
+  var f=1;
+  for(var i=1; i<=t; i=i+1)
+    { 
+    f=f*i;
+    }
+  return f; 
+};
+  var result=fact(x);
+  document.writeln(result);
+
+ </script > 
+ </body>
+ </html> 
+
