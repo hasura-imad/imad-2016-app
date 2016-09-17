@@ -3,15 +3,37 @@
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
+    <body data-spy="scroll" data-target="navbar">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="../Unnamed Site 2/js/jquery-1.11.2.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="../Unnamed Site 2/js/bootstrap.js"></script>
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <ul class="nav navbar-nav">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">What I do</a></li>
+             <li><a href="#">What About Me</a></li>
+             <li><a href="#">Contact Me</a></li>
+        </ul>
+    </nav>
+    <section id="home" style="background:url(../Unnamed%20Site%202/sunset.jpg); bacrkground-size:100% 100%; text-align:center" class="bgclr">
+    <h1>I am a web developer</h1>
+    <p class="lead">Want to know more about me</p>
+    <button class="btn btn-info">More Info</button>
+    <button class="btn btn-warning">contact-me</button>
+    </section> 
+    <div class="container">
+        <div class="page-header">
+           My Works
         </div>
-        <br>
-        <div class="center text-big bold">
-            wlcome to worl of web development
+        <div class="list-inline">
+        <img src="../Unnamed Site 2/tiger.jpg" class="img-thumbnail" height="240" width="320">
+        <img src="../Unnamed Site 2/tiger.jpg" class="img-thumbnail" height="240" width="320">
+        <img src="../Unnamed Site 2/tiger.jpg" class="img-thumbnail" height="240" width="320">
+        <img src="../Unnamed Site 2/tiger.jpg" class="img-thumbnail" height="240" width="320">
         </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+    </div>
+    
+  </body>
+
 </html>
