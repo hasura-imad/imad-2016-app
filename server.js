@@ -74,6 +74,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/:articleName', function (req,res) {
+    // : operator is from express utility which compares coming parameter with current vars
     var articleName = req.params.articleName;
     res.send(CreateTemplate(articles[articleName]));
 });
