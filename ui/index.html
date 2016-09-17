@@ -19,27 +19,44 @@
     </body>
 </html>
 -->
+
+<!DOCTYPE html>
 <html>
- <body>
- <script language="Javascript"> 
+<body>
 
- var x;
- x = window.prompt("Enter a no. to find Factorial ?", "0" );
- x=Number(x);
+<p>ENTER a number and click the button:</p>
 
-function fact(t)
-{
-  var f=1;
-  for(var i=1; i<=t; i=i+1)
-    { 
-    f=f*i;
-    }
-  return f; 
-};
-  var result=fact(x);
-  document.writeln(result);
+<input id="no" value="5" />
 
- </script > 
- </body>
- </html> 
+<button onclick="prime()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+
+
+function prime()
+     {
+       var  x = Number(document.getElementById("no").value);
+       var p="a prime";
+       if(x>3) 
+         {
+          if(x%2==0)
+             p="not a prime";
+          else
+             {
+              for(var i=3, hx=x/2; i<=hx; i=i+2)
+                {
+                  if(x%i==0) {p="not a prime";break;}  
+                }
+             }
+         }    
+          document.getElementById("demo").innerHTML=("The given no. "+x+" is "+p);
+     }
+
+
+</script>
+
+</body>
+</html>
 
