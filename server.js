@@ -4,7 +4,7 @@ var path = require('path');
 
 var articleOne = {
     title: 'Article One: Akshat',
-    heading: 'a',
+    heading: 'Article One,',
     date: 'Sept 5, 2016',
     content: `
             <p>
