@@ -14,7 +14,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/article-one', function (req,res) {
-    res.send("Article one requested and will be served.");
+  res.sendFile(path.join(__dirname, 'ui', 'Article-one.html'));
 });
 
 app.get('/article-two', function (req,res) {
