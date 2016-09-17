@@ -4,14 +4,26 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articleOne = {
+var articles = {
+'article-one' : {
     title:'Article One | Hemant Gupta',
     heading:'Article One',
     date:'Sep 21, 2017',
     content:`<p>This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.</p>
     <p>This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.</p>
     <p>This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.</p>`
-};
+},
+'article-two':{title:'Article Two | Hemant Gupta',
+    heading:'Article Two',
+    date:'Sep 21, 2017',
+    content:`<p>This is my second article and I am publishing it.This is my second article and I am publishing it.This is my second article and I am publishing it.This is my second article and I am publishing it.</p>`
+    },
+'article-three':{title:'Article Three | Hemant Gupta',
+    heading:'Article Three',
+    date:'Sep 21, 2018',
+    content:`<p>This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.</p>
+    <p>This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.</p>
+    <p>This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.</p>`}};
 function createTemplate (data){
     var title = data.title;
     var heading = data.heading;
@@ -39,8 +51,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req, res) {
-  res.send(createTemplate(articleOne));
+app.get('/:articleName', function (req, res) {
+  res.send(createTemplate(articles[articleName]));
 });
 app.get('/article-two', function (req, res) {
   res.send('ARTICLE TWO REQUESTED.');
