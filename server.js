@@ -2,7 +2,9 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
-var articleOne = {
+var articles = {
+    
+    articleOne : {
     title: 'Article One: Akshat',
     heading: 'Article One,',
     date: 'Sept 5, 2016',
@@ -17,7 +19,10 @@ var articleOne = {
             <p>
                 This is the content of article one.
             </p>  `
+    }  
+    
 };
+
 
 function CreateTemplate(data){
     var title = data.title;
@@ -68,16 +73,9 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/article-one', function (req,res) {
-  res.send(CreateTemplate(articleOne));
-});
-
-app.get('/article-two', function (req,res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Article-two.html'));
-});
-
-app.get('/article-three', function (req,res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Article-three.html'));
+app.get('/:articleName', function (req,res) {
+    var articleName = req.params.articleName;
+    res.send(CreateTemplate(articles[articleName]));
 });
 
 app.get('/ui/madi.png', function (req, res) {
