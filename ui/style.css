@@ -20,3 +20,21 @@ body {
     height: 200px;
 }
 
+.container{
+    max-width: 700;
+    color: #ff75ad;
+    margin: auto;
+    padding-left: 20;
+    padding-top: 60;
+    padding-right: 20;
+    font-family: fantasy;
+}
+.head{
+    max-width: 800px;
+    color: #821541;
+    margin: 0 auto;
+    padding-left: 20;
+    padding-top: 60;
+    padding-right: 20;
+    font-family: fantasy;
+}
