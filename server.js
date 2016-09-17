@@ -4,6 +4,112 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var articles={
+	articleOne:{
+		title:"Article One | S-Xync",
+		heading:"This is Article One",
+		date:"5th September 2016",
+		content:`<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`
+	},
+	articleTwo:{
+		title:"Article Two | S-Xync",
+		heading:"This is Article Two",
+		date:"15th September 2016",
+		content:`<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`
+
+	},
+	articleThree:{
+		title:"Article Three | S-Xync",
+		heading:"This is Article Three",
+		date:"25th September 2016",
+		content:`<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`
+
+	}
+};
+function createtemplate(data){
+	var title=data.title;
+	var heading=data.heading;
+	var date=data.date;
+	var content=data.content;
+	var htmlTemplate={
+			`<html>
+				<head>
+					<title>${title}</title>
+					<link rel="stylesheet" type="text/css" href="/ui/style.css">
+					<meta name="viewport" content="width=device-width,initial-scale=1"/>
+				</head>
+				<body>
+					<div class="container">
+						<div>
+							<a href="/">Home</a>
+						</div>
+						<hr>
+						<h2>${heading}</h2>
+						<div>
+							<h5>${date}</h5>
+						</div>
+						<div>
+						${content}
+						</div>
+					</div>
+				</body>
+			</html>`
+	}
+	return htmlTemplate;
+
+}
+
 
 app.get('/', function (req, res) {
 	res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -12,14 +118,8 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
 	res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-app.get('/article-one',function(req,res){
-	res.sendFile(path.join(__dirname,'ui','article-one.html'));
-});
-app.get('/article-two',function(req,res){
-	res.sendFile(path.join(__dirname,'ui','article-two.html'));
-});
-app.get('/article-three',function(req,res){
-	res.sendFile(path.join(__dirname,'ui','article-three.html'));
+app.get('/:articleName',function(req,res){
+	res.send(createtemplate(articles[articleName]));
 });
 app.get('/ui/madi.png', function (req, res) {
 	res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
