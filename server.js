@@ -2,11 +2,6 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
-var draw = function(){
-    var a = 10;
-    var b = 10;
-};
-
 var articles = {
     
     articleOne : {
@@ -27,6 +22,11 @@ var articles = {
     }  
     
 };
+
+var drawEllipse = function(a,b,c,d){
+    ellipse(a,b,c,d);
+};
+
 //ellipse(200,200,200,200);
 function CreateTemplate(data){
     var title = data.title;
@@ -81,6 +81,7 @@ app.get('/:articleName', function (req,res) {
     // : operator is from express utility which compares coming parameter with current vars
     var articleName = req.params.articleName;
     res.send(CreateTemplate(articles[articleName]));
+    res.send(drawEllipse(200,200,200,200));
 });
 
 app.get('/ui/madi.png', function (req, res) {
