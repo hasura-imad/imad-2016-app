@@ -23,12 +23,6 @@ var articles = {
     
 };
 
-var drawEllipse = function(a,b,c,d){
-    fill(0,0,0);
-    ellipse(a,b,c,d);
-};
-
-//ellipse(200,200,200,200);
 function CreateTemplate(data){
     var title = data.title;
     var heading = data.heading;
@@ -82,7 +76,6 @@ app.get('/:articleName', function (req,res) {
     // : operator is from express utility which compares coming parameter with current vars
     var articleName = req.params.articleName;
     res.send(CreateTemplate(articles[articleName]));
-    res.send(drawEllipse(200,200,200,200));
 });
 
 app.get('/ui/madi.png', function (req, res) {
