@@ -2,6 +2,11 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
+var draw = function(){
+    var a = 10;
+    var b = 10;
+};
+
 var articles = {
     
     articleOne : {
@@ -22,7 +27,7 @@ var articles = {
     }  
     
 };
-ellipse(200,200,200,200);
+//ellipse(200,200,200,200);
 function CreateTemplate(data){
     var title = data.title;
     var heading = data.heading;
