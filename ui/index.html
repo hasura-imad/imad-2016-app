@@ -1,4 +1,4 @@
-<!--  
+
 <!doctype html>
 <html>
     <head>
@@ -18,45 +18,5 @@
         </script>
     </body>
 </html>
--->
 
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>ENTER a number and click the button:</p>
-
-<input id="no" value="5" />
-
-<button onclick="prime()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-
-
-function prime()
-     {
-       var  x = Number(document.getElementById("no").value);
-       var p="a prime";
-       if(x>3) 
-         {
-          if(x%2==0)
-             p="not a prime";
-          else
-             {
-              for(var i=3, hx=x/2; i<=hx; i=i+2)
-                {
-                  if(x%i==0) {p="not a prime";break;}  
-                }
-             }
-         }    
-          document.getElementById("demo").innerHTML=("The given no. "+x+" is "+p);
-     }
-
-
-</script>
-
-</body>
-</html>
 
