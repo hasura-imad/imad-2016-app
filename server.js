@@ -24,6 +24,7 @@ var articles = {
 };
 
 var drawEllipse = function(a,b,c,d){
+    fill(0,0,0);
     ellipse(a,b,c,d);
 };
 
