@@ -22,8 +22,7 @@ var articles = {
     }  
     
 };
-
-
+ellipse(200,200,200,200);
 function CreateTemplate(data){
     var title = data.title;
     var heading = data.heading;
