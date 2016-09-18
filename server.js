@@ -26,7 +26,7 @@ res.send('Welcome to instrcution on nodejs installation');
 });
 app.get('/article-three',function(req,res)
 {
-res.send('this site is for business tactics');
+res.sendFile(path.join(__dirname, 'ui', 'D:\IMAGE RGB-14'));
 });
 
 
