@@ -26,7 +26,7 @@ res.send('Welcome to instrcution on nodejs installation');
 });
 app.get('/article-three',function(req,res)
 {
-res.sendFile(path.join(__dirname, 'ui', 'D:\IMAGE RGB-14'));
+res.send('article 3');
 });
 
 
