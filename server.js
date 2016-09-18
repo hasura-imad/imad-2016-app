@@ -18,7 +18,15 @@ app.get('/ui/madi.png', function (req, res) {
 });
 app.get('/article-one',function(req,res)
 {
-res.send('hello article one is abut new');
+res.send('hello article one is abut news');
+});
+app.get('/article-two',function(req,res)
+{
+res.send('Welcome to instrcution on nodejs installation');
+});
+app.get('/article-three',function(req,res)
+{
+res.send('this site is for business tactics');
 });
 
 
