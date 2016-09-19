@@ -20,3 +20,8 @@ body {
     height: 200px;
 }
 
+.header {
+    border: 2x solid #ab10cd;
+    radius-corner: 5px;
+}
+
