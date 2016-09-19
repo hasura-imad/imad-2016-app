@@ -12,7 +12,7 @@ app.get('/article-one', function (req, res){
     res.send('Article one will be resquested and served');
 });
 app.get('/article-two', function (req, res){
-    res.send('Article two will be resquested and served');
+    res.send('<h1>Article two will be resquested and served</h1>');
 });
 app.get('/article-three', function (req, res){
     res.send('Article three will be resquested and served');
