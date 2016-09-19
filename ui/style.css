@@ -21,7 +21,7 @@ body {
 }
 
 .header {
-    border: 2x solid #ab10cd;
-    radius-corner: 5px;
+    border: 2px solid #ab10cd;
+    radius: 5px;
 }
 
