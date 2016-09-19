@@ -22,6 +22,6 @@ body {
 
 .header {
     border: 2px solid #ab10cd;
-    radius: 5px;
+    border-radius: 5px;
 }
 
