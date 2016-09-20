@@ -1,15 +1,26 @@
 body {
     font-family: sans-serif;
-    background-color: cyan;
     margin-top: 5px;
+}
+
+.image {
+    padding: 2em;
+    text-align: center;
 }
 
 .center {
     text-align: center;
+    margin-bottom: .5em;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.image:hover {
+	transform: rotate(-45deg);	
 }
 
 .text-big {
-    font-size: 300%;
+    font-size: 200%;
 }
 
 .bold {
@@ -21,10 +32,8 @@ body {
 }
 
 .header {
-    height: 125px;
-    width: 1275px;
-    border: 2px solid #ab10cd;
+    height: 200px;
     border-radius: 5px;
-    background-color: pink;
+    background-color: #ff9933;
 }
 
