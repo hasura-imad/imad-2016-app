@@ -12,40 +12,43 @@ var article = {
     content: ` Stuff goes here`
 };
 
-var htmlTemplate = `<html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-        <title>
-            Article one lol
-        </title>
-     </head>     
-     <body>
-        <div>
-            <a href="/"> Home </a>
-        </div>
-        <hr/>
-        <div class="center text-big">
-            <h1>
-                Heading
-            </h1>
-        </div>
-        <div class="center text-big">
-            Date : 
-        </div>
-        <div>
-            <p>
-                Text, maybe?
-          </p>
-        </div>
-    </body>
-</html>`;
+function createTemplate(data){
+    var title = data.title;
+    var heading = data.heading;
+    var date = data.date;
+    var content = data.content;
+    var htmlTemplate = `<html>
+        <head>
+            <link href="/ui/style.css" rel="stylesheet" />
+            ${title}
+         </head>     
+         <body>
+            <div>
+                <a href="/"> Home </a>
+            </div>
+            <hr/>
+            <div class="center text-big">
+                <h1>
+                    ${heading}
+                </h1>
+            </div>
+            <div class="center text-big">
+                ${date}
+            </div>
+            <div>
+              ${content}
+            </div>
+        </body>
+    </html>`;
+    return htmlTemplate;
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one', function (req,res){
-	 res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+	 res.send(createTemplate(article));
 });
 
 app.get('/ui/style.css', function (req, res) {
