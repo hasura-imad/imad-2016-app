@@ -3,7 +3,7 @@ var button = document.getElementById('counter');
 
 button.onclick = function () {
 
-    // Make a request to the counter endpoint
+    // Create a request object
     var request = new XMLHttpRequest();
     
     // Capture the response and store it in a variable
@@ -18,4 +18,8 @@ button.onclick = function () {
       }  
       // Not done yet
     };
+    
+    // Make the request
+    request.open('GET', 'http://coco98.imad.hasura-app.io/counter', true);
+    request.send(null);
 };
