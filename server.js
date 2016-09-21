@@ -91,7 +91,11 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/:articleName', function (req, res) {
 
 	var articleName = req.params.articleName;
+<<<<<<< HEAD
   res.send(createTemplate(articles[articleName]));
+=======
+	res.send(createTemplate(articles[articleName]));
+>>>>>>> origin/master
 });
 
 
