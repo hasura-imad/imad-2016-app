@@ -9,8 +9,36 @@ var article = {
     title: 'Article',
     heading: 'Article',
     date: 'Sep 21 2016',
-    content `
-}
+    content: ` Stuff goes here`
+};
+
+var htmlTemplate = `<html>
+    <head>
+        <link href="/ui/style.css" rel="stylesheet" />
+        <title>
+            Article one lol
+        </title>
+     </head>     
+     <body>
+        <div>
+            <a href="/"> Home </a>
+        </div>
+        <hr/>
+        <div class="center text-big">
+            <h1>
+                Heading
+            </h1>
+        </div>
+        <div class="center text-big">
+            Date : 
+        </div>
+        <div>
+            <p>
+                Text, maybe?
+          </p>
+        </div>
+    </body>
+</html>`;
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
