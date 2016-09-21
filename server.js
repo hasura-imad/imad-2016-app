@@ -102,7 +102,7 @@ var htmlTemplate=
             ${content}
         </div>
         <div>
-            <img src="/C.V-01.png">
+            <img src=>"/C.V-01.png"</img>
         </div>
         </div>
         
