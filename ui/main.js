@@ -1,2 +1,3 @@
 console.log('Loaded!');
-prompt("hi");
+var element = getElementById('main-text');
+element.innerHTML = 'Hello !! Welcome to HMG_007 Introduction Page'
