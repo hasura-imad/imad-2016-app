@@ -1,8 +1,8 @@
 console.log('loaded');
 
-var element = document.getElementById('main-text');
+//var element = document.getElementById('main-text');
 
-element.innerHTML = 'Hello :)';
+//element.innerHTML = 'Hello :)';
 
 
 // MOVING MADI
