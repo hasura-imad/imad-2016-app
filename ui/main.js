@@ -4,6 +4,13 @@ var element = document.getElementById('main-text');
 element.innerHTML = 'New value';
 // move image
 var img = document.getElementById('madi');
+var marginLeft = 0;
+function move () {
 img.onclick = function(){
-    img.style.marginLeft = '100px';
+    if(marginLeft>80){
+        marginLeft = MarginLeft +10;
+    
+    img.style.marginLeft = marginLeft + 'px';
+    }
 };
+}
