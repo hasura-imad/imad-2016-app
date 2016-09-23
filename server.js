@@ -73,6 +73,10 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+app.get('/ui/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+
 app.get('/:articleName', function (req,res) {
     // : operator is from express utility which compares coming parameter with current vars
     var articleName = req.params.articleName;
