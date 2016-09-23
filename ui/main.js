@@ -3,7 +3,7 @@ var button = document.getElementById('counter');
 
 button.onclick = function (){
     
-    // make a request
+    // create a request
     var request = new XMLHttpRequest();
     
     // capture the responce and store it in a var
@@ -18,7 +18,7 @@ button.onclick = function (){
         // else ignore request
     };
     
-    // create the request
+    // make the request
     request.open('GET', "http://akshatbhargava123.imad.hasura-app.io/counter", true);
     request.send(null);
     
