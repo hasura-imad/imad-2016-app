@@ -8,7 +8,7 @@ button.onclick = function (){
     
     // capture the responce and store it in a var
     request.onstatechange = function(){
-        if(request.readyState === XMLHttpRequest.DONE){
+        if(request.readyState === XMLHttpRequest.DONE){ // readyState = CurrentState
             if(request.status === 200){ // 200 means request has been completed.
                 var counter = request.responseText;
                 var span = document.getElementById('count');
@@ -19,7 +19,7 @@ button.onclick = function (){
     };
     
     // create the request
-    request.open('GET', "http://akshatbhargava123.imad.hasura-app.io/", true);
+    request.open('GET', "http://akshatbhargava123.imad.hasura-app.io/counter", true);
     request.send(null);
     
 };
