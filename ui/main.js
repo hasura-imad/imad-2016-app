@@ -7,7 +7,7 @@ var img = document.getElementById('madi');
 var marginLeft = 0;
 function move () {
 img.onclick = function(){
-    if(marginLeft>80){
+    if(marginLeft===0){
         marginLeft = MarginLeft +10;
     
     img.style.marginLeft = marginLeft + 'px';
