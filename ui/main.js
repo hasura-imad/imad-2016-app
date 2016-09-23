@@ -1,12 +1,29 @@
 // Counter code
 var button = document.getElementById('counter');
-var counter = 1;
 
 button.onclick = function (){
-    counter++;
-    var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
+    
+    // make a request
+    var request = new XMLHttpRequest();
+    
+    // capture the responce and store it in a var
+    request.onstatechange = function(){
+        if(request.readyState === XMLHttpRequest.DONE){
+            if(request.status === 200){ // 200 means request has been completed.
+                var counter = request.responseText;
+                var span = document.getElementById('count');
+                span.innerHTML = counter.toString();
+            }
+        }
+        // else ignore request
+    };
+    
+    // create the request
+    request.open('GET', "http://akshatbhargava123.imad.hasura-app.io/", true);
+    request.send(null);
+    
 };
+
 
 
 
