@@ -1,6 +1,18 @@
-console.log('loaded');
+// Counter code
+var button = getElementById('counter');
+var counter = 0;
 
-//var element = document.getElementById('main-text');
+button.onclick = function (){
+    counter++;
+    var span = getElementById('count');
+    span.innerHTML = counter.toString();
+};
+
+
+
+
+// PRACTICE AREA
+/*//var element = document.getElementById('main-text');
 
 //element.innerHTML = 'Hello :)';
 
@@ -19,3 +31,4 @@ image.onclick = function (){
     var interval = setInterval(moveRight, 40);
     image.style.marginLeft = '100px';
 };
+*/
