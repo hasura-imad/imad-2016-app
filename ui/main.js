@@ -1,10 +1,10 @@
 // Counter code
-var button = getElementById('counter');
+var button = document.getElementById('counter');
 var counter = 0;
 
 button.onclick = function (){
     counter++;
-    var span = getElementById('count');
+    var span = document.getElementById('count');
     span.innerHTML = counter.toString();
 };
 
