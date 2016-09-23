@@ -11,6 +11,9 @@ var image = document.getElementById('madi');
 
 var marginLeft = 0;
 function moveRight(){
+    if(marginLeft === 400){
+        marginLeft = 0;
+    }
     marginLeft++;
     image.style.marginLeft = marginLeft + 'px';
 }
