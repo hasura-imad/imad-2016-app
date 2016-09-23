@@ -19,6 +19,7 @@ body {
 
 .img-medium {
     height: 200px;
+    width:300px;
 }
 .container{
     max-width: 800px;
