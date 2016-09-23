@@ -31,15 +31,26 @@ var submit = document.getElementById('submit_button');
 
 submit.onclick = function(){
     // 1. Make a request to the server and send the name
+    var request = new XMLHttpRequest();
     
-    // 2. Capture a list of names and render it as a list
-    var names = ["name1", "name2", "name3", "name4"];
-    var list = '';
-    for(var  i = 0; i < names.length; i++){
-        list += '<li>' + names[i] + '</li>';
-    }
-    var ul = document.getElementById('namelist');
-    ul.innerHTML = list;
+    // capture the responce and store it in a var
+    request.onreadystatechange = function(){
+        if(request.readyState === XMLHttpRequest.DONE){ // readyState = CurrentState
+            if(request.status === 200){ // 200 means request has been completed.
+                // 2. Capture a list of names and render it as a list
+                var names = ["name1", "name2", "name3", "name4"];
+                var list = '';
+                for(var  i = 0; i < names.length; i++){
+                    list += '<li>' + names[i] + '</li>';
+                }
+                var ul = document.getElementById('namelist');
+                ul.innerHTML = list;
+            }
+        }
+        // else ignore request
+    };
+    request.open('GET', "http://akshatbhargava123.imad.hasura-app.io/submit-name/:name", true);
+    request.send(null);
     
 };
 
