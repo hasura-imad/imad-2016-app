@@ -1,17 +1,30 @@
 <!doctype html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
-        </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! I am your webapp.
-        </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+<head>
+  <title>My Profile</title>
+  <link href="/ui/style.css" rel="stylesheet" />
+  <style>
+  body{
+    background-color:#FFFFFF;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="center">
+      <img id="main-img" src="http://core0.staticworld.net/images/article/2016/05/hacker-hack-100661189-primary.idge.jpg" class="img-medium"/>
+    </div>
+    <hr>
+    <h3>Personal</h3>
+    <div>Hi! I am SaiKumar.</div>
+    <hr>
+    <h3>Professional</h3>
+    <div>I study at IIIT Guwahati.</div>
+    <hr>
+    <div class="footer">
+      This button <button id="counter">Click Me!</button> is clicked <span id="count">0</span> times.
+    </div>
+  </div>
+  <script type="text/javascript" src="/ui/main.js"></script>
+</body>
 </html>
