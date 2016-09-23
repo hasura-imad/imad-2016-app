@@ -1,4 +1,4 @@
-var express = require('express');
+var express = require('express'); //express is the keyword, to create a webserver so that we don't have to set listhn etc
 var morgan = require('morgan');
 var path = require('path');
 
