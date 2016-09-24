@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    margin-top: 5px;
+    margin-top: 60px;
 }
 
 .image {
@@ -42,7 +42,6 @@ body {
     margin: auto;
     color: darkgreen;
     font-family: sans-serif;
-    padding: 60px;
     padding-left: 20px;
     padding-right: 20px;
 }
