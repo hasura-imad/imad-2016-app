@@ -9,7 +9,7 @@ var articles = {
     'article-one': {
         heading: "Article One",
         date: "Sep 5,2016",
-        Title: "Adeline's First Article",
+        title: "Adeline's First Article",
         content : `
             <p>
                 This is the first paragraph in my article. I am planning to write some nonsense in this article. I hope you don't read all the nonsense that I am writing. I wish you would go and mind y our own business.
