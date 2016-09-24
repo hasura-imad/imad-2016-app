@@ -10,7 +10,6 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function(req, res) {
->>>>>>> 8c157c098a2189527fb81fe77fc1095e4fa2463f
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
