@@ -37,3 +37,12 @@ body {
     background-color: #ff9933;
 }
 
+.container{
+    max-width: 800px;
+    margin: auto;
+    color: darkgreen;
+    font-family: sans-serif;
+    padding: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
