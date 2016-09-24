@@ -10,6 +10,7 @@ app.get('/', function (req, res) {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 app.get('/article-one', function(req, res) {
   res.send("Article one requested and will be served here");
 
@@ -25,16 +26,24 @@ app.get('/article-three', function(req, res) {
 
 =======
 app.get('/article-one', function(req, res){
+=======
+app.get('/article-one', function(req, res) {
+>>>>>>> 8c157c098a2189527fb81fe77fc1095e4fa2463f
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
-app.get('/article-two', function(req, res){
-    res.send("Article Two requested and will be served here")
+app.get('/article-two', function(req, res) {
+    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
+<<<<<<< HEAD
 app.get('/article-three', function(req, res){
     res.send("Article Three requested and will be served here")
 >>>>>>> b7297eab285ea90f054aa293cb9fc14ce47fe674
+=======
+app.get('/article-three', function(req, res) {
+    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+>>>>>>> 8c157c098a2189527fb81fe77fc1095e4fa2463f
 });
 
 app.get('/ui/style.css', function (req, res) {
