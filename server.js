@@ -98,9 +98,9 @@ app.get('/counter',function(req,res){
 var names=[];
 app.get('/submit-name',function(req,res){ //URL: /submit-name?name=xxxx (?name=xxxx--> query parameter string)
    //Get the name from the request
-   var name=req.query.name;  //TODO
+   var name=req.query.name;  
 
-   names.push(name);
+   names.push(name);                  //return list of names using JSON
    //JSON Javascript Object Notation
    res.send(JSON.stringify(names));
 });
