@@ -22,8 +22,8 @@ var articles = {
     'article-two': {
         heading: "Article Two",
         date: "Sep 6,2016",
-        Title: "Adeline's Second Article",
-        Content : `
+        title: "Adeline's Second Article",
+        content : `
             <p>
                 This is the first paragraph in my second article. I am planning to write some nonsense in this article. I hope you don't read all the nonsense that I am writing. I wish you would go and mind y our own business.
             </p>
@@ -35,8 +35,8 @@ var articles = {
     'article-three' :{
         heading: "Article Three",
         date: "Sep 7,2016",
-        Title: "Adeline's Third Article",
-        Content : `
+        title: "Adeline's Third Article",
+        content : `
             <p>
                 This is the first paragraph in my third article. I am planning to write some nonsense in this article. I hope you don't read all the nonsense that I am writing. I wish you would go and mind y our own business.
             </p>
