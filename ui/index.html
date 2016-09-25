@@ -3,10 +3,15 @@
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
         <script>
-            var element = document.getElementById("myimage");
-            element.onclick = function ()
+            var img = document.getElementById("myimage");
+            var marginLeft = 0;
+            function moveRight() {
+                marginLeft = marginLeft + 10;
+                img.style.marginLeft = marginLeft + "px";
+            }
+            img.onclick = function ()
             {
-                element.style.marginleft = '100px';
+                var interval = setInterval(moveRight, 100);
             }
             
         </script>
