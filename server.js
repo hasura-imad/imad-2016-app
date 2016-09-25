@@ -103,7 +103,7 @@ var htmlTemplate=
             ${content}
         </div>
         <div>
-            <img src="/C.V-01.png">
+            <img src="/https://lh3.googleusercontent.com/-h5cGrcpC270/V-au0l-UAoI/AAAAAAAAAhM/0dBFlV80MnEyFMKXRz2EHPF3kelCsasmwCEw/w139-h140-p/BestMe_20160922130927.jpg">
         </div>
         </div>
         
