@@ -1,47 +1,59 @@
+// Calling the express Framework of JavaScript, which manages port, lisetening extra.
 var express = require('express');
+// This morgan is used to log, the request details.
 var morgan = require('morgan');
 var path = require('path');
 
 var app = express();
+//This tells express to log via morgan
+//and morgan to log in the "combined" pre-defined format
 app.use(morgan('combined'));
 
-
+// This *articles* is key-format ! 
+// aritcles* holds three keys - `article-one`, `article-two`, `article-three`
+// Each again has its own key-variables - `title`,`heading`,`date`,`content`
 var articles = {
     'article-one': {
-      title: 'Article One | Tanmai Gopal',
+      title: 'Article One | Saif Shines',
       heading: 'Article One',
-      date: 'Sep 5, 2016',
+      date: 'Sep 20, 2016',
       content: `
           <p>
-              This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
+              This is the content for my first article. This is the content for my first article. 
+              This is the content for my first article. This is the content for my first article. 
+              This is the content for my first article. This is the content for my first article. 
           </p>
           <p>
-              This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
+              This is the content for my first article. This is the content for my first article. 
+              This is the content for my first article. This is the content for my first article. 
+              This is the content for my first article. This is the content for my first article. 
           </p>
           <p>
-              This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
+              This is the content for my first article. This is the content for my first article. 
+              This is the content for my first article. This is the content for my first article. 
+              This is the content for my first article. This is the content for my first article. 
           </p>`
     },
     'article-two': {
-      title: 'Article Two | Tanmai Gopal',
+      title: 'Article Two | Saif Shines',
       heading: 'Article Two',
-      date: 'Sep 10, 2016',
+      date: 'Sep 24, 2016',
       content: `
           <p>
               This is the content for my second article.
           </p>`
     },
     'article-three': {
-      title: 'Article Three | Tanmai Gopal',
+      title: 'Article Three | Saif Shines',
       heading: 'Article Three',
-      date: 'Sep 15, 2016',
+      date: 'Sep 29, 2016',
       content: `
           <p>
               This is the content for my third article.
           </p>`
     }
 };
-
+// 
 function createTemplate (data) {
     var title = data.title;
     var date = data.date;
