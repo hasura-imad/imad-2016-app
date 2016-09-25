@@ -119,7 +119,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
  var counter = rerquest.responseText;
-    var span = document.getElementById('count');
+var span = document.getElementById('count');
 app.get('/counter',function(req,res){
    
     span.innerHTML = counter.toString();
