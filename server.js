@@ -12,6 +12,8 @@ var article = {
     content: ` Stuff goes here`
 };
 
+var counter =0;
+
 function createTemplate(data){
     var title = data.title;
     var heading = data.heading;
@@ -45,6 +47,11 @@ function createTemplate(data){
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/counter', function (req,res){
+    counter++;
+    res.send(counter.toString());
 });
 
 app.get('/article-one', function (req,res){
