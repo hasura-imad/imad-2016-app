@@ -120,6 +120,9 @@ app.get('/', function (req, res) {
 });
 
 app.get('/counter',function(req,res){
+    var counter = rerquest.responseText;
+    var span = document.getElementById('count');
+    span.innerHTML = counter.toString();
     
     res.send(counter.toString());
 });
