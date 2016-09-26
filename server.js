@@ -98,6 +98,10 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/bootstrap.min.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bootstrap.min.css'));
 });
+app.get('/ui/jquery-3.1.1.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'jquery-3.1.1.min.js'));
+});
+
 app.get('/ui/bootstrap.min.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bootstrap.min.js'));
 });
