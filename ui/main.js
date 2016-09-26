@@ -19,6 +19,7 @@ button.onclick = function(){
   
             }
         }
+        else( console.log("server Error"));
     };
     //make the request
     request.open('GET','http://isaac6171.imad.hasura-app.io/counter' , true);
