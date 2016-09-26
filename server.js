@@ -13,11 +13,11 @@ app.get('/article-one', function(req,res) {
   res.send("The article one will be served");       
 });
 
-app.get('/article-one', function(req,res) {
+app.get('/article-two', function(req,res) {
   res.send("The article two will be served");       
 });
 
-app.get('/article-one', function(req,res) {
+app.get('/article-three', function(req,res) {
   res.send("The article three will be served");       
 });
 
