@@ -4,6 +4,8 @@ body {
     /*margin-top: 75px;*/
     margin: 0px;
     padding: 0px;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 .center {
