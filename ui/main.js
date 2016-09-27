@@ -1,4 +1,5 @@
 console.log('Loaded!');
+console.alert("hi");
 //move the image
 var img = document.getElementById('madi');
 var marginLeft = 0;
