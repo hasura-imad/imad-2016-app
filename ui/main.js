@@ -17,11 +17,13 @@
                }
            }
            
-       };   
+          
         
      //Not done yet
        };
        //Make the request
        request.open('GET', 'http://suryan123.imad.hasura-app.io/counter' ,  true);
-       request.send (null);   
- };
+       request.send (null);
+          
+        };
+        
