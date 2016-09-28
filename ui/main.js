@@ -61,13 +61,6 @@ button.onclick = function(){
     request.open('GET','http://isaac6171.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
     
-    //render the variable in the correct span
- 
-     
-     
-     
-     //example
-   
-     
-     
- };
+    };
+    //Comments
+    var comment = document.getElementById('cmnt_btn');
