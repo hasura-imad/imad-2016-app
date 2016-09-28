@@ -132,6 +132,13 @@ app.get('/submit-name', function(req,res){
     res.send(JSON.stringify(names));
 }
 );
+var comments =[];
+app.get('/art_cmnt',function(req,res){
+    var comment = req.query.comment;
+    comments.push(comment);
+    res.send(JSON.stringyfy(comments));
+    
+});
 app.get('/:articleName',function(req,res){
     var articleName = req.params.articleName;
    res.send(createTemplate(articles[articleName]));
