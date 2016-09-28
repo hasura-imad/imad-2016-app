@@ -103,7 +103,7 @@ var htmlTemplate=
             ${content}
         </div>
         <div>
-           <input>
+           <input type="text" placeholder="Comment Here!" class ="comment"/>
         </div>
         </div>
         
