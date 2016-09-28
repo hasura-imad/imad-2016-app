@@ -9,8 +9,29 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var articleOne={
+    title:'article one'
+};
+function createTemplate(data){
+    var title=data.title;
+var htmlTemplate=
+    `<html>
+    <head>
+       <title> ${
+            title
+        }
+        </title>
+         <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>this is heading</h1>
+        <p>this is paragraph</p>
+    </body>
+</html>`;
+return htmlTemplate;
+}
 app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.send(createTemplate(articleOne));
 });
 
 
