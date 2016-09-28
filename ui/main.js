@@ -38,7 +38,6 @@ var request = new XMLHttpRequest();
                      
                     list += '<li>' + names[i] + '</li>';
                 }
-                alert(list);
                 var ul = document.getElementById('namelist');
                 ul.innerHTML = list;
             }
