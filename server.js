@@ -103,8 +103,8 @@ var htmlTemplate=
             ${content}
         </div>
         <div>
-           <input type="text" placeholder="Comment Here!" class ="comment"/>
-           <input type ="submit" value="Submit"/>
+           <input type="text" placeholder="Comment Here!" id ="comment"/>
+           <input type ="submit" value="Submit"  id ="cmnt_btn"/>
         </div>
         </div>
         
