@@ -104,6 +104,7 @@ var htmlTemplate=
         </div>
         <div>
            <input type="text" placeholder="Comment Here!" class ="comment"/>
+           <input type ="submit" value="Submit"/>
         </div>
         </div>
         
