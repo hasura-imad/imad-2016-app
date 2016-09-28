@@ -1,50 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<body>
-    
-<style>
-body {
-    font-family: sans-serif;
-    background-color: pink;
-    margin-top: 75px;
-    color:green;
-    text-align:center;
-}
-</style>    
-
-<p>ENTER a number and click the button:</p>
-
-<input id="no" value="1"/>
-
-<button onclick="prime()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-
-
-function prime()
-     {
-       var  x = Number(document.getElementById("no").value);
-       var p="a prime";
-       if(x>3) 
-         {
-          if(x%2==0)
-             p="not a prime";
-          else
-             {
-              for(var i=3, hx=x/2; i<=hx; i=i+2)
-                {
-                  if(x%i==0) {p="not a prime";break;}  
-                }
-             }
-         }    
-          document.getElementById("demo").innerHTML=("The given no. "+x+" is "+p);
-     }
-
-
-</script>
-
-</body>
+    <head>
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="center">
+                <img id='madi' src="https://pbs.twimg.com/profile_images/774927785059987456/7ghr_M-D.jpg" class="img-medium"/>
+            </div>
+            <h3>Personal</h3>
+            <div>
+                Hi. My name is Tanmai Gopal
+            </div>
+            <hr/>
+            <h3>Professional</h3>
+            <div>
+                I work at Hasura
+            </div>
+            <hr/>
+            <div class="footer">
+                This button <button id="counter">Click me!</button> has been clicked <span id="count">0</span> times.
+                <hr/>
+                <input type="text" id="name" placeholder="name"></input>
+                <input type="submit" value="Submit" id="submit_btn"></input>
+                <ul id="namelist">
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="/ui/main.js">
+        </script>
+    </body>
 </html>
-
