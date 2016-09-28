@@ -31,4 +31,7 @@ body {
     padding-right: 20px;
     }
 
-
+.comment {
+    width: 200px;
+    height:400px;
+}
