@@ -64,3 +64,6 @@ button.onclick = function(){
     };
     //Comments
     var comment = document.getElementById('cmnt_btn');
+    comment.onclick = function(){
+        
+    };
