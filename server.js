@@ -9,9 +9,19 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var articleOne={
-    title:'article one'
+var articles  = { 
+    'article-one':{
+         title:'article one'
+        
+    },
+    'article-two':{
+       title:'article two' 
+    },
+    'article-three':{
+        title:'article three'
+    }
 };
+
 function createTemplate(data){
     var title=data.title;
 var htmlTemplate=
@@ -30,19 +40,15 @@ var htmlTemplate=
 </html>`;
 return htmlTemplate;
 }
-app.get('/article-one', function (req, res) {
-  res.send(createTemplate(articleOne));
+
+app.get('/:articleName', function (req, res) {
+    //articleName=article one
+    var articleName=req.parans.articleName;
+  res.send(createTemplate(articles[articleName]));
 });
 
 
-app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
 
-
-app.get('/article-three', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-});
 
 
 app.get('/ui/style.css', function (req, res) {
