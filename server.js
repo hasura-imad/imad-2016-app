@@ -82,7 +82,7 @@ app.get('/', function (req, res) {
 });
 
 var names = [];
-app.get('/submit-name', function(req,res) {
+app.get('/submit-name/:name', function(req,res) {
     var name = req.params.name;
     names.push(name);
     res.send(JSON.stringify(names));
