@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact Blue Developer Directory</title>	
-	<style>
-		label{
-			display:inline-block;
-			width:150px;
-		}
-	</style>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<title>Online Book Shopping</title>
 </head>
-<body style="margin:0;background-color:#1c478e;color:#fff;">
-	<h1 style="margin:0;padding:5px;background-color:#333;color:#fff;">
-		Blue Developer Directory
-	</h1>
-	<div style="width:750px;padding-left:10px;"><!--main div start-->
-			<h3>Contact Us</h3>
-			<p>Please use this form to contact a member of our website team</p>
-			<form method="post" action="somescript.php">
-				<p>
-					<label for="name">Full Name:</label>
-					<input type="text" name="name">
-				</p>
-				<p>
-					<label for="email">Email Address: </label>
-					<input type="text" name="email">
-				</p>
-				<p>
-					<label for="phone">Phone Number: </label>
-					<input type="text" name="phone">
-				</p>
-				<p>
-					<label for="call">Best Time To Call: </label>
-					<input type="radio" name="time" value="morning" checked>Morning
-					<input type="radio" name="time" value="noon">Noon
-					<input type="radio" name="time" value="evening">Evening
-				</p>
-				<p>
-					<label for="budget">Budget: </label>
-					<select type="list" name="budget">
-						<option>--Please Select--</option>
-						<option value="100-500">$100 - $500</option>
-						<option value="500-1000">$500 - $1000</option>
-						<option value="1000-2000">$1000 - $2000</option>
-						<option value="2000+">$2000+</option>
-						<option value="not sure">Not Sure</option>
-					</select>
-				</p>
-				<p>
-					<label for="call">Services Needed:(Check all that apply)</label>
-					<table>
-						<tr>
-							<td><input type="checkbox" name="services" value="html">html</td>
-							<td><input type="checkbox" name="services" value="php">PHP</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="services" value="asp">ASP</td>
-							<td><input type="checkbox" name="services" value="java">Java</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="services" value="c">C++</td>
-							<td><input type="checkbox" name="services" value="design">Design</td>
-						</tr>
-					</table>
-				</p>
-				<p>
-					<input type="submit" value="Submit Inquiry">
-				</p>
-			</form>
-	</div><!--main div end-->
+
+<body>
+<div id="container">
+	<div id="header">
+	<img width="8%" src="images/logo.png" alt="web developer directory">
+        <h1><span class="blue-text">Bay</span> OfBooks</h1>
+        <h2><a href="login.html"><span class="bl-text">Login</span></a> | <a href="signup.html"><span class="white-text">Sign Up</span></a></h2>
+     </div><!--header end-->
+	 
+	 <ul class="menu">
+		<li class="dropdown">
+			<a href="index.html" class="dropbtn">Home</a>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Authors</a>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Publisher</a>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Indian Writing</a>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Fiction</a>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Non Fiction</a>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="contact.html" class="dropbtn">Contact Us</a>
+		</li>
+	</ul>
+	 
+	 
+	 
+	 <div id="leftmenu">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="browse.html">Art & Photography</a></li>
+            <li><a href="browse.html">Biography</a></li>
+            <li><a href="browse.html">Business & Investments</a></li>
+            <li><a href="browse.html">Children's Book</a></li>
+            <li><a href="browse.html">College Text & Reference</a></li>
+            <li><a href="browse.html">Computer & Internet</a></li>
+            <li><a href="browse.html">Cooking Food & Wine</a></li>
+            <li><a href="browse.html">Educational & Professional</a></li>
+            <li><a href="browse.html">Entertainment</a></li>
+            <li><a href="browse.html">Entrance Exam Prep</a></li>
+        </ul>
+    </div><!--leftmenu end-->
+    
+	<div id="content">
+		<!--CONTENT HERE-->
+    </div><!--content end-->
+	
+</div><!--container end-->
 </body>
 </html>
