@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Blue Developer Directory</title>	
+	<style>
+		label{
+			display:inline-block;
+			width:150px;
+		}
+	</style>
+</head>
+<body style="margin:0;background-color:#1c478e;color:#fff;">
+	<h1 style="margin:0;padding:5px;background-color:#333;color:#fff;">
+		Blue Developer Directory
+	</h1>
+	<div style="width:750px;padding-left:10px;"><!--main div start-->
+			<h3>Contact Us</h3>
+			<p>Please use this form to contact a member of our website team</p>
+			<form method="post" action="somescript.php">
+				<p>
+					<label for="name">Full Name:</label>
+					<input type="text" name="name">
+				</p>
+				<p>
+					<label for="email">Email Address: </label>
+					<input type="text" name="email">
+				</p>
+				<p>
+					<label for="phone">Phone Number: </label>
+					<input type="text" name="phone">
+				</p>
+				<p>
+					<label for="call">Best Time To Call: </label>
+					<input type="radio" name="time" value="morning" checked>Morning
+					<input type="radio" name="time" value="noon">Noon
+					<input type="radio" name="time" value="evening">Evening
+				</p>
+				<p>
+					<label for="budget">Budget: </label>
+					<select type="list" name="budget">
+						<option>--Please Select--</option>
+						<option value="100-500">$100 - $500</option>
+						<option value="500-1000">$500 - $1000</option>
+						<option value="1000-2000">$1000 - $2000</option>
+						<option value="2000+">$2000+</option>
+						<option value="not sure">Not Sure</option>
+					</select>
+				</p>
+				<p>
+					<label for="call">Services Needed:(Check all that apply)</label>
+					<table>
+						<tr>
+							<td><input type="checkbox" name="services" value="html">html</td>
+							<td><input type="checkbox" name="services" value="php">PHP</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="services" value="asp">ASP</td>
+							<td><input type="checkbox" name="services" value="java">Java</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="services" value="c">C++</td>
+							<td><input type="checkbox" name="services" value="design">Design</td>
+						</tr>
+					</table>
+				</p>
+				<p>
+					<input type="submit" value="Submit Inquiry">
+				</p>
+			</form>
+	</div><!--main div end-->
+</body>
+</html>
