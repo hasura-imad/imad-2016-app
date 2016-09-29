@@ -1,0 +1,177 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font: 12px Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #061C37;
+	background: #1c478e;
+	background-image:url(../images/background.png);
+	background-repeat:repeat-x;
+}
+
+*{
+	margin: 0 auto 0 auto;
+	text-align:left;
+}
+
+
+h2{
+	padding-bottom:10px;
+	color:#054dbc;
+}
+
+h3{
+	font-size:16px;
+	font-weight:bold;
+	padding:10px 0 10px 0;
+	color:#054dbc;
+}
+
+h4{
+	font-size:15px;
+	font-weight:bold;
+	padding-bottom:5px;
+	color:#054dbc;
+}
+
+p{
+	margin:10px 0 10px 0;
+}
+
+#container{
+	width: 960px;
+}
+
+
+#header{
+	height:85px;
+	width:960px;	
+}
+
+#header h1{
+	float:left;
+  padding:20px 0 0 20px;
+	text-align:left;
+	color:#FFFFFF;
+	font-size:43px;
+	color:#FFF;	
+
+}
+
+#header img{
+float:left;
+}
+
+#header a{
+	text-decoration: none;
+}
+
+#header h2{
+	float:right;
+	padding:40px 20px 0 0;
+	color:#A9D1FA;
+	text-align:right;
+	width:400px;
+}
+
+.bl-text:hover {color: #ffffff;}
+
+.white-text:hover {color: #A9D1FA;}
+
+.blue-text{
+	color:#67A0F5;
+}
+
+.white-text{
+	color:#fff;
+}
+
+.bl-text{
+	color:#A9D1FA;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	
+	display:inline;
+	width:960px;
+	height:54px;
+	float:left;
+	clear:both;
+}
+
+.menu li {
+    float: left;
+}
+
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding-top:15px;
+    padding-left:35px;
+	padding-right:35px;
+    text-decoration: none;
+}
+
+.menu li a:hover, .dropdown:hover .dropbtn {
+    color: #87BCF8;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#content{
+	display:block;
+	float:left;
+	margin-top:15px;
+	margin-left:10px;
+	width:900px;
+	height:auto;
+	background:#fff;
+	padding:15px;
+	border-radius:10px;
+	border:6px solid #1C478E;
+	
+}
+
+label{
+	display: inline-block;
+	width:150px;
+}
+
+.blue-background{
+	background:#2658a9;
+	padding:5px;
+	color:#fff;
+}
