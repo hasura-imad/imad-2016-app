@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var pages = {
-    "page-one":{
+    "page-introduction":{
     title :"Introduction | The Constitution Of India",
     heading : "Introduction",
     date :"July 23, 2016",
@@ -32,9 +32,9 @@ var pages = {
                     It is drawn from many sources. Keeping in mind the needs and conditions of India its framers borrowed different features freely from previous legislation viz. Government of India Act 1858, Indian Councils Act 1861, Indian Councils Act 1892, Indian Councils Act 1909, Government of India Act 1919, Government of India Act 1935 and the Indian Independence Act 1947. The last legislation which led to the creation of the two independent nations of India and Pakistan provided for the division of the erstwhile Constituent Assembly into two, with each new assembly having sovereign powers transferred to it, to enable each to draft and enact a new constitution, for the separate states.
                 </p>`
 },
-    "page-two":{},
-    "page-three":{},
-    "page-four":{}
+    "page-cassembly":{},
+    "page-influences":{},
+    "page-structure":{}
 }
 
 function createtemplate (data) {
