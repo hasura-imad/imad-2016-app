@@ -80,7 +80,7 @@ app.get('/', function (req, res) {
 
 app.get('/:pageName', function (req, res) {
     var pageName = req.params.pageName;
-  res.send(createtemplate(pages[pageName]));
+    res.send(createtemplate(pages[pageName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
