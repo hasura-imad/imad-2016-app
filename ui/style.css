@@ -6,7 +6,7 @@ body {
 	font-size: 13px;
 	color: #061C37;
 	background: #1c478e;
-	background-image:url(background.png);
+	background-image:url(/ui/background.png);
 	background-repeat:repeat-x;
 }
 
