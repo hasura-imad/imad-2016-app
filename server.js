@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var introduction = {
+var pages = {
+    "page-introduction":{
     title :"Introduction | The Constitution Of India",
     heading : "Introduction",
     date :"July 23, 2016",
@@ -30,6 +31,10 @@ var introduction = {
                 <p>
                     It is drawn from many sources. Keeping in mind the needs and conditions of India its framers borrowed different features freely from previous legislation viz. Government of India Act 1858, Indian Councils Act 1861, Indian Councils Act 1892, Indian Councils Act 1909, Government of India Act 1919, Government of India Act 1935 and the Indian Independence Act 1947. The last legislation which led to the creation of the two independent nations of India and Pakistan provided for the division of the erstwhile Constituent Assembly into two, with each new assembly having sovereign powers transferred to it, to enable each to draft and enact a new constitution, for the separate states.
                 </p>`
+},
+    "page-cassembly":{},
+    "page-influences":{},
+    "page-structure":{}
 }
 
 function createtemplate (data) {
@@ -73,8 +78,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/introduction', function (req, res) {
-  res.send(createtemplate(introduction));
+app.get('/:pageName', function (req, res) {
+    var pageName = req.params.pageName;
+  res.send(createtemplate(pages[pageName]));
 });
 
 app.get('/article-two', function (req, res) {
