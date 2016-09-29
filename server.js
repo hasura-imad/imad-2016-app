@@ -139,7 +139,7 @@ var comments =[];
 app.get('/art_cmnt',function(req,res){
     var comment = req.query.comment;
     comments.push(comment);
-    res.send(JSON.stringyfy(comments));
+    res.send(JSON.stringify(comments));
     
 });
 app.get('/:articleName',function(req,res){
