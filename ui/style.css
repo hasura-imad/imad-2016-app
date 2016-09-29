@@ -1,5 +1,4 @@
 body {
-	margin: 0;
 	padding: 0;
 	text-align: left;
 	font: 12px Arial, Helvetica, sans-serif;
@@ -8,12 +7,9 @@ body {
 	background: #1c478e;
 	background-image:url(../images/background.png);
 	background-repeat:repeat-x;
+	margin: 0 auto 0 auto;
 }
 
-*{
-	margin: 0 auto 0 auto;
-	text-align:left;
-}
 
 h2{
 	padding-bottom:10px;
@@ -55,13 +51,6 @@ p{
 	font-size:43px;
 }
 
-#header h2{
-	float:right;
-	padding:40px 20px 0 0;
-	color:#A9D1FA;
-	text-align:right;
-	width:400px;
-}
 
 #header img{
 float:left;
@@ -93,7 +82,6 @@ float:left;
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    padding-top: 5px;
 	font-size: 15px;
 	font-weight: bold;
 	width:960px;
@@ -148,7 +136,6 @@ li.dropdown {
 
 #leftmenu{
 	margin-top:15px;
-	width:190px;
 	float:left;
 	background-color:#1C478E;
 	border-radius:10px;
@@ -161,14 +148,6 @@ li.dropdown {
 	width:204px;
 }
 
-
-#leftmenu h3{
-	list-style: none;
-	padding: 0px;
-	color:#FFFFFF;
-	padding-bottom:7px;
-	border-bottom:2px solid #fff;
-}
 
 #leftmenu ul li{
 	list-style: none;
@@ -195,7 +174,6 @@ li.dropdown {
 	float:left;
 	margin-top:15px;
 	margin-left:10px;
-	width:680px;
 	height:auto;
 	background:#fff;
 	padding:15px;
