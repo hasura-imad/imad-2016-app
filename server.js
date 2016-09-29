@@ -105,6 +105,9 @@ var htmlTemplate=
         <div>
            <input type="text" placeholder="Comment Here!" id ="comment"/>
            <input type ="submit" value="Submit"  id ="cmnt_btn"/>
+           <ul id="cmnt_list">
+           
+           </ul>
         </div>
         </div>
         
