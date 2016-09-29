@@ -21,8 +21,12 @@ body {
 }
 
 .container {
-                max-width: 800px;
-                margin: 0 auto;
-                color: grey;
-                font-family:sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    color: brown;
+    font-family: cursive;
+    padding-top: 60;
+    padding-right: 20;
+    padding-left: 20;
+    padding-bottom: 20;
             }
