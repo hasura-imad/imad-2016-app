@@ -81,4 +81,8 @@ button.onclick = function(){
             }
             
         };
+        var commentInput = document.getElementById('comment');
+        var comment = commentInput.value;
+        request.open('GET',"http://isaac6171.imad.hasura-app.io/art_cmnt?comment=" + comment, true);
+        request.send(null);
     };
