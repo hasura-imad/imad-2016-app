@@ -53,8 +53,14 @@ p{
 	text-align:left;
 	color:#FFFFFF;
 	font-size:43px;
-	color:#FFF;	
+}
 
+#header h2{
+	float:right;
+	padding:40px 20px 0 0;
+	color:#A9D1FA;
+	text-align:right;
+	width:400px;
 }
 
 #header img{
@@ -65,13 +71,7 @@ float:left;
 	text-decoration: none;
 }
 
-#header h2{
-	float:right;
-	padding:40px 20px 0 0;
-	color:#A9D1FA;
-	text-align:right;
-	width:400px;
-}
+
 
 .bl-text:hover {color: #ffffff;}
 
@@ -91,13 +91,11 @@ float:left;
 
 .menu {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
     padding-top: 5px;
 	font-size: 15px;
 	font-weight: bold;
-	display:inline;
 	width:960px;
 	height:54px;
 	float:left;
