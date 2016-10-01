@@ -10,7 +10,7 @@ var name = req.query.name;
 names.push(name);
 req.send(JSON.stringify(names));
 });
-app.
+
 var articles = {
 'article-one' : {
     title:'Article One | Hemant Gupta',
