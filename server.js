@@ -43,7 +43,7 @@ var pages = {
                 </p>
                 
                 <h2>
-                    Previous legislation used as sources
+                    Drafting
                 </h2>
                 <p>
                     It was adopted by the Constituent Assembly on 26 November 1949, and came into effect on 26 January 1950. With its adoption, the Union of India became the modern and contemporary Republic of India replacing the Government of India Act, 1935 as the country's fundamental governing document. To ensure constitutional autochthony, the framers of the constitution repealed the prior Acts of the British Parliament via Article 395 of the constitution. India celebrates its coming into force on 26 January each year, as Republic Day.
