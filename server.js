@@ -96,7 +96,7 @@ var pages = {
                 </p>
                 <ul>
                     <li>First Schedule (Articles 1 and 4) - This lists the states and territories of India, lists any changes to their borders and the laws used to make that change.</li>
-                    <li>Part 2: Citizenship</li>
+                    <li>Second Schedule (Articles 59(3), 65(3), 75(6), 97, 125, 148(3), 158(3), 164(5), 186 and 221) - This lists the salaries of officials holding public office, judges, and Comptroller and Auditor General of India </li>
                     <li>Part 3: Fundamental Rights</li>
                     <li>Part 4: Directive Principles of State Policy</li>
                     <li>Part 4A: Fundamental Duties</li>
