@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var pages = {
-    "page-introduction":{
+    "introduction":{
     title :"Introduction | The Constitution Of India",
     heading : "Introduction",
     date :"July 23, 2016",
