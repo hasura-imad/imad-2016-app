@@ -1,6 +1,6 @@
 console.log('Loaded!');
  
- var element = getElementById('anita');
+var element = getElementById('anita');
 var marginleft=0;
 
 function moveRight()
