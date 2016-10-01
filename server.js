@@ -73,7 +73,7 @@ function createtemplate (data) {
                             </head>    
                             <body>
                                 <div class="container">
-                                    <div>
+                                    <div class = 'header'>
                                         <a href = '/'>Home</a>
                                         <a href = '/introduction'>Introduction</a>
                                         <a href = '/cassembly'>The Constituent Assembly</a>
