@@ -9,48 +9,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var articles  = { 
-    'article-one':{
-         title:'article one'
-        
-    },
-    'article-two':{
-       title:'article two' 
-    },
-    'article-three':{
-        title:'article three'
-    }
-};
-
-function createTemplate(data){
-    var title=data.title;
-var htmlTemplate=
-    `<html>
-    <head>
-       <title> ${
-            title
-        }
-        </title>
-         <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <h1>this is heading</h1>
-        <p>this is paragraph</p>
-    </body>
-</html>`;
-return htmlTemplate;
-}
-
-app.get('/:articleName', function (req, res) {
-    //articleName=article one
-    var articleName=req.params.articleName;
-  res.send(createTemplate(articles[articleName]));
-});
-
-
-
-
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
