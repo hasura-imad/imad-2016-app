@@ -56,6 +56,12 @@ counter = counter+1;
 res.send(counter.toString());
     
 });
+var names = [];
+app.get('/submit-btn',function(req,res){
+var name = req.query.name;
+names.push(name);
+req.send(JSON.stringify(names));
+});
 app.get('/:articleName', function (req, res) {
     var articleName = req.params.articleName;
   res.send(createTemplate(articles[articleName]));
