@@ -6,7 +6,7 @@ button.onclick = function(){
     
     //Capture the response and store it in a variable
     request.onreadystatechange = function(){
-        if (request.raedystate === XMLhttprequest.DONE){
+        if (request.readystate === XMLhttprequest.DONE){
             if(request.status === 200){
                 var counter = request.responseText;
                 var span = document.getElementById('count');
@@ -16,6 +16,6 @@ button.onclick = function(){
         
     }
     //Render the variable in the correct span
-    request.open('GET', "http://rajatsarkari.imad.hasura-app.io/",true);
+    request.open('GET', 'http://rajatsarkari.imad.hasura-app.io/',true);
     request.send(null);
 }
