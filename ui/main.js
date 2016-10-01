@@ -1,8 +1,7 @@
 var button = document.getElementById('counter');
 
 button.onclick = function(){
-    
-    //Make a request to the counter endpoint
+    //create a request to the counter endpoint
     var request = new XMLhttprequest();
     
     //Capture the response and store it in a variable
@@ -17,4 +16,6 @@ button.onclick = function(){
         
     }
     //Render the variable in the correct span
+    request.open('GET', "http://rajatsarkari.imad.hasura-app.io/",true);
+    request.send(null);
 }
