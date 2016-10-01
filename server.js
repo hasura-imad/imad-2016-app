@@ -5,12 +5,29 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOneContent={
+var articlesContent={
+articleOneContent:{
   title:'Article One',
   heading:'Article 1 |Anita MC',
   content:`<p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the content.This is the content.This is the content.
             <p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the 
+            <p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the `},
+    
+    articleTwoContent:{
+        title:'Article Two',
+        heading:'Article 2 | Anita MC',
+        content:`<p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the content.This is the content.This is the content.
+            <p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the 
             <p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the `
+    },
+    articleThreeContent:{
+        title:'Article Three',
+        heading:'Article 3 | Anita MC',
+        content:`<p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the content.This is the content.This is the content.
+            <p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the 
+            <p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the `
+    },
+    
   
 };
 
