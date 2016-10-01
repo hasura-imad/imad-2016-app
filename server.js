@@ -64,17 +64,31 @@ var pages = {
                 <ul>
                     <li>Preamble<p>with the words "socialist" and "secular" added to it in 1976 by the 42nd constitutional amendment.</p>
                     </li>
-                    <p><li></li><li></li></p>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Part 1  : Union And Its Territories</li>
+                    <li>Part 2  : Citizenship</li>
+                    <li>Part 3  : Fundamental Rights</li>
+                    <li>Part 4  : Directive Principles of State Policy</li>
+                    <li>Part 4A : Fundamental Duties</li>
+                    <li>Part 5  : The Union</li>
+                    <li>Part 6  : The States</li>
+                    <li>Part 7  : States in the B Part of the Schedule</li>
+                    <li>Part 8  : The Union Territories</li>
+                    <li>Part 9  : The Panchayats</li>
+                    <li>Part 9A : The Municipalities</li>
+                    <li>Part 9B : The Co-operative Societies</li>
+                    <li>Part 10 : The Scheduled and Tribal Areas</li>
+                    <li>Part 11 : Relations between the Union and the States</li>
+                    <li>Part 12 : Finance,Property,Contracts,and Suits</li>
+                    <li>Part 13 : Trade and Commerce within the territory of India</li>
+                    <li>Part </li>
+                    <li>Part </li>
+                    <li>Part </li>
+                    <li>Part </li>
+                    <li>Part </li>
+                    <li>Part </li>
+                    <li>Part </li>
+                    <li>Part </li>
+                    <li>Part </li>
                 </ul>
                 
                 `
