@@ -22,13 +22,15 @@ body {
     width:156px;
 }
 .container{
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     color: #a24a8f;
     font-family: Arial;
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    box-sizing:border-box;
+    color
     }
 
 #comment {
