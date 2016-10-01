@@ -19,8 +19,7 @@ button.onclick = function(){
     request.open('GET', 'http://rajatsarkari.imad.hasura-app.io/counter',true);
     request.send(null);
 }
-var nameInput = document.getElementById('name'); 
-var name = nameInput.value;
+
 var submit = document.getElementById('submit_btn');
 submit.onclick = function(){ //create a request to the counter endpoint
     var request = new XMLHttpRequest();
@@ -42,6 +41,8 @@ submit.onclick = function(){ //create a request to the counter endpoint
         }
         
     }
+    var nameInput = document.getElementById('name'); 
+    var name = nameInput.value;
     //Render the variable in the correct span
     request.open('GET', 'http://rajatsarkari.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
