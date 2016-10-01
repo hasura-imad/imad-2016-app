@@ -35,7 +35,6 @@ button.onclick = function() {
 	request.send(null);
 };
 
-var nameInput = document.getElementById('name').value;
 var submit = document.getElementById('submit_btn');
 submit.onclick = function (){
 	var request = new XMLHttpRequest();
@@ -56,7 +55,8 @@ submit.onclick = function (){
 			}
 		}		
 	};
-	
+
+	var nameInput = document.getElementById('name').value;	
 	request.open('GET', 'http://pkmariya.imad.hasura-app.io/submit-name?name=', true);
 	request.send(null);
 };
