@@ -1,7 +1,6 @@
 console.log('Loaded!');
-
-var element=document.getElementById('anita');
-element.innerHTML='lalala';
+ 
+ var element=getElementById('anita');
 
 element.onclick=function(){
    element.style.marginleft='100px'; 
