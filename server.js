@@ -122,8 +122,8 @@ var htmlTemplate=
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/',function(req, res){
-    res.sendFile(path.join(__dirname,'ui', 'Bio.html'));
+app.get('/ui/bio.html',function(req, res){
+    res.sendFile(path.join(__dirname,'ui', 'bio.html'));
 });
 
 var counter = 0;
