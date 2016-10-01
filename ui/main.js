@@ -2,6 +2,12 @@ console.log('Loaded!');
  
  var element = getElementById('anita');
 var marginleft=0;
+
+function moveRight()
+{
+    marginleft=marginleft+100;
+    element.style.marginleft= marginleft +'px';
+}
 element.onclick=function(){
-   element.style.marginleft = '100px'; 
+   var interval=setInterval(moveRight,100);
 };
