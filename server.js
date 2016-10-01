@@ -100,7 +100,7 @@ var pages = {
                     <li>Third Schedule (Articles 75(4), 99, 124(6), 148(2), 164(3), 188 and 219):Forms of Oaths - This lists the oaths of offices for elected officials and judges.</li>
                     <li>Fourth Schedule (Articles 4(1) and 80(2)) - This details the allocation of seats in the Rajya Sabha (the upper house of Parliament) per State or Union Territory.</li>
                     <li>Fifth Schedule (Article 244(1)) - This provides for the administration and control of Scheduled Areas and Scheduled Tribes (areas and tribes needing special protection due to disadvantageous conditions).</li>
-                    <li>Part 5: The Union</li>
+                    <li>Sixth Schedule (Articles 244(2) and 275(1)) - Provisions made for the administration of tribal areas in Assam, Meghalaya, Tripura, and Mizoram.</li>
                     <li>Part 6: The States</li>
                     <li>Part 7: States in the B Part of the Schedule</li>
                     <li>Part 8: The Union Territories</li>
