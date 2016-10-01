@@ -39,8 +39,12 @@ var pages = {
                     It was drafted by the Constituent Assembly, which was elected by elected members of the provincial assemblies. The 389 member Constituent Assembly took almost three years (two years, eleven months and eighteen days to be precise) to complete its historic task of drafting the Constitution for independent India, during which, it held eleven sessions over 165 days. Of these, 114 days were spent on the consideration of the draft Constitution. On 29 August 1947, the Constituent Assembly set up a Drafting Committee under the Chairmanship of Dr. B.R. Ambedkar to prepare a draft Constitution for India. While deliberating upon the draft Constitution, the assembly moved, discussed and disposed of as many as 2,473 amendments out of a total of 7,635 tabled. Dr B.R. Ambedkar, Sanjay Phakey, Jawaharlal Nehru, C. Rajagopalachari, Rajendra Prasad, Sardar Vallabhbhai Patel, Kanaiyalal Munshi, Ganesh Vasudev Mavalankar, Sandipkumar Patel, Maulana Abul Kalam Azad, Shyama Prasad Mukherjee, Nalini Ranjan Ghosh, and Balwantrai Mehta were some important figures in the assembly. There were more than 30 members of the scheduled classes. Frank Anthony represented the Anglo-Indian community, and the Parsis were represented by H. P. Modi. The Chairman of the Minorities Committee was Harendra Coomar Mookerjee, a distinguished Christian who represented all Christians other than Anglo-Indians. Ari Bahadur Gurung represented the Gorkha Community. Prominent jurists like Alladi Krishnaswamy Iyer, Benegal Narsing Rau and K. M. Munshi, Ganesh Mavlankar were also members of the Assembly. Sarojini Naidu, Hansa Mehta, Durgabai Deshmukh, Rajkumari Amrit Kaur and Vijayalakshmi Pandit were important women members.
                 </p>
                 <p>
-                    It imparts constitutional supremacy and not parliamentary supremacy, as it is not created by the Parliament but, by a constituent assembly, and adopted by its people, with a declaration in its preamble. The Parliament cannot override the constitution.
+                    The first temporary 2-day president of the Constituent Assembly was Dr Sachchidananda Sinha. Later, Rajendra Prasad was elected president of the Constituent Assembly. The members of the Constituent Assembly met for the first time on 9 December 1946.
                 </p>
+                
+                <h2>
+                    Previous legislation used as sources
+                </h2>
                 <p>
                     It was adopted by the Constituent Assembly on 26 November 1949, and came into effect on 26 January 1950. With its adoption, the Union of India became the modern and contemporary Republic of India replacing the Government of India Act, 1935 as the country's fundamental governing document. To ensure constitutional autochthony, the framers of the constitution repealed the prior Acts of the British Parliament via Article 395 of the constitution. India celebrates its coming into force on 26 January each year, as Republic Day.
                 </p>
@@ -50,9 +54,6 @@ var pages = {
                 <p>
                     The major portion of the Indian subcontinent was under British rule from 1857 to 1947. When the Constitution of India came into force on 26 January 1950, it repealed the Indian Independence Act. India ceased to be a dominion of the British Crown and became a sovereign democratic republic. The date of 26 January was chosen to commemorate the Purna Swaraj declaration of independence of 1930. Articles 5, 6, 7, 8, 9, 60, 324, 366, 367, 379, 380, 388, 391, 392, 393 and 394 of the Constitution came into force on 26 Nov 1949 and the remaining articles on 26 Jan 1950.
                 </p>
-                <h2>
-                    Previous legislation used as sources
-                </h2>
                 <p>
                     It is drawn from many sources. Keeping in mind the needs and conditions of India its framers borrowed different features freely from previous legislation viz. Government of India Act 1858, Indian Councils Act 1861, Indian Councils Act 1892, Indian Councils Act 1909, Government of India Act 1919, Government of India Act 1935 and the Indian Independence Act 1947. The last legislation which led to the creation of the two independent nations of India and Pakistan provided for the division of the erstwhile Constituent Assembly into two, with each new assembly having sovereign powers transferred to it, to enable each to draft and enact a new constitution, for the separate states.
                 </p>`
