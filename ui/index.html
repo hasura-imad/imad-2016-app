@@ -1,43 +1,50 @@
-<!doctype html>
-<html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-        <title>Portfolio | George Jacob</title>
-        <link rel="icon" href="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/s150x150/13413410_478447315685433_2107082282_a.jpg" type="image/jpg">
-    </head>
-    <body>
-    <div class="container">
-        
-        <div class="center">
-            <img id="madi" src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/s150x150/13413410_478447315685433_2107082282_a.jpg" class="img-medium"/>
-        </div>
-        <hr/>
-        
-        <h3>Personal</h3>
-        <div>
-            Hi, I am George Jacob
-        </div>
-        <hr/>
-        <h3>Professional</h3>
-         <div>
-             I had completed my BE Computer Science & Engineering at Noorul Islam University, Kumarcoil, Thuckalay in Kanyakumari District. I am doing MTech Computer Science with Internet Technologies at Amrita Vishwa Vidyapeetham, Vallikavu in Kollam District. 
-                      <br/>My interests are Programming in C, C++, C#, VB.Net, HTML, CSS, NodeJS
-         </div>
-           
-          
-    </div>
-    <hr/>
-    <div class="footer">
-        This button<button id="counter" onclick="button">Click me</button> has been clicked <span id="count">0</span> times.
-        <hr/>
-        <input type="text" id="name=" placeholder="name"/>
-        <input type="submit" value="Submit" id="submit_btn" />
-        <ul id="namelist">
+//Counter code
+var button=document.getElementById('counter');
 
-        </ul>
-    </div>
+button.onclick=function(){
     
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
-</html>
+    //Create a request object
+    var request= new XMLHttpRequest();
+
+    //Capture the response and store it in a variable
+    request.onreadystatechange=function(){
+    	if (request.readyState==XMLHttpRequest.DONE) {
+    		//Take some action
+    		if (request.status==200) {
+    			//Capture a list of names and render it as a list.
+	            var names=request.responseText;
+	            names=JSON.parse(names);
+	            var list='';
+	            for (var i=0;i<names.length;i++){
+		            list += '<li>' + names[i] + '</li>';
+	            }         
+	            var ul=document.getElementById('namelist'); //render list of names
+	            ul.innerHTML=list;
+    		}
+    	
+    	}
+
+    };
+      
+     //Make the request
+     var nameInput=document.getElementById('name');
+     var name=nameInput.value;
+     request.open('GET','http://georgekunchattil1992.imad.hasura-app.io/submit-name?name',name,true);
+     request.send(null);
+};
+
+//Submit name
+
+var submit=document.getElementById('submit_btn');
+submit.onclick=function() {
+	//Make a request to the server and send the name
+
+	//Capture a list of names and render it as a list.
+	var names=['name1','name2','name3','name4'];
+	var list='';
+	for (var i=0;i<names.length;i++){
+		list += '<li>' + names[i] + '</li>';
+	}
+	var ul=document.getElementById('namelist');
+	ul.innerHTML=list;
+};
