@@ -6,21 +6,21 @@ var app = express();
 app.use(morgan('combined'));
 
 var articlesContent={
-articleOneContent:{
+'article-one':{
   title:'Article One',
   heading:'Article 1 |Anita MC',
   content:`<p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the content.This is the content.This is the content.
             <p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the 
             <p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the `},
     
-    articleTwoContent:{
+    'article-two':{
         title:'Article Two',
         heading:'Article 2 | Anita MC',
         content:`<p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the content.This is the content.This is the content.
             <p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the 
             <p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the `
     },
-    articleThreeContent:{
+    'article-three':{
         title:'Article Three',
         heading:'Article 3 | Anita MC',
         content:`<p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the content.This is the content.This is the content.
@@ -65,8 +65,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one',function(req,res){
-    res.send(createTemplate(articleOneContent));
+app.get('/:articleName',function(req,res){
+    
+    var articleName=req.params.articleName;
+    res.send(createTemplate(articlesContent[articleName]));
 });
 
 app.get('/article-two',function(req,res){
