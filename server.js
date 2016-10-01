@@ -101,15 +101,12 @@ var pages = {
                     <li>Fourth Schedule (Articles 4(1) and 80(2)) - This details the allocation of seats in the Rajya Sabha (the upper house of Parliament) per State or Union Territory.</li>
                     <li>Fifth Schedule (Article 244(1)) - This provides for the administration and control of Scheduled Areas and Scheduled Tribes (areas and tribes needing special protection due to disadvantageous conditions).</li>
                     <li>Sixth Schedule (Articles 244(2) and 275(1)) - Provisions made for the administration of tribal areas in Assam, Meghalaya, Tripura, and Mizoram.</li>
-                    <li>Part 6: The States</li>
-                    <li>Part 7: States in the B Part of the Schedule</li>
-                    <li>Part 8: The Union Territories</li>
-                    <li>Part 9: The Panchayats</li>
-                    <li>Part 9A: The Municipalities</li>
-                    <li>Part 9B: The Co-operative Societies</li>
-                    <li>Part 10: The Scheduled and Tribal Areas</li>
-                    <li>Part 11: Relations between the Union and the States</li>
-                    <li>Part 12: Finance,Property,Contracts,and Suits</li>
+                    <li>Seventh Schedule (Article 246) - The union (central government), state, and concurrent lists of responsibilities.</li>
+                    <li>Eighth Schedule (Articles 344(1) and 351) - The official languages.</li>
+                    <li>Ninth Schedule (Article 31-B) - Validation of certain Acts and Regulations.</li>
+                    <li>Tenth Schedule (Articles 102(2) and 191(2)) - "Anti-defection" provisions for Members of Parliament and Members of the State Legislatures.</li>
+                    <li>Eleventh Schedule (Article 243-G) - Panchayat Raj (rural local government).</li>
+                    <li>Twelfth Schedule (Article 243-W) - Municipalities (urban local government).</li>
                 </ul>    
                 
                 `
