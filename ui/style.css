@@ -37,6 +37,24 @@ body {
     width: 400px;
     height:200px;
 }
+
+.body_index {
+	margin:0px;
+	background-color:#666;
+	
+}
+.cont_index{
+    width:1000px;
+	height:600px;
+	background-color:#000;
+	margin-left:auto;
+	margin-right:auto;
+    padding-top:100px;
+	box-sizing:border-box;
+	font-family:"Tekton Pro";
+	font-size:large;
+	color:#FFF;
+}
 .nav1 {
 	width:265px;
 	height:30px;
@@ -57,23 +75,6 @@ body {
 }
 .nav1:hover {
 		background-color:#C03;
-}
-.body_index {
-	margin:0px;
-	background-color:#666;
-	
-}
-.cont_index{
-    width:1000px;
-	height:600px;
-	background-color:#000;
-	margin-left:auto;
-	margin-right:auto;
-    padding-top:100px;
-	box-sizing:border-box;
-	font-family:"Tekton Pro";
-	font-size:large;
-	color:#FFF;
 }
 .footer{
     width:1000px;
