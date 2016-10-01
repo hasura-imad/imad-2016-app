@@ -6,7 +6,15 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articles={
+var port = 8080; // Use 8080 for local development because you might already have apache running on 80
+app.listen(8080, function () {
+  console.log(`IMAD course app listening on port ${port}!`);
+});
+
+
+/* code actually above port declaration
+        //Demo from instructor
+   var articles={
   'article-one':{
         title:'Article One | George Jacob',
         heading:'Article-One',
@@ -126,9 +134,6 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+*/
 
 
-var port = 8080; // Use 8080 for local development because you might already have apache running on 80
-app.listen(8080, function () {
-  console.log(`IMAD course app listening on port ${port}!`);
-});
