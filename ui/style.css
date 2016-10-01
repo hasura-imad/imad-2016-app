@@ -126,6 +126,11 @@ body {
 		background-color:#C03;
     
 }
+.img_index{
+    border-radius:10px;
+    padding-top:10px;
+    margin-left:500px;
+}
 .footer{
     width:1000px;
     height:200px;
