@@ -59,7 +59,7 @@ var pages = {
         content:`
                 <p>The Indian constitution is the world's longest. At its commencement, it had 395 articles in 22 parts and 8 schedules. It is made up of of almost 80,000 words. In its current form (September 2012), it has a preamble, 25 parts with 448 articles, 12 schedules, 5 appendices and 100 amendments, the latest of which came into force on 1 August 2015.
                 </p>
-                <h>Parts</h>
+                <h3>Parts</h3>
                 <p>The individual articles of the constitution are grouped together into the following parts:</p>
                 <ul>
                     <li>Preamble<p>with the words "socialist" and "secular" added to it in 1976 by the 42nd constitutional amendment.</p>
