@@ -64,32 +64,32 @@ var pages = {
                 <ul>
                     <li>Preamble<p>with the words "socialist" and "secular" added to it in 1976 by the 42nd constitutional amendment.</p>
                     </li>
-                    <li>Part 1  : Union And Its Territories</li>
-                    <li>Part 2  : Citizenship</li>
-                    <li>Part 3  : Fundamental Rights</li>
-                    <li>Part 4  : Directive Principles of State Policy</li>
-                    <li>Part 4A : Fundamental Duties</li>
-                    <li>Part 5  : The Union</li>
-                    <li>Part 6  : The States</li>
-                    <li>Part 7  : States in the B Part of the Schedule</li>
-                    <li>Part 8  : The Union Territories</li>
-                    <li>Part 9  : The Panchayats</li>
-                    <li>Part 9A : The Municipalities</li>
-                    <li>Part 9B : The Co-operative Societies</li>
-                    <li>Part 10 : The Scheduled and Tribal Areas</li>
-                    <li>Part 11 : Relations between the Union and the States</li>
-                    <li>Part 12 : Finance,Property,Contracts,and Suits</li>
-                    <li>Part 13 : Trade and Commerce within the territory of India</li>
-                    <li>Part 14 : Services Under the Union, the States</li>
+                    <li>Part 1: Union And Its Territories</li>
+                    <li>Part 2: Citizenship</li>
+                    <li>Part 3: Fundamental Rights</li>
+                    <li>Part 4: Directive Principles of State Policy</li>
+                    <li>Part 4A: Fundamental Duties</li>
+                    <li>Part 5: The Union</li>
+                    <li>Part 6: The States</li>
+                    <li>Part 7: States in the B Part of the Schedule</li>
+                    <li>Part 8: The Union Territories</li>
+                    <li>Part 9: The Panchayats</li>
+                    <li>Part 9A: The Municipalities</li>
+                    <li>Part 9B: The Co-operative Societies</li>
+                    <li>Part 10: The Scheduled and Tribal Areas</li>
+                    <li>Part 11: Relations between the Union and the States</li>
+                    <li>Part 12: Finance,Property,Contracts,and Suits</li>
+                    <li>Part 13: Trade and Commerce within the territory of India</li>
+                    <li>Part 14: Services Under the Union, the States</li>
                     <li>Part 14A: Tribunals</li>
-                    <li>Part 15 : Elections</li>
-                    <li>Part 16 : Special Provisions Relating to certain Classes</li>
-                    <li>Part 17 : Languages</li>
-                    <li>Part 18 : Emergency Provisions</li>
-                    <li>Part 19 : Miscellaneous</li>
-                    <li>Part 20 : Amendment of the Constitution</li>
-                    <li>Part 21 : Temporary, Transitional and Special Provisions</li>
-                    <li>Part 22 : Short title, date of commencement, Authoritative text in Hindi and Repeals</li>
+                    <li>Part 15: Elections</li>
+                    <li>Part 16: Special Provisions Relating to certain Classes</li>
+                    <li>Part 17: Languages</li>
+                    <li>Part 18: Emergency Provisions</li>
+                    <li>Part 19: Miscellaneous</li>
+                    <li>Part 20: Amendment of the Constitution</li>
+                    <li>Part 21: Temporary, Transitional and Special Provisions</li>
+                    <li>Part 22: Short title, date of commencement, Authoritative text in Hindi and Repeals</li>
                 </ul>
                 
                 `
