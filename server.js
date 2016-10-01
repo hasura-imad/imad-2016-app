@@ -107,6 +107,14 @@ var pages = {
                     <li>Tenth Schedule (Articles 102(2) and 191(2)) - "Anti-defection" provisions for Members of Parliament and Members of the State Legislatures.</li>
                     <li>Eleventh Schedule (Article 243-G) - Panchayat Raj (rural local government).</li>
                     <li>Twelfth Schedule (Article 243-W) - Municipalities (urban local government).</li>
+                </ul> 
+                <h3>Appendices</h3>
+                <ul>
+                    <li>Appendix I - The Constitution (Application to Jammu and Kashmir) Order, 1954.</li>
+                    <li>Appendix II - Re-statement, with reference to the present text of the Constitution, of the exceptions and modifications subject to which the Constitution applies to the State of Jammu and Kashmir.</li>
+                    <li>Appendix III - Extracts from the Constitution (Forty-fourth Amendment) Act, 1978.</li>
+                    <li>Appendix IV - The Constitution (Eighty-sixth Amendment) Act, 2002.</li>
+                    <li>Appendix V - The Constitution (Eighty-eighth Amendment) Act, 2003.</li>
                 </ul>    
                 
                 `
