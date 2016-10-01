@@ -58,6 +58,11 @@ body {
 .nav1:hover {
 		background-color:#C03;
 }
+.body_index {
+	margin:0px;
+	background-color:#666;
+	
+}
 .cont_index{
     width:1000px;
 	height:600px;
