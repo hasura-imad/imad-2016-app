@@ -13,11 +13,6 @@ var articleOneContent={
             <p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the `
   
 };
-
-
-
-
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
