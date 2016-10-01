@@ -45,9 +45,6 @@ var pages = {
                 <h2>
                     Drafting
                 </h2>
-                <p>
-                    It was adopted by the Constituent Assembly on 26 November 1949, and came into effect on 26 January 1950. With its adoption, the Union of India became the modern and contemporary Republic of India replacing the Government of India Act, 1935 as the country's fundamental governing document. To ensure constitutional autochthony, the framers of the constitution repealed the prior Acts of the British Parliament via Article 395 of the constitution. India celebrates its coming into force on 26 January each year, as Republic Day.
-                </p>
                 <p>The assembly met in sessions open to the public, for 166 days, spread over a period of 2 years, 11 months and 18 days before adopting the Constitution, the 308 members of the assembly signed two copies of the document (one each in Hindi and English) on 24 January 1950. The original Constitution of India is hand-written with beautiful calligraphy, each page beautified and decorated by artists from Shantiniketan including Beohar Rammanohar Sinha and Nandalal Bose. The illustrations on the cover and pages represent styles from the different civilisations of the subcontinent, ranging from the prehistoric Mohenjodaro civilisation, in the Indus Valley, to the present. The calligraphy in the book was done by Prem Behari Narain Raizda. It was published in Dehra Dun, and photolithographed at the offices of Survey of India. The entire exercise to produce the original took nearly five years. Two days later, on 26 January 1950, the Constitution of India became the law of all the States and territories of India. Rs.1,00,00,000 was official estimate of expenditure on constituent assembly. It has undergone many amendments since its enactment.
                 </p>
                 <p>
@@ -55,7 +52,18 @@ var pages = {
                 </p>`
     },
     "influences":{},
-    "structure":{}
+    "structure":{
+        title :"Structure | The Constitution Of India",
+        heading : "Structure",
+        date :"July 23, 2016",
+        content:`
+                <p>The Indian constitution is the world's longest. At its commencement, it had 395 articles in 22 parts and 8 schedules. It is made up of of almost 80,000 words. In its current form (September 2012), it has a preamble, 25 parts with 448 articles, 12 schedules, 5 appendices and 100 amendments, the latest of which came into force on 1 August 2015.
+                </p>
+                <h>Parts</h>
+                <p>The individual articles of the constitution are grouped together into the following parts:</p>
+                
+                `
+    }
 }
 
 function createtemplate (data) {
@@ -77,6 +85,7 @@ function createtemplate (data) {
                                         <a href = '/'>Home</a>
                                         <a href = '/introduction'>Introduction</a>
                                         <a href = '/cassembly'>The Constituent Assembly</a>
+                                        <a href = '/influences'>Influences</a>
                                         <a href = '/structure'>Structure</a>
                                     </div>
                                     <hr/>
