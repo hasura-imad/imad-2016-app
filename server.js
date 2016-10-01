@@ -9,9 +9,16 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+app.get('/ui/css/bootstrap.min.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '/css/bootstrap.min.css'));
 });
+app.get('/ui/css/animate.min.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '/css/animate.min.css'));
+});
+app.get('/ui/css/creative.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '/css/creative,css'));
+});
+
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
