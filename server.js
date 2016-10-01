@@ -61,6 +61,10 @@ var pages = {
                 </p>
                 <h>Parts</h>
                 <p>The individual articles of the constitution are grouped together into the following parts:</p>
+                <ul>
+                    <li>Preamble<p>with the words "socialist" and "secular" added to it in 1976 by the 42nd constitutional amendment.</p>
+                    </li>
+                </ul>
                 
                 `
     }
