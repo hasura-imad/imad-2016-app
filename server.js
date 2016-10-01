@@ -13,12 +13,43 @@ var articleOneContent={
             <p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the `
   
 };
+
+function createTemplate(data){
+  title=data.title;
+  heading=data.heading;
+  content=data.content;
+
+var htmlTemplate=`<html>
+    <head>
+        <title>
+            ${title}
+        </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+         <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div>
+            <a href="/">Home</a>
+        </div>
+        <hr>
+        <div>
+            <h1>${heading}</h1>
+        </div>
+        <hr>
+        <div>
+            ${content}
+        </div>
+    </body>
+</html>`;
+return htmlTemplate;
+}
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    res.send(createTemplate(articleOneContent));
 });
 
 app.get('/article-two',function(req,res){
