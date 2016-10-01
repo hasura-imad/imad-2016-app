@@ -99,7 +99,7 @@ var pages = {
                     <li>Second Schedule (Articles 59(3), 65(3), 75(6), 97, 125, 148(3), 158(3), 164(5), 186 and 221) - This lists the salaries of officials holding public office, judges, and Comptroller and Auditor General of India. </li>
                     <li>Third Schedule (Articles 75(4), 99, 124(6), 148(2), 164(3), 188 and 219):Forms of Oaths - This lists the oaths of offices for elected officials and judges.</li>
                     <li>Fourth Schedule (Articles 4(1) and 80(2)) - This details the allocation of seats in the Rajya Sabha (the upper house of Parliament) per State or Union Territory.</li>
-                    <li>Part 4A: Fundamental Duties</li>
+                    <li>Fifth Schedule (Article 244(1)) - This provides for the administration and control of Scheduled Areas and Scheduled Tribes (areas and tribes needing special protection due to disadvantageous conditions).</li>
                     <li>Part 5: The Union</li>
                     <li>Part 6: The States</li>
                     <li>Part 7: States in the B Part of the Schedule</li>
