@@ -58,3 +58,11 @@ body {
 .nav1:hover {
 		background-color:#C03;
 }
+.footer{
+    max-width:1000px;
+    height:200px;
+    background-color:#C03;
+	margin-left:auto;
+	margin-right:auto;
+	color:#FFF;
+}
