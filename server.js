@@ -80,15 +80,16 @@ var pages = {
                     <li>Part 11 : Relations between the Union and the States</li>
                     <li>Part 12 : Finance,Property,Contracts,and Suits</li>
                     <li>Part 13 : Trade and Commerce within the territory of India</li>
-                    <li>Part </li>
-                    <li>Part </li>
-                    <li>Part </li>
-                    <li>Part </li>
-                    <li>Part </li>
-                    <li>Part </li>
-                    <li>Part </li>
-                    <li>Part </li>
-                    <li>Part </li>
+                    <li>Part 14 : Services Under the Union, the States</li>
+                    <li>Part 14A: Tribunals</li>
+                    <li>Part 15 : Elections</li>
+                    <li>Part 16 : Special Provisions Relating to certain Classes</li>
+                    <li>Part 17 : Languages</li>
+                    <li>Part 18 : Emergency Provisions</li>
+                    <li>Part 19 : Miscellaneous</li>
+                    <li>Part 20 : Amendment of the Constitution</li>
+                    <li>Part 21 : Temporary, Transitional and Special Provisions</li>
+                    <li>Part 22 : Short title, date of commencement, Authoritative text in Hindi and Repeals</li>
                 </ul>
                 
                 `
