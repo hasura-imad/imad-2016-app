@@ -2,21 +2,20 @@
 var button = document.getElementById('counter');
 var counter=0;
 button.onclick = function () {
-    // make request to counter enddpoint
-    var request = new XMLHttpRequest();
     
-    // catch request
+   var request = new XMLHttpRequest(); 
+   
     request.onreadystatechange = function () {
       if(request.readyState === XMLHttpRequest.DONE){
-            if(request.status === "200"){
-                var counter=request.respons;
+             if(request.status === "200"){  //DO NOT COMPARE WITH "200" INSTEAD WITH 200
+                var counter=request.responseText; //Should be request.responseText
                 var span = document.getElementById('count');
                 span.innerHTML= counter.toString();
             }
         }
     };
-    // rendering correct count
-    request.open('GET', 'http://coco98.imad.hasura-app.io/counter', true);
 
+  request.open("GET", document.URL+"counter", true);
     request.send(null);
+
 };
