@@ -21,7 +21,8 @@ button.onclick=function(){
   
   
   
-  //render the variable in correct span
-  counter=counter+1;
+ //make a request
+ request.open('GET','http://anitamahotra63.imad.hasura-app.io/counter',true);
+ request.send(null);
   
 };
