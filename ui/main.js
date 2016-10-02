@@ -1,7 +1,7 @@
-var button=document.getElementById("counter");
-
-
-button.onclick=function(){
+var submit=document.getElementById('submit-btn');
+ var nameInput=document.getElementById('name');
+var name=nameInput.value;
+submit.onclick=function(){
   
   //create a reqest object
   var request=new XMLHttpRequest();
@@ -30,12 +30,4 @@ button.onclick=function(){
  request.open('GET','http://anitamahotra63.imad.hasura-app.io/submit-button?name='+name,true);
  request.send(null);
   
-  var nameInput=document.getElementById('name');
-  var name=nameInput.value;
-  var submit=document.getElementById('submit_btn');
-  submit.onclick=function()
-  {
-     
-     
-  };
 };
