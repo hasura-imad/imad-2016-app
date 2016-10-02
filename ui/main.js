@@ -12,9 +12,14 @@ button.onclick=function(){
       {
           if(request.status==200)
           {
-              var counter=request.responseText;
-              var span=document.getElementById('count');
-              span.innerHTML=counter.toString();
+             var names=['name1','name2','name3','name4'];
+            var list='';
+     for(var i=0;i<names.length;i++)
+     {
+         list+='<li>'+names[i]+'</li>';
+     }
+     var ul=document.getElementById('the_list');
+     ul.innerHTML=list;
           }
       }
   };
@@ -22,7 +27,7 @@ button.onclick=function(){
   
   
  //make a request
- request.open('GET','http://anitamahotra63.imad.hasura-app.io/counter',true);
+ request.open('GET','http://anitamahotra63.imad.hasura-app.io/submit-button?name='+name,true);
  request.send(null);
   
   var nameInput=document.getElementById('name');
@@ -30,14 +35,7 @@ button.onclick=function(){
   var submit=document.getElementById('submit_btn');
   submit.onclick=function()
   {
-     var names=['name1','name2','name3','name4'];
-     var list='';
-     for(var i=0;i<names.length;i++)
-     {
-         list+='<li>'+names[i]+'</li>';
-     }
-     var ul=document.getElementById('the_list');
-     ul.innerHTML=list;
+     
      
   };
 };
