@@ -67,6 +67,15 @@ app.get('/counter',function(req,res){
    res.send(counter.toString());
 });
 
+var names=[];
+app.get('/submit-name/:name',function(req,res){
+   
+   var name=req.params.name;
+   names.push(name);
+   
+   //JSON COMES INTO PLAY:JAVASCRIPT OBJECT NOTATION. which converst the java objects to strings 
+   res.send(JSON.stringify(names));
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
