@@ -126,10 +126,21 @@ body {
 		background-color:#C03;
     
 }
+.img_box{
+	height:201px;
+    width:156px;
+    
+    margin-left:10px;
+	padding-top:10px;
+
+	
+}
 .img_index{
-    border-radius:20px;
-    padding-top:10px;
-    margin-left:500px;
+    border-style:inset;
+	
+	border-color:#FFF;
+	
+   
 }
 .footer{
     width:1000px;
