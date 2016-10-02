@@ -1,6 +1,5 @@
 var submit=document.getElementById('submit-btn');
- var nameInput=document.getElementById('name');
-var name=nameInput.value;
+ 
 submit.onclick=function(){
   
   //create a reqest object
