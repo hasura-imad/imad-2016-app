@@ -27,12 +27,12 @@ var articlesContent={
         content:`<p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the content.This is the content.This is the content.
             <p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the 
             <p>This is the content.This is the content.This is the content.this is the content.This is the content.This is the content.This is the `
-    },
+    }
     
   
 };
 
-var article-four:{
+var articleFour={
    title:'Article 4',
    heading1:'About me',
    heading2:'About my sister',
@@ -41,11 +41,11 @@ var article-four:{
 };
 
 function Createtemplate(data){
-  title=data.title;
-  heading1=data.heading1;
-  heading2=data.heading2;
-  content1=data.content1;
-  content2=data.content2;
+   var title=data.title;
+   var heading1=data.heading1;
+   var heading2=data.heading2;
+   var content1=data.content1;
+   var content2=data.content2;
   
   var HTMLTemplate=`<html>
     <head>
@@ -99,7 +99,7 @@ return htmlTemplate;
 }
 
 app.get('/article-four',function(req,res){
-    res.send(Createtemplate(article-four));
+    res.send(Createtemplate(articleFour));
 });
 
 var counter=0;
