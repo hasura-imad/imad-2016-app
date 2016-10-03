@@ -6,6 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articlesContent={
+    //javacript data structure
 'article-one':{
   title:'Article One',
   heading:'Article 1 |Anita MC',
