@@ -3,13 +3,33 @@
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
+    
     <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
-        </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! I am your webapp.
+        <div class="container">
+            <div class="center">
+                <img id="madi" src="/ui/madi.png" class="img-medium"/>
+            </div>
+            <h3>Personal</h3>
+            <div>
+                Its my personal information
+            </div>
+            <hr/>
+            <h3>Professional</h3>
+            <div>
+                Its my proffesional inforamtion
+            </div>
+            <hr/>
+            <div calss="footer">
+                This button <button id="counter"> click me </button> has been clicked <span id="count">0</span> times
+                <hr/>
+                <input type="text" id="name" placeholder="name" />
+                <input type="submit" value="submit" id="submit_btn"/>
+                 <ul id="namelist">
+                   
+                </ul>
+            </div>
+            <div>
+            </div>
         </div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
