@@ -32,6 +32,42 @@ var articlesContent={
   
 };
 
+var article-four:{
+   title:'Article 4',
+   heading1:'About me',
+   heading2:'About my sister',
+   content1:'<p>I am anita mc. I live in Indore.I want to be a software engineer.Thats all for today.</p>',
+   content2:' <p>She is a very fun person to be with. really like and love her,she is my role mode. thats all.</p>'
+};
+
+function Createtemplate(data){
+  title=data.title;
+  heading1=data.heading1;
+  heading2=data.heading2;
+  content1=data.content1;
+  content2=data.content2;
+  
+  var HTMLTemplate=`<html>
+    <head>
+        <title>${title}</title>
+        <link href='/ui/style.css' rel="stylesheet"/>
+    </head>
+    <body>
+        <div>
+            <h3>${heading1}</h3>
+            <hr>
+            ${content1}
+        </div>
+        <div>
+            <h4>${heading2}</h4>
+            <hr>
+            ${content2}
+        </div>
+    </body>
+</html>`;
+return HTMLTemplate;
+};
+
 function createTemplate(data){
   title=data.title;
   heading=data.heading;
@@ -63,7 +99,7 @@ return htmlTemplate;
 }
 
 app.get('/article-four',function(req,res){
-    res.sendFile(path.join(__dirname,'ui','article-four.html'));
+    res.send(Createtemplate(article-four));
 });
 
 var counter=0;
