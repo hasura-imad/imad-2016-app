@@ -62,6 +62,10 @@ var htmlTemplate=`<html>
 return htmlTemplate;
 }
 
+app.get('/article-four',function(req,res){
+    res.sendFile(path.join(__dirname,'ui','article-four.html'));
+});
+
 var counter=0;
 app.get('/counter',function(req,res){
    counter=counter+1;
