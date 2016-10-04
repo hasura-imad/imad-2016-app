@@ -9,4 +9,4 @@ function moveleft(){
 img.onclick = function(){
     var interval = setInterval(moveleft,10);
 
-}
+};
