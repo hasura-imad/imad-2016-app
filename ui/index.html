@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<title>Online Book Shopping</title>
+</head>
+
+<style>
+
+</style>
+
+<body>
+<div id="container">
+	<div id="header">
+	<img width="8%" src="images/logo.png" alt="web developer directory">
+        <h1><span class="blue-text">Bay</span> OfBooks</h1>
+        <button class="a" onclick="document.getElementById('loginbtn').style.display='block'" style="width:auto;">Login</button>
+		<button class="b" onclick="document.getElementById('regbtn').style.display='block'" style="width:auto;">Register</button>
+     </div><!--header end-->
+	 
+	 <ul class="menu">
+		<li class="dropdown">
+			<a href="index.php" class="dropbtn">Home</a>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Authors</a>
+			<div class="dropdown-content">
+				<table>
+					<tr>
+						<td><a href="#">Agatha Christie</a></td>
+						<td><a href="#">Albert Camus</a></td>
+						<td><a href="#">Alexandre Dumas</a></td>
+						<td><a href="#">Ankit Fadia</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Amish Tripathi</a></td>
+						<td><a href="#">Amitav Ghosh</a></td>
+						<td><a href="#">Anita Nair</a></td>
+						<td><a href="#">Ayn Rand</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Anton Chekhov</a></td>
+						<td><a href="#">Aparna Jain</a></td>
+						<td><a href="#">Arundhati Roy</a></td>
+						<td><a href="#">Douglas Adams</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Charles Dickens</a></td>
+						<td><a href="#">Chetan Bhagat</a></td>
+						<td><a href="#">Devdutt Pattanaik</a></td>
+						<td><a href="#">George Eliot</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Douglas Adams</a></td>
+						<td><a href="#">Ernest Hemingway</a></td>
+						<td><a href="#">Fyodor Dostoevsky</a></td>
+						<td><a href="#">Joseph Heller</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Harper Lee</a></td>
+						<td><a href="#">John Steinbeck</a></td>
+						<td><a href="#">Joseph Conrad</a></td>
+						<td><a href="#">Mark Twain</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Jules Verne</a></td>
+						<td><a href="#">Jane Smiley</a></td>
+						<td><a href="#">Khushwant Singh</a></td>
+						<td><a href="#">Robert Mighall</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Meghana Gulzar</a></td>
+						<td><a href="#">Durjoy Datta</a></td>
+						<td><a href="#">Oscar Wilde</a></td>
+						<td><a href="#">R. K. Narayan</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Paulo Coelho</a></td>
+						<td><a href="#">Preeti Shenoy</a></td>
+						<td><a href="#">Premchand</a></td>
+						<td><a href="#">Ruskin Bond</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Michael Gorra</a></td>
+						<td><a href="#">Ramachandra Guha</a></td>
+						<td><a href="#">Robin Sharma</a></td>
+						<td><a href="#">Shobha De</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Salman Rushdie</a></td>
+						<td><a href="#">Satyajit Ray</a></td>
+						<td><a href="#">Shashi Tharoor</a></td>
+						<td><a href="#">Vladimir Nabokov</a></td>
+					</tr>
+				</table>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Publisher</a>
+			<div class="dropdown-content">
+				<table>
+					<tr>
+						<td><a href="#">Arihant Publications</a></td>
+						<td><a href="#">PHI Learning</a></td>
+						<td><a href="#">Notion Press</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Taxmann Publications</a></td>
+						<td><a href="#">Rupa Publications</a></td>
+						<td><a href="#">Nair Publications</a></td
+					</tr>
+					<tr>
+						<td><a href="#">Navneet Publications</a></td>
+						<td><a href="#">Var India</a></td>
+						<td><a href="#">Dinakaran</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Compare Infobase</a></td>
+						<td><a href="#">Pitara Kids</a></td>
+						<td><a href="#">Techmax Publications</a></td>
+					</tr>
+				</table>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Indian Writing</a>
+			<div class="dropdown-content">
+				<table>
+					<tr>
+						<td><a href="#">Hindi</a></td>
+						<td><a href="#">Marathi</a></td>
+						<td rowspan="4" style="padding-right:10px"><img src="images/publishers/indian-writing.jpg" alt="languages"></td>
+					</tr>
+					<tr>
+						<td><a href="#">Bengali</a></td>
+						<td><a href="#">Telegu</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Tamil</a></td>
+						<td><a href="#">Kannada</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Malayalam</a></td>
+						<td><a href="#">Gujrati</a></td>
+					</tr>
+				</table>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Fiction</a>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Non-Fiction</a>
+		</li>
+		<li class="dropdown">
+			<a href="contact.html" class="dropbtn">Contact Us</a>
+		</li>
+	</ul>
+	 
+	 <div id="leftmenu">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="browse.html">Art & Photography</a></li>
+            <li><a href="browse.html">Biography</a></li>
+            <li><a href="browse.html">Business & Investments</a></li>
+            <li><a href="browse.html">Children's Book</a></li>
+            <li><a href="browse.html">College Text & Reference</a></li>
+            <li><a href="browse.html">Computer & Internet</a></li>
+            <li><a href="browse.html">Cooking Food & Wine</a></li>
+            <li><a href="browse.html">Educational & Professional</a></li>
+            <li><a href="browse.html">Entertainment</a></li>
+            <li><a href="browse.html">Entrance Exam Prep</a></li>
+        </ul>
+    </div><!--leftmenu end-->
+    
+	<div id="content" style="float:left;"><!--CONTENT HERE-->
+		<select class="location">
+			<option>-Location-</option>
+			<option value="Thane">Thane</option>
+			<option value="Belapur">Belapur</option>
+			<option value="Nerul">Nerul</option>
+			<option value="Kharghar">Kharghar</option>
+			<option value="Vashi">Vashi</option>
+		</select>
+		<form action="page1.php" method="post">
+			<input type="text" name="text1" placeholder="Search.." style="display:inline;float:left;margin-right:10px">
+		</form>
+		<input type="submit" class="d" value="Search" style="display:inline;float:left;margin-top:9px;height:45px;">
+		<div>
+		<center>
+			<div class="w3-content w3-display-container" style="max-width:800px;margin-top:100px">
+				<img class="mySlides" src="images/adv/book0.jpg" style="width:100%;height:300px">
+				<img class="mySlides" src="images/adv/book1.jpg" style="width:100%;height:300px">
+				<img class="mySlides" src="images/adv/book2.jpg" style="width:100%; height:300px">
+				<img class="mySlides" src="images/adv/book3.jpg" style="width:100%; height:300px">
+			</div>
+		</center>
+		<script>
+			var myIndex = 0;
+			carousel();
+	
+			function carousel() 
+			{
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) 
+				{
+					x[i].style.display = "none";
+				}
+				myIndex++;
+				if (myIndex > x.length) {myIndex = 1}
+				x[myIndex-1].style.display = "block";
+				setTimeout(carousel, 4000); 
+			}
+		</script>
+		</div>
+		<div id="content-table"><!--content table start-->
+			<table>
+				<tr>
+					<td><img src="images/books/book1.jpg" class="dispbook"></td>
+					<td><img src="images/books/book2.jpg" class="dispbook"></td>
+					<td><img src="images/books/book3.jpg" class="dispbook"></td>
+				</tr>
+			</table>
+		</div><!--content table end-->
+    </div><!--content end-->
+	
+</div><!--container end-->
+
+
+<div id="regbtn" class="modal">
+  
+  <form class="modal-content animate" action="register_insert.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('regbtn').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h2>Sign Up</h2>
+    </div>
+
+    <div class="container">
+      <label for="name" >Name</label>
+      <input type="text" placeholder="Enter Name.." name="name" required><br>
+
+      <label>Username</label>
+      <input type="text" placeholder="Enter Userame.." name="username" required><br>
+	 
+      <label>Email</label>
+      <input type="email" placeholder="Enter Email.." name="email" required><br>
+      
+	  <label>Password</label>
+	  <input type="password" placeholder="Enter Password.." name="pwd" required><br>	   
+      
+	  <label>Phone number</label>
+      <input type="text" placeholder="Enter Phone number.." name="phone" required><br>	   
+      
+	  <label>Address</label>
+      <input type="text" placeholder="Enter Address.." name="add1" required><br>	   	   
+      
+      <label>City</label>
+      <input type="text" placeholder="Enter City.." name="city" required><br>
+
+      <label>State</label>
+      <input type="text" placeholder="Enter State.." name="state" required><br>
+
+      <label>Pin Code</label>
+      <input type="text" placeholder="Enter Pin Code.." name="pin" required><br>
+
+	  <button class="c" type="submit">Register</button>
+	  <button class="c"type="button" onclick="document.getElementById('regbtn').style.display='none'" >Cancel</button>
+    </div>
+    
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('regbtn');
+</script>
+
+<div id="loginbtn" class="modal">
+  
+  <form class="modal-content animate" action="authenticate.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('loginbtn').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h2>Log In</h2>
+    </div>
+
+    <div class="form-container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required><br>
+	 
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required><br>
+        
+      <button class="c" type="submit">Login</button>
+	  <button class="c" type="button" onclick="document.getElementById('loginbtn').style.display='none'" >Cancel</button>
+    </div>
+  </form>
+</div>
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('loginbtn');
+</script>
+
+</body>
+</html>
