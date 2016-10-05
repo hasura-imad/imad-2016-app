@@ -23,7 +23,7 @@ button.onclick = function () {
 
 var nameInput = document.getElementById('name');
 var name=nameInput.value;
-var submit = document.getElementById('sumbit_btn');
+var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
     //make request to get names
     
