@@ -5,15 +5,33 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var Viku1= {
-    title :'article 1',
+var articles= {
+  'Viku1':{  title :'article 1',
     date :'6 oct 2016',
     heading : 'Article 1 about ms dhoni',
     content :`<p>
             
             This is about MSD.This is about MSD.This is about MSD.This is about MSD.This is about MSD.This is about MSD.
             This is about MSD.This is about MSD.This is about MSD.This is about MSD.This is about MSD.This is about MSD..This is about MSD.This is about MSDThis is about MSDThis is about MSD.
-        </p>`
+        </p>`},
+        
+   'Viku2':{  title :'article 2',
+    date :'6 oct 2016',
+    heading : 'Article 2 about sachin',
+    content :`<p>
+            
+            This is about MSD.This is about MSD.This is about MSD.This is about MSD.This is about MSD.This is about MSD.
+            This is about MSD.This is about MSD.This is about MSD.This is about MSD.This is about MSD.This is about MSD..This is about MSD.This is about MSDThis is about MSDThis is about MSD.
+        </p>`},     
+        
+         'Viku3':{  title :'article 3',
+    date :'6 oct 2016',
+    heading : 'Article 3 about VIKASH KUMAR',
+    content :`<p>
+            
+            This is about MSD.This is about MSD.This is about MSD.This is about MSD.This is about MSD.This is about MSD.
+            This is about MSD.This is about MSD.This is about MSD.This is about MSD.This is about MSD.This is about MSD..This is about MSD.This is about MSDThis is about MSDThis is about MSD.
+        </p>`}    
     
 };
 
@@ -73,8 +91,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/Viku1', function (req, res) {
-  res.send(createtemplate(Viku1));
+app.get('/Vikuname', function (req, res) {
+  var Vikuname=req.params.Vikuname;
+  res.send(createtemplate(articles[Vikuname]))
 });
 
 app.get('/Viku2', function (req, res) {
