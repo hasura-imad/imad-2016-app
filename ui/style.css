@@ -23,6 +23,6 @@ body {
 .container{
         max-width: 600px;
         margin: 0 auto;
-        color: yellow;
+        color: lightgrey;
         font-family:sans-serif;
     }
