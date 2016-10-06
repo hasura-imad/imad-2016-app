@@ -28,7 +28,7 @@ var htmltemplate=`
     <html>
 <head>
 <title>
-article 1
+${title}
 </title>
 <meta name='viewport' content="width=device-width initial-scale=1"/>
 
