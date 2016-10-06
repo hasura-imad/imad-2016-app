@@ -20,3 +20,9 @@ body {
     height: 200px;
 }
 
+.container{
+        max-width: 600px;
+        margin: 0 auto;
+        color:; grey;
+        font-family:; sans-serif;
+    }
