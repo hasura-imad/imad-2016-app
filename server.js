@@ -93,7 +93,7 @@ app.get('/', function (req, res) {
 
 app.get('/Vikuname', function (req, res) {
   var Vikuname=req.params.Vikuname;
-  res.send(createtemplate(articles[Vikuname]))
+  res.send(createtemplate(articles[Vikuname]));
 });
 
 
