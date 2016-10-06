@@ -96,12 +96,7 @@ app.get('/Vikuname', function (req, res) {
   res.send(createtemplate(articles[Vikuname]))
 });
 
-app.get('/Viku2', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Viku2.html'));
-});
-app.get('/Viku3', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Viku3.html'));
-});
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
