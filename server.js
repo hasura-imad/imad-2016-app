@@ -91,7 +91,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/Vikuname', function (req, res) {
+app.get('/:Vikuname', function (req, res) {
   var Vikuname=req.params.Vikuname;
   res.send(createtemplate(articles[Vikuname]));
 });
