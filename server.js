@@ -16,7 +16,7 @@ app.get('/Viku1', function (req, res) {
 app.get('/Viku2', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Viku2.html'));
 });
-app.get('/Viku23', function (req, res) {
+app.get('/Viku3', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Viku3.html'));
 });
 
