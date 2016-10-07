@@ -22,7 +22,9 @@ button.onclick = function(){
    
 };
 
+ var nameInput=document.getElementById('name');
 
+var name =nameInput.value;
 
 var submit=document.getElementById('submit_btn');
 
@@ -48,9 +50,7 @@ submit.onclick = function(){
         }
     };
     
-    var nameInput=document.getElementById('name');
-
-var name =nameInput.value;
+   
    
    request.open('GET', 'http://golua94.imad.hasura-app.io/submit_name?name=' + name, true);
    request.send(null);
