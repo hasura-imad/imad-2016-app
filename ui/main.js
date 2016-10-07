@@ -1,4 +1,4 @@
-console.log('Loaded!');
+/*console.log('Loaded!');
 var element=document.getElementById('main-text');
 
 
@@ -16,4 +16,11 @@ img.onclick=function(){
     var interval=setInterval(moveright, 10);
     
     
-}
+}*/
+
+var button=document.getElementById('counter');
+var counter=0;
+button.onclick = function(){
+    counter=counter+1;
+    res.send(counter.toString());
+};
