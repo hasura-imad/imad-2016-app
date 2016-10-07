@@ -30,8 +30,14 @@ var submit=document.getElementById('submit_btn');
 
 submit.onclick = function(){
     
+    var request= new XMLHttpRequest();
     
-    var names= ['name1', 'name2', 'name3', 'name4'];
+    request.onreadystatechange=function(){
+        if(request.readyState == XMLHttpRequest.DONE){
+            
+            if(request.status == 200){
+                 var names=request.responseText;
+                 names= JASON.parse(names);
     var list='';
     
     for(var i=0; i<names.length; i++){
@@ -40,4 +46,13 @@ submit.onclick = function(){
     
     var ul=document.getElementById('namelist');
     ul.innerHTML=list;
+            }
+        }
+    };
+   
+   request.open('GET', 'http://golua94.imad.hasura-app.io/submit_name?name=' + name, true);
+   request.send(null);
+    
+    
+   
 };
