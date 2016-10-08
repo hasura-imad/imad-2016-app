@@ -7,17 +7,19 @@ button.onclick = function() {
 
 	var request = new XMLHttpRequest();
 
+	var counter = request.responseText();
+
 	request.onreadystatechange = function() {
 		if(request.readyState === XMLHttpRequest.DONE){
 			if(request.status === 200) {
-				var counter = request.responseText;
+		//		var counter = request.responseText;
 				var span = document.getElementById('count');
 				span.innerHTML = counter.toString();
 			}
 		}
 	};
 
-	alert("Counter value is: " +request.responseText);	
+	alert("Counter value is: " +counter);	
 	request.open('GET', 'http://pkmariya.imad.hasura-app.io/counter', true);
 	request.send(null);
 
