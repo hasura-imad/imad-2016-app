@@ -3,16 +3,18 @@
 
 var button = document.getElementById('counter');
 
+var rootURL=window.location.protocol+"//"+window.location.host;
+
 button.onclick = function() {
 
 	var request = new XMLHttpRequest();
 
-	var counter = request.responseText;
+	// var counter = request.responseText;
 
 	request.onreadystatechange = function() {
 		if(request.readyState === XMLHttpRequest.DONE){
 			if(request.status === 200) {
-		//		var counter = request.responseText;
+				var counter = request.responseText;
 				var span = document.getElementById('count');
 				span.innerHTML = counter.toString();
 			}
@@ -20,7 +22,8 @@ button.onclick = function() {
 	};
 
 	alert("Counter value is: " +counter);	
-	request.open('GET', 'http://pkmariya.imad.hasura-app.io/counter', true);
+	request.open('GET', rootURL + '/counter', true);
+	// request.open('GET', 'http://pkmariya.imad.hasura-app.io/counter', true);
 	request.send(null);
 
 };
@@ -47,6 +50,7 @@ submit.onclick = function (){
 	};
 
 	var nameInput = document.getElementById('name').value;	
-	request.open('GET', 'http://pkmariya.imad.hasura-app.io/submit-name?name=' + name, true);
+	request.open('GET', rootURL + '/submit-name?name=' + nameInput, true);
+	// request.open('GET', 'http://pkmariya.imad.hasura-app.io/submit-name?name=' + name, true);
 	request.send(null);
 };
