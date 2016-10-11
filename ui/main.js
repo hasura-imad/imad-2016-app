@@ -20,8 +20,7 @@ button.onclick = function() {
 			}
 		}
 	};
-
-	alert("Counter value is: " +counter);	
+	
 	request.open('GET', rootURL + '/counter', true);
 	// request.open('GET', 'http://pkmariya.imad.hasura-app.io/counter', true);
 	request.send(null);
