@@ -5,15 +5,6 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-/*
-app.use(express.static(path.join(__dirname, 'ui')));
-
-app.get('/ui/favicon.ico', function(req, res) {
-        res.sendFile(path.join(__dirname, 'ui', 'favicon.ico'));
-});
-
-*/
-
 var articles = {
     
     'article-one' : {
