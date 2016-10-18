@@ -30,4 +30,3 @@ app.listen(8080, function () {
 });
 
 
-alert("The paragraph is now hidden");
