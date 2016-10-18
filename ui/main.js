@@ -48,6 +48,11 @@
             
             var ul = document.getElementById('namelist');
             ul.innerHTML = list;
+            
+            
+            
+            
+            alert("The paragraph is now hidden");
         };
         
             
