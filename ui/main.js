@@ -52,7 +52,7 @@
             
             
             
-            alert("The paragraph is now hidden");
+            
         };
         
             
