@@ -5,7 +5,7 @@ var marginleft=0;
 var h=0;
 var interval = setInterval(moveleft,10);
 function moveleft(){
-    marginleft= marginleft + 10 ;
+    marginleft= marginleft + 2 ;
    
     imgo.style.marginLeft=marginleft + "px" ;
 }
