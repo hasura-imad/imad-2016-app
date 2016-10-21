@@ -30,3 +30,33 @@ body {
     font-size: 16px;
     z-index:1000;
 }
+/* article one css */
+#a1{
+
+border : 1px solid black;
+padding : 5px;
+margin : 2px auto;
+background:indigo;
+}
+#h1{
+
+text-align:center;
+color:white;
+}
+
+#a2{
+float:left;
+margin:30px auto;
+padding:5px ;
+background:silver;
+width:1330px;
+
+}
+footer{
+clear:both;
+text-align:center;
+padding:5px;
+margin:2px auto;
+border-top:1px solid blue;
+background :indigo;
+}
