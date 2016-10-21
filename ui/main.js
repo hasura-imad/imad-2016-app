@@ -5,7 +5,7 @@ var marginleft=0;
 var h=0;
 function moveleft(){
     marginleft= marginleft + 10 ;
-    h=marginleft + "px";
-    imgo.style.marginLeft="h";
+   
+    imgo.style.marginLeft=marginleft + "px" ;
 }
 imgo.addEventListener("click", moveleft);
