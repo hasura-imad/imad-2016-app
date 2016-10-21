@@ -1,9 +1,9 @@
 console.log('Loaded!');
 
 var imgo =document.getElementById("simg");
-var marginleft = 5;
+var h = 5;
 function moveleft(){
-    marginleft = marginleft + 3;
-    imgo.style.marginLeft="marginleft+'px'";
+h = h + 30;
+    imgo.style.marginLeft="h+'px'";
 }
 imgo.addEventListener("click", moveleft);
