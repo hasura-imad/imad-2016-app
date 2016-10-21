@@ -17,10 +17,12 @@
 
 <div id="a2">
 this is a sample website 
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+
 <table id="tab1" align="center">
 <tr>
     <td>YOUR NAME </td>
-	<td><input type="text" id="yourname"></td>
+	<td><input type="text" id="yourname" name="fname"></td>
 	</tr>
 <tr>
     <td>YOUR COLLEGE NAME</td>
@@ -33,13 +35,24 @@ this is a sample website
     <td></td>
 	<td><INPUT type="submit" id="submit"></td>
 </tr>
-</table>
+</table></form>
 </div>
 <footer>
 have a good day !
 </footer>
 
-
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
+$name = $_POST['fname'];
+if(empty($name)){
+echo "name is empty";
+}
+else{
+echo $name;
+}}
+?>
 
 </body>
 </html>
+
+
