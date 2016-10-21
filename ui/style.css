@@ -20,8 +20,8 @@ body {
     height: 200px;
 }
 #but1{
-    width:100px;
-     position:absolute;
+    
+     position:relative;
     color: white;
     
     text-align: center;
