@@ -32,10 +32,10 @@ body {
 }
 /* article one css */
 #a1{
-
-border : 1px solid black;
+position:fixed;
+border-bottom : 1px solid black;
 padding : 5px;
-margin : 2px auto;
+margin : 0 auto;
 background-color:indigo;
 }
 #h1{
