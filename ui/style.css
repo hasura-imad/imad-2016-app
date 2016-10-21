@@ -21,7 +21,7 @@ body {
 }
 #but1{
     
-    position:relative;
+    position:absolute;
     color: white;
     
     text-align: center;
