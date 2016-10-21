@@ -16,3 +16,4 @@ function stop(){
 }
 
 but1.addEventListener("click" ,stop);
+but1.addEventListener("dblclick" ,moveleft);
