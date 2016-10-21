@@ -1,12 +1,9 @@
 console.log('Loaded!');
 
-var img =document.getElementbyId("madi");
+var img =document.getElementbyId('madi');
 var marginleft = 0;
-function moveleft(){
+var moveleft= function (){
     marginleft = marginleft + 3;
-    img.style.marginleft= marginleft + "px";
+    img.style.marginleft+"px";
 }
-img.onclick = function(){
-    var interval = setInterval(moveleft,10);
-
-};
+img.addEventListener('click',moveleft);
