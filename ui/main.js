@@ -1,9 +1,9 @@
 console.log('Loaded!');
 
-var img =document.getElementById("madi");
+var imgo =document.getElementsByClassName("img-medium");
 var marginleft = 5;
 function moveleft(){
     marginleft = marginleft + 3;
-    img.style.marginLeft=marginleft+"px";
+    img.style.marginLeft="marginleft";
 }
-img.addEventListener("click", moveleft);
+imgo.addEventListener("click", moveleft);
