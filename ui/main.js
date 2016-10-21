@@ -1,6 +1,6 @@
 console.log('Loaded!');
 
-var imgo =document.getElementsByClassName("img-medium");
+var imgo =document.getElementById("simg");
 var marginleft = 5;
 function moveleft(){
     marginleft = marginleft + 3;
