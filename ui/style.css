@@ -7,10 +7,10 @@ body {
 	color: #061C37;
 	height: 100%;
     background: #0c2847; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#0c2847, #003777); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#0c2847, #003777); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#0c2847, #003777); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#0c2847, #003777); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(white, #003777); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #003777); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #003777); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #003777); /* Standard syntax (must be last) */
 }
 
 *{
