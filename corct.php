@@ -19,14 +19,14 @@ include('connection.php');
 </tr>
 <tr>
   <td>BRANCH</td>
-   <td><input type="submit" name="fname" value="send"></td>
+   <td><input type="text" name="fname" ></td>
 </tr>
  <tr>
   <td>EMAIL</td>
   <td><input text="email"></td>
 <tr>
    <td>RATE US</td>
-   <td><input type="number" min="0" max="10"><input type="submit"></td>
+   <td><input type="number" min="0" max="10"></td>
    </tr>
    <tr>
    <td>DATE OF BIRTH</td>
