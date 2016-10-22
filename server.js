@@ -30,7 +30,7 @@ app.get('/newcon.php', function (req, res) {
   res.sendFile(path.join(__dirname, 'newcon.php'));
 });
 app.get('/new.php', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'new.php'));
+  res.sendFile(path.join(__dirname, 'new.php'));
 });
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
