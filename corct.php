@@ -8,9 +8,10 @@
 </head>
 <body>
 <?php
-include('connection.php');
+include('/newcon1.php');
+$dbconnection = new dbconnection();
 ?>
-<form metod ="post" action="corct1.php">>
+<form enctype="multipart/form-data" metod ="post" action="corct1.php">>
 <h1>form<hr></h1>
 <table>
 <tr>
