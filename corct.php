@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-include('/newcon1.php');
+include('newcon1.php');
 $dbconnection = new dbconnection();
 ?>
 <form enctype="multipart/form-data" metod ="post" action="corct1.php">>
