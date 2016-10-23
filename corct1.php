@@ -2,7 +2,7 @@
 <head></head>
 <body>
 <?php
-include('/newcon1.php');
+include('newcon1.php');
 $dbconnection = new dbconnection();
 ?>
 Hi <?php echo htmlspecialchars($_POST['name']); ?>
