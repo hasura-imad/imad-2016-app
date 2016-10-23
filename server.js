@@ -8,7 +8,7 @@ var config = {
   database: 'pkmariya',
   host: 'db.imad.hasura-app.io',
   port: '5432',
-  password: process.env.DB_PASSWORD
+  password: 'db-pkmariya-4181'
 };
 
 var app = express();
