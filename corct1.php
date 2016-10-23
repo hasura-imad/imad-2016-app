@@ -2,7 +2,8 @@
 <head></head>
 <body>
 <?php
-include('connection.php');
+include('/newcon1.php');
+$dbconnection = new dbconnection();
 ?>
 Hi <?php echo htmlspecialchars($_POST['name']); ?>
 Your branch <?php echo $_POST['branch']; ?>
