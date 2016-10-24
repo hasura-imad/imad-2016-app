@@ -83,7 +83,7 @@ app.get('/test-db', function(req, res){
     // return the results
     pool.query('SELECT * FROM test' ,function(err, result){
         if(err){
-            alert('ERROR!');
+            console.log('its an error');
             res.status(500).send(err.toString());
         }
         else{
