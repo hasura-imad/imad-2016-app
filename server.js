@@ -116,7 +116,7 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-app.get('/articles :articleName', function (req,res) {
+app.get('/articles/:articleName', function (req,res) {
     // : operator is from express utility which compares coming parameter with current vars
     var articleName = req.params.articleName;
     res.send(CreateTemplate(articles[articleName]));
