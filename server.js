@@ -78,7 +78,7 @@ var pool = new Pool(config);
 app.get('/test-db', function(req, res){
     // make a select command
     // return the results
-    pool.query('SELECT * from user',function(err, result){
+    pool.query('SELECT * from test',function(err, result){
         if(err){
             res.status(500).send(err.toString());
         }
