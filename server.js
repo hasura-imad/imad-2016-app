@@ -9,7 +9,7 @@ var config = {
     host: 'db.imad.hasura-app.io',
     port: '5432',
     password: process.env.DB_PASSWORD // environment variable
-}
+};
 
 var articles = {
     
@@ -82,15 +82,16 @@ var pool = new Pool(config);
 app.get('/test-db', function(req, res){
     // make a select command
     // return the results
-    pool.query('SELECT * from test',function(err, result){
+    pool.query('SELECT * FROM test' ,function(err, result){
         if(err){
+            alert('ERROR!');
             res.status(500).send(err.toString());
         }
         else{
             res.send(JSON.stringify(result.rows));
         }
-    })
-})
+    });
+});
 
 var counter = 0;
 app.get('/counter', function(req, res){
