@@ -119,7 +119,19 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/articles/:articleName', function (req,res) {
     // : operator is from express utility which compares coming parameter with current vars
     var articleName = req.params.articleName;
-    res.send(CreateTemplate(articles[articleName]));
+    
+    pool.query("SELECT * from article WHERE  title = " + req.params.articleName, function(req,res){
+        if(err){
+            res.status(500).send(err.toString())
+        } else{
+            if(result.row.length === 0){
+                res.status(400).send('Article Not Found!');
+            } else {
+                var articleData = result.rows[0];
+                res.send(CreateTemplate(articleData));
+            }
+        }
+    })
 });
 
 app.get('/ui/madi.png', function (req, res) {
