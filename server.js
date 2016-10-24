@@ -33,7 +33,7 @@ var articles = {
 
 
 function CreateTemplate(data){
-    //var title = data.title;
+    var title = data.title;
     var heading = data.heading;
     var date = data.date;
     var content = data.content;
@@ -118,8 +118,8 @@ app.get('/ui/main.js', function (req, res) {
 
 app.get('/:articleName', function (req,res) {
     // : operator is from express utility which compares coming parameter with current vars
-    var articleName = req.params.articleName;
-    res.send(CreateTemplate(articles[articleName]));
+    var articlename = req.params.articleName;
+    res.send(CreateTemplate(articles[articlename]));
 });
 
 app.get('/ui/madi.png', function (req, res) {
