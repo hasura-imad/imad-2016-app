@@ -14,7 +14,7 @@ var config = {
 var articles = {
     
     articleOne : {
-    title: 'Article One: Akshat',
+    title: 'Article One Akshat',
     heading: 'Article One,',
     date: 'Sept 5, 2016',
     content: `
@@ -29,12 +29,11 @@ var articles = {
                 This is the content of article one.
             </p>  `
     }  
-    
 };
 
 
 function CreateTemplate(data){
-    var title = data.title;
+    //var title = data.title;
     var heading = data.heading;
     var date = data.date;
     var content = data.content;
