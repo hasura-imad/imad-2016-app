@@ -2,10 +2,11 @@ console.log('Loaded!');
 
 var button = document.getElementById('counter');
 var span = document.getElementById('count');
+var request = new XMLHttpRequest();
 
 button.onclick = function(){
 
-	var request = new XMLHttpRequest();
+	
 
 	request.onreadystatechange = function () {
 
@@ -16,7 +17,7 @@ button.onclick = function(){
 
 	};
 
-	request.open('GET','http://achyut92.imad.hasura-app.io/counter',true);
+	request.open('GET','http://localhost:8080/counter',true);
 	request.send(null);
 };
 
@@ -25,7 +26,6 @@ submit.onclick = function(){
 
 	var nameInput = document.getElementById('name');
 	var name = nameInput.value;
-	var request = new XMLHttpRequest();
 
 	request.onreadystatechange = function () {
 
@@ -44,6 +44,6 @@ submit.onclick = function(){
 
 	};
 
-	request.open('GET','http://achyut92.imad.hasura-app.io/submit-name?name='+name,true);
+	request.open('GET','http://localhost:8080/submit-name?name='+name,true);   //achyut92.imad.hasura-app.io
 	request.send(null);
 };
