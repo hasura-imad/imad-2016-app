@@ -2,14 +2,36 @@
 <html>
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
-    </head>
+    	<link href="/ui/favicon.ico" rel="shortcut icon" />
+	<link href="" rel="shortcut icon" />
+	</head>
     <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
+        <div class="header">
+            
         </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! I am your webapp.
+        <div class="container">
+        	<div class="image">
+            		<img id="myimage" src="https://scontent.fmaa1-1.fna.fbcdn.net/v/t1.0-9/12744627_10208564793381773_1607753535603607946_n.jpg?oh=2ae5dbcc71806a8fb87183d04b16ecd0&oe=5880C959" class="img-medium"/>
+        	</div>
+        	<hr/>
+        	<h3>Personal</h3>
+        	<div>
+            		Hi! I am Mariya!
+        	</div>
+        	<hr/>
+		<h3>Professional</h3>
+                <div>
+			I work at Ford
+  		</div>
+		<hr/>
+		<div class="footer">
+			This button <button id="counter">Click Me!</button> has been clicked <span id="count">0</span> times.
+			<hr/>
+			<input type="text" id="name" placeholder="name"></input>
+			<input type="submit" id='submit_btn' value="Submit"></input>
+			<ul id='namelist'>
+			</ul>
+		</div>
         </div>
         <script type="text/javascript" src="/ui/main.js">
         </script>

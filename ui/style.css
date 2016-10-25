@@ -1,15 +1,26 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+    margin-top: 60px;
+}
+
+.image {
+    padding: 2em;
+    text-align: center;
 }
 
 .center {
     text-align: center;
+    margin-bottom: .5em;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.image:hover {
+	transform: rotate(-45deg);	
 }
 
 .text-big {
-    font-size: 300%;
+    font-size: 200%;
 }
 
 .bold {
@@ -20,3 +31,17 @@ body {
     height: 200px;
 }
 
+.header {
+    height: 200px;
+    border-radius: 5px;
+    background-color: #ff9933;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    color: darkgreen;
+    font-family: sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
