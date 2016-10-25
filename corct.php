@@ -8,10 +8,10 @@
 </head>
 <body>
 <?php
-include('newcon1.php');
+include'newcon1.php';
 $dbconnection = new dbconnection();
 ?>
-<form enctype="multipart/form-data" metod ="post" action="corct1.php">>
+<form  metod ="post" action="corct.php">>
 <h1>form<hr></h1>
 <table>
 <tr>
@@ -38,6 +38,10 @@ $dbconnection = new dbconnection();
 </tr>
 </table>
 </form>
-
-</body>
+<div>
+Hi <?php echo htmlspecialchars($_POST['name']); ?>
+Your branch <?php echo $_POST['branch']; ?>
+email <?php echo $_POST['email'];?>
+dob <?php echo $_POST['date'];?>
+</body></div>
 </html>
