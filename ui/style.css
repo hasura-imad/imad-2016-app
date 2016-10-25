@@ -1,4 +1,4 @@
-body {
+.body {
     font-family: sans-serif;
     background-color: lightgrey;
     margin-top: 75px;
@@ -19,4 +19,45 @@ body {
 .img-medium {
     height: 200px;
 }
+#but1{
+    
+    position:fixed;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    z-index:1000;
+}
+/* article one css */
+#a1{
 
+border-bottom : 1px solid black;
+padding : 5px;
+margin : 2px auto ;
+background-color:indigo;
+margin-top:0;
+}
+#h1{
+
+text-align:center;
+color:white;
+}
+
+#a2{
+
+margin:20px auto;
+
+background-color:silver;
+
+
+}
+footer{
+clear:both;
+text-align:center;
+padding:5px;
+margin:2px auto;
+border-top:1px solid blue;
+background-color :#b9acac;
+}
