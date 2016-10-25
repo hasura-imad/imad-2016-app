@@ -1,22 +1,145 @@
 body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+	margin:0px;
+	
+	
+
+	
+	}
+.main {
+	
+	height:700px;
+	width:1000px;
+	background-color:#FFF;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:130px;
+	
+	}
+	
+.sub {
+	height:500px;
+	width:500px;
+	background-color:#FFF;
+	margin-left:auto;
+	margin-right:auto;
+	border-style:solid;
+	
+
+	border-color:rgb(239, 239, 239);
+	border-width:thin;
+	
+	
+	
+}
+._folio {
+	height:70px;
+	width:500px;
+	background-color:#3897f0;
+	padding-top:20px;
+	color:#FFF;
+	font:icon;
+	font-size:36px;
+	
+
+	
+	
+}
+._txt {
+	
+	text-align:center;
+	margin-top:0px;
+	
+	
+	
+	}
+.img_box {
+	height:150px;
+	width:150px;
+	margin-left:200px;
+	margin-top:60px;
+	
+	
+	}	
+.pic {
+	border-radius: 100px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+	border: solid 1px #efefef;
+    border-top-color: rgb(239, 239, 239);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(239, 239, 239);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(239, 239, 239);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(239, 239, 239);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    height: 100px;
+    margin: 0 auto 20px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    width: 100px;
+	
+}
+.ent {
+	height:50px;
+	width:150px;
+	margin-top:5px;
+	margin-left:180px;
+	float:left;
 }
 
-.center {
-    text-align: center;
-}
+._ent {
+	
+	background-color:#3897f0;
+	border-color:#3897f0;
+	color:#FFF;
+	border-style:solid;
+	width:150px;
+	height:20px;
+	border-radius:2px;
+	font:icon;
+	float:left;
+	text-align:center;
+	padding-top:2px;
 
-.text-big {
-    font-size: 300%;
+	
 }
-
-.bold {
-    font-weight: bold;
+._ent:hover {
+	
+	background-color:#89ce89;
+	border-color:#89ce89;
 }
+.footer{
+	width:500px;
+	height:100px;
+	background-color:#FFF;
+	margin-top:30px;
 
-.img-medium {
-    height: 200px;
+	padding-top:30px;
+}
+.in{
+	margin-left:200px;
+	
+	
+	
+	}
+._ftxt {
+
+	
+	color:#000;
+	font-family:Arial, Helvetica, sans-serif;
 }
 
