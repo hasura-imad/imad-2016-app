@@ -9,12 +9,19 @@ Login page
 color:#00FF00;</style>
 Simple Login Page
 </h1>
+<div class="container">
 <form name="login">
 Username<input type="text" name="userid"/>
 Password<input type="password" name="pswrd"/>
 <input type="button" onclick="check(this.form)" value="Login"/>
 <input type="reset" value="Cancel"/>
-</form>
+</form></div>
+<style>.container{width : 500px;
+height : 400px
+text-align : center;
+background-color: #34495E;
+margin : 0 auto;
+}</style>
 <script language="javascript">
 function check(form)/*function to check userid & password*/
 {
