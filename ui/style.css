@@ -1,7 +1,8 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+    margin: 30px;
+    background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/antique.jpg');
+    background-size: cover;
 }
 
 .center {
@@ -20,3 +21,19 @@ body {
     height: 200px;
 }
 
+.container{ 
+    margin: 20px auto;
+    color: white;
+    font-family: sans-serif;
+}
+
+.profile{ 
+    margin: 20px;
+    color: blue;
+    font-family: sans-serif;
+}
+
+.nav li a{
+    color: yellow;
+    font-weight: bold;
+}

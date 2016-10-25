@@ -1,16 +1,56 @@
 <!doctype html>
 <html>
     <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="/ui/style.css" rel="stylesheet" />
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
+        <header class="container">
+            <div class="row">
+            <div class="col-sm-3 text-center">
+                <img id="madi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7_5K3IdSuagFvRpx3R2nm9wi7DkVE33BRrOdox65pCB-yLqg3Zg" class="img-medium"/>
+            </div>
+            <div class="col-sm-5 text-center">
+                <h2>Welcome to My Profile</h2>
+            </div>
+            <nav class="col-sm-4 text-center">
+              <div class="container-fluid">
+                <ul class="nav nav-pills nav-justified">
+                  <li><a href="#">Education</a></li>
+                  <li><a href="#">Project</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+            
         </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! I am your webapp.
+        </header>
+      
+        <div class="profile">
+            
+            <div>
+                <h4>Who am I?</h4>
+                <p>Hi.. This is Achyut from Chennai.</p>
+            </div>    
+            <hr/>
+            <div>
+                <h4>Why am I here?</h4>
+                <p>Worked at TCS. Did my Masters in Software Engineering at NUS.</p>
+            </div>
         </div>
+
+        <div class="footer">
+            This button <button id="counter">Click Me!</button> has been clicked <span id="count">0</span> times.
+            <hr/>
+            <input type="text" name="name" placeholder="Name" id="name">
+            <input type="submit" value="Submit" id="submit_btn">
+            <ul id="nameList">
+                
+            </ul>
+        </div>
+		
         <script type="text/javascript" src="/ui/main.js">
         </script>
     </body>
