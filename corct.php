@@ -4,7 +4,7 @@
 <head>
 <title>hello
 </title>
-<link rel="stylesheet" href="neww.css">
+
 </head>
 <body>
 <?php
