@@ -15,38 +15,6 @@ app.use(morgan('combined'));
 
 var pool = new Pool(config); 
 
-var articles = {
-	'article-one': {
-	title: 'Article One',
-	date: 'Sep 18, 2016',
-	content: `<p>This is the content for article one.This is the content for article one.This is the content for article one.
-			</p>
-			<p>This is the content for article one.This is the content for article one.This is the content for article one.
-			</p>
-			<p>This is the content for article one.This is the content for article one.This is the content for article one.</p>`
-		},
-
-	'article-two': {
-	title: 'Article Two',
-	date: 'Sep 19, 2016',
-	content: `<p>This is the content for article two.This is the content for article two.This is the content for article two.
-			</p>
-			<p>This is the content for article two.This is the content for article two.This is the content for article two.
-			</p>
-			<p>This is the content for article two.This is the content for article two.This is the content for article one.</p>`
-		},
-
-	'article-three': {
-	title: 'Article Three',
-	date: 'Sep 20, 2016',
-	content: `<p>This is the content for article three.This is the content for article three.This is the content for article three.
-			</p>
-			<p>This is the content for article three.This is the content for article three.This is the content for article three.
-			</p>
-
-			<p>This is the content for article three.This is the content for article three.This is the content for article three.</p>`
-		}
-};
 
 
 function createTemplate(data){
@@ -69,7 +37,7 @@ function createTemplate(data){
 		<h3>
 		${title}
 		</h3>
-		<div>${date}</div>
+		<div>${date.toDateString()}</div>
 		<div>
 			${content}
 		</div>
@@ -122,11 +90,23 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-app.get('/:articleName', function (req, res) {
+app.get('/articles/:articleName', function (req, res) {
 
 	var articleName = req.params.articleName;
 
-  res.send(createTemplate(articles[articleName]));
+	pool.query('SELECT * FROM article WHERE title=$1',[articleName],function(err,result){
+		if(err){
+           res.status(500).send(err.toString());
+       }else{
+           if(result.rows.length == 0){
+           	res.status(404).send('Article Not Found.');
+           }else{
+           	res.send(createTemplate(result.rows[0]));
+           }
+       }
+	});
+
+  
 
 });
 
