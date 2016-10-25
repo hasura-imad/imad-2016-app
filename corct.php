@@ -8,8 +8,7 @@
 </head>
 <body>
 <?php
-include'newcon1.php';
-$dbconnection = new dbconnection();
+pg_connect("localhost","bhanu836","db-bhanu836-69865","bhanu836");
 ?>
 <form  metod ="post" action=""<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);">>
 <h1>form<hr></h1>
