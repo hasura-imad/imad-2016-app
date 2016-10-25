@@ -7,8 +7,11 @@
 
 </head>
 <body>
+
 <?php
-$connect = pg_connect("localhost:5432","bhanu836","db-bhanu836-69865","bhanu836");
+require "copytst.php";
+$Database = new PostgresDb($database_name, $host, $username, $password);
+$Database->pdo();
 ?>
 <form  metod ="post" action=""<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);">>
 <h1>form<hr></h1>
