@@ -29,6 +29,7 @@ body {
     
     .header {
         color : blue;
+        text-align : center;
         margin-left :80px;
         margin-top: 40px;
         margin-right :80px;
