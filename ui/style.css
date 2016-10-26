@@ -2,6 +2,7 @@ body {
     font-family: sans-serif;
     margin-top: 75px;
     background-color : grey;
+    background-image : url(bg.jpg);
 }
 
 .center {
