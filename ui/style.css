@@ -2,6 +2,7 @@ body {
     font-family: sans-serif;
     background-color: yellow;
     margin-top: 75px;
+    background-image : url(depositphotos_2582409-Html-background.jpg);
 }
 
 .center {
@@ -28,5 +29,5 @@ body {
     }
     
     #id{
-        background-image : url(depositphotos_2582409-Html-background.jpg);
+        
     }
