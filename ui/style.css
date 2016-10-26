@@ -39,7 +39,6 @@ background-image:url(http://zellox.com/wp-content/uploads/2016/02/background-ima
     .header {
         color : white;
         text-align : center;
-        margin-left :80px;
-        margin-top: 40px;
-        margin-right :80px;
+       margin-top: 10px;
+        
     }
