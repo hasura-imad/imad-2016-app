@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     margin-top: 75px;
    
-    background-image : url(bg.jpg);
+    background-image : url(ui/bg.jpg);
 }
 
 .center {
