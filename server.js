@@ -79,7 +79,7 @@ app.get('/test-db',function(req,res){
     //make a select request
     //return a response with the results
    pool.query('SELECT * FROM user123',function(err,result){
-if(err){res.status(500).send(err.toString());}else{res.send(JSON.stringify(result));}
+if(err){res.status(500).send(err.toString());}else{res.send(JSON.stringify(result.rows));}
    }); });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
