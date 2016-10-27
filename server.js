@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
+var Pool = require('pg').Pool;
 var app = express();
 app.use(morgan('combined'));
 
@@ -59,6 +59,10 @@ app.get('/submit-name', function(req, res) {
 app.get('/counter', function (req,res){
     counter++;
     res.send(counter.toString());
+});
+
+app.get('/test-db',function (req,res){
+   //make select req and return response 
 });
 
 app.get('/article-one', function (req,res){
