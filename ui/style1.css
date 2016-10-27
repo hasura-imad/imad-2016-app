@@ -1,0 +1,841 @@
+/* start editing from here */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0;padding:0;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+/*--login form start here--*/ 
+@font-face {
+    font-family: 'PoiretOne-Regular';
+    src:url(../fonts/PoiretOne-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src:url(../fonts/SourceSansPro-Regular.ttf) format('truetype');
+}
+body {
+    background: #16214d;
+	font-family: 'SourceSansPro-Regular';
+	font-size: 100%;
+}
+.logo-top h1 {
+    font-size: 2.4em;
+    color: #fff;
+    text-align: center;
+    font-family: 'PoiretOne-Regular';
+}
+.logo-bottom {
+    margin-top: 8.5%;
+}
+.head {
+    width: 50%;
+    margin: 11% auto 0;
+    background: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+}
+.logo {
+    width: 45%;
+    float: left;
+    background: #44c7f4;
+    padding: 11.57% 0;
+}
+.login {
+    width: 55%;
+    float: right;
+    padding: 4% 0;
+	background:#fff;
+}
+.login input[type="text"], .login input[type="password"] {
+    outline: none;
+    font-size: 16px;
+    color: #cecfd3;
+    padding: 20px 30px 10px 10px;
+    margin: 0;
+    width: 89.87%;
+    border: none;
+    border-bottom: 2px solid #cecfd3;
+    -webkit-appearance: none;
+}
+.login input.name {
+    background: url(../images/l1.png) no-repeat 98% 67%;
+}
+.login input.email {
+    background: url(../images/l2.png) no-repeat 98% 67%;
+}
+.login input.password {
+    background: url(../images/l3.png) no-repeat 98% 67%;
+}
+.login-top {
+    padding: 0px 25px;
+    margin-top: 3%;
+}
+.submit{
+	float:left;
+}
+.login-bottom ul{
+	padding:0;
+	float:right;
+}
+.login-bottom ul li{
+	list-style:none;
+	display:inline-block;
+	vertical-align: middle;
+	margin-left: 16px;
+}
+.login-bottom ul li p{
+	color:#b7b9c6;
+	font-size:15px;
+}
+.login-bottom ul li span{
+	background:url(../images/social.png) no-repeat;
+	width:34px;
+	height:34px;
+	display:block;
+}
+.login-bottom ul li span:hover{
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+	opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+.login-bottom ul li span.fb{
+	background-position:0px 0px;
+}
+.login-bottom ul li span.twit{
+	background-position:-34px 0px;
+}
+.login-bottom ul li span.google{
+	background-position:-68px 0px;
+}
+.login-bottom {
+    margin-top: 17%;
+}
+.login-bottom1{
+	margin-top: 28%;
+}
+.submit input[type="submit"] {
+    font-size: 13px;
+    color: #44c7f4;
+    background: #fff;
+    border: 2px solid #44c7f4;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    -ms-border-radius: 20px;
+    padding: 6px 13px;
+    font-family: 'SourceSansPro-Regular';
+}
+.submit input[type="submit"]:hover{
+	background:#44c7f4;
+	color:#fff;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+/* radios and checkboxes */
+.row1{
+	outline:none;
+	padding: 20px;
+	overflow: auto;
+	height: 200px;
+}
+.sky-form.col.col-4 ul {
+padding: 0;
+list-style: none;
+}
+.sky-form h4{
+	margin-top: 10px;
+	background: #ECECEC;
+	padding: 10px 20px;
+	color: #333333;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	font-size:16px;
+}
+.sky-form section {
+	margin-bottom: 20px;
+}
+.sky-form .label {
+	display: block;
+	margin-bottom: 6px;
+	line-height: 19px;
+}
+.sky-form .label.col {
+	margin: 0;
+	padding-top: 10px;
+}
+.sky-form .input,
+.sky-form .select,
+.sky-form .textarea,
+.sky-form .radio,
+.sky-form .checkbox,
+.sky-form .toggle,
+.sky-form .button {
+	position: relative;
+	display: block;
+}
+/* selects */
+.sky-form .select i {
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	width: 1px;
+	height: 11px;
+	background: #fff;
+	box-shadow: 0 0 0 12px #fff;
+}
+.sky-form .select i:after,
+.sky-form .select i:before {
+	content: '';
+	position: absolute;
+	right: 0;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+.sky-form .select i:after {
+	bottom: 0;
+	border-top: 4px solid #404040;
+}
+.sky-form .select i:before {
+	top: 0;
+	border-bottom: 4px solid #404040;
+}
+.sky-form .select-multiple select {
+	height: auto;
+}
+/* radios and checkboxes */
+.sky-form .radio {
+	outline:none;
+	border:none;
+	margin-bottom: 7px;
+	padding-left: 22px;
+	font-size: 16px;
+	line-height: 27px;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 0;
+}
+.sky-form .radio:last-child,
+.sky-form .checkbox:last-child {
+	margin-bottom: 0;
+}
+.sky-form .radio input,
+.sky-form .checkbox input {
+	position: absolute;
+	left: -9999px;
+}
+.sky-form .radio i{
+    position: absolute;
+    top: 6px;
+    left: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+}
+.sky-form .radio i {
+	border-radius: 50%;
+}
+.sky-form .radio input + i:after{
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.1s;
+	-o-transition: opacity 0.1s;
+	-ms-transition: opacity 0.1s;
+	-moz-transition: opacity 0.1s;
+	-webkit-transition: opacity 0.1s;
+}
+.sky-form .radio input + i:after {
+    content: '';
+    top: 3px;
+    left: 3px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+.sky-form .checkbox input + i:after {
+	content: '';
+	top: 3px;
+	left: 2px;
+	width: 10px;
+	height: 7px;
+	background: url(../images/tick.png) no-repeat;
+	text-align: center;
+}
+.sky-form .radio input:checked + i:after,
+.sky-form .checkbox input:checked + i:after {
+	opacity: 1;
+}
+.sky-form .inline-group {
+	margin: 0 -30px -4px 0;
+}
+.sky-form .inline-group:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.sky-form .inline-group .radio{
+	float: left;
+	margin-right: 30px;
+}
+.sky-form .inline-group .radio:last-child{
+	margin-bottom: 4px;
+}
+/* icons */
+
+.sky-form [class^="icon-"] {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+/* normal state */
+.sky-form .input input,
+.sky-form .select select,
+.sky-form .textarea textarea,
+.sky-form .radio i,
+.sky-form .checkbox i,
+.sky-form .toggle i,
+.sky-form .icon-append,
+.sky-form .icon-prepend {
+	border-color: #fff;
+	transition: border-color 0.3s;
+	-o-transition: border-color 0.3s;
+	-ms-transition: border-color 0.3s;
+	-moz-transition: border-color 0.3s;
+	-webkit-transition: border-color 0.3s;
+}
+.sky-form .toggle i:before {
+	background-color: #fff;	
+}
+/* hover state */
+.sky-form .input:hover input,
+.sky-form .select:hover select,
+.sky-form .textarea:hover textarea,
+.sky-form .radio:hover i,
+.sky-form .checkbox:hover i,
+.sky-form .toggle:hover i {
+	border-color: #fff;
+}
+.sky-form .button:hover {
+	opacity: 1;
+}
+/* focus state */
+.sky-form .input input:focus,
+.sky-form .select select:focus,
+.sky-form .textarea textarea:focus,
+.sky-form .radio input:focus + i,
+.sky-form .checkbox input:focus + i,
+.sky-form .toggle input:focus + i {
+	border-color: #fff;
+}
+/* checked state */
+.sky-form .radio input + i:after {
+	background-color: #fff;	
+}
+.sky-form .checkbox input + i:after {
+	color: #fff;
+}
+.sky-form .radio input:checked + i,
+.sky-form .checkbox input:checked + i,
+.sky-form .toggle input:checked + i {
+	border-color: #fff;
+}
+/* error state */
+.sky-form .state-error input,
+.sky-form .state-error select,
+.sky-form .state-error textarea,
+.sky-form .radio.state-error i,
+.sky-form .checkbox.state-error i,
+.sky-form .toggle.state-error i {
+	background: #fff;
+}
+/* success state */
+.sky-form .state-success input,
+.sky-form .state-success select,
+.sky-form .state-success textarea,
+.sky-form .radio.state-success i,
+.sky-form .checkbox.state-success i,
+.sky-form .toggle.state-success i {
+	background: #fff;
+}
+/* disabled state */
+.sky-form .input.state-disabled input,
+.sky-form .select.state-disabled,
+.sky-form .textarea.state-disabled,
+.sky-form .radio.state-disabled,
+.sky-form .checkbox.state-disabled,
+.sky-form .toggle.state-disabled,
+.sky-form .button.state-disabled {
+	cursor: default;
+	opacity: 0.5;
+}
+.sky-form .input.state-disabled:hover input,
+.sky-form .select.state-disabled:hover select,
+.sky-form .textarea.state-disabled:hover textarea,
+.sky-form .radio.state-disabled:hover i,
+.sky-form .checkbox.state-disabled:hover i,
+.sky-form .toggle.state-disabled:hover i {
+	border-color: #e5e5e5;
+}
+section.sky-form {
+    margin-left: 16%;
+}
+/******** SAP ************/
+.sap_tabs{
+	clear:both;
+}
+.tab_box{
+	background:#fd926d;
+	padding: 2em;
+}
+.top1{
+	margin-top: 2%;
+}
+.resp-tabs-list {
+    list-style: none;
+    padding-left: 19px;
+    text-align: left;
+}
+.resp-tab-item {
+    color: #d8dcdf;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0px 0px;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    margin: 0 5px;
+}
+.resp-tab-active {
+    text-shadow: none;
+    color: #44c7f4;
+}
+.resp-tabs-container {
+	padding: 0px;
+	background-color: #fff;
+	clear: left;
+}
+h2.resp-accordion {
+	cursor: pointer;
+	padding: 5px;
+	display: none;
+}
+.resp-tab-content {
+	display: none;
+}
+.resp-content-active, .resp-accordion-active {
+   display: block;
+}
+.resp-tab-item label{
+	margin-right:8px;
+}
+/*-----------------*/
+.account ul {
+    padding: 0;
+    width: 17%;
+    margin: 1% auto 0;
+}
+.account ul li{
+	list-style:none;
+	display:inline-block;
+}
+.account ul li p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.65);
+}
+.account ul li p a{
+	color:#fff;
+}
+.account ul li p a:hover{
+	color:#44c7f4;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.account ul span {
+    margin-left: 23px;
+    vertical-align: top;
+    display: inline-block;
+    color: #fff;
+    font-size: 13px;
+}
+.account ul li:nth-child(1){
+	float:left;
+}
+.account ul li:nth-child(3){
+	float:right;
+}
+.footer {
+    text-align: center;
+    margin-top: 10%;
+}
+.footer p{
+	font-size:16px;
+	color:#fff;
+}
+.footer p a{
+	color:#fff;
+}
+.footer p a:hover{
+	text-decoration:none;
+	color:#44c7f4;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+/*--meadia-quiries-start-here--*/
+@media(max-width:1440px){
+.logo {
+    padding: 12.1% 0;
+}
+.account ul span {
+    margin-left: 22px;
+}
+.account ul {
+    width: 19%;
+}
+.login input[type="text"], .login input[type="password"] {
+    width: 88.4%;
+}
+}
+@media(max-width:1366px){
+.logo-top h1 {
+    font-size: 2.25em;
+}
+.head {
+    width: 52%;
+	margin: 10.5% auto 0;
+}
+.logo-top {
+    margin-top: 1.1%;
+}
+.footer {
+    margin-top: 6%;
+}
+.logo {
+    padding: 12.15% 0;
+}
+.login input[type="text"], .login input[type="password"] {
+    width: 88.3%;
+}
+}
+@media(max-width:1280px){
+.logo-top h1 {
+    font-size: 2.05em;
+}
+.login input[type="text"], .login input[type="password"] {
+    font-size: 15px;
+    padding: 18px 27px 10px 10px;
+}
+.submit input[type="submit"] {
+    font-size: 12px;
+}
+.login-bottom ul li {
+    margin-left: 9px;
+}
+section.sky-form {
+    margin-left: 10%;
+}
+.sky-form .radio {
+    font-size: 15px;
+}
+.account ul {
+    width: 21.38%;
+}
+.footer {
+    margin-top: 11%;
+}
+.head {
+    margin: 11.5% auto 0;
+}
+}
+@media(max-width:1024px){
+.logo-top h1 {
+    font-size: 2em;
+}
+.head {
+    margin: 16% auto 0;
+    width: 65%;
+}
+.login-bottom ul li {
+    margin-left: 3px;
+}
+section.sky-form {
+    margin-left: 13.5%;
+}
+.account ul {
+    width: 26.38%;
+}
+.footer {
+    margin-top: 14%;
+}
+}
+@media(max-width:768px){
+.head {
+    margin: 23% auto 0;
+    width: 80%;
+}
+.submit input[type="submit"] {
+    padding: 4px 13px;
+}
+.logo-top h1 {
+    font-size: 1.9em;
+}
+.login input[type="text"], .login input[type="password"] {
+    font-size: 14px;
+    padding: 16px 23px 10px 10px;
+}
+.login-bottom ul li p {
+    font-size: 14px;
+}
+.login-bottom ul li span {
+    width: 31px;
+    height: 31px;
+    background-size: 300%;
+}
+.login-bottom ul li span.twit {
+    background-position: -31px 0px;
+}
+.login-bottom ul li span.google {
+    background-position: -62px 0px;
+}
+.account ul {
+    width: 35%;
+}
+.account ul span {
+    margin-left: 20px;
+}
+.footer p {
+    font-size: 15px;
+}
+.footer {
+    margin-top: 23%;
+}
+}
+@media(max-width:640px){
+.logo-top h1 {
+    font-size: 1.75em;
+}
+.login input[type="text"], .login input[type="password"] {
+    width: 87.6%;
+}
+section.sky-form {
+    margin-left: 10%;
+}
+.login-top {
+    padding: 0px 20px;
+    margin-top: 3%;
+}
+.submit input[type="submit"] {
+    font-size: 11px;
+    padding: 4px 11px;
+}
+.login-bottom ul li p {
+    font-size: 13px;
+}
+.login-bottom ul li span {
+    width: 29px;
+    height: 29px;
+}
+.login-bottom ul li span.twit {
+    background-position: -29px 0px;
+}
+.login-bottom ul li span.google {
+    background-position: -58px 0px;
+}
+.login-bottom ul li {
+    margin-left: 1px;
+}
+.head {
+    margin: 29% auto 0;
+    width: 87%;
+}
+.sky-form .radio {
+    font-size: 14px;
+}
+.sky-form .radio i {
+    width: 9px;
+    height: 9px;
+}
+.sky-form .radio {
+    padding-left: 18px;
+}
+.login-bottom {
+    margin-top: 15.7%;
+}
+.account ul {
+    width: 42%;
+	margin: 2.5% auto 0;
+}
+.footer {
+    margin-top: 37%;
+}
+.login input.name {
+    background: url(../images/l1.png) no-repeat 98% 60%;
+    background-size: 5%;
+}
+.login input.email {
+    background: url(../images/l2.png) no-repeat 98% 60%;
+	background-size: 5%;
+}
+.login input.password {
+    background: url(../images/l3.png) no-repeat 98% 60%;
+	background-size: 5%;
+}
+}
+@media(max-width:480px){
+.logo {
+    padding: 7% 0;
+    width: 100%;
+}
+.submit input[type="submit"] {
+    font-size: 12px;
+}
+.login input.name {
+    background: url(../images/l1.png) no-repeat 99% 60%;
+    background-size: 4.5%;
+}
+.login input.email {
+    background: url(../images/l2.png) no-repeat 99% 60%;
+	background-size: 4.5%;
+}
+.login input.password {
+    background: url(../images/l3.png) no-repeat 99% 60%;
+	background-size: 4.5%;
+}
+.logo-bottom {
+    margin-top: 4.5%;
+}
+section.sky-form {
+    margin-left: 27%;
+}
+.login {
+    width: 100%;
+    padding: 8% 0;
+}
+.login-bottom {
+    margin-top: 12.7%;
+}
+.account ul {
+    width: 57.8%;
+    margin: 3.5% auto 0;
+}
+.footer {
+    margin-top: 14%;
+}
+.footer p {
+    font-size: 14px;
+}
+.head {
+    margin: 20% auto 0;
+}
+}
+@media(max-width:320px){
+.logo-top h1 {
+    font-size: 1.55em;
+}
+section.sky-form {
+    margin-left: 14%;
+}
+.login input.name {
+    background: url(../images/l1.png) no-repeat 98.5% 60%;
+    background-size: 5%;
+}
+.login input.email {
+    background: url(../images/l2.png) no-repeat 98.5% 60%;
+	background-size: 5%;
+}
+.login input.password {
+    background: url(../images/l3.png) no-repeat 98.5% 60%;
+	background-size: 5%;
+}
+.sky-form .radio {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+.resp-tab-item {
+    font-size: 16px;
+}
+.login input[type="text"], .login input[type="password"] {
+    font-size: 11px;
+    padding: 15px 17px 6px 10px;
+}
+.account ul li p {
+    font-size: 12px;
+}
+.account ul span {
+    margin-left: 15px;
+}
+.account ul {
+    width: 80%;
+    margin: 4% auto 0;
+}
+.footer p {
+    line-height: 1.6em;
+}
+.login-bottom ul li p {
+    font-size: 12px;
+}
+.login-bottom ul li span {
+    width: 25px;
+    height: 25px;
+}
+.login-bottom ul li span.google {
+    background-position: -50px 0px;
+}
+.login-bottom ul li span.twit {
+    background-position: -25px 0px;
+}
+.head {
+    margin: 15% auto 0;
+}
+.submit input[type="submit"] {
+    font-size: 11px;
+    padding: 3px 11px;
+}
+}
+/*--meadia-quiries-end-here--*/
