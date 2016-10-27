@@ -70,7 +70,7 @@ res.send(counter.toString());
     
 app.get('/articles/:id', function (req, res) {
 
-pool.query("SELECT * FROM article_data where id ="+req.params.id,function(err,result){if(err){res.status(500).send(err.toString());}
+pool.query("SELECT * FROM article_data where id = '"+req.params.id+"'",function(err,result){if(err){res.status(500).send(err.toString());}
 else{if(result.rows.length === 0){res.status(400).send('Article Not Found!! Retry with Valid Article ID');}else{var article Data = result.rows[0];
     res.send(createTemplate(articleData));
 }}
