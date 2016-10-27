@@ -1,4 +1,5 @@
 var express = require('express');
+var grunt = require('grunt');
 var morgan = require('morgan');
 var path = require('path');
 var config = {user : 'luckyman000786',database :'luckyman000786',host:'db.imad.hasura-app.io',  port : '5432',password : process.env.DB_PASSWORD};
@@ -38,12 +39,10 @@ app.get('/', function (req, res) {
 var pool = new Pool(config);
 
 app.get('/articles/:id', function (req, res) {
-
 pool.query("SELECT * FROM article_data where id = $1",[req.params.id],function(err,result){
-    if(err){
+if(err){
         res.status(500).send(err.toString());
-        
-    }else{
+}else{
         if(result.rows.length === 0){
 res.status(400).send("Article Not Found!! Retry with Valid Article ID");
             
@@ -60,12 +59,12 @@ res.status(400).send("Article Not Found!! Retry with Valid Article ID");
 app.get('/login.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'login.html'));
 }); 
-app.get('/test-db',function(req,res){
+/*app.get('/test-db',function(req,res){
     //make a select request
     //return a response with the results
    pool.query('SELECT * FROM user123',function(err,result){
 if(err){res.status(500).send(err.toString());}else{res.send(JSON.stringify(result.rows));}
-   }); });
+   }); });*/
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
