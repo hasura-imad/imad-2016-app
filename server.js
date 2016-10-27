@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool = require('pg').Pool;
+//var Pool = require('pg').Pool;
 var app = express();
 app.use(morgan('combined'));
 
@@ -67,7 +67,7 @@ app.get('/counter', function (req,res){
     res.send(counter.toString());
 });
 
-var pool = new Pool(config);
+/*var pool = new Pool(config);
 app.get('/test-db',function (req,res){
    pool.query('SELECT * FROM test', function (err,result){
        if(err){
@@ -78,7 +78,7 @@ app.get('/test-db',function (req,res){
    })
    //make select req and return response 
 });
-
+*/
 app.get('/article-one', function (req,res){
 	 res.send(createTemplate(article));
 });
