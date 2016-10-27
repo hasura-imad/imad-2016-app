@@ -1,9 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var config = {
-user : 'luckyman000786',database :'luckyman000786',host:'db.imad.hasura-app.io',  port : '5432',password : process.env.DB_PASSWORD
-    };
+var config = {user : 'luckyman000786',database :'luckyman000786',host:'db.imad.hasura-app.io',  port : '5432',password : process.env.DB_PASSWORD};
 var Pool = require('pg').Pool;
 var app = express();
 app.use(morgan('combined'));
