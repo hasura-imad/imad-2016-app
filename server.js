@@ -9,28 +9,6 @@ var app = express();
 app.use(morgan('combined'));
 var names = [];
 
-
-
-var articles = {
-'article-one' : {
-    title:'Article One | Hemant Gupta',
-    heading:'Article One',
-    date:'Sep 21, 2017',
-    content:`<p>This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.</p>
-    <p>This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.</p>
-    <p>This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.</p>`
-},
-'article-two':{title:'Article Two | Hemant Gupta',
-    heading:'Article Two',
-    date:'Sep 21, 2017',
-    content:`<p>This is my second article and I am publishing it.This is my second article and I am publishing it.This is my second article and I am publishing it.This is my second article and I am publishing it.</p>`
-    },
-'article-three':{title:'Article Three | Hemant Gupta',
-    heading:'Article Three',
-    date:'Sep 21, 2018',
-    content:`<p>This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.</p>
-    <p>This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.</p>
-    <p>This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.This is my first article and I am publishing it.</p>`}};
 function createTemplate (data){
     var title = data.title;
     var heading = data.heading;
