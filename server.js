@@ -1,5 +1,4 @@
 var express = require('express');
-var grunt = require('grunt');
 var morgan = require('morgan');
 var path = require('path');
 var config = {user : 'luckyman000786',database :'luckyman000786',host:'db.imad.hasura-app.io',  port : '5432',password : process.env.DB_PASSWORD};
