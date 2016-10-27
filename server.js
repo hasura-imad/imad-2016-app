@@ -75,7 +75,7 @@ res.send(counter.toString());
 app.get('/login.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'login.html'));
 }); 
-app.get('test-db',function(req,res){
+app.get('/test-db',function(req,res){
     //make a select request
     //return a response with the results
    pool.query('SELECT * FROM user',function(err,result){
