@@ -63,7 +63,7 @@ var pool = new Pool(config);
 
 app.get('/articles/:id', function (req, res) {
 
-pool.query("SELECT * FROM article_data where id = '"+req.params.id+"'",function(err,result){
+pool.query("SELECT * FROM article_data where id = $1",[req.params.id],function(err,result){
     if(err){
         res.status(500).send(err.toString());
         
