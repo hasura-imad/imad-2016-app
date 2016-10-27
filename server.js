@@ -18,7 +18,7 @@ var config = {
     database : 'krusty-crab',
     host : 'db.imad.hasura-app.io',
     port : '5432',
-    password : 'db-krusty-crab-624'
+    password : process.env.DB_PASSWORD
 }
 function createTemplate(data){
     var title = data.title;
