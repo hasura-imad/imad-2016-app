@@ -13,7 +13,13 @@ var article = {
 };
 
 var counter =0;
-
+var config = {
+    user : 'krusty-crab',
+    database : 'krusty-crab',
+    host : 'db.imad.hasura-app.io',
+    port : '5432',
+    password : process.env.DB_PASSWORD
+}
 function createTemplate(data){
     var title = data.title;
     var heading = data.heading;
@@ -61,7 +67,15 @@ app.get('/counter', function (req,res){
     res.send(counter.toString());
 });
 
+var pool = new Pool(config);
 app.get('/test-db',function (req,res){
+   pool.query('SELECT * FROM test', function (err,result){
+       if(err){
+           res.status(500).send(err.toString());
+       } else{
+           res.send(JSON.stringify(result));
+       }
+   })
    //make select req and return response 
 });
 
