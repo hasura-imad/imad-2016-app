@@ -10,8 +10,8 @@
                 fit: true
             }
             //Variables
-            var options = $.extend(defaults, options);            
-            var opt = options, jtype = opt.type, jfit = opt.fit, jwidth = opt.width, vtabs = 'vertical', accord = 'accordion';
+            var options1 = $.extend(defaults, options);            
+            var opt = options1, jtype = opt.type, jfit = opt.fit, jwidth = opt.width, vtabs = 'vertical', accord = 'accordion';
 
             //Main function
             this.each(function () {
@@ -26,13 +26,13 @@
                 jtab_options();
                 //Properties Function
                 function jtab_options() {
-                    if (jtype == vtabs) {
+                    if (jtype === vtabs) {
                         $respTabs.addClass('resp-vtabs');
                     }
-                    if (jfit == true) {
+                    if (jfit === true) {
                         $respTabs.css({ width: '100%', margin: '0px' });
                     }
-                    if (jtype == accord) {
+                    if (jtype === accord) {
                         $respTabs.addClass('resp-easy-accordion');
                         $respTabs.find('.resp-tabs-list').css('display', 'none');
                     }
