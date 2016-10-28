@@ -1,80 +1,124 @@
-// Counter code
-var button = document.getElementById('counter');
+var popup;
 
-button.onclick = function (){
-    
-    // create a request
-    var request = new XMLHttpRequest();
-    
-    // capture the responce and store it in a var
-    request.onreadystatechange = function(){
-        if(request.readyState === XMLHttpRequest.DONE){ // readyState = CurrentState
-            if(request.status === 200){ // 200 means request has been completed.
-                var counter = request.responseText;
-                var span = document.getElementById('count');
-                span.innerHTML = counter.toString();
-            }
-        }
-        // else ignore request
-    };
-    
-    // make the request
-    request.open('GET', "http://akshatbhargava123.imad.hasura-app.io/counter", true);
-    request.send(null);
-    
-};
-
-// Submit Name Code
-
-var submit = document.getElementById('submit_button');
-
-submit.onclick = function(){
-    // 1. Make a request to the server and send the name
-    var request = new XMLHttpRequest();
-    
-    // capture the responce and store it in a var
-    request.onreadystatechange = function(){
-        if(request.readyState === XMLHttpRequest.DONE){ // readyState = CurrentState
-            if(request.status === 200){ // 200 means request has been completed.
-                // 2. Capture a list of names and render it as a list
-                var names = request.responseText;
-                names = JSON.parse(names);
-                var list = '';
-                for(var  i = 0; i < names.length; i++){
-                    list += '<li>' + names[i] + '</li>';
-                }
-                var ul = document.getElementById('namelist');
-                ul.innerHTML = list;
-            }
-        }
-        // else ignore request
-    };
-    var nameInput = document.getElementById('name');
-    var name = nameInput.value;
-    request.open('GET', "http://akshatbhargava123.imad.hasura-app.io/submit-name/"+name, true);
-    request.send(null);
-    
-};
+$(function() {
 
 
-// PRACTICE AREA
-/*//var element = document.getElementById('main-text');
+	// Vars.
+		var	$window = $(window),
+			$body = $('body'),
+			$wrapper = $('#wrapper');
 
-//element.innerHTML = 'Hello :)';
+	// Breakpoints.
+		skel.breakpoints({
+			xlarge:	'(max-width: 1680px)',
+			large:	'(max-width: 1280px)',
+			medium:	'(max-width: 980px)',
+			small:	'(max-width: 736px)',
+			xsmall:	'(max-width: 480px)'
+		});
+
+	// Disable animations/transitions until everything's loaded.
+		$body.addClass('is-loading');
+
+		$window.on('load', function() {
+			$body.removeClass('is-loading');
+		});
+
+	// Poptrox.
+		$window.on('load', function() {
+			$('.thumbnails').poptrox({
+				onPopupClose: function() {
+					$body.removeClass('is-covered'); 
+				},
+				onPopupOpen: function() {
+					swal({
+						  title: "Start the quiz.",
+					      text: "Are you sure?",
+					      type: "info",
+						  showCancelButton: true,
+					      confirmButtonColor: "#DD6B55",
+						  confirmButtonText: "Yes!",
+						  cancelButtonText: "No!",
+						  closeOnConfirm: false,
+						  closeOnCancel: false,
+					},
+						  function(isConfirm){
+							$body.addClass('is-covered');
+						  	if (isConfirm) {
+								swal({   title: "Redirecting you...",   text: "Hold you please, thanks :)",   timer: 1000,   showConfirmButton: false });
+								setTimeout(window.location.href = "quiz.html",2000)
+						   }
+						   else {
+								swal("Its okay!", "We cancelled it!", "info")
+						   } 
+						  }
+						);
+				},
+				baseZIndex: 10001,
+				useBodyOverflow: false,
+				usePopupEasyClose: true,
+				overlayColor: '#000000',
+				overlayOpacity: 0.1,
+				popupLoaderText: '',
+				fadeSpeed: 500,
+				usePopupDefaultStyling: false,
+				windowMargin: (skel.breakpoint('small').active ? 5 : 50),
+			})
+
+		});
+});
 
 
-// MOVING MADI
 
-var image = document.getElementById('madi');
+/*
+var popup;
 
-var marginLeft = 0;
-function moveRight(){
-    marginLeft++;
-    image.style.marginLeft = marginLeft + 'px';
-}
+$(function() {
 
-image.onclick = function (){
-    var interval = setInterval(moveRight, 40);
-    image.style.marginLeft = '100px';
-};
+
+	// Vars.
+		var	$window = $(window),
+			$body = $('body'),
+			$wrapper = $('#wrapper');
+
+	// Breakpoints.
+		skel.breakpoints({
+			xlarge:	'(max-width: 1680px)',
+			large:	'(max-width: 1280px)',
+			medium:	'(max-width: 980px)',
+			small:	'(max-width: 736px)',
+			xsmall:	'(max-width: 480px)'
+		});
+
+	// Disable animations/transitions until everything's loaded.
+		$body.addClass('is-loading');
+
+		$window.on('load', function() {
+			alert('ehhlo')
+			$body.removeClass('is-loading');
+		});
+
+	// Poptrox.
+		$window.on('load', function() {
+			$('.thumbnails').poptrox({
+				onPopupClose: function() {
+					$body.removeClass('is-covered'); 
+				},
+				onPopupOpen: function() {
+					$body.addClass('is-covered');
+					popup = true;
+				},
+				baseZIndex: 10001,
+				useBodyOverflow: false,
+				usePopupEasyClose: true,
+				overlayColor: '#000000',
+				overlayOpacity: 0.1,
+				popupLoaderText: '',
+				fadeSpeed: 500,
+				usePopupDefaultStyling: false,
+				windowMargin: (skel.breakpoint('small').active ? 5 : 50),
+			})
+
+		});
+});
 */
