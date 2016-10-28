@@ -11,6 +11,12 @@ var config = {
     password: process.env.DB_PASSWORD // environment variable
 };
 
+var app = express();
+app.use(morgan('combined'));
+app.get('/startup',function(req, res){
+    window.location.href = "startup.html";
+    res.send('alert request done!');
+});
 
 /*
 var app = express();
