@@ -14,8 +14,7 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 app.get('/startup',function(req, res){
-    window.location.href = "startup.html";
-    res.send('alert request done!');
+    res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
 });
 
 /*
