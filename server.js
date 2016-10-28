@@ -13,8 +13,12 @@ var config = {
 
 var app = express();
 app.use(morgan('combined'));
+
 app.get('/startup',function(req, res){
     res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
+});
+app.get('/', function(req, res){
+   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 /*
