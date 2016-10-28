@@ -8,7 +8,7 @@ var app = express();
 //This tells express to log via morgan
 //and morgan to log in the "combined" pre-defined format
 app.use(morgan('combined'));
-
+/*
 // This *articles* is key-format ! 
 // aritcles* holds three keys - `article-one`, `article-two`, `article-three`
 // Each again has its own key-variables - `title`,`heading`,`date`,`content`
@@ -90,7 +90,7 @@ function createTemplate (data) {
     `;
     return htmlTemplate;
 }
-
+*/
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
