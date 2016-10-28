@@ -33,12 +33,13 @@ body {
         margin-top: 100px;
         margin-right :100px;
 }
-.container{
+/*.container{
         max-width: 600px;
         margin: 0 auto;
         color: black;
         font-family:sans-serif;
     }
+    */
     
     .header {
         color : orange;
