@@ -10,10 +10,10 @@ body {
    }
 .viku{
     font-family:algeria;
-    font-size : 50px;
+    font-size : 300%;
 }
 .center {
-    padding-right:20px;
+    text-align : right;
 }
 
 .text-big {
@@ -29,6 +29,7 @@ body {
     height: 180px;
     
     width: 170px;
+    padding-left:1024px;
   
 }
 
