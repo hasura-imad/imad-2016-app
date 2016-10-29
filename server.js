@@ -1,6 +1,8 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var jsdom=require('jsdom');
+var $=require('jquery')(jsdom.jsdom().createWindow());
 
 var app = express();
 app.use(morgan('combined'));
