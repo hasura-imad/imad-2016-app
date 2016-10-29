@@ -28,7 +28,7 @@
 
 /* Jumbotron */
 .jumbotron{
-    background:#f4f4f4 url(../images/music.jpg);
+    background:#f4f4f4 url(/images/music.jpg);
     width: auto;
     height:350px;
 	padding:0;
