@@ -143,15 +143,37 @@
         </div>
     </div>
     <!--JUMBOTRON END-->
+    <!--CONTAINER-->
     <div class="container">
     	<div class="row">
-    		<div class="col-md-10 col-md-offset-1">
-    			<p>Mobile first
-With Bootstrap 2, we added optional mobile friendly styles for key aspects of the framework. With Bootstrap 3, we've rewritten the project to be mobile friendly from the start. Instead of adding on optional mobile styles, they're baked right into the core. In fact, Bootstrap is mobile first. Mobile first styles can be found throughout the entire library instead of in separate files.
-
-To ensure proper rendering and touch zooming, add the viewport meta tag to your </p>
+    		<div class="col-md-1">
+    			<div id="mySidenav" class="sidenav">
+				  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  	<div>
+					  	<a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>   Home</a>
+					  	<a href="#"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>   Radio</a>
+					  	<a href="#"><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>   Discover</a>
+					  	<a href="#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>   Browse</a>
+					  	<a href="#"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>   My Music</a>
+					  	<a href="#"><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>   Request A Song</a>
+					  	<a href="#"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>   Contact Us</a>
+				  	</div>
+				</div>
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+				<script>
+					function openNav() {
+				    	document.getElementById("mySidenav").style.width = "250px";
+					}
+					function closeNav() {
+				    	document.getElementById("mySidenav").style.width = "0";
+					}
+				</script>
+    		</div>
+    		<div class="col-md-10 ">
+    			<p>Mobile first With Bootstrap 2, we added optional mobile friendly styles for key aspects of the framework. With Bootstrap 3, we've rewritten the project to be mobile friendly from the start. Instead of adding on optional mobile styles, they're baked right into the core. In fact, Bootstrap is mobile first. Mobile first styles can be found throughout the entire library instead of in separate files. To ensure proper rendering and touch zooming, add the viewport meta tag to your </p>
     		</div>
     	</div>
     </div>
+    <!--CONTAINER END-->
 </body>
 </html>
