@@ -29,3 +29,24 @@ var port = 8080; // Use 8080 for local development because you might already hav
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+
+app.get('/fonts/glyphicons-halflings-regular.eot', function (req, res) {
+  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
+});
+
+app.get('/fonts/glyphicons-halflings-regular.eot?#iefix', function (req, res) {
+  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot?#iefix'));
+});
+
+app.get('/fonts/glyphicons-halflings-regular.woff2', function (req, res) {
+  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.woff2'));
+});
+
+app.get('/fonts/glyphicons-halflings-regular.eot', function (req, res) {
+  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
+});
+
+
+app.get('/fonts/glyphicons-halflings-regular.eot', function (req, res) {
+  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
+});
