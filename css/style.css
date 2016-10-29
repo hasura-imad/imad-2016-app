@@ -1,0 +1,59 @@
+/* Navbar */
+.navbar {
+	font-weight: bold;
+	font-size: 16px;
+	background: #303030;
+	padding-top: 5px;
+}
+
+.navbar-inverse {
+	font-weight: bold;
+	font-size: 16px;
+	background: #303030;
+}
+
+.navbar-collapse{
+	padding-top: 12px;
+}
+
+.navbar-brand img{
+	height: 55px;
+}
+
+.dropdown-menu{
+	border-radius: 7px;
+}
+
+
+
+/* Jumbotron */
+.jumbotron{
+    background:#f4f4f4 url(../images/music.jpg);
+    width: auto;
+    height:350px;
+	padding:0;
+	margin-top: 70px;
+}
+
+.jumbotron [class*="col-"] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+    overflow:auto;
+    height:350px;
+}
+
+.jumbotron h1{
+	font-weight: bold;
+	font-size: 54px;
+	padding-top: 80px;
+	padding-left: 40px;
+	color: #4286f4;
+}
+ .jumbotron h1 span{
+ 	color: #f442b3;
+ }
+
