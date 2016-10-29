@@ -1,6 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var jQuery = require('jQuery');
 
 var app = express();
 app.use(morgan('combined'));
@@ -58,3 +59,4 @@ app.get('/fonts/glyphicons-halflings-regular.eot', function (req, res) {
 app.get('/fonts/glyphicons-halflings-regular.eot', function (req, res) {
   res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
 });
+
