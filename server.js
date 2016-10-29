@@ -13,6 +13,14 @@ app.get('/css/bootstrap.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', 'bootstrap.css'));
 });
 
+app.get('/js/bootstrap.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js', 'bootstrap.js'));
+});
+
+app.get('/js/jquery.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js', 'jquery.js'));
+});
+
 app.get('/js/dropdown.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', 'dropdown.js'));
 });
