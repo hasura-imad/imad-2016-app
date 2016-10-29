@@ -15,6 +15,10 @@ app.get('/css/bootstrap.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', 'bootstrap.css'));
 });
 
+app.get('/js/dropdown.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js', 'dropdown.js'));
+});
+
 app.get('/css/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', 'style.css'));
 });
