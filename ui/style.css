@@ -55,12 +55,12 @@ body {
         text-align : center;
         font-size : 50px;
        margin : 0 auto;
-       max-width:100px;
+       max-width:1000px;
         
     }
     
     .main{
-    max-width:100px;
+    max-width:1000px;
     margin:0 auto;
         align-content:center;
     }
