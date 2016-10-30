@@ -55,5 +55,6 @@ body {
         text-align : center;
         font-size : 50px;
        margin-top: 10px;
+       max-width:800px;
         
     }
