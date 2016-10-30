@@ -59,6 +59,7 @@ body {
     
     .main{
     max-width:1000px;
+    text-align : center;
     
         align-content:center;
     }
