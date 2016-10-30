@@ -51,7 +51,7 @@ body {
     */
     
     .header {
-        
+        align-content:center;
        max-width:1000px;
         
     }
