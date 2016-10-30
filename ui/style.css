@@ -52,7 +52,7 @@ body {
     
     .header {
         color : orange;
-        text-align : center;
+        text-align : left;
         font-size : 20px;
        margin : 0 auto;
        max-width:900px;
