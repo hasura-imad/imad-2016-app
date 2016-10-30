@@ -53,8 +53,10 @@ body {
     
     
     .main{
-    max-width:800px;
-    align-content:center;
+   max-width: 600px;
+        margin: 0 auto;
+        color: black;
+        font-family:sans-serif;
         
     }
     
