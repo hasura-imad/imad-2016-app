@@ -52,8 +52,8 @@ body {
     
     .header {
         color : orange;
-        text-align : left;
-        font-size : 20px;
+        text-align : center;
+        font-size : 50px;
        margin : 0 auto;
        max-width:900px;
         
