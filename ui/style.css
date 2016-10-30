@@ -61,17 +61,19 @@ body {
     }
     
 .subhead{
+     margin :0 auto;
 color : orange;
-        text-align : left;
+        
         font-size : 50px;
-        margin :0 auto;
+       
     
 }
 
 .college{
+     margin :0 auto;
 color : white;
-        text-align : left;
+        
         font-size : 20px;
-        margin :0 auto;
+       
     
 }
