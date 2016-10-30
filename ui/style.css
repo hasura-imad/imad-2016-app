@@ -60,5 +60,7 @@ body {
     }
     
     .main{
-    max-width:900px;}
+    max-width:900px;
+        align-content:center;
+    }
     }
