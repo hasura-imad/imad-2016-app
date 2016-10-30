@@ -54,7 +54,7 @@ body {
         color : orange;
         text-align : center;
         font-size : 50px;
-       margin-top: 10px;
+       margin : 0 auto;
        max-width:900px;
         
     }
