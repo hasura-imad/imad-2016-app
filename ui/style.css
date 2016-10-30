@@ -26,12 +26,12 @@ body {
 }
 
 .img-medium {
-    
+    position : absolute;
     height: 180px;
     
     width: 170px;
     padding-left:1024px;
-    margin-top : 0px;
+    
   
 }
 
