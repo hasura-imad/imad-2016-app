@@ -53,20 +53,18 @@ body {
     .header {
         text-align:center;
        max-width:1000px;
-       align-content:center;
         
     }
     
     .main{
     max-width:1000px;
-    text-align : center;
-    
-        align-content:center;
+    margin:0 auto;
+        
     }
     
 .subhead{
 color : orange;
-        
+        text-align : left;
         font-size : 50px;
         margin :0 auto;
     
@@ -74,7 +72,7 @@ color : orange;
 
 .college{
 color : black;
-        
+        text-align : left;
         font-size : 20px;
         margin :0 auto;
     
