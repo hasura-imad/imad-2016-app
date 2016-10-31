@@ -47,7 +47,7 @@ p {
 
 #bg {
 	height:36px;
-	background:url('http://blog.lenycom.com/wp-content/uploads/2010/01/Apple-Vector-Desktop-Ful-HD-Background.jpg') repeat-x;
+	background:url('') repeat-x;
 }
 
 #main-content {
@@ -73,7 +73,7 @@ p {
 	width:218px;
 	margin:0 auto;
 	padding:10px 25px;
-	background:url('http://blog.lenycom.com/wp-content/uploads/2010/01/Apple-Vector-Desktop-Ful-HD-Background.jpg') no-repeat top;
+	background:url('') no-repeat top;
 }
 
 #footer {
@@ -124,7 +124,7 @@ h3 {
 ul {
 	padding:0;
 	margin:0 0 0 17px;
-	list-style:square url('http://blog.lenycom.com/wp-content/uploads/2010/01/Apple-Vector-Desktop-Ful-HD-Background.jpg');
+	list-style:square url('');
 }
 
 .box {
