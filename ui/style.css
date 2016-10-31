@@ -73,5 +73,19 @@ body {
     
     .college{
         color :white;
+        font-size :25px;
+    }
+    
+    .place{
+        color :white;
+        font-size :25px;
+    }
+    .email{
+        color :white;
+        font-size :25px;
+    }
+    .mobile{
+        color :white;
+        font-size :25px;
     }
 
