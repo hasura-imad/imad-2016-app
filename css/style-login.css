@@ -1,0 +1,33 @@
+body{
+	background: #f4f4f4 url(../images/music5.jpg);
+	background-size: 1360px 786px;
+    background-repeat: no-repeat;
+
+}
+
+.col-md-4 form{
+	padding: 20px;
+	margin-top: 50%;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	border:1px solid #fff
+}
+
+.form-control{
+	color: #ffffff;
+	background: transparent;
+}
+
+.btn-default{
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.5);
+	border:0px;
+	margin-left: 20px;
+	width: 100px;
+}
+
+.btn-default:hover{
+	background: #fff;
+	color: #000;
+}
