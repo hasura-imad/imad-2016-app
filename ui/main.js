@@ -1,4 +1,4 @@
-var button = document.getElementById('counter');
+/*var button = document.getElementById('counter');
 
 button.onclick = function(){
     //create a request to the counter endpoint
@@ -47,4 +47,4 @@ submit.onclick = function(){ //create a request to the counter endpoint
     request.open('GET', 'http://rajatsarkari.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
     
-}
+}*/
