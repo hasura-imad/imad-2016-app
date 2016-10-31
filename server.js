@@ -9,6 +9,22 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/index.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/signup', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'signup.html'));
+});
+
+app.get('/login', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login.html'));
+});
+
+app.get('/trending', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'trending.html'));
+});
+
 app.get('/css/bootstrap.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', 'bootstrap.css'));
 });
@@ -23,6 +39,18 @@ app.get('/js/jquery.js', function (req, res) {
 
 app.get('/css/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', 'style.css'));
+});
+
+app.get('/css/style-trending.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'css', 'style-trending.css'));
+});
+
+app.get('/css/style-login.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'css', 'style-login.css'));
+});
+
+app.get('/css/style-signup.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'css', 'style-signup.css'));
 });
 
 app.get('/images/logo.png', function (req, res) {
