@@ -23,11 +23,6 @@ body {
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    color: grey;
-    font-family: initial;
-    padding-right: 20;
-    padding-left: 20;
-    padding-bottom: 20;
+    position:fixed;
+    
             }
