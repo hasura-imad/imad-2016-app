@@ -13,15 +13,15 @@ app.get('/index.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/signup', function (req, res) {
+app.get('/signup.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'signup.html'));
 });
 
-app.get('/login', function (req, res) {
+app.get('/login.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'login.html'));
 });
 
-app.get('/trending', function (req, res) {
+app.get('/trending.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'trending.html'));
 });
 
