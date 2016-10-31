@@ -5,9 +5,11 @@ body {
     background-color:black;
 }
 
-.center {
-    font-family:Vivaldi;
-    text-align: center;
+.top {
+    font-family:cursive;
+    text-align:right;
+    float:right;
+    border-radius:20;
 }
 
 .text-big {
