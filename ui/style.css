@@ -6,6 +6,7 @@ body {
 }
 
 .top {
+    display:inline-block;
     font-family:cursive;
     text-align:right;
     float:right;
