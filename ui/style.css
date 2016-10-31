@@ -89,3 +89,8 @@ body {
         font-size :25px;
     }
 
+.objective{
+    max-width :450px;
+    color:white;
+    font-size:15px;
+}
