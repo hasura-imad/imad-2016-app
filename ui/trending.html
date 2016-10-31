@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="images/logo.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="images/logo.png" sizes="32x32">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home-Radio</title>
+
+	<!--BOOTSTRAP CSS-->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<!--CUSTOM CSS-->
+	<link href="css/style-trending.css" rel="stylesheet">
+
+	<!--JQUERY JAVASCRIPT-->
+	<script src="js/jquery.js"></script>
+
+	<!--BOOTSTRAP JAVASCRIPT-->
+	<script src="js/bootstrap.js"></script>
+</head>
+	
+<body>
+	<!--NAVBAR-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid"><!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="LOGO" ></a>
+				<a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="LOGO" ></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">My Music</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Browse <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="trending.html"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Trending</a></li>
+							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Featured Playlist</a></li>
+							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    New Releases</a></li>
+							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Weekly Top 15</a></li>
+							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    All Album</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#"><span class="btn-sm glyphicon glyphicon-menu-right" aria-hidden="true"></span>    People</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#"><span class="btn-sm glyphicon glyphicon-fire" aria-hidden="true"></span>    Surprise Me</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Search</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="login.html">Login</a></li>
+					<li><a href="signup.html">Sign Up</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!--NAVBAR END-->
+
+	<div class="container" >
+    	<div class="row">
+    		<div class="col-md-1">
+    			<div id="mySidenav" class="sidenav">
+				  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  	<div>
+					  	<a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>   Home</a>
+					  	<a href="#"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>   Radio</a>
+					  	<a href="#"><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>   Discover</a>
+					  	<a href="#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>   Browse</a>
+					  	<a href="#"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>   My Music</a>
+					  	<a href="#"><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>   Request A Song</a>
+					  	<a href="#"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>   Contact Us</a>
+				  	</div>
+				</div>
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+				<script>
+					function openNav() {
+				    	document.getElementById("mySidenav").style.width = "250px";
+					}
+					function closeNav() {
+				    	document.getElementById("mySidenav").style.width = "0";
+					}
+				</script>
+    		</div>
+    		<div class="col-md-10 ">
+    			<p>Mobile first With Bootstrap 2, we added optional mobile friendly styles for key aspects of the framework. With Bootstrap 3, we've rewritten the project to be mobile friendly from the start. Instead of adding on optional mobile styles, they're baked right into the core. In fact, Bootstrap is mobile first. Mobile first styles can be found throughout the entire library instead of in separate files. To ensure proper rendering and touch zooming, add the viewport meta tag to your </p>
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>
