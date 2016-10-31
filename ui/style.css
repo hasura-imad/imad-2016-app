@@ -90,9 +90,9 @@ body {
     }
 
 .objective{
-    max-width :450px;
+    width :450px;
     color:white;
-    font-size:15px;
+    
 }
 .object{
     font-size:25px;
