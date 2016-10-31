@@ -1,5 +1,5 @@
 body {
-    font-family: initial;
+    font-family: sans-serif;
     background-color: black;
     margin-top: 60px;
 }
@@ -9,8 +9,8 @@ body {
 }
 
 .text-big {
-    font-size: 750%;
-    color:grey;
+    font-size: 300%;
+    color:blue;
     
 }
 
@@ -22,3 +22,12 @@ body {
     height: 200px;
 }
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: blue;
+    font-family: cursive;
+    padding-right: 20;
+    padding-left: 20;
+    padding-bottom: 20;
+            }
