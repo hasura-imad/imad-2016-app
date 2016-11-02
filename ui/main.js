@@ -1,3 +1,14 @@
+alert('Welcome to my Website')
+
+
+
+
+
+
+
+
+
+
 //Counter Code
  var button = document.getElementById('counter');
  var counter = 1;
