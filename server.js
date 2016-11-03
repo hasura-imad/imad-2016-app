@@ -52,6 +52,14 @@ function createTemplate (data) {
               <div>
                 ${content}
               </div>
+              <hr/>
+              <h4>Comments</h4>
+              <div id="comment_form">
+              </div>
+              <br/>
+              <div id="comments">
+                <center>Loading comments...</center>
+              </div>
           </div>
       </body>
     </html>
@@ -152,6 +160,18 @@ app.get('/get-articles', function (req, res) {
    // make a select request
    // return a response with the results
    pool.query('SELECT * FROM article ORDER BY date DESC', function (err, result) {
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          res.send(JSON.stringify(result.rows));
+      }
+   });
+});
+
+app.get('/get-comments/:articleName', function (req, res) {
+   // make a select request
+   // return a response with the results
+   pool.query('SELECT comment.*, "user".username FROM article, comment, "user" WHERE article.title = $1 AND article.id = comment.article_id AND comment.user_id = "user".id ORDER BY comment.timestamp DESC', [req.params.articleName], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
