@@ -4,7 +4,7 @@ function loadLoginForm () {
         <h3>Login/Register to unlock awesome features</h3>
         <input type="text" id="username" placeholder="username" />
         <input type="password" id="password" />
-        <br/>
+        <br/><br/>
         <input type="submit" id="login_btn" value="Login" />
         <input type="submit" id="register_btn" value="Register" />
         `;
@@ -41,6 +41,7 @@ function loadLoginForm () {
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
         submit.value = 'Logging in...';
+        loadLogin();
     };
     
     var register = document.getElementById('register_btn');
