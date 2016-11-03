@@ -57,6 +57,14 @@ function loadLogin () {
     request.send(null);
 }
 
+function escapeHTML (text)
+{
+    var $text = document.createTextNode(html);
+    var $div = document.createElement('div');
+    $div.appendChild($text);
+    return $div.innerHTML;
+}
+
 function loadComments () {
         // Check if the user is already logged in
     var request = new XMLHttpRequest();
@@ -69,7 +77,7 @@ function loadComments () {
                 for (var i=0; i< commentsData.length; i++) {
                     var time = new Date(commentsData[i].timestamp);
                     content += `<div class="comment">
-                        <p>${commentsData[i].comment}</p>
+                        <p>${escapeHTML(commentsData[i].comment)}</p>
                         <div class="commenter">
                             ${commentsData[i].username} - ${time.toLocaleTimeString()} on ${time.toLocaleDateString()} 
                         </div>
