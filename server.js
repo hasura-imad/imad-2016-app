@@ -35,12 +35,12 @@ function createTemplate(data){
                 <a href="/"> Home </a>
             </div>
             <hr/>
-            <div class="center text-big">
+            <div class="center">
                 <h1>
                     ${heading}
                 </h1>
             </div>
-            <div class="center text-big">
+            <div class="center">
                 ${date.toDateString()}
             </div>
             <div>
