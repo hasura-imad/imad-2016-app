@@ -97,7 +97,7 @@ function loadLogin () {
     };
     
     checkRequest.open('GET', '/check-login', true);
-checkRequest.send(null);
+    checkRequest.send(null);
 }
 
 // The first thing to do is to check if the user is logged in!
