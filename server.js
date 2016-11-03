@@ -13,7 +13,7 @@ app.get('/index.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('signup.php', function (req, res) {
+app.get('/signup.php', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'signup.php'));
 });
 
