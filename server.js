@@ -5,13 +5,6 @@ var Pool = require('pg').Pool;
 var app = express();
 app.use(morgan('combined'));
 
-var article = {
-    title: 'Article',
-    heading: 'Article',
-    date: 'Sep 21 2016',
-    content: ` Stuff goes here`
-};
-
 var counter =0;
 var config = {
     user : 'krusty-crab',
