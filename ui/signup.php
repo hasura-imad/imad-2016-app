@@ -1,3 +1,7 @@
+<?php
+$dbconn3 = pg_pconnect("host=db.imad.hasura-app.io port=5432 dbname=blog user=ramit0402 password=process.env.DB_PASSWORD");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,28 +28,48 @@
 <body>
 	<div class="col-md-4 col-md-offset-4">
 		<form class="form-horizontal">
+			<h3 class="col-sm-offset-4">SIGN UP</h3>
 			<div class="form-group">
-		    	<label for="Name" class="col-sm-2 control-label">Name</label>
-		    	<div class="col-sm-10">
+		    	<label for="Name" class="col-sm-3 control-label">Name</label>
+		    	<div class="col-sm-9">
 		      		<input type="text" class="form-control" id="Name" placeholder="Name">
 		    	</div>
 		  	</div>
 		  	<div class="form-group">
-		    	<label for="Username" class="col-sm-2 control-label">Username</label>
-		    	<div class="col-sm-10">
+		    	<label for="Username" class="col-sm-3 control-label">Username</label>
+		    	<div class="col-sm-9">
 		      		<input type="text" class="form-control" id="Username" placeholder="Username">
 		    	</div>
 		  	</div>
 		  	<div class="form-group">
-		    	<label for="Email" class="col-sm-2 control-label">Email</label>
-		    	<div class="col-sm-10">
+		    	<label for="Email" class="col-sm-3 control-label">Email</label>
+		    	<div class="col-sm-9">
 		      		<input type="email" class="form-control" id="Email" placeholder="Email">
 		    	</div>
 		  	</div>
 		  	<div class="form-group">
-		    	<label for="Password" class="col-sm-2 control-label">Password</label>
-		    	<div class="col-sm-10">
+		    	<label for="Password" class="col-sm-3 control-label">Password</label>
+		    	<div class="col-sm-9">
 		      		<input type="password" class="form-control" id="Password" placeholder="Password">
+		    	</div>
+		  	</div>
+		  	<div class="form-group">
+		    	<label for="Dob" class="col-sm-3 control-label">DOB</label>
+		    	<div class="col-sm-9">
+		      		<input type="date" class="form-control" id="Dob" placeholder="Dob">
+		    	</div>
+		  	</div>
+		  	<div class="form-group">
+		    	<label for="Gender" class="col-sm-3 control-label">Gender</label>
+		    	<div class="col-sm-9">
+		      		<input type="radio" class="Gender" name="gender" id="Gender" value="male"> Male
+					<input type="radio" class="Gender" name="gender" id="Gender" value="female"> Female
+		    	</div>
+		  	</div>
+		  	<div class="form-group">
+		    	<label for="City" class="col-sm-3 control-label">City</label>
+		    	<div class="col-sm-9">
+		      		<input type="text" class="form-control" id="City" placeholder="City">
 		    	</div>
 		  	</div>
 		  	<div class="form-group">
