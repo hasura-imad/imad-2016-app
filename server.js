@@ -110,13 +110,14 @@ app.post('/login', function (req, res) {
               var hashedPassword = hash(password, salt); // Creating a hash based on the password submitted and the original salt
               if (hashedPassword === dbString) {
                 
-                // Set a session
-                // A session id is created and set as a cookie
-                // the session-id is also stored in an internal javascript object
-                // In the javascript object, the session-id -> auth -> {userId...}
-                req.session.auth = {'userId': result.rows[0].id};
+                // Set the session
+                req.session.auth = {userId: result.rows[0].id};
+                // set cookie with a session id
+                // internally, on the server side, it maps the session id to an object
+                // { auth: {userId }}
                 
                 res.send('credentials correct!');
+                
               } else {
                 res.send(403).send('username/password is invalid');
               }
@@ -132,7 +133,6 @@ app.get('/check-login', function (req, res) {
        res.send('You are not logged in');
    }
 });
-
 
 var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
