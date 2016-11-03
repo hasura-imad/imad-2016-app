@@ -180,7 +180,7 @@ app.get('/get-comments/:articleName', function (req, res) {
    });
 });
 
-app.get('/submit-comment/:articleName', function (req, res) {
+app.post('/submit-comment/:articleName', function (req, res) {
    // Check if the user is logged in
     if (req.session && req.session.auth && req.session.auth.userId) {
         // First check if the article exists and get the article-id
