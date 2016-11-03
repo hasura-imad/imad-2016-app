@@ -109,14 +109,14 @@ app.post('/login', function (req, res) {
               var salt = dbString.split('$')[2];
               var hashedPassword = hash(password, salt); // Creating a hash based on the password submitted and the original salt
               if (hashedPassword === dbString) {
-                res.send('credentials correct!');
                 
                 // Set a session
-                req.session.auth = {'userId': result.rows[0].id};
                 // A session id is created and set as a cookie
                 // the session-id is also stored in an internal javascript object
                 // In the javascript object, the session-id -> auth -> {userId...}
+                req.session.auth = {'userId': result.rows[0].id};
                 
+                res.send('credentials correct!');
               } else {
                 res.send(403).send('username/password is invalid');
               }
