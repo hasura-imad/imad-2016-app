@@ -79,10 +79,20 @@ app.get('/test-db',function (req,res){
    //make select req and return response 
 });
 
-app.get('/articles/:articleName', function (req,res){
-    var articleName = req.params.articleName;
-    var articlData =
-	 res.send(createTemplate(articlData));
+app.get('/articles/:articleName', function (req, res) {
+  // SELECT * FROM article WHERE title = '\'; DELETE WHERE a = \'asdf'
+  pool.query("SELECT * FROM article WHERE title = $1", [req.params.articleName], function (err, result) {
+    if (err) {
+        res.status(500).send(err.toString());
+    } else {
+        if (result.rows.length === 0) {
+            res.status(404).send('Article not found');
+        } else {
+            var articleData = result.rows[0];
+            res.send(createTemplate(articleData));
+        }
+    }
+  });
 });
 
 app.get('/ui/style.css', function (req, res) {
