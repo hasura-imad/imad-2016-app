@@ -79,8 +79,9 @@ app.get('/test-db',function (req,res){
    //make select req and return response 
 });
 
-app.get('/article-one', function (req,res){
-	 res.send(createTemplate(article));
+app.get('/articles/:articleName', function (req,res){
+    var articleName = req.params.articleName;
+	 res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
