@@ -1,5 +1,8 @@
 body {
+    height: 100%;
+    width: 100%;
     font-family: sans-serif;
+    font-size: 3vw;
     background-color: lightgrey;
     margin-top: 75px;
 }
@@ -9,7 +12,7 @@ body {
 }
 
 .text-big {
-    font-size: 300%;
+    /*font-size: 200%;*/
 }
 
 .bold {
@@ -17,6 +20,10 @@ body {
 }
 
 .img-medium {
-    height: 200px;
+    height: 300px;
 }
 
+.mobile{
+    margin-left: 40px;
+    margin-right: 40px;
+}
