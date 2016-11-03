@@ -1,4 +1,16 @@
+function loadLogin () {
+
 // Check if the user is already logged in
+var checkRequest = new XMLHttpRequest();
+checkRequest.onreadystatechange = function () {
+    if (request.readyState === XMLHttpRequest.DONE) {
+        if 
+    }
+};
+
+checkRequest.open('GET', '/check-login', true);
+checkRequest.send(null);
+
 
 var loginHtml = `
     <h3>Login/Register to unlock awesome features</h3>
@@ -37,7 +49,7 @@ submit.onclick = function () {
     var password = document.getElementById('password').value;
     console.log(username);
     console.log(password);
-    request.open('POST', 'http://coco98.imad.hasura-app.io/login', true);
+    request.open('POST', '/login', true);
     request.setRequestHeader('Content-Type', 'application/json');
     request.send(JSON.stringify({username: username, password: password}));  
     submit.value = 'Logging in...';
@@ -67,7 +79,7 @@ register.onclick = function () {
     var password = document.getElementById('password').value;
     console.log(username);
     console.log(password);
-    request.open('POST', 'http://coco98.imad.hasura-app.io/create-user', true);
+    request.open('POST', '/create-user', true);
     request.setRequestHeader('Content-Type', 'application/json');
     request.send(JSON.stringify({username: username, password: password}));  
     register.value = 'Registering...';
