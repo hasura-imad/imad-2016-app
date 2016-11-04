@@ -103,7 +103,13 @@ body {
     
 }
 
-.subobjective{
+.column{
+    margin: auto;
+  overflow: hidden;
+  -ms-column-count :2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
   
 }
 
