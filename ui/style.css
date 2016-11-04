@@ -127,3 +127,8 @@ article {
     overflow: hidden;
 }
 
+.ekline{
+    
+    display:inline-block;
+}
+
