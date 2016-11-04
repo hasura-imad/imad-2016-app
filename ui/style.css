@@ -100,5 +100,6 @@ body {
 
 .objective{
     max-width:450px;
+    display:inline-block;
 }
 
