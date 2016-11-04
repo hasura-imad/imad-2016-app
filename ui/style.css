@@ -89,7 +89,11 @@ body {
         font-size :25px;
     }
 
-
+.mainobjective{
+    max-width:1000px;
+    
+    
+}
 .object{
     font-size:25px;
 }
