@@ -110,10 +110,10 @@ body {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
-  -ms-column-gap :90px;
-  -webkit-column-gap: 90px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 90px; /* Firefox */
-    column-gap: 90px;
+  -ms-column-gap :100px;
+  -webkit-column-gap: 100px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 100px; /* Firefox */
+    column-gap: 100px;
   
 }
 
