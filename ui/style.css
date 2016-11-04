@@ -90,7 +90,7 @@ body {
     }
 
 .mainobjective{
-    max-width:800px;
+    max-width:900px;
     border: 1px solid gray;
     
     
@@ -106,7 +106,7 @@ body {
 
 nav {
     float: left;
-    max-width: 200px;
+    max-width: 300px;
     margin: 0;
     padding: 1em;
 }
