@@ -1,11 +1,18 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var pool = require('pg').Pool;
+var Pool = require('pg').Pool;
 
 var app = express();
 app.use(morgan('combined'));
 
+var config = {
+    user: 'gaurav00012',
+    database: 'gaurav00012',
+    password: 'db-gaurav00012-40955', // process.env.DB_PASSWORD
+    host: 'db.imad.hasura-app.io',
+    port: '5432'
+};
 
 var articles = {
    'article-one' : {
@@ -52,6 +59,19 @@ var articles = {
     }
     
 };
+
+var pool = new Pool(config);
+
+app.get('/test-db' , function (req, res){
+   pool.query('SELECT * from users', function(err, results) {
+        if(err){
+            res.status(500).send(err.toString());
+        } 
+        else{
+            res.send(JSON.stringify(results));
+        }
+   });
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
