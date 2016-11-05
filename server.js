@@ -113,12 +113,11 @@ app.get('/css/sweetalert-master/dist/sweetalert.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'css/sweetalert-master/dist/sweetalert.css'));
 });
 
-app.get('scripts/startup.js', function (req, res) {
+app.get('/scripts/startup.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'scripts/startup.js'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
-    res.send("HELLO!!!")
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
