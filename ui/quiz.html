@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+        <script src="scripts/sweetalert.min.js"></script> 
+        <link rel="stylesheet" type="text/css" href="./css/sweetalert-master/dist/sweetalert.css">
+        <script type="text/javascript" src="scripts/quiz.js"></script>
+        <!--<script type="text/javascript" src="scripts/jquery.multiscroll.js"></script>-->
+    </head>
+    <body>
+        <title>QUIZ</title>
+        <h1> QUIZ </h1>
+        <br>
+        <br>
+        <div
+        <div id="timer">
+            TIME TAKEN YET : 00:00
+        </div>
+        <hr/>
+        <p> 
+            <div id="question">
+                question
+            </div>
+        </p> <br> <hr/>
+        <form>
+
+            <input id="option1" type="radio" name="Question" value='1'></input>
+            <div id="textOption1">
+                Option 1
+            </div>
+            <br>
+            
+            <input id="option2" type="radio" name="Question" value='1'></input>
+            <div id="textOption2">
+                Option 2
+            </div>
+            <br>
+
+            <input id="option3" type="radio" name="Question" value='1'></input>
+            <div id="textOption3">
+                Option 3
+            </div>
+            <br>
+
+            <input id="option4" type="radio" name="Question" value='1'></input>
+            <div id="textOption4">
+                Option 4
+            </div>
+            <br>
+
+        </form>
+        <br>
+        <button onclick="next()">next</button>
+    </body>
+</html>
