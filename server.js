@@ -89,7 +89,7 @@ return htmlTemplate;
 }
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'quiz.html'));
 });
 
 app.use(express.static(path.join(__dirname, 'ui')));
