@@ -61,7 +61,7 @@ var articles = {
 };
 
 var pool = new Pool(config);
-alert('hello')
+
 app.get('/test-db' , function (req, res){
    pool.query('SELECT * from users', function(err, results) {
         if(err){
