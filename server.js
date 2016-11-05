@@ -88,7 +88,7 @@ var articles = {
 return htmlTemplate;
 }
 
-app.get('/', function (req, res) {
+app.get('/start', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
 });
 
