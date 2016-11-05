@@ -88,8 +88,10 @@ var articles = {
 return htmlTemplate;
 }
 
+
+
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
 });
 
 app.get('/:articleName', function (req,res) {
