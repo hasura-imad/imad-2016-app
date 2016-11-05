@@ -88,8 +88,6 @@ var articles = {
 return htmlTemplate;
 }
 
-f
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
 });
@@ -102,8 +100,21 @@ app.get('/:articleName', function (req,res) {
      
 });
 
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+app.get('/ui/scripts/sweetalert.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/scripts', 'sweetalert.min.js'));
+});
+
+app.get('/ui/css/sweetalert-master/dist/sweetalert.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/css/sweetalert-master/dist/', 'sweetalert.css'));
+});
+
+app.get('/ui/scripts/startup.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/scripts', 'startup.js'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
