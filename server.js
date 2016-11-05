@@ -92,13 +92,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
 });
 
-app.get('/:articleName', function (req,res) {
-    //articleName == article-one
-    //articles[articleName]=={} content object for article one
-    var articleName = req.params.articleName;
-     res.send(createTemplate(articles[articleName]));
-     
-});
 
 
 app.use(express.static(path.join(__dirname, 'ui')));
