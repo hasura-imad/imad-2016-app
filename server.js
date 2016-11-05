@@ -55,7 +55,7 @@ var articles = {
 app.use(express.static(path.join(__dirname, 'ui')));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'quiz.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
