@@ -11,6 +11,17 @@ $(document).keypress(function(e) {
 
 function validateAll() {
     
+    var request = new XMLHttpRequest();
+    
+    request.onreadystatechange = function() {
+      if(request.status === 200){
+          var tempNames = request.responceText.toString();
+      }
+    };
+    
+    request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/', true);
+    request.send(null);
+    
     var inputname
     var password
     var statusSpan = document.getElementById('status')
