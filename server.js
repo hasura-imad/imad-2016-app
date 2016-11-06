@@ -77,6 +77,17 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
 });
 
+app.get('/users' , function(req, res){
+   pool.query('SELECT * from users', function(err, results) {
+    if(err){
+        res.status(500).send(err.toString());
+    } 
+    else{
+        res.send(JSON.stringify(results.rows));
+    }
+   });
+});
+
 app.use(express.static(path.join(__dirname, 'ui')));
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
