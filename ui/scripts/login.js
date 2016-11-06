@@ -1,21 +1,13 @@
-var users = ["user1","user2","user3","user4"];
-var passwords = ["123","132","312","213"];
-var totalUsers = 4;
+//var users = ["user1","user2","user3","user4"];
+//var passwords = ["123","132","312","213"];
+//var totalUsers = 4;
+
+var users = [];
+var passwords = [];
 
 $(document).keypress(function(e) {
     if(e.which == 13) {
         // enter pressed
-        var request = new XMLHttpRequest();
-        var tempNames;
-        
-        request.onreadystatechange = function() {
-          if(request.status === 304){
-              console.log(request.responceText);
-          }
-        };
-        
-        request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/', true);
-        request.send(null);
         
         validateAll();
     }
@@ -24,16 +16,18 @@ $(document).keypress(function(e) {
 function validateAll() {
     
     var request = new XMLHttpRequest();
+    var object;
     
     request.onreadystatechange = function() {
       if(request.status === 200){
-          var tempNames = request.responceText.toString();
+          object = request.responceText;
       }
     };
     
     request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/', true);
     request.send(null);
     
+    console.log(object);
     
     var inputname;
     var password;
