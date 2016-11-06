@@ -10,7 +10,7 @@ $(document).keypress(function(e) {
         
         request.onreadystatechange = function() {
           if(request.status === 200){
-              console.log(tempNames = request.responceText.toString());
+              console.log(tempNames = request.responceText);
           }
         };
         
