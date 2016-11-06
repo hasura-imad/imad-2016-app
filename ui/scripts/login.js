@@ -5,6 +5,17 @@ var totalUsers = 4;
 $(document).keypress(function(e) {
     if(e.which == 13) {
         // enter pressed
+        var request = new XMLHttpRequest();
+    
+        request.onreadystatechange = function() {
+          if(request.status === 200){
+              var tempNames = request.responceText.toString();
+          }
+        };
+        console.log(tempNames);
+        request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/', true);
+        request.send(null);
+        
         validateAll();
     }
 });
@@ -21,6 +32,7 @@ function validateAll() {
     
     request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/', true);
     request.send(null);
+    
     
     var inputname;
     var password;
