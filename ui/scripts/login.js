@@ -27,7 +27,7 @@ function validateAll() {
     request.onreadystatechange = function() {
         if(request.readyState === XMLHttpRequest.DONE) {
             // Take some action
-            if(request.status === 200) {
+            if(request.status === 304) {
                 //alert('recieved');
                 a = request.responceText;
                 alert(a);
