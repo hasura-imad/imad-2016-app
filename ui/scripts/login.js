@@ -23,11 +23,13 @@ function validateAll() {
     var object;
     
     request.onreadystatechange = function() {
-      if(request.status === 200){
-          //alert('recieved');
-          object = request.responceText;
-          alert(object);
-      }
+        if(request.readyState === XMLHttpRequest.DONE) {
+          if(request.status === 200){
+              //alert('recieved');
+              object = request.responceText;
+              alert(object);
+          }
+        }
     };
     
     request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/', true);
