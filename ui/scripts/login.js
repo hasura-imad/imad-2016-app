@@ -9,7 +9,7 @@ $(document).keypress(function(e) {
         var tempNames;
         
         request.onreadystatechange = function() {
-          if(request.status === 200){
+          if(request.status === 304){
               console.log(request.responceText);
           }
         };
