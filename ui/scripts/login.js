@@ -22,15 +22,15 @@ function validateAll() {
     
     // create a new object
     var request = new XMLHttpRequest();
-    var object;
+    var a;
     
     request.onreadystatechange = function() {
         if(request.readyState === XMLHttpRequest.DONE) {
             // Take some action
             if(request.status === 200) {
                 //alert('recieved');
-                object = request.responceText;
-                alert(object.toString());
+                a = request.responceText;
+                alert(a);
             }
         }
     };
