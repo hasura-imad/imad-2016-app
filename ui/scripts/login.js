@@ -25,14 +25,14 @@ function validateAll() {
     request.onreadystatechange = function() {
       if(request.status === 200){
           alert('recieved');
-          console.log(request.responceText);
+          console.log(request.responceText.toString());
       }
     };
     
     request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/', true);
     request.send(null);
     
-    console.log(object[0].name);
+    //console.log(object[0].name);
     
     var inputname;
     var password;
