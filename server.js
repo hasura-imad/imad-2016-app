@@ -14,7 +14,7 @@ var config = {
     port: '5432'
 };
 
-var articles = {
+/*var articles = {
    'article-one' : {
         title : 'Article One : Gaurav Aggarwal',
         heading : 'Article One',
@@ -58,7 +58,7 @@ var articles = {
         
     }
     
-};
+}*/
 
 var pool = new Pool(config);
 
