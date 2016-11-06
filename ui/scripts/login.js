@@ -1,9 +1,6 @@
-//var users = ["user1","user2","user3","user4"];
-//var passwords = ["123","132","312","213"];
-//var totalUsers = 4;
-
-var users = [];
-var passwords = [];
+var users = ["user1","user2","user3","user4"];
+var passwords = ["123","132","312","213"];
+var totalUsers = 4;
 
 document.onreadystatechange = function () {
     if (document.readyState === "complete") {
@@ -18,6 +15,10 @@ document.onreadystatechange = function () {
 };
 
 function validateAll() {
+    
+/*
+    
+    GOING TO LEARN THIS VIA INTERNSHIP :P
     
     // create a new object
     var request = new XMLHttpRequest();
@@ -38,7 +39,8 @@ function validateAll() {
     request.send(null);
     
     //console.log(object[0].name);
-    
+*/
+
     var inputname;
     var password;
     var statusSpan = document.getElementById('status');
