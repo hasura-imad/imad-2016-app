@@ -70,7 +70,7 @@ app.get('/users' , function(req, res){
    pool.query('SELECT * from users', function(err, results) {
     if(err){
         res.status(500).send(err.toString());
-    } 
+    }
     else{
         res.send(JSON.stringify(results.rows[0].name));
     }
