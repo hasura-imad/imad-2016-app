@@ -1,1 +1,1 @@
-console.log('Loaded!');
+$('#animate_text').textillate({ in: { effect: 'rollIn' } });
