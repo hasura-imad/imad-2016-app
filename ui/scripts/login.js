@@ -27,7 +27,7 @@ function validateAll() {
           if(request.status === 200){
               //alert('recieved');
               object = request.responceText;
-              alert(object);
+              alert(object[0]);
           }
         }
     };
