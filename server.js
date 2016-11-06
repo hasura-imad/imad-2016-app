@@ -73,7 +73,7 @@ app.get('/users' , function(req, res){
    });
 });
 
-app.get('/test-db', function (req, res){
+/*app.get('/test-db', function (req, res){
    pool.query('SELECT * from users', function(err, results) {
         if(err){
             res.status(500).send(err.toString());
@@ -82,7 +82,7 @@ app.get('/test-db', function (req, res){
             res.send(JSON.stringify(results.rows));
         }
    });
-});
+});*/
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
