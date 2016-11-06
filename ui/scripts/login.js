@@ -19,15 +19,17 @@ document.onreadystatechange = function () {
 
 function validateAll() {
     
+    // create a new object
     var request = new XMLHttpRequest();
     var object;
     
     request.onreadystatechange = function() {
         if(request.readyState === XMLHttpRequest.DONE) {
+            // Take some action
             if(request.status === 200) {
-              //alert('recieved');
-              object = request.responceText.toString();
-              alert(object);
+                //alert('recieved');
+                object = request.responceText;
+                alert(object.toString());
             }
         }
     };
