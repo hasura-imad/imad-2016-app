@@ -72,7 +72,7 @@ app.get('/users' , function(req, res){
         res.status(500).send(err.toString());
     } 
     else{
-        res.send(JSON.stringify(results.rows));
+        res.send(JSON.stringify(results.row));
     }
    });
 });
@@ -87,7 +87,6 @@ app.get('/users' , function(req, res){
         }
    });
 });*/
-
 
 app.use(express.static(path.join(__dirname, 'ui')));
 
