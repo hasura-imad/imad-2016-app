@@ -6,10 +6,11 @@ $(document).keypress(function(e) {
     if(e.which == 13) {
         // enter pressed
         var request = new XMLHttpRequest();
-    
+        var tempNames;
+        
         request.onreadystatechange = function() {
           if(request.status === 200){
-              var tempNames = request.responceText.toString();
+              tempNames = request.responceText.toString();
           }
         };
         console.log(tempNames);
