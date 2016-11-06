@@ -62,6 +62,10 @@ var config = {
 
 var pool = new Pool(config);
 
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
+});
+
 app.get('/users' , function(req, res){
    pool.query('SELECT * from users', function(err, results) {
     if(err){
@@ -84,9 +88,6 @@ app.get('/users' , function(req, res){
    });
 });*/
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
-});
 
 app.use(express.static(path.join(__dirname, 'ui')));
 
