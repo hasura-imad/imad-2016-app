@@ -62,6 +62,17 @@ var config = {
 
 var pool = new Pool(config);
 
+app.get('/users' , function(req, res){
+   pool.query('SELECT * from users', function(err, results) {
+    if(err){
+        res.status(500).send(err.toString());
+    } 
+    else{
+        res.send(JSON.stringify(results.rows));
+    }
+   });
+});
+
 app.get('/test-db', function (req, res){
    pool.query('SELECT * from users', function(err, results) {
         if(err){
@@ -75,17 +86,6 @@ app.get('/test-db', function (req, res){
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
-});
-
-app.get('/users' , function(req, res){
-   pool.query('SELECT * from users', function(err, results) {
-    if(err){
-        res.status(500).send(err.toString());
-    } 
-    else{
-        res.send(JSON.stringify(results.rows));
-    }
-   });
 });
 
 app.use(express.static(path.join(__dirname, 'ui')));
