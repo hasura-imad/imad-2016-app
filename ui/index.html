@@ -1,34 +1,98 @@
-<!doctype html>
-<html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body data-spy="scroll" data-target="navbar">
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="../Unnamed Site 2/js/jquery-1.11.2.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed --> 
-	<script src="../Unnamed Site 2/js/bootstrap.js"></script>
-    <nav class="navbar navbar-inverse navbar-fixed-bottom">
-        <ul class="nav navbar-nav">
-             <li><a href="abc.html">Home</a></li>
-             <li><a href="abc.html">What I do</a></li>
-             <li><a href="abc.html">What About Me</a></li>
-             <li><a href="abc.html">Contact Me</a></li>
-        </ul>
-    </nav>
-    <section id="home" style="background:url(../Unnamed%20Site%202/sunset.jpg); bacrkground-size:100% 100%; text-align:center" class="bgclr">
-    <h1>I am a web developer</h1>
-    <p class="lead">Hello World</p>
-    <button class="btn btn-info">More Info</button>
-    <button class="btn btn-warning">contact-me</button>
-    </section> 
-    <div class="container">
-        <div class="page-header">
-           My Works
-        </div>
-    </div>
-    <div class='footer'>
-        This button <button id="counter">Click Me</button>Has been clicked <span id="count">0 </span>times
-    </div>
-    </body>
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Animating 3D Transforms</title>
+	 <style>
+	 body {
+       font-family: 'Alfa Slab One', cursive;
+       font-size:6rem;
+       background:#2c333a;
+    }
+
+    div {
+         width:80%;
+         margin:4rem auto;
+         text-align:center;
+         perspective: 800px;
+        }
+
+    span {
+         display:inline-block;
+         margin-left: -20px;
+         color:#77c6bc;
+         transform-origin: 50% 70%;
+         }
+         span:nth-child(2n)
+		 {
+             color:#95b8cb;
+         }
+          span:nth-child(1)
+		  {
+              animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
+          }
+
+          span:nth-child(2)
+		  {
+              margin-right:30px;
+              animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .2s both;
+          }
+
+          span:nth-child(3) {
+            margin-right:30px;
+            animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .4s both;
+            }
+
+            span:nth-child(4) {
+              animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .6s both;
+             }
+
+           span:nth-child(5)
+		    {
+             margin-left:-28px;
+             animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .8s both;
+            }
+
+            span:nth-child(6) {
+                animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1s both;
+             }
+
+             span:nth-child(7) { 
+                 animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.2s both;
+             }
+             @keyframes flipUp {
+             from {transform: rotateX(90deg);}
+             to {tranform: rotateX(0deg);}
+             }
+			 .btn{
+				 align-content:center;
+				 padding:8px 8px 8px 8px;
+				 border-radius:4px 4px 4px 4px;
+				 appearance:dialog;
+				 float:!important;
+				 color:#DFBDBE;
+				 background-color:#9E9696;
+			 }
+     </style>
+ 
+  </head>
+
+  <body>
+ <div> 
+  <span>W</span>
+  <span>e</span>
+  <span>l</span>
+  <span>c</span>
+  <span>o</span>
+  <span>m</span>
+  <span>e</span>
+  <br>
+  <span>U</span>
+  <span>S</span>
+  <span>E</span>
+  <span>R</span>
+  </div>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <button class="btn" >  Continue  to anupambiswas059@imad.hasura.io </button>
+    
+</body>
 </html>
