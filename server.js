@@ -68,7 +68,7 @@ app.get('/users' , function(req, res){
         res.status(500).send(err.toString());
     }
     else{
-        res.send(JSON.stringify(results.rows[0].name));
+        res.status(200).send(JSON.stringify(results.rows[0].name));
     }
    });
 });
