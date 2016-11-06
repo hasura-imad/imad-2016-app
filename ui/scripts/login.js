@@ -24,11 +24,11 @@ function validateAll() {
     
     request.onreadystatechange = function() {
         if(request.readyState === XMLHttpRequest.DONE) {
-          if(request.status === 200){
+            if(request.status === 200) {
               //alert('recieved');
-              object = request.responceText;
-              alert(object[0]);
-          }
+              object = request.responceText.toString();
+              alert(object);
+            }
         }
     };
     
