@@ -24,8 +24,9 @@ function validateAll() {
     
     request.onreadystatechange = function() {
       if(request.status === 200){
-          alert('recieved');
-          console.log(request.responceText.toString());
+          //alert('recieved');
+          object = request.responceText;
+          alert(object);
       }
     };
     
