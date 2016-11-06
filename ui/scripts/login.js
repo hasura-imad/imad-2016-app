@@ -5,13 +5,17 @@
 var users = [];
 var passwords = [];
 
-$(document).keypress(function(e) {
-    if(e.which == 13) {
-        // enter pressed
-        
-        validateAll();
+document.onreadystatechange = function () {
+    if (document.readyState === "complete") {
+        $(document).keypress(function(e) {
+            if(e.which == 13) {
+                // enter pressed
+                
+                validateAll();
+            }
+        });
     }
-});
+};
 
 function validateAll() {
     
