@@ -10,10 +10,10 @@ $(document).keypress(function(e) {
         
         request.onreadystatechange = function() {
           if(request.status === 200){
-              tempNames = request.responceText.toString();
+              console.log(tempNames = request.responceText.toString());
           }
         };
-        console.log(tempNames);
+        
         request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/', true);
         request.send(null);
         
