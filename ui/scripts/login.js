@@ -16,9 +16,9 @@ document.onreadystatechange = function () {
 
 function validateAll() {
     
-/*
+
     
-    GOING TO LEARN THIS VIA INTERNSHIP :P
+    //GOING TO LEARN THIS VIA INTERNSHIP :P
     
     // create a new object
     var request = new XMLHttpRequest();
@@ -39,7 +39,7 @@ function validateAll() {
     request.send(null);
     
     //console.log(object[0].name);
-*/
+
 
     var inputname;
     var password;
