@@ -1,0 +1,1 @@
+$('#animate_text').textillate({ in: { effect: 'rollIn' } });
