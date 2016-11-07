@@ -23,6 +23,8 @@ document.onreadystatechange = function () {
                             //alert('recieved');
                             object = request.responseText;
                             for(var i = 0; i < object.length; i++){
+                                console.log(object[i].name);
+                                console.log(object[i].password);
                                 users.push(object[i].name);
                                 passwords.push(object[i].password);
                             }
