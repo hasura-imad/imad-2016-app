@@ -57,7 +57,7 @@ function validateAll() {
     
     // SEARCH FOR USER IN USERS LIST
     for(i = 0; i < users.length; i++) {
-        if(inputname == users[i]) {
+        if(inputname.toString() === users[i]) {
             userIndex = i;
             found = true;
         }
