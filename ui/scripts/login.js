@@ -3,12 +3,35 @@ var passwords = [];
 
 var temp = [{"name":"user1","id":1,"password":"123"},{"name":"user2","id":2,"password":"123"},{"name":"user3","id":3,"password":"123\r\n"},{"name":"user4","id":4,"password":"123"}];
 
+// *************** FETCHING DATA FROM DATABASE (NOT A GOOD PRACTICE HERE) ***********************
+
+var request = new XMLHttpRequest();
+var object;
+
+request.onreadystatechange = function() {
+    if(request.readyState === XMLHttpRequest.DONE) {
+        // Take some action
+        if(request.status === 200) {
+            object = JSON.parse(request.responseText);
+            for(var i = 0; i < object.length; i++){
+                users.push(object[i].name.toString());
+                passwords.push(object[i].password.toString());
+            }
+        }
+    }
+};
+
+request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/users', true);
+request.send(null);
+
+// **********************************************************************************************
+
+
 document.onreadystatechange = function () {
     if (document.readyState === "complete") {
         $(document).keypress(function(e) {
             if(e.which == 13) {  // enter pressed
-
-
+            
                 validateAll();
             }
         });
@@ -16,29 +39,6 @@ document.onreadystatechange = function () {
 };
 
 function validateAll() {
-
-    // *************** FETCHING DATA FROM DATABASE (NOT A GOOD PRACTICE HERE) ***********************
-
-    var request = new XMLHttpRequest();
-    var object;
-    
-    request.onreadystatechange = function() {
-        if(request.readyState === XMLHttpRequest.DONE) {
-            // Take some action
-            if(request.status === 200) {
-                object = JSON.parse(request.responseText);
-                for(var i = 0; i < object.length; i++){
-                    users.push(object[i].name.toString());
-                    passwords.push(object[i].password.toString());
-                }
-            }
-        }
-    };
-    
-    request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/users', true);
-    request.send(null);
-    
-    // **********************************************************************************************
 
     var inputname, password;
     var userIndex;
