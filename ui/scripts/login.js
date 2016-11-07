@@ -22,14 +22,10 @@ document.onreadystatechange = function () {
                     if(request.readyState === XMLHttpRequest.DONE) {
                         // Take some action
                         if(request.status === 200) {
-                            //alert('recieved');
                             object = JSON.parse(request.responseText);
-                            alert("Object = " + object);
-                            alert("Length = " + object.length);
-
                             for(var i = 0; i < object.length; i++){
-                                console.log("Name : " + object[i].name.toString());
-                                console.log("Password : " + object[i].password.toString());
+                                //console.log("Name : " + object[i].name.toString());
+                                //console.log("Password : " + object[i].password.toString());
                                 users.push(object[i].name);
                                 passwords.push(object[i].password);
                             }
@@ -50,26 +46,25 @@ document.onreadystatechange = function () {
 
 function validateAll() {
 
-    var inputname;
-    var password;
+    var inputname, password;
+    var userIndex;
     var statusSpan = document.getElementById('status');
     var temp = document.getElementById('status-message');
     var found = false;
-    var userIndex;
     
     if(document.getElementById("username") !== "")
         inputname = document.getElementById('username').value;
     if(document.getElementById("password") !== "")
         password = document.getElementById('password').value;
     
-    /*for(var i = 0; i < users.length; i++){
+    for(var i = 0; i < users.length; i++){
         console.log(users[i]);
         console.log(passwords[i]);
-    }*/
+    }
     
     // SEARCH FOR USER IN USERS LIST
     for(i = 0; i < users.length; i++) {
-        if(inputname === users[i]) {
+        if(inputname == users[i]) {
             userIndex = i;
             found = true;
         }
