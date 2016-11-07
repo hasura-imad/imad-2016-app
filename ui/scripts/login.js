@@ -23,7 +23,7 @@ document.onreadystatechange = function () {
                         // Take some action
                         if(request.status === 200) {
                             //alert('recieved');
-                            object = request.responseText;
+                            object = JSON.parse(request.responseText);
                             alert("Object = " + object);
                             alert("Length = " + object.length);
 
