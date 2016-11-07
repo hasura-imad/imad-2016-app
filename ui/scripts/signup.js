@@ -54,6 +54,7 @@ function validateAll() {
     for(i = 0; i < users.length; i++) {
         if(inputname == users[i]) {
             found = true;
+            break;
         }
     }
     
@@ -67,9 +68,10 @@ function validateAll() {
         temp.innerHTML = "Password must 8 to 16 characters long!!!"; // USER ENTERED WRONG PASSWORD
         statusSpan.style.display = 'block';
     }
-    else if (!found){
+    else {
         temp.style.color = "#20FF00";
         temp.innerHTML = "Registering you...";
+        alert('hi muthafucka');
         var queryToAdd = "http://akshatbhargava123.imad.hasura-app.io/" + inputname + "-" + password;
         ready = true;
         request.open('GET', queryToAdd, true);
