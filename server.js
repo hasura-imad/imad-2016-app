@@ -87,14 +87,12 @@ app.get('/:info' , function(req, res){
     for(i = temp + 1; i < info.length; i++){
         password += info[i];
     }
-    var result = "username ="  + username + "   " + "password = " + password;
-    res.send(result);
-    pool.query('SELECT * from users', function(err, results) {
+    pool.query(`INSERT INTO users (name, password) VALUES (` + username + `,` + password +`)`, function(err, results) {
     if(err){
         res.status(500).send(err.toString());
     }
     else{
-        res.send(JSON.stringify(results.rows));
+        res.send("User Registered!!!");
     }
    });
 });
