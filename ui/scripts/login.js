@@ -55,6 +55,11 @@ function validateAll() {
     if(document.getElementById("password") !== "")
         password = document.getElementById('password').value;
     
+    for(var i = 0; i < users.length; i++){
+        console.log(users[i]);
+        console.log(passwords[i]);
+    }
+    
     // SEARCH FOR USER IN USERS LIST
     for(var i = 0; i < users.length; i++) {
         if(inputname === users[i]) {
