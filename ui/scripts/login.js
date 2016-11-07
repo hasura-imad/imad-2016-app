@@ -24,9 +24,6 @@ function validateAll() {
     var request = new XMLHttpRequest();
     var a;
     
-    request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/', true);
-    request.send(null);
-    
     request.onreadystatechange = function() {
         if(request.readyState === XMLHttpRequest.DONE) {
             // Take some action
@@ -37,6 +34,9 @@ function validateAll() {
             }
         }
     };
+    
+    request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/', true);
+    request.send(null);
     
     //console.log(object[0].name);
 
