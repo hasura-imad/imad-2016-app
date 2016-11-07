@@ -35,7 +35,7 @@ function validateAll() {
         }
     };
     
-    request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/', true);
+    request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/users', true);
     request.send(null);
     
     //console.log(object[0].name);
