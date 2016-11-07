@@ -1,5 +1,5 @@
-var users = ["user1","user2","user3","user4"];
-var passwords = ["123","132","312","213"];
+var users = ["user1","user2","user3","user4","user5"];
+var passwords = ["123","132","312","213","123"];
 var totalUsers = 4;
 
 document.onreadystatechange = function () {
@@ -32,7 +32,7 @@ function validateAll() {
             // Take some action
             if(request.status === 200) {
                 //alert('recieved');
-                a = request.responceText;
+                a = request.responseText;
                 alert(a);
             }
         }
