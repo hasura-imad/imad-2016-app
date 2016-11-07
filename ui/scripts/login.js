@@ -22,7 +22,7 @@ document.onreadystatechange = function () {
                         if(request.status === 200) {
                             //alert('recieved');
                             object = request.responseText;
-                            for(var i = 0; i < object.size(); i++){
+                            for(var i = 0; i < object.length; i++){
                                 users.push(object[i].name);
                                 passwords.push(object[i].password);
                             }
@@ -56,7 +56,7 @@ function validateAll() {
         password = document.getElementById('password').value;
     
     // SEARCH FOR USER IN USERS LIST
-    for(var i = 0; i < users.size(); i++) {
+    for(var i = 0; i < users.length; i++) {
         if(inputname === users[i]) {
             userIndex = i;
             found = true;
