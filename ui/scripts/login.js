@@ -23,11 +23,11 @@ document.onreadystatechange = function () {
                         // Take some action
                         if(request.status === 200) {
                             //alert('recieved');
-                            object = request.responseText;
-                            alert("Object = " + object[0].name.toString());
+                            object = request.responseText.toString();
+                            alert("Object = " + object[0].name);
                             for(var i = 0; i < object.length; i++){
-                                console.log("Name : " + object[i].name.toString());
-                                console.log("Password : " + object[i].password.toString());
+                                console.log("Name : " + object[i].name);
+                                console.log("Password : " + object[i].passwor);d
                                 users.push(object[i].name);
                                 passwords.push(object[i].password);
                             }
