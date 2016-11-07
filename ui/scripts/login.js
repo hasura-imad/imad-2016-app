@@ -1,12 +1,36 @@
-var users = ["user1","user2","user3","user4","user5"];
-var passwords = ["123","132","312","213","123"];
-var totalUsers = 4;
+//var users = ["user1","user2","user3","user4","user5"];
+//var passwords = ["123","132","312","213","123"];
+//var totalUsers = 4;
+
+var users = [];
+var passwords = [];
 
 document.onreadystatechange = function () {
     if (document.readyState === "complete") {
         $(document).keypress(function(e) {
             if(e.which == 13) {
                 // enter pressed
+                
+                // *************** FETCHING DATA FROM DATABASE (NOT A GOOD PRACTICE HERE) ***********************
+                // create a new object
+                var request = new XMLHttpRequest();
+                var object;
+                
+                request.onreadystatechange = function() {
+                    if(request.readyState === XMLHttpRequest.DONE) {
+                        // Take some action
+                        if(request.status === 200) {
+                            //alert('recieved');
+                            object = request.responseText;
+                            console.log(object);
+                        }
+                    }
+                };
+                
+                request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/users', true);
+                request.send(null);
+                
+                // **********************************************************************************************
                 
                 validateAll();
             }
@@ -15,31 +39,6 @@ document.onreadystatechange = function () {
 };
 
 function validateAll() {
-    
-
-    
-    //GOING TO LEARN THIS VIA INTERNSHIP :P
-    
-    // create a new object
-    var request = new XMLHttpRequest();
-    var a;
-    
-    request.onreadystatechange = function() {
-        if(request.readyState === XMLHttpRequest.DONE) {
-            // Take some action
-            if(request.status === 200) {
-                //alert('recieved');
-                a = request.responseText.toString();
-                console.log(a);
-            }
-        }
-    };
-    
-    request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/users', true);
-    request.send(null);
-    
-    //console.log(object[0].name);
-
 
     var inputname;
     var password;
