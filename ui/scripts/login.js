@@ -29,8 +29,8 @@ function validateAll() {
             // Take some action
             if(request.status === 200) {
                 //alert('recieved');
-                a = request.responseText;
-                alert(a);
+                a = request.responseText.toString();
+                console.log(a);
             }
         }
     };
