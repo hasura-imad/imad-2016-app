@@ -12,10 +12,11 @@ document.onreadystatechange = function () {
         $(document).keypress(function(e) {
             if(e.which == 13) {
                 // enter pressed
+                alert(temp[0].name.toString());
                 // *************** FETCHING DATA FROM DATABASE (NOT A GOOD PRACTICE HERE) ***********************
                 // create a new object
                 var request = new XMLHttpRequest();
-                var object = [];
+                var object;
                 
                 request.onreadystatechange = function() {
                     if(request.readyState === XMLHttpRequest.DONE) {
@@ -23,11 +24,12 @@ document.onreadystatechange = function () {
                         if(request.status === 200) {
                             //alert('recieved');
                             object = request.responseText;
+                            alert("Object = " + object[0].name.toString());
                             for(var i = 0; i < object.length; i++){
                                 console.log("Name : " + object[i].name.toString());
                                 console.log("Password : " + object[i].password.toString());
-                                users.push(object[i].name.toString());
-                                passwords.push(object[i].password.toString());
+                                users.push(object[i].name);
+                                passwords.push(object[i].password);
                             }
                         }
                     }
