@@ -73,6 +73,30 @@ app.get('/users' , function(req, res){
    });
 });
 
+app.get('/:info' , function(req, res){
+    var info = req.params.info.toString(), temp;
+    var username, password;
+    for(var i = 0; i < info.length; i++){
+        if(info[i] !== '-'){
+            username += info[i];
+        } else{
+            temp = i;
+        }
+    }
+    for(i = temp + 1; i < info.length; i++){
+        password += info[i];
+    }
+    res.send("username = " + username + "   " + "password = " + password);
+    pool.query('SELECT * from users', function(err, results) {
+    if(err){
+        res.status(500).send(err.toString());
+    }
+    else{
+        res.send(JSON.stringify(results.rows));
+    }
+   });
+});
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
 });
