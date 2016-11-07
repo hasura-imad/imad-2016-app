@@ -6,7 +6,7 @@ var Pool = require('pg').Pool;
 var app = express();
 app.use(morgan('combined'));
 
-var config = {
+var config = {    
     user: 'gaurav00012',
     database: 'gaurav00012',
     password: 'db-gaurav00012-40955', // process.env.DB_PASSWORD
