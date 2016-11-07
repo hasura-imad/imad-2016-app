@@ -73,30 +73,6 @@ app.get('/users' , function(req, res){
    });
 });
 
-app.get('/:info' , function(req, res){
-    var info = req.params.info, temp;
-    var username = "", password ="";
-    for(var i = 0; i < info.length; i++){
-        if(info[i] !== '-'){
-            username += info[i];
-        } else{
-            temp = i
-            break;
-        }
-    }
-    for(i = temp + 1; i < info.length; i++){
-        password += info[i];
-    }
-    pool.query("INSERT INTO users (name, password) VALUES (" + "'" + username + "'" + "," + "'" + password + "'" + ");", function(err, results) {
-    if(err){
-        res.status(500).send(err.toString());
-    }
-    else{
-        res.send("User Registered!!!");
-    }
-   });
-});
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
 });
