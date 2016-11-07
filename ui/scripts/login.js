@@ -5,12 +5,14 @@
 var users = [];
 var passwords = [];
 
+var temp = [{"name":"user1","id":1,"password":"123"},{"name":"user2","id":2,"password":"123"},{"name":"user3","id":3,"password":"123\r\n"},{"name":"user4","id":4,"password":"123"}];
+
 document.onreadystatechange = function () {
     if (document.readyState === "complete") {
         $(document).keypress(function(e) {
             if(e.which == 13) {
                 // enter pressed
-                
+                alert(temp[0]);
                 // *************** FETCHING DATA FROM DATABASE (NOT A GOOD PRACTICE HERE) ***********************
                 // create a new object
                 var request = new XMLHttpRequest();
