@@ -19,6 +19,9 @@ function validateAll() {
 
     // *************** FETCHING DATA FROM DATABASE (NOT A GOOD PRACTICE HERE) ***********************
 
+    request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/users', true);
+    request.send(null);
+
     var request = new XMLHttpRequest();
     var object;
     
@@ -34,9 +37,6 @@ function validateAll() {
             }
         }
     };
-    
-    request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/users', true);
-    request.send(null);
     
     // **********************************************************************************************
     
