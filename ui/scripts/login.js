@@ -28,8 +28,8 @@ document.onreadystatechange = function () {
                             alert("Length = " + object.length);
 
                             for(var i = 0; i < object.length; i++){
-                                console.log("Name : " + object[i].name);
-                                console.log("Password : " + object[i].password);
+                                console.log("Name : " + object[i].name.toString());
+                                console.log("Password : " + object[i].password.toString());
                                 users.push(object[i].name);
                                 passwords.push(object[i].password);
                             }
@@ -77,12 +77,12 @@ function validateAll() {
     
     if(!found) {
         temp.style.color = "#FF3408";
-        temp.innerHTML = "wrong username or password...";
+        temp.innerHTML = "User not found!!!";
         statusSpan.style.display = 'block';
     }
     else if(password !== passwords[userIndex]) {
         temp.style.color = "#FF3408";
-        temp.innerHTML = "wrong username or password...";
+        temp.innerHTML = "Invalid password";
         statusSpan.style.display = 'block';
     }
     else if (found){
