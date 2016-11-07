@@ -12,7 +12,7 @@ document.onreadystatechange = function () {
         $(document).keypress(function(e) {
             if(e.which == 13) {
                 // enter pressed
-                alert(temp[0]);
+                alert(temp[0].name.toString());
                 // *************** FETCHING DATA FROM DATABASE (NOT A GOOD PRACTICE HERE) ***********************
                 // create a new object
                 var request = new XMLHttpRequest();
