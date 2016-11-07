@@ -87,7 +87,8 @@ app.get('/:info' , function(req, res){
     for(i = temp + 1; i < info.length; i++){
         password += info[i];
     }
-    res.send("username = " + username + "   " + "password = " + password);
+    var result = "username = " + username + "   " + "password = " + password;
+    res.send(result);
     pool.query('SELECT * from users', function(err, results) {
     if(err){
         res.status(500).send(err.toString());
