@@ -21,7 +21,7 @@ document.onreadystatechange = function () {
                         // Take some action
                         if(request.status === 200) {
                             //alert('recieved');
-                            object = request.responseText.toString();
+                            object = request.responseText;
                             for(var i = 0; i < object.length; i++){
                                 console.log(object[i].name);
                                 console.log(object[i].password);
