@@ -6,11 +6,10 @@ var temp = [{"name":"user1","id":1,"password":"123"},{"name":"user2","id":2,"pas
 document.onreadystatechange = function () {
     if (document.readyState === "complete") {
         $(document).keypress(function(e) {
-            if(e.which == 13) {
-                // enter pressed
-                alert(temp[0].name.toString());
+            if(e.which == 13) {  // enter pressed
+
                 // *************** FETCHING DATA FROM DATABASE (NOT A GOOD PRACTICE HERE) ***********************
-                // create a new object
+
                 var request = new XMLHttpRequest();
                 var object;
                 
@@ -20,8 +19,6 @@ document.onreadystatechange = function () {
                         if(request.status === 200) {
                             object = JSON.parse(request.responseText);
                             for(var i = 0; i < object.length; i++){
-                                //console.log("Name : " + object[i].name.toString());
-                                //console.log("Password : " + object[i].password.toString());
                                 users.push(object[i].name.toString());
                                 passwords.push(object[i].password.toString());
                             }
