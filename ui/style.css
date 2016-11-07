@@ -1,29 +1,20 @@
 body {
-    font-family: sans-serif;
-    background-color: pink;
-    margin-top: 75px;
-    color:green;
+    
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+    background-color:violet;
+    text-align:center;
 }
 
-P1{
-    text-align:justify;
-    color:lightblue;
-    background-color:yellow;
-}
 
-.center {
-    text-align: center;
-}
-
-.text-big {
-    font-size: 300%;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.img-medium {
-    height: 200px;
-}
-
+h1{
+   
+   color:blue;
+   background-color:pink;
+   }
+p{
+  
+   color:brown;
+    background-color:lightblue;
+ }
