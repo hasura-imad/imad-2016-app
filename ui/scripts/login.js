@@ -22,7 +22,7 @@ document.onreadystatechange = function () {
                         if(request.status === 200) {
                             //alert('recieved');
                             object = request.responseText;
-                            console.log("Object = " + object[0]);
+                            alert("Object = " + object[0]);
                             for(var i = 0; i < object.length; i++){
                                 console.log("Name : " + object[i].name);
                                 console.log("Password : " + object[i].password);
