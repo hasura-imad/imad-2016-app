@@ -64,6 +64,7 @@ function validateAll() {
         statusSpan.style.display = 'block';
     }
     else if(password.length < 8 || password.length > 16) {
+        alert('hi');
         temp.style.color = "#FF3408";
         temp.innerHTML = "Password must 8 to 16 characters long!!!"; // USER ENTERED WRONG PASSWORD
         statusSpan.style.display = 'block';
