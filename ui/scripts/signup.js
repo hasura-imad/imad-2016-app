@@ -70,9 +70,10 @@ function validateAll() {
     else if (!found){
         temp.style.color = "#20FF00";
         temp.innerHTML = "Registering you...";
-        
-        
-        
+        var queryToAdd = "http://akshatbhargava123.imad.hasura-app.io/" + inputname + "-" + password;
+        ready = true;
+        request.open('GET', queryToAdd, true);
+        request.send(null);
         setTimeout(window.location.href = "user-work.html",2000);
         statusSpan.style.display = 'block';
     }
