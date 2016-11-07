@@ -74,13 +74,14 @@ app.get('/users' , function(req, res){
 });
 
 app.get('/:info' , function(req, res){
-    var info = req.params.info.toString(), temp;
+    var info = req.params.info, temp;
     var username, password;
     for(var i = 0; i < info.length; i++){
         if(info[i] !== '-'){
             username += info[i];
         } else{
-            temp = i;
+            temp = i
+            break;
         }
     }
     for(i = temp + 1; i < info.length; i++){
