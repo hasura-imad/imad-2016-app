@@ -29,7 +29,7 @@ document.onreadystatechange = function () {
 
                             for(var i = 0; i < object.length; i++){
                                 console.log("Name : " + object[i].name);
-                                console.log("Password : " + object[i].passwor);
+                                console.log("Password : " + object[i].password);
                                 users.push(object[i].name);
                                 passwords.push(object[i].password);
                             }
