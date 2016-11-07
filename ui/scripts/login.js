@@ -14,7 +14,7 @@ document.onreadystatechange = function () {
                 // *************** FETCHING DATA FROM DATABASE (NOT A GOOD PRACTICE HERE) ***********************
                 // create a new object
                 var request = new XMLHttpRequest();
-                var object;
+                var object = [];
                 
                 request.onreadystatechange = function() {
                     if(request.readyState === XMLHttpRequest.DONE) {
