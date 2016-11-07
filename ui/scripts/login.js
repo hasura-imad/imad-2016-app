@@ -1,7 +1,3 @@
-//var users = ["user1","user2","user3","user4","user5"];
-//var passwords = ["123","132","312","213","123"];
-//var totalUsers = 4;
-
 var users = [];
 var passwords = [];
 
@@ -72,12 +68,12 @@ function validateAll() {
     
     if(!found) {
         temp.style.color = "#FF3408";
-        temp.innerHTML = "User not found!!!";
+        temp.innerHTML = "Invalid Username Or Password!!!"; // USER NOT FOUND 
         statusSpan.style.display = 'block';
     }
     else if(password !== passwords[userIndex]) {
         temp.style.color = "#FF3408";
-        temp.innerHTML = "Invalid password";
+        temp.innerHTML = "Invalid Username Or Password!!!"; // USER ENTERED WRONG PASSWORD
         statusSpan.style.display = 'block';
     }
     else if (found){
@@ -87,8 +83,3 @@ function validateAll() {
         statusSpan.style.display = 'block';
     }
 }
-
-
-/*$('.message a').click(function(){
-$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-});*/
