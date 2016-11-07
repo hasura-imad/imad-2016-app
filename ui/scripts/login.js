@@ -21,9 +21,6 @@ function validateAll() {
 
     var request = new XMLHttpRequest();
     var object;
-
-    request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/users', true);
-    request.send(null);
     
     request.onreadystatechange = function() {
         if(request.readyState === XMLHttpRequest.DONE) {
@@ -38,8 +35,10 @@ function validateAll() {
         }
     };
     
-    // **********************************************************************************************
+    request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/users', true);
+    request.send(null);
     
+    // **********************************************************************************************
 
     var inputname, password;
     var userIndex;
