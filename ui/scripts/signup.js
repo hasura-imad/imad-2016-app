@@ -1,6 +1,7 @@
 var users = [];
 
 // *************** FETCHING DATA FROM DATABASE (NOT A GOOD PRACTICE HERE) ***********************
+var ready = false;
 
 var request = new XMLHttpRequest();
 var object;
@@ -9,9 +10,13 @@ request.onreadystatechange = function() {
     if(request.readyState === XMLHttpRequest.DONE) {
         // Take some action
         if(request.status === 200) {
-            object = JSON.parse(request.responseText);
-            for(var i = 0; i < object.length; i++){
-                users.push(object[i].name.toString());
+            if(!ready){
+                object = JSON.parse(request.responseText);
+                for(var i = 0; i < object.length; i++){
+                    users.push(object[i].name.toString());
+                }
+            } else{
+                console.log(request.responseText);
             }
         }
     }
