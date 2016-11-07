@@ -1,32 +1,32 @@
 var users = [];
 
+// *************** FETCHING DATA FROM DATABASE (NOT A GOOD PRACTICE HERE) ***********************
+
+var request = new XMLHttpRequest();
+var object;
+
+request.onreadystatechange = function() {
+    if(request.readyState === XMLHttpRequest.DONE) {
+        // Take some action
+        if(request.status === 200) {
+            object = JSON.parse(request.responseText);
+            for(var i = 0; i < object.length; i++){
+                users.push(object[i].name.toString());
+            }
+        }
+    }
+};
+
+request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/users', true);
+request.send(null);
+
+// **********************************************************************************************
+
 document.onreadystatechange = function () {
     if (document.readyState === "complete") {
         $(document).keypress(function(e) {
             if(e.which == 13) {  // enter pressed
 
-                // *************** FETCHING DATA FROM DATABASE (NOT A GOOD PRACTICE HERE) ***********************
-
-                var request = new XMLHttpRequest();
-                var object;
-                
-                request.onreadystatechange = function() {
-                    if(request.readyState === XMLHttpRequest.DONE) {
-                        // Take some action
-                        if(request.status === 200) {
-                            object = JSON.parse(request.responseText);
-                            for(var i = 0; i < object.length; i++){
-                                users.push(object[i].name.toString());
-                            }
-                        }
-                    }
-                };
-                
-                request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/users', true);
-                request.send(null);
-                
-                // **********************************************************************************************
-                
                 validateAll();
             }
         });
@@ -66,21 +66,7 @@ function validateAll() {
         temp.style.color = "#20FF00";
         temp.innerHTML = "Registering you...";
         
-        var request = new XMLHttpRequest();
-        request.onreadystatechange = function() {
-                    if(request.readyState === XMLHttpRequest.DONE) {
-                        // Take some action
-                        if(request.status === 200) {
-                            object = JSON.parse(request.responseText);
-                            for(var i = 0; i < object.length; i++){
-                                users.push(object[i].name.toString());
-                            }
-                        }
-                    }
-                };
-                
-        request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/users', true);
-        request.send(null);
+        
         
         setTimeout(window.location.href = "user-work.html",2000);
         statusSpan.style.display = 'block';
