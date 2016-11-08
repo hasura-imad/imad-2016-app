@@ -55,12 +55,12 @@ html{
     background-color:#cfcfcf;
     opacity: 0.7;
     border-radius: 2%;
-    min-height: 60vh;
-    min-width: 90vh;
+    min-height: 40vh;
+    min-width: 60vh;
     max-width: auto;
     max-height: auto;
-    left: 30%;
-    top: 10%;
+    left: 30vw;
+    top: 4.5vw;
   
 
 
@@ -555,11 +555,11 @@ a.socialIcon:hover, .socialHoverClass {
 /*polaroid*/
 .polaroid {
   position: relative;
-  width: 15.29px;
+  width: 15.29vw;
 }
 
 .polaroid img {position: relative;
-  border: 10px solid #fff;
+  border: 0.695vw solid #fff;
   border-bottom: 3.125vw solid #fff;
   -webkit-box-shadow: 0.2vw 0.2vw 0.2vw #777;
      -moz-box-shadow: 0.2vw 0.2vw 0.2vw #777;
@@ -574,7 +574,7 @@ a.socialIcon:hover, .socialHoverClass {
 .responsive{
   display: inline-block;
   font-family: Tahoma;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
 }
 
 legend{
