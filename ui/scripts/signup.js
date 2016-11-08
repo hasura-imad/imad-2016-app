@@ -71,9 +71,8 @@ function validateAll() {
     }
     else {
         temp.style.color = "#20FF00";
-        temp.innerHTML = "Registering you...";
-        alert('hi muthafucka');
         var queryToAdd = "http://akshatbhargava123.imad.hasura-app.io/query-" + inputname + "-" + password;
+        alert(queryToAdd);
         ready = true;
         request.open('GET', queryToAdd, true);
         request.send(null);
