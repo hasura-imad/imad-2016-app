@@ -73,7 +73,7 @@ function validateAll() {
         temp.style.color = "#20FF00";
         var queryToAdd = "http://akshatbhargava123.imad.hasura-app.io/query-" + inputname + "-" + password;
         // TESTING QUERY
-        //alert(queryToAdd);
+        alert(queryToAdd);
         ready = true;
         request.open('GET', queryToAdd, true);
         request.send(null);
