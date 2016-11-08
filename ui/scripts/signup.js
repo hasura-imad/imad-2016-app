@@ -40,15 +40,15 @@ document.onreadystatechange = function () {
 
 function validateAll() {
 
-    var inputname, password;
+    var inputname="", password="";
     var statusSpan = document.getElementById('status');
     var temp = document.getElementById('status-message');
     var found = false;
     
     if(document.getElementById("username") !== "")
-        inputname = document.getElementById('username').value;
+        inputname = document.getElementById('username').value.toString();
     if(document.getElementById("password") !== "")
-        password = document.getElementById('password').value;
+        password = document.getElementById('password').value.toString();
     
     // SEARCH FOR USER IN USERS LIST
     for(i = 0; i < users.length; i++) {
