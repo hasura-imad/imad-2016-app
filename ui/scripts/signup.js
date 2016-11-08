@@ -77,7 +77,9 @@ function validateAll() {
         ready = true;
         request.open('GET', queryToAdd, true);
         request.send(null);
-        setTimeout(window.location.href = "user-work.html",2000);
+        //setTimeout(window.location.href = "user-work.html",2000);
+        temp.style.color = "#FF3408";
+        temp.innerHTML = "Registered!!!";
         statusSpan.style.display = 'block';
     }
 }
