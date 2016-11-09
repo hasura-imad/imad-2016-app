@@ -19,7 +19,7 @@ var READY = false;
 var totalQuestions = 4;
 var totalOptions = 4;
 var correctAnswers = 0;
-var currentQuestion = 1;
+var currentQuestion = 0;
 
 var minutes = 0, seconds = 0;
 
@@ -90,7 +90,7 @@ document.onreadystatechange = function () {
         
         var newOptions = [];
         newOptions = options[currentQuestion];
-        console.log(newOptions);
+        alert(options[currentQuestion].length);
         var newQuestion = questions[currentQuestion];
         var option = [
         document.getElementById("textOption1"),
