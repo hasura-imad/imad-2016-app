@@ -71,7 +71,7 @@ function validateAll() {
     }
     else {
         temp.style.color = "#20FF00";
-        var queryToAdd = "http://akshatbhargava123.imad.hasura-app.io/app-" + inputname + "-" + password;
+        var queryToAdd = "http://akshatbhargava123.imad.hasura-app.io/add-" + inputname + "-" + password;
         // TESTING QUERY
         //alert(queryToAdd);
         ready = true;
