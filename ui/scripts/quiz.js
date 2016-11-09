@@ -88,6 +88,7 @@ document.onreadystatechange = function () {
         request.send(null);
         
         var newOptions = options[currentQuestion];
+        alert(newOptions.length);
         var newQuestion = questions[currentQuestion];
         var option = [
         document.getElementById("textOption1"),
@@ -95,7 +96,7 @@ document.onreadystatechange = function () {
         document.getElementById("textOption3"),
         document.getElementById("textOption4") ];
         for(var i = 0; i < 4; i++){
-            options[i].innerHTML = newOptions[i];
+            option[i].innerHTML = newOptions[i];
         }
         var Question = document.getElementById('question');
         Question.innerHTML = newQuestion;
