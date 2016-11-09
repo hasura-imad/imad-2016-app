@@ -19,7 +19,7 @@ var READY = false;
 var totalQuestions = 4;
 var totalOptions = 4;
 var correctAnswers = 0;
-var currentQuestion = 0;
+var currentQuestion = 1;
 
 var minutes = 0, seconds = 0;
 
@@ -49,18 +49,9 @@ document.onreadystatechange = function () {
                         options_object.push(object[i].option4.toString());
                         options.push(options_object);
                     }
-                    console.log("********************************************************************");
-                    console.log(questions);
-                    console.log("********************************************************************");
-                    console.log(answers);
-                    console.log("********************************************************************");
-                    console.log(options);
                 }
             }
         };
-        
-        request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/get-' + Quiz_Name , true);
-        request.send(null);
         
         swal({
                 title: "Are you ready?",
@@ -92,6 +83,10 @@ document.onreadystatechange = function () {
                     }
                 }
             );
+        
+        request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/get-' + Quiz_Name , true);
+        request.send(null);
+        
         var newOptions = options[currentQuestion];
         var newQuestion = questions[currentQuestion];
         var option = [
@@ -142,6 +137,10 @@ function result(score, outOf) {
 
 function next() {
     var index = getCheckedIndex();
+    if(index == -1){
+        //  ADD SELECT NOTIFICATION HERE
+        
+    }
     if(index !== -1){
         if(options[currentQuestion][index] === answers[currentQuestion]){
             correctAnswers++;
@@ -149,9 +148,9 @@ function next() {
         }
         currentQuestion++;
     }
-    if(currentQuestion === totalQuestions){
+    if(currentQuestion === questions.length){
         //result(correctAnswers,totalQuestions)
-        alert("You scored " + correctAnswers + " out of " + totalQuestions);
+        alert("You scored " + correctAnswers + " out of " + questions.length);
     }
     updateOptions();
 }
