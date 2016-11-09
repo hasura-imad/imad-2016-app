@@ -39,11 +39,11 @@ document.onreadystatechange = function () {
                 // Take some action
                 if(request.status === 200) {
                     object = JSON.parse(request.responseText);
-                    alert(object[0].question);
                     for(var i = 0; i < object.length; i++){
                         questions.push(object[i].question.toString());
+                        console.log(questions);
                         answers.push(object[i].answer.toString());
-                        var options_object = [];
+                        var options_object;
                         for(var j = 1; j <= 4; j++) {
                             options_object.push((object[i].option + j).toString());
                             console.log(options_object[j].toString());
