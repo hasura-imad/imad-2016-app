@@ -27,7 +27,8 @@ app.use(express.static(path.join(__dirname, 'ui')));
 // GETTING MATERIAL FOR QUIZ FROM DB
 app.get('/get-:table' , function(req, res) {
     var tableName = req.params.table.toString();
-    pool.query('SELECT * from \"' + tableName + "\";", function(error, results){
+    var query = "SELECT * from \"" + tableName + "\""; 
+    pool.query(query, function(error, results){
         if(err){
             console.log(results.rows);
             res.send(JSON.stringify(results.rows));
