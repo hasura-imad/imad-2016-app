@@ -32,8 +32,7 @@ app.get('/get-:table' , function(req, res) {
         if(error){
             res.status(500).send(err.toString());
         } else {
-            console.log(results.rows);
-            res.send(JSON.stringify(results.rows));
+            res.send(JSON.stringify(results.rows[0].question));
         }
     });
 });
