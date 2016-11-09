@@ -19,7 +19,7 @@ var pool = new Pool(config);
 // [question, option1, ... , option4, answer][i]; //  0 = question, optionN = N, answer = length-1
 
 app.get('/get-:table' , function(req, res) {
-    var tableName = req.params.table;
+    var tableName = req.params.table.toString();
     pool.query('SELECT * from \"' + tableName + "\";", function(error, results){
         if(!err){
             alert('it worked!');
