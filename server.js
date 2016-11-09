@@ -16,7 +16,23 @@ var config = {
 
 var pool = new Pool(config);
 
-app.get('/users' , function(req, res){
+// [question, option1, ... , option4, answer][i]; //  0 = question, optionN = N, answer = length-1
+
+app.get('/get-:table' , function(req, res) {
+    var tableName = req.params.table;
+    pool.query('SELECT * from \"' + tableName + "\";", function(error, results){
+        if(!err){
+            alert('it worked!');
+            console.log(results.rows);
+            res.send(JSON.stringify(results.rows));
+        } else {
+            res.status(500).send(err.toString());
+        }
+    });
+});
+
+// GETTING LIST TO USERS (WORST PRACTISE NO SECURITY)
+app.get('/users' , function(req, res) {
    pool.query('SELECT * from users', function(err, results) {
     if(err){
         res.status(500).send(err.toString());
@@ -33,7 +49,7 @@ app.get('/', function (req, res) {
 
 app.use(express.static(path.join(__dirname, 'ui')));
 
-// THIS IS WHAT I DID TILL NOW FOR SIGNUP
+// FOR ADDING NEW USERS TO DB
 app.get('/add-:info' , function(req, res){
     var info = req.params.info, temp;
     var username = "", password ="";
@@ -57,17 +73,6 @@ app.get('/add-:info' , function(req, res){
     }
    });
 });
-
-/*app.get('/test-db', function (req, res){
-   pool.query('SELECT * from users', function(err, results) {
-        if(err){
-            res.status(500).send(err.toString());
-        } 
-        else{
-            res.send(JSON.stringify(results.rows));
-        }
-   });
-});*/
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
