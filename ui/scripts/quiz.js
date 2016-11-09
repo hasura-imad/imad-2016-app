@@ -39,7 +39,7 @@ document.onreadystatechange = function () {
                 // Take some action
                 if(request.status === 200) {
                     object = JSON.parse(request.responseText);
-                    alert(object[0].length);
+                    alert(object[0].question);
                     for(var i = 0; i < object.length; i++){
                         questions.push(object[i].question.toString());
                         answers.push(object[i].answer.toString());
