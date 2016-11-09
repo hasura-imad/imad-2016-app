@@ -80,6 +80,7 @@ function validateAll() {
         //setTimeout(window.location.href = "user-work.html",2000);
         temp.style.color = "#FF3408";
         temp.innerHTML = "Registered!!!";
+        $.notify("Registered...");
         statusSpan.style.display = 'block';
     }
 }
