@@ -41,13 +41,12 @@ document.onreadystatechange = function () {
                     object = JSON.parse(request.responseText);
                     for(var i = 0; i < object.length; i++){
                         questions.push(object[i].question.toString());
-                        console.log(questions);
                         answers.push(object[i].answer.toString());
-                        var options_object;
-                        for(var j = 1; j <= 4; j++) {
-                            options_object.push((object[i].option + j).toString());
-                            console.log(options_object[j].toString());
-                        }
+                        var options_object = [];
+                        options_object.push(object[i].option1.toString());
+                        options_object.push(object[i].option2.toString());
+                        options_object.push(object[i].option3.toString());
+                        options_object.push(object[i].option4.toString());
                         options.push(options_object);
                     }
                     console.log("********************************************************************");
