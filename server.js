@@ -34,7 +34,7 @@ app.get('/', function (req, res) {
 app.use(express.static(path.join(__dirname, 'ui')));
 
 // THIS IS WHAT I DID TILL NOW FOR SIGNUP
-app.get('/query-:info' , function(req, res){
+app.get('/add-:info' , function(req, res){
     var info = req.params.info, temp;
     var username = "", password ="";
     for(var i = 0; i < info.length; i++){
