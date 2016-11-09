@@ -13,7 +13,7 @@ var options = [
     ['JS','c++','c','ruby'] ];
 */
 
-var questions = [], answers = [], options = [[]];
+var questions = [], answers = [], options = [];
 
 var READY = false;
 var totalQuestions = 4;
