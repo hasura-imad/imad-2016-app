@@ -95,7 +95,7 @@ document.onreadystatechange = function () {
         document.getElementById("textOption3"),
         document.getElementById("textOption4") ];
         for(var i = 0; i < 4; i++){
-            option[i].innerHTML = newOptions[i];
+            options[i].innerHTML = newOptions[i];
         }
         var Question = document.getElementById('question');
         Question.innerHTML = newQuestion;
