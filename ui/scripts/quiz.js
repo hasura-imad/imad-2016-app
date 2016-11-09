@@ -29,7 +29,7 @@ document.onreadystatechange = function () {
     if (document.readyState === "complete") { // PAGE HAS BEEN LOADED        
         
         var request = new XMLHttpRequest();
-        var object;
+        var object = [];
         
         // STRUCTURE OF INCOMING OBJECT
         // ob = [{question,option1,...,option4,answer},...];
