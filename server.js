@@ -18,8 +18,16 @@ var pool = new Pool(config);
 
 // [question, option1, ... , option4, answer][i]; //  0 = question, optionN = N, answer = length-1
 
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
+});
+
+app.use(express.static(path.join(__dirname, 'ui')));
+
+// GETTING MATERIAL FOR QUIZ FROM DB
 app.get('/get-:table' , function(req, res) {
     var tableName = req.params.table.toString();
+    res.send(tableName);
     pool.query('SELECT * from \"' + tableName + "\";", function(error, results){
         if(!err){
             alert('it worked!');
@@ -42,12 +50,6 @@ app.get('/users' , function(req, res) {
     }
    });
 });
-
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
-});
-
-app.use(express.static(path.join(__dirname, 'ui')));
 
 // FOR ADDING NEW USERS TO DB
 app.get('/add-:info' , function(req, res){
