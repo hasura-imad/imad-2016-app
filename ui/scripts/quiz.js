@@ -89,6 +89,7 @@ document.onreadystatechange = function () {
         request.send(null);
         
         var newOptions = options[currentQuestion];
+        console.log(newOptions);
         var newQuestion = questions[currentQuestion];
         var option = [
         document.getElementById("textOption1"),
