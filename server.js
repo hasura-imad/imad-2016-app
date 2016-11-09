@@ -29,6 +29,7 @@ app.get('/get-:table' , function(req, res) {
     var tableName = req.params.table.toString();
     var query = "SELECT * from \"" + tableName + "\""; 
     console.log(query);
+    res.send(query);
     pool.query(query, function(error, results){
         if(!err){
             res.status(500).send(err.toString());            
