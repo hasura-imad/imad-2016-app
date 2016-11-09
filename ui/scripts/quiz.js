@@ -88,7 +88,8 @@ document.onreadystatechange = function () {
         request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/get-' + Quiz_Name , true);
         request.send(null);
         
-        var newOptions = options[currentQuestion];
+        var newOptions = [];
+        newOptions = options[currentQuestion];
         console.log(newOptions);
         var newQuestion = questions[currentQuestion];
         var option = [
