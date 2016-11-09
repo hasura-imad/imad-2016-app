@@ -41,7 +41,7 @@ app.get('/add-:info' , function(req, res){
         if(info[i] !== '-'){
             username += info[i];
         } else{
-            temp = i
+            temp = i;
             break;
         }
     }
