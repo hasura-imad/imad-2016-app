@@ -7,15 +7,6 @@ var request = new XMLHttpRequest();
 var object;
 
 request.onreadystatechange = function() {
-    $(".username").notify(
-      "Enter the desired username here.", 
-      { position:"right" }
-    );
-    
-    $(".password").notify(
-      "Enter the desired password here (8-16 long) .", 
-      { position:"right" }
-    );
     
     if(request.readyState === XMLHttpRequest.DONE) {
         // Take some action
@@ -39,6 +30,17 @@ request.send(null);
 
 document.onreadystatechange = function () {
     if (document.readyState === "complete") {
+        
+        $(".username").notify(
+          "Enter the desired username here.", 
+          { position:"right" }
+        );
+        
+        $(".password").notify(
+          "Enter the desired password here (8-16 long) .", 
+          { position:"right" }
+        );
+        
         $(document).keypress(function(e) {
             if(e.which == 13) {  // enter pressed
 
