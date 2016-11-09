@@ -45,10 +45,16 @@ document.onreadystatechange = function () {
                         var options_object = [];
                         for(var j = 1; j <= 4; j++) {
                             options_object.push((object[i].option + j).toString());
-                            console.log(options_object[j]);
+                            console.log(options_object[j].toString());
                         }
                         options.push(options_object);
                     }
+                    console.log("********************************************************************");
+                    console.log(questions);
+                    console.log("********************************************************************");
+                    console.log(answers);
+                    console.log("********************************************************************");
+                    console.log(options);
                 }
             }
         };
