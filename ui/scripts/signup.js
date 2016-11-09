@@ -7,6 +7,16 @@ var request = new XMLHttpRequest();
 var object;
 
 request.onreadystatechange = function() {
+    $(".username").notify(
+      "Enter the desired username here.", 
+      { position:"right" }
+    );
+    
+    $(".password").notify(
+      "Enter the desired password here (8-16 long) .", 
+      { position:"right" }
+    );
+    
     if(request.readyState === XMLHttpRequest.DONE) {
         // Take some action
         if(request.status === 200) {
@@ -15,7 +25,7 @@ request.onreadystatechange = function() {
                 for(var i = 0; i < object.length; i++){
                     users.push(object[i].name.toString());
                 }
-            } else{
+            } else {
                 alert(request.responseText);
             }
         }
@@ -61,12 +71,14 @@ function validateAll() {
     if(found) {
         temp.style.color = "#FF3408";
         temp.innerHTML = "User Already Exists!!!"; // USER NOT FOUND 
+        $.notify("User Already Exists!!!", "error");
         statusSpan.style.display = 'block';
     }
     else if(password.length < 8 || password.length > 16) {
         alert('hi');
         temp.style.color = "#FF3408";
         temp.innerHTML = "Password must 8 to 16 characters long!!!"; // USER ENTERED WRONG PASSWORD
+        $.notify("Password must 8 to 16 characters long !!!", "warn");
         statusSpan.style.display = 'block';
     }
     else {
@@ -80,7 +92,7 @@ function validateAll() {
         //setTimeout(window.location.href = "user-work.html",2000);
         temp.style.color = "#FF3408";
         temp.innerHTML = "Registered!!!";
-        $.notify("Registered...");
+        $.notify(inputname + " has been registered...");
         statusSpan.style.display = 'block';
     }
 }
