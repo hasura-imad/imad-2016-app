@@ -37,6 +37,17 @@ app.get('/get-:table' , function(req, res) {
     });
 });
 
+app.get('/find-:user', function (req, res){
+    var name = req.params.user;
+    pool.query("SELECT * from users where " + "'" + name + "'", function (err, results) {
+        if(err){
+            res.status(500).send(err.toString());
+        } else {
+            res.send(JSON.stringify(results.rows));
+        }
+    });
+});
+
 // GETTING LIST TO USERS (WORST PRACTISE NO SECURITY)
 app.get('/users' , function(req, res) {
    pool.query('SELECT * from users', function(err, results) {
