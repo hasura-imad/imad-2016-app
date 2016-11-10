@@ -28,6 +28,36 @@ var Quiz_Name = "Physics_Questions";
 document.onreadystatechange = function () {
     if (document.readyState === "complete") { // PAGE HAS BEEN LOADED        
         
+        
+var request = new XMLHttpRequest();
+        var object = [];
+        
+        // STRUCTURE OF INCOMING OBJECT
+        // ob = [{question,option1,...,option4,answer},...];
+        
+        request.onreadystatechange = function() {
+            if(request.readyState === XMLHttpRequest.DONE) {
+                // Take some action
+                if(request.status === 200) {
+                    object = JSON.parse(request.responseText);
+                    for(var i = 0; i < object.length; i++){
+                        questions.push(object[i].question.toString());
+                        answers.push(object[i].answer.toString());
+                        var options_object = [];
+                        options_object.push(object[i].option1.toString());
+                        options_object.push(object[i].option2.toString());
+                        options_object.push(object[i].option3.toString());
+                        options_object.push(object[i].option4.toString());
+                        options.push(options_object);
+                    }
+                    console.log(options);
+                }
+            }
+        };
+        
+        request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/get-' + Quiz_Name , true);
+        request.send(null);        
+        
         swal({
                 title: "Are you ready?",
                 text: "just a last confirmation...",
@@ -58,35 +88,6 @@ document.onreadystatechange = function () {
                     }
                 }
             );
-        
-        var request = new XMLHttpRequest();
-        var object = [];
-        
-        // STRUCTURE OF INCOMING OBJECT
-        // ob = [{question,option1,...,option4,answer},...];
-        
-        request.onreadystatechange = function() {
-            if(request.readyState === XMLHttpRequest.DONE) {
-                // Take some action
-                if(request.status === 200) {
-                    object = JSON.parse(request.responseText);
-                    for(var i = 0; i < object.length; i++){
-                        questions.push(object[i].question.toString());
-                        answers.push(object[i].answer.toString());
-                        var options_object = [];
-                        options_object.push(object[i].option1.toString());
-                        options_object.push(object[i].option2.toString());
-                        options_object.push(object[i].option3.toString());
-                        options_object.push(object[i].option4.toString());
-                        options.push(options_object);
-                    }
-                    console.log(options);
-                }
-            }
-        };
-        
-        request.open('GET', 'http://akshatbhargava123.imad.hasura-app.io/get-' + Quiz_Name , true);
-        request.send(null);
         
         var newOptions = [];
         newOptions = options[currentQuestion];
