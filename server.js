@@ -16,8 +16,6 @@ var config = {
 
 var pool = new Pool(config);
 
-// [question, option1, ... , option4, answer][i]; //  0 = question, optionN = N, answer = length-1
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'startup.html'));
 });
@@ -30,17 +28,6 @@ app.get('/get-:table' , function(req, res) {
     var query = "SELECT * from \"" + tableName + "\""; 
     pool.query(query, function(error, results){
         if(error){
-            res.status(500).send(err.toString());
-        } else {
-            res.send(JSON.stringify(results.rows));
-        }
-    });
-});
-
-app.get('/find-:user', function (req, res){
-    var name = req.params.user;
-    pool.query("SELECT * from users where " + "'" + name + "'", function (err, results) {
-        if(err){
             res.status(500).send(err.toString());
         } else {
             res.send(JSON.stringify(results.rows));
