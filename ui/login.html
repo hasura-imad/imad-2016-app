@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/login.js"></script>
+    </head>
+    <body>
+        <div class="login-page">
+            <div class="form">
+                <form class="login-form">
+                    <input type="text" id="username" placeholder="username"/>
+                    <input type="password" id="password" placeholder="password"/>
+                    <button type="button" onclick="validateAll();">login</button>
+                    <br><br>
+                    <span role="alert" id="status" style="display: none;">
+                        <div id="status-message" class="alert"></div>
+                    </span>
+                    <p class="message">Not registered? <a href="signup.html">Create an account</a></p>
+                </form>
+            </div>
+        </div>
+    </body> 
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="scripts/notify.js"></script>
+        <script type="text/javascript" src="scripts/signup.js"></script>
+    </head>
+    <body>
+        <div class="signup-page">
+            <div class="form">
+                <form class="login-form">
+                    <input type="text" id="username" placeholder="user-name"/>
+                    <input type="password" id="password" placeholder="password"/>
+                    <br><br>
+                    <span role="alert" id="status" style="display: none;">
+                        <div id="status-message" class="alert"></div>
+                    </span>
+                    <button onclick="validateAll();">create</button>
+                    <p class="message">Already registered? <a href="login.html">Sign In</a></p>
+                </form>
+            </div>
+        </div>
+    </body> 
+</html>
