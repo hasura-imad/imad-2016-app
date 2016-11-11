@@ -27,7 +27,7 @@
 
 /* Container */
 .container{
-    margin-top: 91px;
+    padding-top: 91px;
 }
 
 
@@ -112,6 +112,54 @@ a.closebtn:hover {
     margin-bottom: 100px;
 }
 
+/* Main Content */
+.articles{
+	padding-top:71px;
+}
+
+h1{
+	font-weight:bold;
+	font-size:30px;
+}
+
+.maincontent img{
+	width: 230px;
+	border-radius: 50%;
+}
+
+h3{
+	font-weight: bold;
+}
+
+.col-md-5{
+	margin-top: 230px;
+	margin-bottom: 230px;
+}
+
+.form-horizontal{
+	padding: 5px ;
+	color: #000000;
+	background: transparent;
+	border-radius: 10px;
+	border:1px solid #000000;
+}
+
+.form-control{
+	color: #000000;
+	background: transparent;
+}
+
+.btn-default{
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.5);
+	border:0px;
+	width: 80px;
+}
+
+.btn-default:hover{
+	background: #fff;
+	color: #000;
+}
 
 /* Caruosel */
 .carousel-inner .item img{
