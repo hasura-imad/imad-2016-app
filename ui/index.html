@@ -20,6 +20,9 @@
 
 	<!--BOOTSTRAP JAVASCRIPT-->
 	<script src="js/bootstrap.js"></script>
+	
+	<!--HTML JAVASCRIPT-->
+	<script src="js/app.js"></script>
 </head>
 	
 <body>
@@ -41,27 +44,25 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->----
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#">My Subscription</a></li>
+					<li><a id="home" href="#homeSection">Home</a></li>
+					<li><a id="article" href="#articleSection">My Articles</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Browse <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="trending.html"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Trending</a></li>
-							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Featured </a></li>
-							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    New Articles</a></li>
-							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    This Weeks Special</a></li>
-							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    All Blogs</a></li>
+							<li><a href="#trendingSection"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Trending</a></li>
+							<li><a href="#featuredSection"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Featured </a></li>
+							<li><a href="#newSection"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    New Articles</a></li>
+							<li><a href="#specialSection"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    This Weeks Special</a></li>
+							<li><a href="#blogSection"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    All Blogs</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="#"><span class="btn-sm glyphicon glyphicon-menu-right" aria-hidden="true"></span>    People</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#"><span class="btn-sm glyphicon glyphicon-fire" aria-hidden="true"></span>    Surprise Me</a></li>
+							<li><a href="#peopleSection"><span class="btn-sm glyphicon glyphicon-menu-right" aria-hidden="true"></span>    People</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Search</a></li>
+					<li><a href="#browseSection">Search</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="login.html">Login</a></li>
-					<li><a href="signup.html">Sign Up</a></li>
+					<li><a id="login" href="#loginSection">Login</a></li>
+					<li><a id="signup" href="#signupSection">Sign Up</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
@@ -69,7 +70,7 @@
 	<!--NAVBAR END-->
 
     <!--CONTAINER-->
-    <div class="container">
+    <div id="homeSection" class="container">
     	<div class="row">
     		<!--SIDE NAVBAR START-->
     		<div class="col-md-1">
@@ -267,17 +268,88 @@
 				</div>
 			</div>
 			<!--CAROUSEL END-->
+		</div>
 
-
-			<div class="col-md-12 ">
-				<div class="col-md-4 ">
-					<p>Blogs are online journals that you can use to share information within an organization in an efficient, dynamic style. In a business setting, blogs are a great tool for delivering timely information with a personal touch.Blogs are a flexible medium for communicating within an organization. Use a blog to inform employees about a new product. Or use a blog to inform colleagues about topics that range from experiences at a trade show to tips on using new technology. Blogs are a fast, effective way to share your news and views.A blog can have a single author or allow for multiple contributors. Invite others to provide feedback comments on what you post. Blogs give you the tools to collect and share information.</p>
+		<div class="maincontent">
+			<div class="articles" id="articleSection">
+				<h1>ARTICLES</h1>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-3">
+							<img src="images/article1.jpg" alt="Image Article 1" >
+						</div>
+						<div class="col-md-6 " style="margin-top:40px">
+							<h4>THE CHEAPENING OF CONOR MCGREGOR'S ONCE-CLEVER ACT</h4>
+							<p>    There was a time not very long ago when a Conor McGregor press conference was still something engaging. Now, as his popularity has boomed and his face dominates the sides of buildings, he has become a caricature of his worst self: a man seeking attention, devoid of the substance that once made him fun. During Thursday’s press conference for UFC 205, perhaps the biggest fighting show ever, McGregor wore a white fur coat he said was mink, stomped around in red pajama pants and held a blue folding chair high above his head.....</p>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-4 ">
-					<p>Blogs are online journals that you can use to share information within an organization in an efficient, dynamic style. In a business setting, blogs are a great tool for delivering timely information with a personal touch.Blogs are a flexible medium for communicating within an organization. Use a blog to inform employees about a new product. Or use a blog to inform colleagues about topics that range from experiences at a trade show to tips on using new technology. Blogs are a fast, effective way to share your news and views.A blog can have a single author or allow for multiple contributors. Invite others to provide feedback comments on what you post. Blogs give you the tools to collect and share information.</p>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-3 col-md-offset-3">
+							<img src="images/article2.jpg" alt="Image Article 2" >
+						</div>
+						<div class="col-md-6 " style="margin-top:40px">
+							<h4>THE MANY SELVES OF KATHERINE NORTH BY EMMA GEEN</h4>
+							<p>    At nineteen Katherine North is the oldest Phenomenaut at Shencorp, the world's leading Consciousness Projection provider.  Recruited at the tender age of twelve she has spent much of the last seven years hooked up to life support in a lab while her mind inhabits the bodies of other animals.  In that time she has contributed enormously to scientific research on endangered species - her specialism - bringing back data and the lived experience of being an animal into the human world......</p?>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-4 ">
-					<p>Blogs are online journals that you can use to share information within an organization in an efficient, dynamic style. In a business setting, blogs are a great tool for delivering timely information with a personal touch.Blogs are a flexible medium for communicating within an organization. Use a blog to inform employees about a new product. Or use a blog to inform colleagues about topics that range from experiences at a trade show to tips on using new technology. Blogs are a fast, effective way to share your news and views.A blog can have a single author or allow for multiple contributors. Invite others to provide feedback comments on what you post. Blogs give you the tools to collect and share information.</p>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-3">
+							<img src="images/article3.jpg" alt="Image Article 3" >
+						</div>
+						<div class="col-md-6 " style="margin-top:40px">
+							<h4>SHOPPING CASUAL WEAR AT CRAFTSVILLA</h4>
+							<p>    If you know me, you know how obsessed I am with palazzos and all things comfy. My search for them led me to Craftsvilla and to be honest I was pleasantly overwhelmed and spoilt for choice.  Since I only wanted to look for something casual, that you can wear every day at home or work, I was happy that there were categories for office wear and casuals, party wear, and festive wear. It makes it really easy to look for what you want exactly, instead of getting lost.....</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-3 col-md-offset-3">
+							<img src="images/article4.jpg" alt="Image Article 4" >
+						</div>
+						<div class="col-md-6 " style="margin-top:40px">
+							<h4>MAFIA III REVIEW – LOYALTY IS ROYALTY</h4>
+							<p>    he Mafia series has had a bit of a patchy history so far, with the first game being beloved and the second getting a tepid response largely thanks to its open world which served as little more than decoration. With some six years since the release of Mafia II we get yet another developer trying to bring series back to into the public eye. The story setup is that a young black man by the name of Lincoln Clay returns from serving in the Vietnam war, and once again finds himself caught up in his families problems involving the various local gangs......</p?>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="login" id="loginSection">
+				<div class="col-md-5 col-md-offset-3">
+					<form class="form-horizontal">
+						<h3 class="col-sm-offset-5">LOGIN</h3>
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+							<div class="col-sm-9">
+								<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+							<div class="col-sm-9">
+								<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-3 col-sm-9">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Remember me
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-4 col-sm-8">
+								<a href="signup.html" class="btn btn-default">Sign Up</a>
+								<button type="submit" class="btn btn-default">Login</button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
