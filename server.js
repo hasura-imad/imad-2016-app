@@ -53,16 +53,28 @@ app.get('/css/style-signup.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', 'style-signup.css'));
 });
 
-app.get('/images/logo.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'logo.png'));
+app.get('/images/logo_blog.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'images', 'logo_blog.png'));
 });
 
-app.get('/images/logo2.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'logo2.png'));
+app.get('/images/carousel-art1.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'images', 'carousel-art1.jpg'));
 });
 
-app.get('/images/music.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'music.jpg'));
+app.get('/images/carousel-art2.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'images', 'carousel-art2.jpg'));
+});
+
+app.get('/images/carousel-art3.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'images', 'carousel-art3.jpg'));
+});
+
+app.get('/images/carousel-art4.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'images', 'carousel-art4.jpg'));
+});
+
+app.get('/images/carousel-art5.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'images', 'carousel-art5.jpg'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
