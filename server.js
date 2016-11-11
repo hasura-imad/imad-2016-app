@@ -37,6 +37,10 @@ app.get('/js/jquery.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', 'jquery.js'));
 });
 
+app.get('/js/app.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js', 'app.js'));
+});
+
 app.get('/css/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', 'style.css'));
 });
@@ -75,6 +79,22 @@ app.get('/images/carousel-art4.jpg', function (req, res) {
 
 app.get('/images/carousel-art5.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'images', 'carousel-art5.jpg'));
+});
+
+app.get('/images/article1.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'images', 'article1.jpg'));
+});
+
+app.get('/images/article2.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'images', 'article2.jpg'));
+});
+
+app.get('/images/article3.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'images', 'article3.jpg'));
+});
+
+app.get('/images/article4.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'images', 'article4.jpg'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
