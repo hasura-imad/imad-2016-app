@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="/images/logo.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/images/logo.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/logo_blog.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="images/logo_blog.png" sizes="32x32">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,16 +10,16 @@
 	<title>Home-Radio</title>
 
 	<!--BOOTSTRAP CSS-->
-	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
 
 	<!--CUSTOM CSS-->
-	<link href="/css/style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 
 	<!--JQUERY JAVASCRIPT-->
-	<script src="/js/jquery.js"></script>
+	<script src="js/jquery.js"></script>
 
 	<!--BOOTSTRAP JAVASCRIPT-->
-	<script src="/js/bootstrap.js"></script>
+	<script src="js/bootstrap.js"></script>
 </head>
 	
 <body>
@@ -33,24 +33,24 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="LOGO" ></a>
-				<a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="LOGO" ></a>
+				<a class="navbar-brand" href="index.html"><img src="images/logo_blog.png" alt="LOGO" ></a>
+				<!--<a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="LOGO" ></a>-->
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+					<!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->----
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#">My Music</a></li>
+					<li><a href="#">My Subscription</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Browse <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="trending.html"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Trending</a></li>
-							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Featured Playlist</a></li>
-							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    New Releases</a></li>
-							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Weekly Top 15</a></li>
-							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    All Album</a></li>
+							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Featured </a></li>
+							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    New Articles</a></li>
+							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    This Weeks Special</a></li>
+							<li><a href="#"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    All Blogs</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="#"><span class="btn-sm glyphicon glyphicon-menu-right" aria-hidden="true"></span>    People</a></li>
 							<li role="separator" class="divider"></li>
@@ -61,58 +61,227 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="login.html">Login</a></li>
-					<li><a href="signup.php">Sign Up</a></li>
+					<li><a href="signup.html">Sign Up</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
 	<!--NAVBAR END-->
 
-	<!--JUMBOTRON-->
-	<div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-md-offset-5">
-                    <div class="jumbotron-content">
-                    	<h1><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>All Music Is Beautiful</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--JUMBOTRON END-->
-
-	<!--CONTAINER-->
+    <!--CONTAINER-->
     <div class="container">
     	<div class="row">
+    		<!--SIDE NAVBAR START-->
     		<div class="col-md-1">
     			<div id="mySidenav" class="sidenav">
 				  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				  	<div>
-					  	<a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>   Home</a>
-					  	<a href="#"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>   Radio</a>
-					  	<a href="#"><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>   Discover</a>
-					  	<a href="#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>   Browse</a>
-					  	<a href="#"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>   My Music</a>
-					  	<a href="#"><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>   Request A Song</a>
-					  	<a href="#"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>   Contact Us</a>
-				  	</div>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a href="index.html" class="collapsed" >
+										 <span class="glyphicon glyphicon-home" aria-hidden="true"> Home</span>
+									</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										 <span class="glyphicon glyphicon-headphones" aria-hidden="true"> Entertainment</span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="panel-body">
+									<ul>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Comedy</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Music</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Gaming</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Movies & TV</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Celebrity</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										 <span class="glyphicon glyphicon-picture" aria-hidden="true"> Art</span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								<div class="panel-body">
+									<ul>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Beauty</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Fashon</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Design</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Writing</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Photography</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										 <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"> Living & Leisure</span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+								<div class="panel-body">
+									<ul>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Travel</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Food</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Relationships</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Self</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Lifestyle</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Pets & Animals</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+										 <span class="glyphicon glyphicon-briefcase" aria-hidden="true"> Buisness & Tech</span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+								<div class="panel-body">
+									<ul>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Buisness</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Social Media</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Fiance</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Tech</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Carrier</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Law</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+										 <span class="glyphicon glyphicon-king" aria-hidden="true"> Sports</span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+								<div class="panel-body">
+									<ul>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Outdoor</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Indoor</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Football</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Basketball</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Hockey</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Other Sports</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a href="contactus.html" class="collapsed" >
+										 <span class="glyphicon glyphicon-phone" aria-hidden="true"> Contact Us</span>
+									</a>
+								</h4>
+							</div>
+						</div>
+					</div>
 				</div>
 				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 				<script>
 					function openNav() {
-				    	document.getElementById("mySidenav").style.width = "250px";
+				    	document.getElementById("mySidenav").style.width = "270px";
 					}
 					function closeNav() {
 				    	document.getElementById("mySidenav").style.width = "0";
 					}
 				</script>
     		</div>
+    		<!--SIDE NAVBAR END-->
+
+    		<!--CAROUSEL START-->
     		<div class="col-md-10 ">
-    			<p>Mobile first With Bootstrap 2, we added optional mobile friendly styles for key aspects of the framework. With Bootstrap 3, we've rewritten the project to be mobile friendly from the start. Instead of adding on optional mobile styles, they're baked right into the core. In fact, Bootstrap is mobile first. Mobile first styles can be found throughout the entire library instead of in separate files. To ensure proper rendering and touch zooming, add the viewport meta tag to your </p>
-    		</div>
-    	</div>
-    </div>
+    			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  	<!-- Indicators -->
+				  	<ol class="carousel-indicators">
+				    	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    	<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    	<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				    	<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				    	<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+				  	</ol>
+				  	<!-- Wrapper for slides -->
+				  	<div class="carousel-inner" role="listbox">
+				    	<div class="item active">
+				      		<img src="images/carousel-art1.jpg"  class="img-responsive" alt="Responsive image">
+			      			<div class="carousel-caption">
+			        			ART
+			      			</div>
+			    		</div>
+			    		<div class="item">
+			      			<img src="images/carousel-art2.jpg" class="img-responsive" alt="Responsive image">
+			      			<div class="carousel-caption">
+			        			MOVIES & TV
+			      			</div>
+			    		</div>
+			    		<div class="item">
+			      			<img src="images/carousel-art3.jpg" class="img-responsive" alt="Responsive image">
+			      			<div class="carousel-caption">
+			        			SPORTS
+			      			</div>
+			    		</div>
+			    		<div class="item">
+			      			<img src="images/carousel-art4.jpg" class="img-responsive" alt="Responsive image">
+			      			<div class="carousel-caption">
+			        			GAMING
+			      			</div>
+			    		</div>
+			    		<div class="item">
+			      			<img src="images/carousel-art5.jpg" class="img-responsive" alt="Responsive image">
+			      			<div class="carousel-caption">
+			        			MUSIC
+			      			</div>
+			    		</div>
+			  		</div>
+		  			<!-- Controls -->
+		  			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    			<span class="sr-only">Previous</span>
+		  			</a>
+		  			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    			<span class="sr-only">Next</span>
+		  			</a>
+				</div>
+			</div>
+			<!--CAROUSEL END-->
+
+
+			<div class="col-md-12 ">
+				<div class="col-md-4 ">
+					<p>Blogs are online journals that you can use to share information within an organization in an efficient, dynamic style. In a business setting, blogs are a great tool for delivering timely information with a personal touch.Blogs are a flexible medium for communicating within an organization. Use a blog to inform employees about a new product. Or use a blog to inform colleagues about topics that range from experiences at a trade show to tips on using new technology. Blogs are a fast, effective way to share your news and views.A blog can have a single author or allow for multiple contributors. Invite others to provide feedback comments on what you post. Blogs give you the tools to collect and share information.</p>
+				</div>
+				<div class="col-md-4 ">
+					<p>Blogs are online journals that you can use to share information within an organization in an efficient, dynamic style. In a business setting, blogs are a great tool for delivering timely information with a personal touch.Blogs are a flexible medium for communicating within an organization. Use a blog to inform employees about a new product. Or use a blog to inform colleagues about topics that range from experiences at a trade show to tips on using new technology. Blogs are a fast, effective way to share your news and views.A blog can have a single author or allow for multiple contributors. Invite others to provide feedback comments on what you post. Blogs give you the tools to collect and share information.</p>
+				</div>
+				<div class="col-md-4 ">
+					<p>Blogs are online journals that you can use to share information within an organization in an efficient, dynamic style. In a business setting, blogs are a great tool for delivering timely information with a personal touch.Blogs are a flexible medium for communicating within an organization. Use a blog to inform employees about a new product. Or use a blog to inform colleagues about topics that range from experiences at a trade show to tips on using new technology. Blogs are a fast, effective way to share your news and views.A blog can have a single author or allow for multiple contributors. Invite others to provide feedback comments on what you post. Blogs give you the tools to collect and share information.</p>
+				</div>
+			</div>
+		</div>
+	</div>
     <!--CONTAINER END-->
 </body>
 </html>
