@@ -113,6 +113,10 @@ a.closebtn:hover {
 }
 
 /* Main Content */
+.row .col-md-12{
+	padding-top: 40px;
+}
+
 .articles{
 	padding-top:71px;
 }
