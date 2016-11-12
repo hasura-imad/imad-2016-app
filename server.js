@@ -246,10 +246,6 @@ app.get('/js/app.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', 'app.js'));
 });
 
-app.get('/article/js/app.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'js', 'app.js'));
-});
-
 app.get('/js/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', 'main.js'));
 });
