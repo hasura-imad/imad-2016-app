@@ -1,2 +1,2 @@
 console.log('Loaded!');
-window.alert("hello");
+window.alert('hello');
