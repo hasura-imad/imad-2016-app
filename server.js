@@ -34,13 +34,13 @@ var articles= {
         </p>`}    
     
 };
-
+ var date=new date();
+    var curdate=date.toString();
 function createtemplate(data){
     var title=data.title;
     var heading=data.heading;
     var content=data.content;
-    var date=new date();
-    var curdate=date.toString();
+   
 
 
 var htmltemplate=`
