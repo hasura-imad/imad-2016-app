@@ -21,6 +21,10 @@ body {
 .a1:hover {text-decoration: underline; color: #add;}
 .a1:active {text-decoration: none; color: #add;}
 
+.a2:link {text-decoration: none; color: yellow;}
+.a2:visited {text-decoration: none; color: yellow;}
+.a2:hover {text-decoration: underline; color: #add;}
+.a2:active {text-decoration: none; color: #add;}
 
 .center {
     text-align : right;
