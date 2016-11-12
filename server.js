@@ -34,14 +34,14 @@ var articles= {
         </p>`}    
     
 };
- var currentdate=new date();
-    var curdate=date.toString();
+ 
 function createtemplate(data){
     var title=data.title;
     var heading=data.heading;
     var content=data.content;
    
-
+var currentdate=new date();
+    var curdate=date.toString();
 
 var htmltemplate=`
     <html>
