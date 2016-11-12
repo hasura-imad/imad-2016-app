@@ -271,7 +271,7 @@ app.get('/article/images/article1_p1.png', function (req, res) {
 });
 
 app.get('/article/images/article1_p2.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'article1_p2.png'));
+  res.sendFile(path.join(__dirname, 'images', 'article1_p2.PNG'));
 });
 
 app.get('/images/carousel-art1.jpg', function (req, res) {
