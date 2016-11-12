@@ -16,12 +16,12 @@ body {
       }
       
       
-      a.article :link {
-          color:yellow;
-      }
-.a2 :link {
-          color:yellow;
-      }
+     .a1:link {text-decoration: none; color: yellow;}
+.a1:visited {text-decoration: none; color: yellow;}
+.a1:hover {text-decoration: underline; color: #add;}
+.a1:active {text-decoration: none; color: #add;}
+
+
 .center {
     text-align : right;
 }
