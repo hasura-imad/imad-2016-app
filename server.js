@@ -9,7 +9,7 @@ app.use(morgan('combined'));
  
 var articles= {
   'Viku1':{  title :'My Article',
-    date :'',
+    date :'6 oct',
     heading : 'Article 1 about ms dhoni',
     content :`<p>
             
@@ -70,7 +70,7 @@ ${title}
     <h3>
        ${heading}
     </h3>
-    <div id="curdate" >
+    <div >
 ${curdate}
     </div>
     
