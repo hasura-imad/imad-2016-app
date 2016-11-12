@@ -11,7 +11,8 @@ body {
    .article{
       padding-bottom :50px;
       font-family:calligrapher;
-      font-size:15px
+      font-size:15px;
+      color: yellow;
       
    }
 
