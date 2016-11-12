@@ -45,7 +45,7 @@ function createTemplate(data) {
 	<link href="css/bootstrap.css" rel="stylesheet">
 
 	<!--CUSTOM CSS-->
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style-article.css" rel="stylesheet">
 
 	<!--JQUERY JAVASCRIPT-->
 	<script src="js/jquery.js"></script>
