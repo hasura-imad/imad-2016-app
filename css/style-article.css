@@ -1,0 +1,31 @@
+/* Navbar */
+.navbar {
+	font-weight: bold;
+	font-size: 16px;
+	background: #303030;
+	padding-top: 5px;
+}
+
+.navbar-inverse {
+	font-weight: bold;
+	font-size: 16px;
+	background: #303030;
+}
+
+.navbar-collapse{
+	padding-top: 12px;
+}
+
+.navbar-brand img{
+	height: 55px;
+}
+
+.dropdown-menu{
+	border-radius: 7px;
+}
+
+
+/* Container */
+.container{
+    margin-top: 91px;
+}
