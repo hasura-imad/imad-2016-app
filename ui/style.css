@@ -8,6 +8,9 @@ body {
 
    background-size:cover;
    }
+   .article{
+       margin-top : 0px;
+   }
 
 .center {
     text-align : right;
