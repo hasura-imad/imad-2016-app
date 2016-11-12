@@ -82,8 +82,7 @@ ${date}
 </html>
 
    `;
-   
-document.getElementById("currentdate").innerHTML=date;
+
    
 return htmltemplate;}
 
