@@ -12,9 +12,11 @@ body {
       padding-bottom :50px;
       font-family:calligrapher;
       font-size:15px;
-     
+      }
       
-   }
+      a:link {
+          color:yellow;
+      }
 
 .center {
     text-align : right;
