@@ -41,7 +41,7 @@ function createtemplate(data){
     var content=data.content;
    
 var currentdate=new Date();
-    var curdate=date.toString();
+    var curdate=currentdate.toString();
 
 var htmltemplate=`
     <html>
