@@ -254,8 +254,8 @@ app.get('/css/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', 'style.css'));
 });
 
-app.get('/article/css/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'css', 'style.css'));
+app.get('/article/css/style-article.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'css', 'style-article.css'));
 });
 
 app.get('/images/logo_blog.png', function (req, res) {
