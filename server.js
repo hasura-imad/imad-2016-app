@@ -242,11 +242,15 @@ app.get('/js/jquery.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', 'jquery.js'));
 });
 
-app.get('article/js/jquery.js', function (req, res) {
+app.get('/article/js/jquery.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', 'jquery.js'));
 });
 
 app.get('/js/app.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js', 'app.js'));
+});
+
+app.get('/article/js/app.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', 'app.js'));
 });
 
@@ -310,7 +314,15 @@ app.get('/fonts/glyphicons-halflings-regular.eot', function (req, res) {
   res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
 });
 
+app.get('/article/fonts/glyphicons-halflings-regular.eot', function (req, res) {
+  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
+});
+
 app.get('/fonts/glyphicons-halflings-regular.eot?#iefix', function (req, res) {
+  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot?#iefix'));
+});
+
+app.get('/article/fonts/glyphicons-halflings-regular.eot?#iefix', function (req, res) {
   res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot?#iefix'));
 });
 
@@ -318,12 +330,23 @@ app.get('/fonts/glyphicons-halflings-regular.woff2', function (req, res) {
   res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.woff2'));
 });
 
+app.get('/article/fonts/glyphicons-halflings-regular.woff2', function (req, res) {
+  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.woff2'));
+});
+
 app.get('/fonts/glyphicons-halflings-regular.eot', function (req, res) {
   res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
 });
 
+app.get('/article/fonts/glyphicons-halflings-regular.eot', function (req, res) {
+  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
+});
 
 app.get('/fonts/glyphicons-halflings-regular.eot', function (req, res) {
+  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
+});
+
+app.get('/article/fonts/glyphicons-halflings-regular.eot', function (req, res) {
   res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
 });
 
