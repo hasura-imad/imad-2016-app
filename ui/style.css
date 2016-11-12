@@ -1,12 +1,14 @@
-*{
-    background:  url(http://www.iwallhd.com/stock/butterfly-nature-abstract-animals-blue-butterflies-insects.jpg) no-repeat center;
-}
+
 body {
     font-family: Bold;
     background-color: lightgrey;
     margin-top: 75px;
 }
-
+.wall{
+    background: url(http://androidwallpape.rs/content/02-wallpapers/131-night-sky/wallpaper-2707591.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 .center {
     text-align: center;
 }
