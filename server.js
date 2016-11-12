@@ -97,6 +97,7 @@ function createTemplate(data) {
 	<div class="container col-md-8 col-md-offset-2">
 		<h3>${heading}</h3>
         <div>${date.toDateString()}</div>
+        <hr/>
         <div>${content}</div>
 	</div>
 	<!--CONATINER END-->
