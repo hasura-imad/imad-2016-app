@@ -52,9 +52,6 @@ function createTemplate(data) {
 
 	<!--BOOTSTRAP JAVASCRIPT-->
 	<script src="js/bootstrap.js"></script>
-	
-	<!--HTML JAVASCRIPT-->
-	<script src="js/app.js"></script>
 </head>
 	
 <body>
