@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 var x=new date();
 var articles= {
   'Viku1':{  title :'My Article',
-    date :x,
+    date :'41 oct',
     heading : 'Article 1 about ms dhoni',
     content :`<p>
             
