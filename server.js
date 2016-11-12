@@ -94,7 +94,7 @@ function createTemplate(data) {
 	<!--NAVBAR END-->
 
 	<!--CONATINER START-->
-	<div class="container col-md-10 col-md-offset-1">
+	<div class="container col-md-8 col-md-offset-2">
 		<h3>${heading}</h3>
         <div>${date.toDateString()}</div>
         <div>${content}</div>
