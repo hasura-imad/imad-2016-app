@@ -4,10 +4,10 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
+var x=new date();
 var articles= {
   'Viku1':{  title :'My Article',
-    date :new date(),
+    date :x,
     heading : 'Article 1 about ms dhoni',
     content :`<p>
             
