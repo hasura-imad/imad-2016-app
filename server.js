@@ -34,7 +34,7 @@ var articles= {
         </p>`}    
     
 };
- var date=new date();
+ var currentdate=new date();
     var curdate=date.toString();
 function createtemplate(data){
     var title=data.title;
