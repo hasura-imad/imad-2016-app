@@ -4,10 +4,10 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-//var x=new date();
+ 
 var articles= {
   'Viku1':{  title :'My Article',
-    date :'41 oct',
+    date :new date(),
     heading : 'Article 1 about ms dhoni',
     content :`<p>
             
@@ -68,7 +68,7 @@ ${title}
        ${heading}
     </h3>
     <div id="currentdate">
-    ${date}
+
     </div>
     
     <div>
@@ -81,7 +81,7 @@ ${title}
 
    `;
    
- //   document.getElementById("currentdate").innerHTML=date;
+  document.getElementById("currentdate").innerHTML=date;
    
 return htmltemplate;}
 
