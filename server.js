@@ -287,6 +287,10 @@ app.get('/article/images/article2_p1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'images', 'article2_p1.jpg'));
 });
 
+app.get('/article/images/article3_p1.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'images', 'article3_p1.jpg'));
+});
+
 app.get('/images/carousel-art1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'images', 'carousel-art1.jpg'));
 });
