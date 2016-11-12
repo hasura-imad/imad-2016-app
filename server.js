@@ -68,7 +68,7 @@ ${title}
        ${heading}
     </h3>
     <div id="currentdate">
-    
+    ${date}
     </div>
     
     <div>
@@ -81,7 +81,7 @@ ${title}
 
    `;
    
-    document.getElementById("currentdate").innerHTML=date;
+ //   document.getElementById("currentdate").innerHTML=date;
    
 return htmltemplate;}
 
