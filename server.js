@@ -6,8 +6,8 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles= {
-  'Viku1':{  title :'article 1',
-    date :'6 oct 2016',
+  'Viku1':{  title :'My Article',
+    date :new date(),
     heading : 'Article 1 about ms dhoni',
     content :`<p>
             
@@ -67,8 +67,8 @@ ${title}
     <h3>
        ${heading}
     </h3>
-    <div>
-        ${date}
+    <div id="currentdate">
+    
     </div>
     
     <div>
@@ -80,6 +80,8 @@ ${title}
 </html>
 
    `;
+   
+    document.getElementById("currentdate").innerHTML=date;
    
 return htmltemplate;}
 
@@ -110,6 +112,7 @@ app.get('/submit_name', function (req, res) {// /submit_name?name=xxxx
 app.get('/:Vikuname', function (req, res) {
   var Vikuname=req.params.Vikuname;
   res.send(createtemplate(articles[Vikuname]));
+ 
 });
 
 
