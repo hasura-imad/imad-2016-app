@@ -40,7 +40,7 @@ function createtemplate(data){
     var heading=data.heading;
     var content=data.content;
    
-var currentdate=new date();
+var currentdate=new Date();
     var curdate=date.toString();
 
 var htmltemplate=`
