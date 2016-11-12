@@ -25,7 +25,7 @@ app.use(session({
 function createTemplate(data) {
     
     var title = data.title;
-    ar date = data.date;
+    var date = data.date;
     var heading = data.heading;
     var content = data.content;
     
