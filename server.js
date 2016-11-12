@@ -7,7 +7,7 @@ var currentdate=new Date();
  
 var articles= {
   'Viku1':{  title :'My Article',
-    date :''+currentdate,
+    date :currentdate,
     heading : 'Article 1 about ms dhoni',
     content :`<p>
             
@@ -40,9 +40,6 @@ function createtemplate(data){
     var heading=data.heading;
     var content=data.content;
     var date=data.date;
-   
-
-    var curdate=currentdate.toString();
 
 var htmltemplate=`
     <html>
