@@ -3,11 +3,11 @@ var morgan = require('morgan');
 var path = require('path');
 var app = express();
 app.use(morgan('combined'));
-
+var currentdate=new Date();
  
 var articles= {
   'Viku1':{  title :'My Article',
-    date :'6 oct',
+    date :''+currentdate,
     heading : 'Article 1 about ms dhoni',
     content :`<p>
             
@@ -39,8 +39,9 @@ function createtemplate(data){
     var title=data.title;
     var heading=data.heading;
     var content=data.content;
+    var date=data.date;
    
-var currentdate=new Date();
+
     var curdate=currentdate.toString();
 
 var htmltemplate=`
@@ -69,7 +70,7 @@ ${title}
        ${heading}
     </h3>
     <div >
-${curdate}
+${date}
     </div>
     
     <div>
