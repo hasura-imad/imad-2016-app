@@ -81,7 +81,7 @@ ${title}
 
    `;
    
-// document.getElementById("currentdate").innerHTML=date;
+document.getElementById("currentdate").innerHTML=date;
    
 return htmltemplate;}
 
