@@ -9,7 +9,7 @@ app.use(morgan('combined'));
  
 var articles= {
   'Viku1':{  title :'My Article',
-    date :""+sdate,
+    date :'',
     heading : 'Article 1 about ms dhoni',
     content :`<p>
             
@@ -41,7 +41,8 @@ function createtemplate(data){
     var title=data.title;
     var heading=data.heading;
     var content=data.content;
-    var date=data.date;
+    var date=new date();
+    var curdate=date.toString();
 
 
 var htmltemplate=`
@@ -69,8 +70,8 @@ ${title}
     <h3>
        ${heading}
     </h3>
-    <div >
-${date}
+    <div id="curdate" >
+${curdate}
     </div>
     
     <div>
