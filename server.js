@@ -215,10 +215,6 @@ app.get('/logout', function (req, res) {
 });
 
 
-app.get('/index.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-
 app.get('/css/bootstrap.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', 'bootstrap.css'));
 });
