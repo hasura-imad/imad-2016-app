@@ -214,9 +214,16 @@ app.get('/logout', function (req, res) {
    res.send('<html><body>Logged out!<br/><br/><a href="/">Back to home</a></body></html>');
 });
 
+app.get('/css/:input', function (req, res) {
+  res.sendFile(path.join(__dirname, 'css', input));
+});
 
-app.get('/css/bootstrap.css', function (req, res) {
+/*app.get('/css/bootstrap.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', 'bootstrap.css'));
+});*/
+
+app.get('/css/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'css', 'style.css'));
 });
 
 app.get('/article/css/bootstrap.css', function (req, res) {
@@ -245,10 +252,6 @@ app.get('/js/app.js', function (req, res) {
 
 app.get('/js/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', 'main.js'));
-});
-
-app.get('/css/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'css', 'style.css'));
 });
 
 app.get('/article/css/style-article.css', function (req, res) {
