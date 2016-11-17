@@ -218,14 +218,6 @@ app.get('/css/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', req.params.input));
 });
 
-/*app.get('/css/bootstrap.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'css', 'bootstrap.css'));
-});*/
-
-app.get('/css/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'css', 'style.css'));
-});
-
 app.get('/article/css/bootstrap.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', 'bootstrap.css'));
 });
