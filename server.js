@@ -238,45 +238,14 @@ app.get('/article/images/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'images', req.params.input));
 });
 
-app.get('/fonts/glyphicons-halflings-regular.eot', function (req, res) {
-  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
+app.get('/fonts/:input', function (req, res) {
+  res.sendFile(path.join(__dirname, 'fonts', req.params.input));
 });
 
-app.get('/article/fonts/glyphicons-halflings-regular.eot', function (req, res) {
-  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
+app.get('/article/fonts/:input', function (req, res) {
+  res.sendFile(path.join(__dirname, 'fonts', req.params.input));
 });
 
-app.get('/fonts/glyphicons-halflings-regular.eot?#iefix', function (req, res) {
-  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot?#iefix'));
-});
-
-app.get('/article/fonts/glyphicons-halflings-regular.eot?#iefix', function (req, res) {
-  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot?#iefix'));
-});
-
-app.get('/fonts/glyphicons-halflings-regular.woff2', function (req, res) {
-  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.woff2'));
-});
-
-app.get('/article/fonts/glyphicons-halflings-regular.woff2', function (req, res) {
-  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.woff2'));
-});
-
-app.get('/fonts/glyphicons-halflings-regular.eot', function (req, res) {
-  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
-});
-
-app.get('/article/fonts/glyphicons-halflings-regular.eot', function (req, res) {
-  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
-});
-
-app.get('/fonts/glyphicons-halflings-regular.eot', function (req, res) {
-  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
-});
-
-app.get('/article/fonts/glyphicons-halflings-regular.eot', function (req, res) {
-  res.sendFile(path.join(__dirname, 'fonts', 'glyphicons-halflings-regular.eot'));
-});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
