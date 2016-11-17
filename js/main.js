@@ -1,12 +1,28 @@
-
 function loadLoginForm () {
     var loginHtml = `
-        <h3>Login/Register to unlock awesome features</h3>
-        <input type="text" id="username" placeholder="username" />
-        <input type="password" id="password" />
-        <br/><br/>
-        <input type="submit" id="login_btn" value="Login" />
-        <input type="submit" id="register_btn" value="Register" />
+        <div class="col-md-5 col-md-offset-3">
+			<form class="form-horizontal">
+				<h3 class="col-sm-offset-5">LOGIN</h3>
+				<div class="form-group">
+					<label for="username" class="col-sm-3 control-label">Username</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="username" placeholder="Username" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="password" class="col-sm-3 control-label">Password</label>
+					<div class="col-sm-9">
+						<input type="password" class="form-control" id="password" placeholder="Password" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-4 col-sm-8">
+						<input type="submit" class="btn btn-default" id="login_btn" value="Login" />
+        				<input type="submit" class="btn btn-default" id="register_btn" value="Register" />
+					</div>
+				</div>
+			</form>
+		</div>
         `;
     document.getElementById('loginSection').innerHTML = loginHtml;
     
@@ -79,7 +95,6 @@ function loadLoginForm () {
     
     };
 }
-
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
