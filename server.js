@@ -218,116 +218,24 @@ app.get('/css/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', req.params.input));
 });
 
+app.get('/js/:input', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js', req.params.input));
+});
+
 app.get('/article/css/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', req.params.input));
 });
 
-app.get('/js/bootstrap.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'js', 'bootstrap.js'));
+app.get('/article/js/:input', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js', req.params.input));
 });
 
-app.get('/article/js/bootstrap.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'js', 'bootstrap.js'));
+app.get('/images/:input', function (req, res) {
+  res.sendFile(path.join(__dirname, 'images', req.params.input));
 });
 
-app.get('/js/jquery.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'js', 'jquery.js'));
-});
-
-app.get('/article/js/jquery.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'js', 'jquery.js'));
-});
-
-app.get('/js/app.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'js', 'app.js'));
-});
-
-app.get('/js/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'js', 'main.js'));
-});
-
-app.get('/article/css/style-article.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'css', 'style-article.css'));
-});
-
-app.get('/images/logo_blog.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'logo_blog.png'));
-});
-
-app.get('/article/images/logo_blog.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'logo_blog.png'));
-});
-
-app.get('/article/images/article1_p1.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'article1_p1.png'));
-});
-
-app.get('/article/images/article1_p2.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'article1_p2.png'));
-});
-
-app.get('/article/images/article1_p3.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'article1_p3.png'));
-});
-
-app.get('/article/images/article1_p4.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'article1_p4.PNG'));
-});
-
-app.get('/article/images/article2_p1.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'article2_p1.jpg'));
-});
-
-app.get('/article/images/article3_p3.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'article3_p3.jpg'));
-});
-
-app.get('/article/images/article4_p1.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'article4_p1.jpg'));
-});
-
-app.get('/article/images/article4_p2.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'article4_p2.jpg'));
-});
-
-app.get('/article/images/article4_p3.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'article4_p3.jpg'));
-});
-
-app.get('/images/carousel-art1.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'carousel-art1.jpg'));
-});
-
-app.get('/images/carousel-art2.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'carousel-art2.jpg'));
-});
-
-app.get('/images/carousel-art3.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'carousel-art3.jpg'));
-});
-
-app.get('/images/carousel-art4.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'carousel-art4.jpg'));
-});
-
-app.get('/images/carousel-art5.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'carousel-art5.jpg'));
-});
-
-app.get('/images/article1.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'article1.jpg'));
-});
-
-app.get('/images/article2.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'article2.jpg'));
-});
-
-app.get('/images/article3.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'article3.jpg'));
-});
-
-app.get('/images/article4.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'images', 'article4.jpg'));
+app.get('/article/images/:input', function (req, res) {
+  res.sendFile(path.join(__dirname, 'images', req.params.input));
 });
 
 app.get('/fonts/glyphicons-halflings-regular.eot', function (req, res) {
