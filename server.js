@@ -215,7 +215,7 @@ app.get('/logout', function (req, res) {
 });
 
 app.get('/css/:input', function (req, res) {
-  res.sendFile(path.join(__dirname, 'css', 'input'));
+  res.sendFile(path.join(__dirname, 'css', req.params.input));
 });
 
 /*app.get('/css/bootstrap.css', function (req, res) {
