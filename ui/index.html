@@ -1,17 +1,97 @@
-<!doctype html>
-<html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
-        </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! I am your webapp.
-        </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Animating 3D Transforms</title>
+	 <style>
+	 body {
+       font-family: 'Alfa Slab One', cursive;
+       font-size:6rem;
+       background:#2c333a;
+    }
+
+    div {
+         width:80%;
+         margin:4rem auto;
+         text-align:center;
+         perspective: 800px;
+        }
+
+    span {
+         display:inline-block;
+         margin-left: -20px;
+         color:#77c6bc;
+         transform-origin: 50% 70%;
+         }
+         span:nth-child(2n)
+		 {
+             color:#95b8cb;
+         }
+          span:nth-child(1)
+		  {
+              animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
+          }
+
+          span:nth-child(2)
+		  {
+              margin-right:30px;
+              animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .2s both;
+          }
+
+          span:nth-child(3) {
+            margin-right:30px;
+            animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .4s both;
+            }
+
+            span:nth-child(4) {
+              animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .6s both;
+             }
+
+           span:nth-child(5)
+		    {
+             margin-left:-28px;
+             animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .8s both;
+            }
+
+            span:nth-child(6) {
+                animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1s both;
+             }
+
+             span:nth-child(7) { 
+                 animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.2s both;
+             }
+             @keyframes flipUp {
+             from {transform: rotateX(90deg);}
+             to {tranform: rotateX(0deg);}
+             }
+			 .btn{
+				 align-content:center;
+				 padding:8px 8px 8px 8px;
+				 border-radius:4px 4px 4px 4px;
+				 appearance:dialog;
+				 float:!important;
+				 color:#DFBDBE;
+				 background-color:#9E9696;
+			 }
+     </style>
+ 
+  </head>
+
+  <body>
+  <div> 
+  <span>W</span>
+  <span>e</span>
+  <span>l</span>
+  <span>c</span>
+  <span>o</span>
+  <span>m</span>
+  <span>e</span>
+  <br>
+  <span>U</span>
+  <span>S</span>
+  <span>E</span>
+  <span>R</span>
+  </div>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <button class="btn" >  baal ota to tui </button>
+</body>
 </html>
