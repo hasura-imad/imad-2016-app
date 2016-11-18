@@ -101,7 +101,7 @@ function createTemplate(data) {
         <div>${content}</div>
 	</div>
 	<!--CONATINER END-->
-
+	<script type="text/javascript" src="/ui/article.js"></script>
 </body>
 </html>`; 
     return htmlTemplate;
