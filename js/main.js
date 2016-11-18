@@ -95,6 +95,7 @@ function loadLoginForm () {
     
     };
 }
+
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
