@@ -102,7 +102,7 @@ pool.query("select * from Students", function(err,result){
    if(err){
        res.status(500).send(err.toString());
    } else{
-       res.send(JSON.stringify());
+       res.send(JSON.stringify(result));
    }
     
 });    
