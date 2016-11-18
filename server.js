@@ -96,9 +96,9 @@ return htmltemplate;}
 
 
 
-/*var pool=new pool(config);
+var pool=new pool(config);
 app.get('/test-db', function(req,res){
-pool.query("select * from Students", function(err,result){
+pool.query('select * from Students', function(err,result){
    if(err){
        res.status(500).send(err.toString());
    } else{
@@ -106,7 +106,7 @@ pool.query("select * from Students", function(err,result){
    }
     
 });    
-});*/
+});
 
 
 app.get('/', function (req, res) {
