@@ -98,7 +98,7 @@ return htmltemplate;}
 
 var pool=new pool(config);
 app.get('/test-db', function(req,res){
-pool.query("select * from Student's_List", function(err,result){
+pool.query("select * from 'Student's_List'", function(err,result){
    if(err){
        res.status(500).send(err.toString());
    } else{
