@@ -15,7 +15,7 @@ commentsubmit.onclick = function(){
         }
     };
    
-   request.open('GET', 'http://golua94.imad.hasura-app.io/articles/:articlename', true);
+   request.open('GET', 'http://golua94.imad.hasura-app.io/articles/article-one', true);
    request.send(null);
    
 };
