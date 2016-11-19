@@ -15,7 +15,7 @@ var config={
 var app = express();
 app.use(morgan('combined'));
 var currentdate=new Date();
- 
+/* 
 var articles= {
   'Viku1':{  title :'My Article',
     date :currentdate,
@@ -44,13 +44,14 @@ var articles= {
             This is about MSD.This is about MSD.This is about MSD.This is about MSD.This is about MSD.This is about MSD..This is about MSD.This is about MSDThis is about MSDThis is about MSD.
         </p>`}    
     
-};
+};*/
  
 function createtemplate(data){
     var title=data.title;
     var heading=data.heading;
     var content=data.content;
     var date=data.date;
+    var comment=data.comment;
 
 var htmltemplate=`
     <html>
@@ -83,6 +84,16 @@ ${date.toDateString()}
     
     <div>
       ${content}
+        </div>
+        
+        <div>
+      <form action="demo_form.asp" id="usrform">
+  Name: <input type="text" name="usrname">
+  <input type="submit">
+</form>
+
+<textarea name="comment" form="usrform">Enter text here...</textarea>
+    
         </div>
     </div>
 </body>
