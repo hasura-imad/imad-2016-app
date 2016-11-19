@@ -52,10 +52,9 @@ function createtemplate(data){
     var content=data.content;
     var date=data.date;
     var comment=data.comment;
-         var textarea=` <form action="demo_form.asp" id="usrform">
-  Name: <input type="text" name="usrname">
+         var textarea=`
   <input type="submit" id="commentbox">
-</form>
+
 
 <textarea name="comment" id="commentarea" form="usrform">Enter text here...</textarea>
 `;
