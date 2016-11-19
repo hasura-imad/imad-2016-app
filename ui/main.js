@@ -1,3 +1,24 @@
+var comsubmit=document.getElementById('comsubmit');
+
+comsubmit.onclick = function(){
+    var request= new XMLHttpRequest();
+    
+    request.onreadystatechange=function(){
+        if(request.readyState == XMLHttpRequest.DONE){
+            
+            if(request.status == 200){
+                var counter= request.responseText;
+               
+                var com=document.getElementById('com');
+                 com.innerHTML=counter.toString();
+            }
+        }
+    };
+   
+   request.open('GET', 'http://golua94.imad.hasura-app.io/loadcomment', true);
+   request.send(null);
+   
+};
 
 
 var button=document.getElementById('counter');
@@ -17,7 +38,7 @@ button.onclick = function(){
         }
     };
    
-   request.open('GET', 'http://golua94.imad.hasura-app.io/counter', true);
+   request.open('GET', 'http://golua94.imad.hasura-app.io/ui/index.html', true);
    request.send(null);
    
 };
