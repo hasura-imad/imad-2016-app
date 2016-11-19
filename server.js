@@ -136,7 +136,7 @@ app.get('/submit_name', function (req, res) {// /submit_name?name=xxxx
  
 });
 
-app.get('/:Vikuname', function (req, res) {
+app.get('/articles/:kkuname', function (req, res) {
   var Vikuname=req.params.Vikuname;
   res.send(createtemplate(articles[Vikuname]));
  
