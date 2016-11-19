@@ -52,12 +52,7 @@ function createtemplate(data){
     var content=data.content;
     var date=data.date;
     var comment=data.comment;
-         var textarea=`
-  <input type="submit" id="commentbox">
 
-
-<textarea name="comment" id="commentarea" form="usrform">Enter text here...</textarea>
-`;
 
 
 var htmltemplate=`
@@ -95,7 +90,6 @@ ${date.toDateString()}
         
         <div>
 
-    ${textarea}
         </div
         <div id="comment">
        
@@ -169,10 +163,7 @@ app.get('/articles/:articlename', function (req, res) {
      }
   });
   
-  app.get('/getcomment', function(req, res){
-     res.send(path.join(_dirname, 'ui', 'index.html')); 
-  });
-
+  
  
 });
 
