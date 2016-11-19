@@ -15,7 +15,7 @@ comsubmit.onclick = function(){
         }
     };
    
-   request.open('GET', 'http://golua94.imad.hasura-app.io/ehee', true);
+   request.open('GET', 'http://golua94.imad.hasura-app.io/index.html', true);
    request.send(null);
    
 };
