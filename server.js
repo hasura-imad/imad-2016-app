@@ -136,9 +136,23 @@ app.get('/submit_name', function (req, res) {// /submit_name?name=xxxx
  
 });
 
-app.get('/:kkuname', function (req, res) {
-  var Vikuname=req.params.kkuname;
-  res.send(createtemplate(articles[Vikuname]));
+app.get('/articles/:articlename', function (req, res) {
+  
+  
+  pool.query("SELECT * FROM article where title = '" + req.params.articlename + "'", function(err, result){
+     if(err) {
+         res.status(500).send(err.toString());
+     }
+     if(result.rows.length===0){
+         res.status(404).send("article not found");
+     }
+     else{
+         var Vikuname=result.rows[0];
+  res.send(createtemplate(Vikuname));
+     }
+  });
+  
+  
  
 });
 
