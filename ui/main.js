@@ -9,7 +9,7 @@ commentsubmit.onclick = function(){
             if(request.status == 200){
                 var comment= request.responseText;
                
-                var span=document.getElementById('comment');
+                var span=document.getElementById('count');
                  span.innerHTML=comment.toString();
             }
         }
