@@ -137,8 +137,8 @@ app.get('/submit_name', function (req, res) {// /submit_name?name=xxxx
 });
 
 app.get('/articles/:kkuname', function (req, res) {
-  var Vikuname=req.params.kkuname;
-  res.send(createtemplate(articles[Vikuname]));
+  var kkuname=req.params.kkuname;
+  res.send(createtemplate(articles[kkuname]));
  
 });
 
