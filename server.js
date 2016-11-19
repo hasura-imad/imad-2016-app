@@ -170,7 +170,7 @@ app.get('/articles/:articlename', function (req, res) {
      }
   });
   
-res.send( document.getElementById("commentarea").value());
+
  
 });
 
