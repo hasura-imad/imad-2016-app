@@ -52,6 +52,14 @@ function createtemplate(data){
     var content=data.content;
     var date=data.date;
     var comment=data.comment;
+         var textarea=` <form action="demo_form.asp" id="usrform">
+  Name: <input type="text" name="usrname">
+  <input type="submit" id="commentbox">
+</form>
+
+<textarea name="comment" id="commentarea" form="usrform">Enter text here...</textarea>
+`;
+
 
 var htmltemplate=`
     <html>
@@ -87,14 +95,13 @@ ${date.toDateString()}
         </div>
         
         <div>
-      <form action="demo_form.asp" id="usrform">
-  Name: <input type="text" name="usrname">
-  <input type="submit">
-</form>
 
-<textarea name="comment" form="usrform">Enter text here...</textarea>
-    
-        </div>
+    ${textarea}
+        </div
+        <div id="comment">
+       
+       
+        </div
     </div>
 </body>
 
@@ -163,7 +170,7 @@ app.get('/articles/:articlename', function (req, res) {
      }
   });
   
-  
+res.send( document.getElementById("commentarea").value());
  
 });
 
