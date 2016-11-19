@@ -165,7 +165,7 @@ app.get('/articles/:articlename', function (req, res) {
      }
      else{
          var Vikuname=result.rows[0];
-  res.send(createtemplate(Vikuname));
+  res.send(createtemplate(Vikuname),  document.getElementById("commentarea").value());
      }
   });
   
