@@ -1,5 +1,24 @@
 
-
+var commentsubmit=document.getElementById('commentbox');
+commentsubmit.onclick = function(){
+    var request= new XMLHttpRequest();
+    
+    request.onreadystatechange=function(){
+        if(request.readyState == XMLHttpRequest.DONE){
+            
+            if(request.status == 200){
+                var comment= request.responseText;
+               
+                var span=document.getElementById('comment');
+                 span.innerHTML=comment.toString();
+            }
+        }
+    };
+   
+   request.open('GET', 'http://golua94.imad.hasura-app.io/articles/:articlename', true);
+   request.send(null);
+   
+};
 var button=document.getElementById('counter');
 
 button.onclick = function(){
