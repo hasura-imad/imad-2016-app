@@ -165,6 +165,15 @@ h3{
 	color: #000;
 }
 
+.articlelink{
+    color: white;
+}
+
+.articlelink:hover{
+    color: white;
+}
+
+
 /* Caruosel */
 .carousel-inner .item img{
     width: 1080px;
