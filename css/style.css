@@ -24,6 +24,12 @@
 	border-radius: 7px;
 }
 
+button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
 
 /* Container */
 .container{
