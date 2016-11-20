@@ -25,7 +25,7 @@ function loadCommentForm () {
                     document.getElementById('comment_text').value = '';
                     loadComments();    
                 } else {
-                    alert('Error! Could not submit comment');
+                    alert('Error!! Could not submit comment');
                 }
                 submit.value = 'Submit';
           }
