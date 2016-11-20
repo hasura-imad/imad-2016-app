@@ -323,6 +323,14 @@ app.get('/article/js/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', req.params.input));
 });
 
+app.get('/section/css/:input', function (req, res) {
+  res.sendFile(path.join(__dirname, 'css', req.params.input));
+});
+
+app.get('/section/js/:input', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js', req.params.input));
+});
+
 app.get('/images/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'images', req.params.input));
 });
@@ -331,11 +339,19 @@ app.get('/article/images/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'images', req.params.input));
 });
 
+app.get('/section/images/:input', function (req, res) {
+  res.sendFile(path.join(__dirname, 'images', req.params.input));
+});
+
 app.get('/fonts/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'fonts', req.params.input));
 });
 
 app.get('/article/fonts/:input', function (req, res) {
+  res.sendFile(path.join(__dirname, 'fonts', req.params.input));
+});
+
+app.get('/section/fonts/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'fonts', req.params.input));
 });
 
