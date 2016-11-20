@@ -169,7 +169,7 @@ app.get('/articles/:articlename', function (req, res) {
 
 
 app.get('/commenting', function (req, res) {
-  res.send(document.getElementById('combox').value());
+  res.send(document.getElementById('combox').value);
 });
 
 app.get('/ui/style.css', function (req, res) {
