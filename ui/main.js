@@ -2,8 +2,13 @@
 
 
 var button=document.getElementById('combo');
-
+var counter=0;
 button.onclick = function(){
+    counter=counter+1;
+    var span=document.getElementById('comment');
+                 span.innerHTML=counter.toString();
+    
+    
     var request= new XMLHttpRequest();
     
     request.onreadystatechange=function(){
