@@ -17,7 +17,7 @@ button.onclick = function(){
         }
         
       };
-         request.open('GET', 'http://golua94.imad.hasura-app.io/counter', true);
+         request.open('GET', 'http://golua94.imad.hasura-app.io/comment', true);
    request.send(null);
     
       
