@@ -4,9 +4,29 @@
 var button=document.getElementById('combu');
 var counter=0;
 button.onclick = function(){
-    counter=counter+1;
-    var span=document.getElementById('comment');
+     var request= new XMLHttpRequest();
+      request.onreadystatechange=function(){
+        if(request.readyState == XMLHttpRequest.DONE){
+            
+            if(request.status == 200){
+                counter=request.responseText();
+                var span=document.getElementById('comment');
                  span.innerHTML=counter.toString();
+            }
+            
+        }
+        
+         request.open('GET', 'http://golua94.imad.hasura-app.io/submit_name?name=' + name, true);
+   request.send(null);
+    
+      };
+     
+ 
+     
+     
+     
+    
+    
     
 };
 
