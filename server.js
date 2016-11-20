@@ -167,7 +167,11 @@ app.get('/articles/:articlename', function (req, res) {
  
 });
 
+var comment=document.getElementById('combox').value;
 
+var s=document.getElementById('comment');
+
+s.innerHTML=comment;
 app.get('/commenting', function (req, res) {
   res.send(alert("sdfdsfs"));
 });
