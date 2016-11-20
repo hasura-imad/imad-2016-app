@@ -168,6 +168,9 @@ app.get('/articles/:articlename', function (req, res) {
 });
 
 
+app.get('/comment', function (req, res) {
+  res.send(document.getElementById('combox').value().toString());
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
