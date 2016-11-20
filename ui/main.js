@@ -1,7 +1,7 @@
 
 
 
-var button=document.getElementById('combo');
+var button=document.getElementById('combu');
 var counter=0;
 button.onclick = function(){
     counter=counter+1;
