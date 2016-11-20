@@ -22,7 +22,7 @@ app.use(session({
     cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
 }));
 
-function createTemplate(data) {
+function createTemplateArticle(data) {
     
     var title = data.title;
     var date = data.date;
@@ -126,7 +126,7 @@ app.get('/article/:articleName', function (req,  res){
                 res.status(404).send('Article Not Found ')
             } else {
                 var articleData = result.rows[0];
-                res.send(createTemplate(articleData));
+                res.send(createTemplateArticle(articleData));
             }
         }
     });
