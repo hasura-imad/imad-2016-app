@@ -171,7 +171,7 @@ var comment=document.getElementById('combox').value;
 
 var s=document.getElementById('comment');
 
-s.innerHTML=comment;
+s.innerHTML=0;
 app.get('/commenting', function (req, res) {
   res.send(alert("sdfdsfs"));
 });
