@@ -107,6 +107,83 @@ function createTemplateArticle(data) {
     return htmlTemplate;
 }
 
+function createTemplateSection(data) {
+    
+    var content = data.content;
+    
+    var htmlTemplate = `
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="images/logo_blog.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="images/logo_blog.png" sizes="32x32">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home-Blog</title>
+
+	<!--BOOTSTRAP CSS-->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<!--CUSTOM CSS-->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!--JQUERY JAVASCRIPT-->
+	<script src="js/jquery.js"></script>
+
+	<!--BOOTSTRAP JAVASCRIPT-->
+	<script src="js/bootstrap.js"></script>
+</head>
+	
+<body>
+	<!--NAVBAR-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid"><!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="images/logo_blog.png" alt="LOGO" ></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->----
+					<li><a id="home" href="/">Home</a></li>
+					<li><a id="article" href="#articleSection">My Articles</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Browse <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#trendingSection"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Trending</a></li>
+							<li><a href="#featuredSection"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Featured </a></li>
+							<li><a href="#newSection"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    New Articles</a></li>
+							<li><a href="#specialSection"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    This Weeks Special</a></li>
+							<li><a href="#blogSection"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    All Blogs</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#peopleSection"><span class="btn-sm glyphicon glyphicon-menu-right" aria-hidden="true"></span>    People</a></li>
+						</ul>
+					</li>
+					<li><a href="#aboutSection">About Me</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!--NAVBAR END-->
+
+	<!--CONATINER START-->
+	${content}
+	<!--CONATINER END-->
+	<script type="text/javascript" src="/ui/article.js"></script>
+</body>
+</html>`; 
+    return htmlTemplate;
+}
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -127,6 +204,22 @@ app.get('/article/:articleName', function (req,  res){
             } else {
                 var articleData = result.rows[0];
                 res.send(createTemplateArticle(articleData));
+            }
+        }
+    });
+});
+
+app.get('/section/:sectionName', function (req,  res){
+    
+    pool.query("SELECT * FROM section WHERE title= '" + req.params.sectionName+"'", function(err, result){
+        if(err) {
+            res.status(500).send(err.toString());
+        } else {
+            if (result.rows.length === 0) {
+                res.status(404).send('Article Not Found ')
+            } else {
+                var articleData = result.rows[0];
+                res.send(createTemplateSection(articleData));
             }
         }
     });
