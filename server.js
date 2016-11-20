@@ -209,7 +209,7 @@ app.get('/article/:articleName', function (req,  res){
     });
 });
 
-app.get('/section/:sectionName', function (req,  res){
+app.get('/sec/:sectionName', function (req,  res){
     
     pool.query("SELECT * FROM section WHERE title= '" + req.params.sectionName+"'", function(err, result){
         if(err) {
@@ -323,11 +323,11 @@ app.get('/article/js/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', req.params.input));
 });
 
-app.get('/section/css/:input', function (req, res) {
+app.get('/sec/css/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', req.params.input));
 });
 
-app.get('/section/js/:input', function (req, res) {
+app.get('/sec/js/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', req.params.input));
 });
 
@@ -339,7 +339,7 @@ app.get('/article/images/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'images', req.params.input));
 });
 
-app.get('/section/images/:input', function (req, res) {
+app.get('/sec/images/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'images', req.params.input));
 });
 
@@ -351,7 +351,7 @@ app.get('/article/fonts/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'fonts', req.params.input));
 });
 
-app.get('/section/fonts/:input', function (req, res) {
+app.get('/sec/fonts/:input', function (req, res) {
   res.sendFile(path.join(__dirname, 'fonts', req.params.input));
 });
 
