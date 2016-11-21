@@ -6,7 +6,6 @@ var crypto = require('crypto');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-// commit
 var config = {
     user: 'coco98',
     database: 'coco98',
