@@ -1,21 +1,6 @@
 
 
 
-
-
-
-website_folder/
-   index.html <- this is the homepage
-   faq/
-     index.html <- this is served from "/faq" and from "/faq/index.html"
-   contact/
-     index.html <- this is served from "/contact" and "/contact/index.html"
-     
-     
-     
-    
-
-
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
