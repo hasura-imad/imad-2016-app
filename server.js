@@ -29,7 +29,9 @@ app.get('/ui/madi.png', function (req, res) {
 res.sendFile(path.join(__dirname, 'ui', '2.html'));
 });
   
-  
+  app.get('/home', function (req, res) {
+res.sendFile(path.join(__dirname, 'home.html'));
+});
   
   
   
