@@ -1,8 +1,7 @@
 body {
-    font-family: jokerman;
-    background-color: aqua;
+    font-family: sans-serif;
+    background-color: white;
     margin-top: 75px;
-    margin:25px ;
 }
 
 .center {
@@ -10,21 +9,22 @@ body {
 }
 
 .text-big {
-    font-size: 200%;
+    font-size: 300%;
 }
 
 .bold {
     font-weight: bold;
 }
-.fontname {
-    font-family:Times new roman;
-}
 
 .img-medium {
-    height: 150px;
-}
-.img-medium1 {
-    height:100px;
+    height: 200px;
+    
+
+
+
+
+
+
 }
 
 
