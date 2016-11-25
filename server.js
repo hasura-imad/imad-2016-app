@@ -90,7 +90,7 @@ function createTemplate(data){
          <div>
              <a href="/">Home</a>
              <span style="display:inline-block; width: 100;"></span>
-             <a href="/12">1</a>
+             <a href="/article-one">1</a>
              <span style="display:inline-block; width: 100;"></span>
              <a href="/article-two">2</a>
              <span style="display:inline-block; width: 100;"></span>
