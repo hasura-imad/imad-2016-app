@@ -1,119 +1,93 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8"> 
+        
         <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="center" >
-                
-                
-                
-                
-                
-             
-   <div class="container">
-         <div>
-             <a href="/">Home</a>
-             <span style="display:inline-block; width: 100;"></span>
-             <a href="/article-one">1</a>
-             <span style="display:inline-block; width: 100;"></span>
-             <a href="/article-two">2</a>
-             <span style="display:inline-block; width: 100;"></span>
-             <a href="/article-three">3</a>
-             <span style="display:inline-block; width: 100;"></span>
-             <a href="/article-four">4</a>
-             </div>
-                
-                
-                
-                
-                
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-                
-    
-                
-                <marquee behavior="scroll" direction="left"><h3>WELCOME  !!SCROLL DOWN FOR !! CHECK OUR COOL HTMl, JAVASCRIPT,CSS TRICKS</h3></marquee>
-                
-                 
-               <span style="text-decoration: underline;"><h1>HTML TRICKS</h1></span> 
-                <img id='madi' src=https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzq1Xk-rhyKmv3JMzKnvvoqik4D5ICKtFIU3jnNrxUgIlI-QbDrA   class="img-medium"/>
-                </div>
-                <hr/>
-                <br>
-                
-                <span style="text-decoration: underline;"><h3>Welcome</h3></span>
-                Welcome to our website. Try our free html, javascript,css tricks...
-                </div>
-                <hr/>
-                
-<span style="text-decoration: underline;"><h2>Let's Start with HTML</h2></span>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-
-      <hr>
-      <br>
-       <h3>1.</h3>
-       
-        <h2>The title attribute</h2>
-
-<p title="THIS IS A TOOLTIP">
-Mouse over this paragraph, to display the title attribute as a tooltip.
-</p>
-
-<p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_title"><button>Click here to view Code</button></a></p>
-
-<hr>
-<br>
-
-<h3>2.</h3>
-
-<p><b>This text is bold</b></p>
-<p><i>This text is italic</i></p>
-<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
-
-<hr>
-<br>
-
-<h3>3.</h3>
-
-<h2>HTML LINK</h2>
-
-<p><a href="http://suryan123.imad.hasura-app.io/">Visit our HTML tutorial</a></p>
-
-<p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_mountain"><button>Click here to view Code</button></a></p>
-
-<hr>
-<br>
-
-
-<h1>MORE UPDATES WILL BE AVAILABLE SOON !!!!!</h1>
-               
-                
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+<style>
+        body{
+	background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tWL6GdY0HraJxgkMX8JS4uXp5CblAwwP7RJA-ksvuAgIZAML");
+-moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+		background-repeat:no-repeat;
+        margin-bottom:50px;
+	}
+	 h1{
+	margin-top:90px;
+	font-size:50px;
+	font-family:Viner Hand ITC;
+    color:white;
+	}
+	 h2{
+	border:1px solid grey;
+	background-color:#77563f;
+	padding-top:5px;
+	width:auto;
+	margin-left:250px;
+	margin-right:250px;
+	font-size:35px;
+	font-family:Viner Hand ITC;
+	text-align:center;
+    color:white;
+	}
+	
+	#login_area{
+	    display:none;
+	    
+	}
+	@media screen and (max-width: 750px){
+	h2{
+	margin-left:0px;
+	margin-right:0px;
+	width:auto;
+	font-size:20px;
+	
+	}
+	}
+</style>
+<script>
+    $(document).ready(function(){
+    $("button").click(function(){
+        $("#login_area").toggle(1000);
+    });
+});
+</script>
+</head>
+<body>
+     
+	<div class="container-fluid">
+	<h1>Hello there!!</h1>
+	<br>
+    <center>
+	<h2>WELCOME to HTML TRICKS</h2>
+	<br><br>
+	<button class="btn btn-warning btn-lg">Get Started</button>
+    <br><br><br>
+	<div id="login_area">
+      <center>Loading login status...</center>
+      
+            </div>
+	  </center>	
+	</div>
+	<br>
+	
+	<p style="color:white;padding-bottom:0px;text-align:center">This Site has been visited <span id="count"> </span> times!</p>
+    <h6 align="center"><font size="2" color="white">Designed by Suryan</font></h6>
     
     
-    
-    
-    
-    
-    
-    
-    
-    <div id="loginpage">
-
-        <div id="loginwindow">
-            <span>Username :</span><input type="text" id="username"><br> <br>
-            <span>Password :</span><input type="password" id="password"><br><br>
-            <span><input type="submit" value="Login" id="loginbtn">      <span><input type="submit" value="Register" id="registerbtn"></span>
-            
-        </span></div>
-        <img id="loginimg" src="/ui/log.jpg">
-    </div>
-    
-    
-    
-    
-    
-
-                 
-    </body>
+       <script type="text/javascript" src="/ui/main.js"></script>
+        
+</body>
 </html>
