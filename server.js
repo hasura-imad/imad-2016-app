@@ -95,6 +95,8 @@ function createTemplate(data){
              <a href="/article-two">2</a>
              <span style="display:inline-block; width: 100;"></span>
              <a href="/article-three">3</a>
+             <a href="/article-four">4</a>
+             
          </div>
          <h3>
             ${heading}
