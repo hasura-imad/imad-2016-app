@@ -2,69 +2,46 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
-
+var app = express();
+app.use(morgan('combined'));
 
 var article={
     'article-one': {
-        title:'article one | suryan123',
+        title:'article one | manoj duli',
         heading:'article one',
         date:'19 th november 2016',
         content:`
             <p>
-                    THIS IS MY FIRST ARTICLE.
-           THIS IS MY FIRST ARTICLE.
+                    HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY FIRST ARTICLE.HAI THIS IS "MANOj DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE.
+            </p>
+                                 
+            <p>
+                    HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY FIRST ARTICLE.HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE.
+                        
+            </p>
+            <p>
+                    HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY FIRST ARTICLE.HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE.
             </p>` 
                 
                 
     },
     'article-two': {
-        title:'article two | suryan123',
+        title:'article two | manoj duli',
             heading:'article two',
             date:'15 th november 2016',
             content:`
                 <p>
-                    HAI THIS IS THIS IS MY SECOND ARTICLE. 
+                    HAI THIS IS "MANOJ DULI"THIS IS MY SECOND ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY SECOND ARTICLE.
                 </p>`
        },
     'article-three': {
-        title:'article two | suryan123',
+        title:'article two | manoj duli',
             heading:'article two',
             date:'11 th november 2016',
             content:`
                 <p>
-                    HAI THIS IS THIS IS MY SECOND ARTICLE.
+                    HAI THIS IS "MANOJ DULI"THIS IS MY SECOND ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY SECOND ARTICLE.
                 </p>`
-                
-                
-                
-                
-                
-    },
-    'article-four': {
-        title:'Article Four | Suryan',
-            heading:'Article four',
-            date:'11 th november 2016',
-            content:`
-                <p>
-                    HAI THIS IS THIS IS MY fourth ARTICLE.
-                </p>`
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
    
     
     }
@@ -89,15 +66,11 @@ function createTemplate(data){
          <div>
              <a href="/">Home</a>
              <span style="display:inline-block; width: 100;"></span>
-             <a href="/article-one">1</a>
+             <a href="/article-one">ARTICLE ONE</a>
              <span style="display:inline-block; width: 100;"></span>
-             <a href="/article-two">2</a>
+             <a href="/article-two">ARTICLE TWO</a>
              <span style="display:inline-block; width: 100;"></span>
-             <a href="/article-three">3</a>
-             <span style="display:inline-block; width: 100;"></span>
-             <a href="/article-four">4</a>
-             
-             
+             <a href="/article-three">ARTICLE THREE</a>
          </div>
          <h3>
             ${heading}
@@ -163,6 +136,3 @@ var port = 8080; // Use 8080 for local development because you might already hav
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
-
-
-
