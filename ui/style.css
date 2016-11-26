@@ -1,9 +1,14 @@
+
 body {
-    font-family: sans-serif;
-    background-color: lightgrey;
+    font-family: Bold;
+    background-color: black;
     margin-top: 75px;
 }
-
+.wall{
+    background: url(http://androidwallpape.rs/content/02-wallpapers/131-night-sky/wallpaper-2707591.jpg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
 .center {
     text-align: center;
 }
@@ -17,6 +22,7 @@ body {
 }
 
 .img-medium {
-    height: 200px;
+    border-radius:100px;
+    
 }
 
