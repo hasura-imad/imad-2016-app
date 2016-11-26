@@ -1,0 +1,145 @@
+body {
+    font-family: sans-serif;
+    margin-top: 10px;
+    background-image:url(http://zellox.com/wp-content/uploads/2016/02/background-image-html.jpg);
+
+
+   background-repeat:no-repeat;
+
+   background-size:cover;
+   }
+  .article{
+      padding-bottom :50px;
+      font-family:calligrapher;
+      font-size:15px;
+      
+      }
+      
+      
+     
+.center {
+    text-align : right;
+}
+
+.text-big {
+    font-size: 300%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.img-medium {
+   
+    height: 180px;
+    
+    width: 170px;
+    float: right;
+    
+   
+    
+  
+}
+
+/*#main-img{
+     margin-left :100px;
+        margin-top: 100px;
+        margin-right :100px;
+}*/
+
+
+.container{
+        max-width: 600px;
+        margin: 0 auto;
+        color: white;
+        font-family:sans-serif;
+        
+    }
+    
+    
+    
+    
+    .main{
+   max-width: 900px;
+        margin: 0 auto;
+        color: white;
+        font-family:sans-serif;
+        
+    }
+    
+    .subhead{
+        margin :0;
+        color:orange;
+        font-family:algeria;
+        font-size :50px;
+    }
+    
+    .header{
+        
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .college{
+        color :white;
+        font-size :25px;
+    }
+    
+    .place{
+        color :white;
+        font-size :25px;
+    }
+    .email{
+        color :white;
+        font-size :25px;
+    }
+    .mobile{
+        color :white;
+        font-size :25px;
+    }
+
+.mainobjective{
+    max-width:900px;
+    border: 1px solid gray;
+    
+    
+}
+.object{
+    font-size:25px;
+}
+
+.objective{
+    max-width:600px;
+    
+}
+
+nav {
+    float: left;
+    max-width: 200px;
+    margin-left: 100px;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    
+  margin-left:350px;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.ekline{
+    
+    display:inline;
+}
+
+
+
