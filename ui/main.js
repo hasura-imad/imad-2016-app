@@ -37,8 +37,9 @@ function loadLoginForm () {
               } else if (request.status === 500) {
                   alert('Something went wrong on the server.Make sure you register ');
                   submit.value = 'Login';
-              } else {
-                  alert('You Loggen in Successfuly');
+              } else if (request.status === 304){
+                  
+                   alert('Something went wrong on the server.Make sure you register ');
                   submit.value = 'Login';
               }
               loadLogin();
