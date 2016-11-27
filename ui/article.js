@@ -38,7 +38,7 @@ function loadCommentForm () {
                     document.getElementById('comment_text').value = '';
                     loadComments();    
                 } else {
-                    alert('Error! Could not submit comment');
+                    alert('Comment Submitted');
                 }
                 submit.value = 'Submit';
           }
