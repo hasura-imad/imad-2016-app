@@ -5,12 +5,12 @@
 body {
 	margin: 0;
 	padding: 0;
-	text-align: left;
+	text-align: center;
 	font: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: white;
 	background-image:url(http://zellox.com/wp-content/uploads/2016/02/background-image-html.jpg);
-background-repeat:no-repeat;
+	background-size:cover;
 }
 
 
