@@ -10,7 +10,7 @@ body {
 	font-size: 14px;
 	color: white;
 	background-image:url(http://zellox.com/wp-content/uploads/2016/02/background-image-html.jpg);
-	background-size:cover;
+background-repeat:no-repeat;
 }
 
 {
