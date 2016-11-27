@@ -39,7 +39,7 @@ function loadLoginForm () {
                   submit.value = 'Login';
               } else if (request.status === 304 || request.status === 400){
                   
-                   alert('Something went wrong on the server.Make sure you register ');
+                   alert('Something went wrong on the server.Make sure you register first ');
                   submit.value = 'Login';
               }
               loadLogin();
