@@ -57,7 +57,7 @@ function createTemplate (data) {
 		<div id="content">
          <div class="container">
               <div id="home">
-                  <a style="font-size:30px; color:white; " href="/">Home</a>
+                  <a style="font-size:30px; color:white; text-align:left " href="/">Home</a>
               </div>
               <hr/>
               <br/>
