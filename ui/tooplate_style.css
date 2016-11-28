@@ -1,0 +1,357 @@
+/*
+
+Template 2022 Sound Master
+
+http://www.tooplate.com/view/2022-sound-master
+
+*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #666;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em; 
+	background-color: #e2d8bd;
+	background-image: url(http://zellox.com/wp-content/uploads/2016/02/background-image-html.jpg);
+	background-repeat: no-repeat;
+	background-position: top center
+}
+
+a, a:link, a:visited { 
+	color: #000; 
+	text-decoration: underline; 
+}
+
+a:hover { 
+	text-decoration: none; 
+}
+
+.orange {
+	color: #C60;
+}
+
+.green {
+	color: #399;
+}
+
+p { 
+	margin: 0 0 15px 0; 
+	padding: 0; 
+}
+
+img { border: none; }
+
+h1, h2, h3, h4, h5, h6 { color: #000; font-family: Georgia, "Times New Roman", Times, serif; }
+h1 { font-size: 38px; font-weight: normal; margin: 0 0 20px 0; padding: 5px 0; }
+h2 { font-size: 30px; font-weight: normal; margin: 0 0 30px 0; font-weight: normal; }
+h3 { font-size: 16px; margin: 0 0 15px 0; padding: 0; padding: 0; font-weight: normal;  }
+h4 { font-size: 14px; margin: 0 0 5px 0; padding: 0; }
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
+.cleaner_h10 { clear: both; width:100%; height: 10px; }
+.cleaner_h20 { clear: both; width:100%; height: 20px; }
+.cleaner_h30 { clear: both; width:100%; height: 30px; }
+.cleaner_h40 { clear: both; width:100%; height: 40px; }
+.cleaner_h50 { clear: both; width:100%; height: 50px; }
+.cleaner_h60 { clear: both; width:100%; height: 60px; }
+
+.float_l { float: left; }
+.float_r { float: right; }
+
+.image_wrapper { 
+	display: inline-block; 
+	border: 5px solid #e2d8bd; 
+	margin-bottom: 10px; 
+}
+
+.image_fl { 
+	float: left; 
+	margin: 3px 30px 0 0; 
+}
+
+.image_fr { 
+	float: right; 
+	margin: 3px 0 0 30px; 
+}
+
+blockquote { 
+	font-style: italic; 
+	margin: 0 0 0 10px;
+}
+
+cite { 
+	font-weight: bold; 
+	color:#333; 
+}
+
+cite span { 
+	color: #666; 
+}
+
+em { color: #000; }
+
+.tooplate_list { 
+	margin: 20px 0 20px 20px; 
+	padding: 0; 
+	list-style: none; 
+}
+
+.tooplate_list li { 
+	background: transparent url(../ui/tooplate_list.png) no-repeat; 
+	margin:0 0 20px; padding: 0 0 0 20px; 
+	line-height: 1em; 
+}
+
+.tooplate_list li a { 
+	color: #fff; 
+}
+
+.tooplate_list li a:hover { 
+	color: #ff4301; 
+}
+
+.btn_more a {
+	display: inline-block;
+	font-weight: bold;
+	color: #000;
+	font-size: 12px;
+	padding: 2px 15px 2px 0;
+	background: url(../ui/readmore.png) no-repeat center right;
+	text-decoration: none;
+}
+
+.btn_more a:hover {
+	padding-right: 20px;
+	text-decoration: none;
+}
+
+.col_400 { width: 400px; } 
+.col_300 { width: 300px; }
+.col_280 { width: 280px; }
+
+#social_box {
+	display: block;
+	height: 48px;
+	padding: 0;
+	margin: 0;
+}
+
+#social_box li {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+#social_box li a {
+	width: 48px;
+	height: 48px;
+	margin-right: 60px;
+}
+
+.service_list { 
+	margin: 0 0 0 15px; 
+	padding: 0; 
+	list-style: none; 
+}
+
+.service_list li { 
+	margin: 0; 
+	padding: 0; 
+}
+
+.service_list li a { 
+	font-size: 16px; 
+	display: block; 
+	height: 25px; 
+	margin-bottom: 20px; 
+	padding-left: 40px; 
+	text-decoration: none; 
+}
+
+.service_list li .service_one { 
+	background: url(../ui/onebit_08.png) center left no-repeat; 
+}
+
+.service_list li .service_two { 
+	background: url(../ui/onebit_11.png) center left no-repeat; 
+}
+
+.service_list li .service_three { 
+	background: url(../ui/onebit_17.png) center left no-repeat; 
+}
+
+.service_list li .service_four { 
+	background: url(../ui/onebit_21.png) center left no-repeat; 
+}
+
+.service_list li .service_five { 
+	background: url(../ui/onebit_12.png) center left no-repeat; 
+}
+
+#contact_form {  
+	padding: 0;
+ }
+ 
+#contact_form form { 
+	margin: 0px; 
+	padding: 0px; 
+}
+
+#contact_form form .input_field 
+{ 
+	width: 300px; 
+	padding: 5px; 
+	background: #eeeeee; 
+	border: 1px solid #dfdfdf; 
+	font-family: Verdana,Geneva,sans-serif;
+    font-size: 12px;
+	margin-top: 5px; 
+}
+
+#contact_form form label { 
+	display: block; 
+	width: 100px; 
+	margin-right: 10px; 
+	font-size: 14px; 
+}
+
+#contact_form form textarea { 
+	width: 368px;  
+	height: 80px; 
+	padding: 5px; 
+	background: #eeeeee; 
+	border: 1px solid #dfdfdf; 
+	font-family: Verdana,Geneva,sans-serif;
+    font-size: 12px;
+	margin-top: 5px; 
+}
+
+#contact_form form .submit_btn  {
+	font-size: 14px; 
+	padding: 3px 10px;
+	background: #eeeeee; 
+	border: 1px solid #dfdfdf;
+}
+
+/* gallery */
+#gallery_container { 
+	clear: both; 
+	margin-top: 30px; 
+	padding-right: 40px; 
+	width: 560px; 
+	height: 300px; 
+	overflow: auto; 
+} 
+
+#gallery_container .gallery_box {
+	clear: both;
+	display: block; 
+	padding: 0;
+	margin: 0 0 40px 0;
+}
+ 
+.gallery_box img {
+	float: left;
+	width: 240px;
+	height: 107px;
+	border: 5px solid #e2d8bd;
+	margin: 3px 30px 0 0;
+}
+
+.form-style-5{
+    max-width: 500px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+    border: none;
+}
+.form-style-5 legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.form-style-5 label {
+    display: block;
+    margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="password"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    
+}
+.form-style-5 input[type="text"]:focus,
+
+.form-style-5 input[type="password"]:focus,
+{
+    background: #d2d9dd;
+}
+
+.form-style-5 .number {
+    background: #1abc9c;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 10px 10px 10px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+    position: relative;
+    display: block;
+    padding: 5px 10px 5px 10px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 5px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+    background: #109177;
+}
+/* end of gallery */

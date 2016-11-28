@@ -1,22 +1,215 @@
+/* A Free Design by Bryant Smith (bryantsmith.com) */
+
+
+
 body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: white;
+	background-image:url(http://zellox.com/wp-content/uploads/2016/02/background-image-html.jpg);
+	background-repeat:no-repeat;
+}
+*
+{
+  margin: 0 auto 0 auto;
+ text-align:left;}
+
+#container
+{
+  display: block; 
+  height:auto;
+  position: relative; 
+  width: 940px;
+font-size:20px;
 }
 
-.center {
+#mainpic h1
+{
+	position:absolute;
+text-align:right;
+font-size:30px;
+color:#AB970C;
+left:600px;
+top:220px;
+}
+
+
+#mainpic h2
+{
+position:absolute;
+text-align:right;
+color:#776906;
+left:600px;
+top:252px;
+}
+
+
+
+.lighter
+{
+color:#F2D76A;
+	
+}
+
+#articlecontent {
+   
+   font-family: 'Times New Roman', Times, serifroman;
+   font-size:20px;
+   
+}
+
+
+
+
+#content
+{
+width:880px;
+height:auto;
+
+padding-left:10px;
+padding-right:10px;
+padding-bottom:5px;
+}
+
+#footer
+{
+width:inherit;
+height:auto;
+}
+
+#footer h3 a,#footer h3 a:visited
+{
+display:inline;
+text-align:center;
+font-size:12px;
+text-decoration:none;
+color:#F5EB67;
+}
+
+a,a:visited
+{
+color:#E4CA10;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+
+#content a{
+
+font-size: 20px;
+font-colour:white;
+
+
+
+}
+
+#menu
+{font-size:80px;
+text-align:center;
+background-repeat:no-repeat;
+width:940px;
+height:69px;
+clear:both;
+}
+
+
+
+html, body {
+text-align: center;
+}
+p {text-align: left;}
+
+<style type="text/css">
+.form-style-5{
+    max-width: 500px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia, Times New Roman, Times, serif;
+}
+.form-style-5 fieldset{
+    border: none;
+}
+.form-style-5 legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.form-style-5 label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-style-5 textarea,
+.form-style-5 select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    
+}
+
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+    background: #d2d9dd;
+}
+.form-style-5 select{
+    -webkit-appearance: menulist-button;
+    height:35px;
+}
+.form-style-5 .number {
+    background: #1abc9c;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
     text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
 }
 
-.text-big {
-    font-size: 300%;
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+    position: relative;
+    display: block;
+    padding: 5px 10px 7px 10px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 30%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 5px;
 }
-
-.bold {
-    font-weight: bold;
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+    background: #109177;
 }
-
-.img-medium {
-    height: 200px;
-}
-
