@@ -137,6 +137,8 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
             
             
             <h1>CONTACT ME</h1>
+            <hr>
+            <br>
             
             
             
