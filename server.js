@@ -43,7 +43,7 @@ var article={
    
    
    
-   'article-three': {
+   'article-four': {
         title:'article two | manoj duli',
             heading:'article two',
             date:'11 th november 2016',
