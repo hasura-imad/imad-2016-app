@@ -72,7 +72,18 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
 
 <h3>5.</h3>
 
-<h2>
+<h2>HTML IMAGES</h2>
+
+<h2>Spectacular Mountain</h2>
+<img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+
+
+<p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_mountain"><button>Click here to view Code</button></a></p>
+
+<hr>
+<br>
+
+
 
 
 
@@ -129,7 +140,8 @@ This example sets the text color of the element to blue:</p>
 
 <p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_inline"><button>Click here to view Code</button></a></p>
 
-
+<hr>
+<br>
             
                 <p>
                 </p>`
