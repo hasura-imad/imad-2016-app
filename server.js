@@ -116,7 +116,7 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
             
             <h3>1.</h3>
             
-           <h2>Inline CSS<h2>
+           <h2>Inline CSS</h2>
 <p>An inline CSS is used to apply a unique style to a single HTML element.
 
 An inline CSS uses the style attribute of an HTML element.
