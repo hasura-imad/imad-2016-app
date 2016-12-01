@@ -69,30 +69,6 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
                
                
                
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
                             
                         
             <p>
@@ -122,6 +98,19 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
                     HAI THIS IS "MANOJ DULI"THIS IS MY SECOND ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY SECOND ARTICLE.
                 </p>`
    
+   
+   
+    },
+    'article-four': {
+        title:'article two | manoj duli',
+            heading:'article two',
+            date:'11 th november 2016',
+            content:`
+                <p>
+                    HAI THIS IS "MANOJ DULI"THIS IS MY SECOND ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY SECOND ARTICLE.
+                </p>`
+   
+   
     
     }
 };
@@ -150,6 +139,8 @@ function createTemplate(data){
              <a href="/article-two">CSS</a>
              <span style="display:inline-block; width: 100;"></span>
              <a href="/article-three">JAVASCRIPT</a>
+             <span style="display:inline-block; width: 100;"></span>
+             <a href="/article-four">ABOUT ME</a>
          </div>
          <h3>
             ${heading}
