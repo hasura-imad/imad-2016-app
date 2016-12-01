@@ -5,6 +5,5 @@ res.sendFile(path.join(__dirname, 'home.html'));
 
 
 
-alert('Welcome to HTML TRICKS');
 
 
