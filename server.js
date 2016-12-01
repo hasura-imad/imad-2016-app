@@ -116,12 +116,12 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
             
             <h3>1.</h3>
             
-            <p>Inline CSS
-An inline CSS is used to apply a unique style to a single HTML element.
+           <h2>Inline CSS<h2>
+<p>An inline CSS is used to apply a unique style to a single HTML element.
 
 An inline CSS uses the style attribute of an HTML element.
 
-This example sets the text color of the <h1> element to blue:</p>
+This example sets the text color of the element to blue:</p>
 
 
 <h1 style="color:blue;">This is a Blue Heading</h1>
