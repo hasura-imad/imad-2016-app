@@ -165,7 +165,7 @@ function createTemplate(data){
     <body>
         <div class = "container">
          <div>
-             <a href="/">Home</a>
+             <a href="/">HOME</a>
              <span style="display:inline-block; width: 100;"></span>
              <a href="/article-one">HTML</a>
              <span style="display:inline-block; width: 100;"></span>
@@ -174,6 +174,8 @@ function createTemplate(data){
              <a href="/article-three">JAVASCRIPT</a>
              <span style="display:inline-block; width: 100;"></span>
              <a href="/article-four">ABOUT ME</a>
+             <span style="display:inline-block; width: 100;"></span>
+             <a href="/article-five">CONTACT ME</a>
          </div>
          <h3>
             ${heading}
