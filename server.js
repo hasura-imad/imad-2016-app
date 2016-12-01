@@ -67,6 +67,12 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
 
 <p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_button"><button>Click here to view Code</button></a></p>
 
+<hr>
+<br>
+
+<h3>5.</h3>
+
+<h2>
 
 
 
@@ -107,6 +113,23 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
             <h1>CSS</h1>
             <hr>
             <br>
+            
+            <h3>1.</h3>
+            
+            <p>Inline CSS
+An inline CSS is used to apply a unique style to a single HTML element.
+
+An inline CSS uses the style attribute of an HTML element.
+
+This example sets the text color of the <h1> element to blue:</p>
+
+
+<h1 style="color:blue;">This is a Blue Heading</h1>
+
+
+<p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_inline"><button>Click here to view Code</button></a></p>
+
+
             
                 <p>
                 </p>`
