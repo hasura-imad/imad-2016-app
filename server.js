@@ -58,8 +58,8 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
 <h3>4.</h3>
 
 <h2>Input Type Button</h2>
-<hr>
-<br>
+
+
 <html>
 <body>
 
