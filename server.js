@@ -7,22 +7,36 @@ app.use(morgan('combined'));
 
 var article={
     'article-one': {
-        title:'article one | manoj duli',
-        heading:'article one',
-        date:'19 th november 2016',
+        title:'HTML TRICKS | ',
+        heading:'HTML',
+        date:'',
         content:`
+            
+            
+            
             <p>
-                    HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY FIRST ARTICLE.HAI THIS IS "MANOj DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE.
-            </p>
-                                 
             <p>
-                    HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY FIRST ARTICLE.HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE.
-                        
-            </p>
-            <p>
-                    HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY FIRST ARTICLE.HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE.
-            </p>` 
-                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
                 
     },
     'article-two': {
@@ -30,9 +44,11 @@ var article={
             heading:'article two',
             date:'15 th november 2016',
             content:`
+            
                 <p>
+                
                     HAI THIS IS "MANOJ DULI"THIS IS MY SECOND ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY SECOND ARTICLE.
-                </p>`
+                
        },
     'article-three': {
         title:'article two | manoj duli',
