@@ -113,8 +113,8 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
     },
     'article-four': {
         title:'ABOUT ME | Suryan',
-            heading:'article two',
-            date:'11 th november 2016',
+            heading:'',
+            date:'',
             content:`
             
             <h1>ABOUT ME</h1>
