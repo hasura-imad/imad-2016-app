@@ -60,8 +60,6 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
 <h2>Input Type Button</h2>
 
 
-<html>
-<body>
 
 <input type="button" onclick="alert('Hello World!')" value="Click Me!">
 
@@ -69,8 +67,6 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
 
 
 
-</body>
-</html>
 
 
 
