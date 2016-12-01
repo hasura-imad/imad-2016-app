@@ -65,7 +65,9 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
 
 <input type="button" onclick="alert('Hello World!')" value="Click Me!">
 
-<p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_button<button>Click here to view Code</button></a></p>
+<p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_button"><button>Click here to view Code</button></a></p>
+
+
 
 </body>
 </html>
