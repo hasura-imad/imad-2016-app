@@ -50,7 +50,9 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
 
 <p><a href="http://suryan123.imad.hasura-app.io/">Visit our HTML tutorial</a></p>
 
-<p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_mountain"><button>Click here to view Code</button></a></p>
+<p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_w3schools"><button>Click here to view Code</button></a></p>
+
+
 
 <hr>
 <br>
