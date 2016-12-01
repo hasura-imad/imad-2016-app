@@ -81,33 +81,66 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
                 
     },
     'article-two': {
-        title:'article two | manoj duli',
-            heading:'article two',
-            date:'15 th november 2016',
+        title:'CSS | Suryan',
+            heading:'',
+            date:'',
             content:`
+            
+            
+            <h1>CSS</h1>
+            <hr>
+            <br>
+            
                 <p>
-                    HAI THIS IS "MANOJ DULI"THIS IS MY SECOND ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY SECOND ARTICLE.
                 </p>`
        },
     'article-three': {
-        title:'article two | manoj duli',
-            heading:'article two',
-            date:'11 th november 2016',
+        title:'JAVASCRIPT | Suryan',
+            heading:'',
+            date:'',
             content:`
+            
+            
+            <h1>JAVASCRIPT</h1>
+            <hr>
+            <br>
+            
                 <p>
-                    HAI THIS IS "MANOJ DULI"THIS IS MY SECOND ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY SECOND ARTICLE.
                 </p>`
    
    
    
     },
     'article-four': {
-        title:'article two | manoj duli',
+        title:'ABOUT ME | Suryan',
             heading:'article two',
             date:'11 th november 2016',
             content:`
+            
+            <h1>ABOUT ME</h1>
+            <hr>
+            <br>
+            
+            
                 <p>
-                    HAI THIS IS "MANOJ DULI"THIS IS MY SECOND ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY SECOND ARTICLE.
+                </p>`
+                
+                
+                
+    },
+    'article-five': {
+        title:'CONTACT ME | Suryan',
+            heading:'',
+            date:'',
+            content:`
+            
+            
+            
+            <h1>CONTACT ME</h1>
+            
+            
+            
+                <p>
                 </p>`
    
    
