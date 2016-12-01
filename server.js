@@ -8,26 +8,99 @@ app.use(morgan('combined'));
 
 var article={
     'article-one': {
-        title:'article one | manoj duli',
-        heading:'article one',
-        date:'19 th november 2016',
+        title:'HTML TRICKS | Suryan',
+        heading:'HTML',
+        date:'',
         content:`
-            <p>
-                    HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY FIRST ARTICLE.HAI THIS IS "MANOj DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE.
-            </p>
+            
+               
+               
+               
+               
+             <span style="text-decoration: underline;"><h2>Let's Start with HTML</h2></span>
+
+
+      <hr>
+      <br>
+       <h3>1.</h3>
+       
+        <h2>The title attribute</h2>
+
+<p title="THIS IS A TOOLTIP">
+Mouse over this paragraph, to display the title attribute as a tooltip.
+</p>
+
+<p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_title"><button>Click here to view Code</button></a></p>
+
+<hr>
+<br>
+
+<h3>2.</h3>
+
+<p><b>This text is bold</b></p>
+<p><i>This text is italic</i></p>
+<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+
+<hr>
+<br>
+
+<h3>3.</h3>
+
+<h2>HTML LINK</h2>
+
+<p><a href="http://suryan123.imad.hasura-app.io/">Visit our HTML tutorial</a></p>
+
+<p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_mountain"><button>Click here to view Code</button></a></p>
+
+<hr>
+<br>
+
+
+<h1>MORE UPDATES WILL BE AVAILABLE SOON !!!!!</h1>
+               
+                  
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
                             
-                            
-                     <h1>hai</h1>       
-                            
-                            
-                                 
-            <p>
-                    HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY FIRST ARTICLE.HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE.
                         
-            </p>
             <p>
-                    HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI" THIS IS MY FIRST ARTICLE.HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE. HAI THIS IS "MANOJ DULI"THIS IS MY FIRST ARTICLE.
             </p>` 
+            
+            
+            
+            
                 
                 
     },
