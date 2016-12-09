@@ -508,13 +508,18 @@ div {
             content:`
             
             
+           
+            
             
             <h1>CONTACT ME</h1>
             <hr>
             <br>
             
             
-
+            Name : Suryan Jayaprakash
+            Phone: 9947120929
+           E-mail: suryanprasadom@gmail.com
+            
             
             
             
