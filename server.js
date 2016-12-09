@@ -85,6 +85,28 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
 
 
 
+<h3>6.<h3>
+<h2>Colouring Some Lines<h2>
+
+<html>
+<head>
+<style>
+span.note {
+    font-size: 120%;
+    color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+</body>
+</html>
+<hr>
+<br>
+
 
 
 
