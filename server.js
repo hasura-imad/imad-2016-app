@@ -85,8 +85,8 @@ Mouse over this paragraph, to display the title attribute as a tooltip.
 
 
 
-<h3>6.<h3>
-<h2>Colouring Some Lines<h2>
+<h3>6.<h3/>
+<h2>Colouring Some Lines</h2>
 
 <html>
 <head>
@@ -110,6 +110,65 @@ span.note {
 
 <hr>
 <br>
+
+<h3>7.<h3/>
+<h2>HTML Forms</h2>
+
+<html>
+<body>
+
+<form action="action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "action_page.php".</p>
+
+</body>
+</html>
+
+<p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit"><button>Click here to view Code</button></a></p>
+<hr>
+<br>
+
+<h3>8.</h3>
+<h2>HTML 5 Canvas(Stroke Text )</h2>
+
+
+
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Hello World",10,50);
+</script>
+
+</body>
+</html>
+
+
+<p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_text2"><button>Click here to view Code</button></a></p>
+
+<hr>
+<br>
+
+
+
+
+
+
+
 
 
 
