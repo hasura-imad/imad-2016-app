@@ -215,27 +215,7 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h1>MORE UPDATES WILL BE AVAILABLE SOON !!!!!</h1>
-               
-                  
-               
-               
-               
-               
-               
+<h3>Thank You..</h3>
                
                
                
