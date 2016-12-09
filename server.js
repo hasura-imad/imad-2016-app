@@ -258,8 +258,51 @@ This example sets the text color of the element to blue:</p>
 
 <p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_inline"><button>Click here to view Code</button></a></p>
 
+
+
 <hr>
 <br>
+            
+            
+   <h3>2.</h3>
+   <h2>CSS Syntax</h2>
+   
+   <html>
+<head>
+<style>
+p {
+    color: red;
+    text-align: center;
+} 
+</style>
+</head>
+<body>
+
+<p>Hello World!</p>
+<p>These paragraphs are styled with CSS.</p>
+
+</body>
+</html>
+
+<p><a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_syntax1"><button>Click here to view Code</button></a></p>
+
+<hr>
+<br>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             
                 <p>
                 </p>`
