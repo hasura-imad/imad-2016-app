@@ -193,6 +193,9 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
 <p><a href="http://www.w3schools.com/html/html_googlemaps.asp"><button>Click here to view Code</button></a></p>
 
+<hr>
+<br>
+
 
 
 
