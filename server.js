@@ -462,8 +462,46 @@ div {
             <hr>
             <br>
             
+            
+            <h3>1.</h3>
+            <h2>Date And Time</h2>
+            
+            <html>
+<body>
+
+<h1>My First JavaScript</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+</body>
+</html> 
+
+
+<p><a href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst"><button>Click here to view Code</button></a></p>
+
+<hr>
+<br>
+
+            
+            
+            
+            
+            
+            
                 <p>
                 </p>`
+   
+   
+   
+   
+   
+  
+   
+   
    
    
    
