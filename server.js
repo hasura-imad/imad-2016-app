@@ -104,6 +104,10 @@ span.note {
 
 </body>
 </html>
+
+
+<p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_span"><button>Click here to view Code</button></a></p>
+
 <hr>
 <br>
 
