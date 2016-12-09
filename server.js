@@ -288,6 +288,39 @@ p {
 
 <hr>
 <br>
+
+<h3>3.</h3>
+<h2>CSS Icons</h2>
+
+<html>
+<head>
+<title>Bootstrap Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body class="container">
+
+<p>Some Bootstrap icons:</p>
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+<br><br>
+
+<p>Styled Bootstrap icons (size and color):</p>
+<i class="glyphicon glyphicon-cloud" style="font-size:24px;"></i>
+<i class="glyphicon glyphicon-cloud" style="font-size:36px;"></i>
+<i class="glyphicon glyphicon-cloud" style="font-size:48px;color:red;"></i>
+<i class="glyphicon glyphicon-cloud" style="font-size:60px;color:lightblue;"></i>
+
+</body>
+</html>
+
+<p><a href="http://www.w3schools.com/css/css_icons.asp"><button>Click here to view Code</button></a></p>
+
+<hr>
+<br>
             
             
             
