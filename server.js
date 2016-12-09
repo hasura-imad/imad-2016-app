@@ -196,6 +196,23 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 <hr>
 <br>
 
+<h3>10.</h3>
+<h2>HTML plug-Ins (Bookmark)</h2>
+
+<html>
+<body>
+
+<object width="400" height="50" data="bookmark.swf"></object>
+ 
+</body>
+</html>
+
+
+<p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_object_plugin"><button>Click here to view Code</button></a></p>
+
+<hr>
+<br>
+
 
 
 
