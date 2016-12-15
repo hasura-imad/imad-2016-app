@@ -513,31 +513,14 @@ img {
 <h3>8.</h3>
 <h2>Text Decoration</h2>
 
-a {
-  text-decoration-line: underline;
-  text-decoration-style: dashed;
-  text-decoration-color: orange;
-}
+<br />
+<a href="#">sample link</a>
+<span class="sample">sample text</span>
+<br/><br/>
+<span class="through">to be cut text</span>
+<span class="wavy">wavy line</span>
 
-.sample {
-  text-decoration: underline overline dotted green;
-}
-
-.through {
-  text-decoration: line-through;
-  color: red;
-}
-
-.wavy {
-  text-decoration: underline wavy violet;
-}
-
-body {
-  text-align: center;
-  font-family: courier new;
-  font-weight: bold;
-  font-size: 20pt;
-}
+<p><a href="http://codepen.io/rpsthecoder/pen/YXzMQw"><button>Click here to view Code</button></a></p>
 
 <hr>
 <br>
