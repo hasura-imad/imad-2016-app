@@ -510,6 +510,39 @@ img {
 <br>
 
 
+<h3>8.</h3>
+<h2>Text Decoration</h2>
+
+a {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: orange;
+}
+
+.sample {
+  text-decoration: underline overline dotted green;
+}
+
+.through {
+  text-decoration: line-through;
+  color: red;
+}
+
+.wavy {
+  text-decoration: underline wavy violet;
+}
+
+body {
+  text-align: center;
+  font-family: courier new;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+<hr>
+<br>
+
+
 
 
 
