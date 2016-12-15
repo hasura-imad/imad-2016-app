@@ -543,7 +543,22 @@ img {
 <hr>
 <br>
 
+<h3>10.</h3>
 
+<h2>Quoting A Quote</h2>
+
+<p>
+  <q>By your <q>powers</q> combined <q>I am <q>Captain Planet</q></q>
+  </q>
+</p>
+<img src="http://upload.wikimedia.org/wikipedia/en/1/1e/Captain_Planet_and_the_Planeteers_title.jpg" alt="captain planet" height="100" />
+
+
+<p><a href="http://codepen.io/rpsthecoder/pen/VLwNzv"><button>Click here to view Code</button></a></p>
+<hr>
+<br>
+
+<h1>Thanks.....</h1>
 
 
 
