@@ -525,6 +525,30 @@ img {
 <hr>
 <br>
 
+<h3>9.</h3>
+<h2>Select a fruit</h2>
+
+<fieldset>
+  <legend>Select a fruit</legend>
+  <input type="radio" name="animal" value="Mango" />
+  <br />
+  <input type="radio" name="animal" value="Apple" />
+  <br />
+  <input type="radio" name="animal" value="Grapes" />
+  <br />
+</fieldset>
+
+<p><a href="http://codepen.io/rpsthecoder/pen/bdGXWr"><button>Click here to view Code</button></a></p>
+
+<hr>
+<br>
+
+
+
+
+
+
+
 
 
 
