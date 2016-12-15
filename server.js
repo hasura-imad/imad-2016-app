@@ -482,9 +482,29 @@ div {
 <br>
 
 <h2>7.</h2>
-<h3>CSS3 Animation</h3>
+<h3>Rounded Images</h3>
 
-<div id="animated_div">CSS3<br><span style="font-size:10px;">Animation</span></div>
+<html>
+<head>
+<style>
+img {
+    border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<h2>Rounded Images</h2>
+<p>Use the border-radius property to create circled images:</p>
+
+<img src="paris.jpg" alt="Paris" width="400" height="300">
+
+</body>
+</html>
+
+
+<p><a href="<p><a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_right"><button>Click here to view Code</button></a></p>"><button>Click here to view Code</button></a></p>
+
 
 <hr>
 <br>
