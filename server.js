@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 
 var article={
     'article-one': {
-        title:'HTML TRICKS | Suryan',
+        title:'HTML TRICKS | Learn HTML',
         heading:'HTML',
         date:'',
         content:`
@@ -233,7 +233,7 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
                 
     },
     'article-two': {
-        title:'CSS | Suryan',
+        title:'CSS | Learn CSS',
             heading:'',
             date:'',
             content:`
@@ -402,7 +402,7 @@ div {
 </style>
 <body>
 
-<h3>Using CSS to style a HTML Form</h3>
+
 
 <div>
   <form action="action_page.php">
@@ -431,6 +431,65 @@ div {
 <hr>
 <br>
 
+<h3>6.</h3>
+<h2>CSS ToolTip</h2>
+
+<html>
+<style>
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+</style>
+<body style="text-align:center;">
+
+<h2>Right Tooltip</h2>
+<p>Move the mouse over the text below:</p>
+
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+
+</body>
+</html>
+
+
+
+<p><a href="http://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_right"><button>Click here to view Code</button></a></p>
+
+<hr>
+<br>
+
+<h2>7.</h2>
+<h3>CSS3 Animation</h3>
+
+<div id="animated_div">CSS3<br><span style="font-size:10px;">Animation</span></div>
+
+<hr>
+<br>
+
+
 
 
 
@@ -452,7 +511,7 @@ div {
                 </p>`
        },
     'article-three': {
-        title:'JAVASCRIPT | Suryan',
+        title:'JAVASCRIPT | Learn JS',
             heading:'',
             date:'',
             content:`
