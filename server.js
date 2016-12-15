@@ -467,7 +467,7 @@ div {
 <h2>Right Tooltip</h2>
 <p>Move the mouse over the text below:</p>
 
-<div class="tooltip">Hover over me
+<div class="tooltip">Hover over me 123
   <span class="tooltiptext">Tooltip text</span>
 </div>
 
