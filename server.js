@@ -706,11 +706,35 @@ Click me to display Date and Time.</button>
    
    
     
-    }
+    },
+    'article-six': {
+        title:'REGISTER | HTML TRICKS',
+            heading:'',
+            date:'',
+            content:`
+            
+            
+           
+            
+            <h1hai</h1>
+           
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                <p>
+                </p>`
+   
     
 
         
-            
+    }         
    
 };
 
