@@ -597,7 +597,7 @@ img {
             <br>
             
             
-        <html>
+       
 <body>
 
 <iframe height="1500px" width="100%" src="https://modernweb.com/45-useful-javascript-tips-tricks-and-best-practices/" name="iframe_a"></iframe>
@@ -607,7 +607,7 @@ img {
 <p></p>
 
 </body>
-</html>
+
 
 <h2>Thanks...</h2>
             
