@@ -7,7 +7,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var article={
-    'article-one': {
+    'html': {
         title:'HTML TRICKS | Learn HTML',
         heading:'HTML',
         date:'',
@@ -232,7 +232,7 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
                 
                 
     },
-    'article-two': {
+    'css': {
         title:'CSS | Learn CSS',
             heading:'',
             date:'',
@@ -585,7 +585,7 @@ img {
                 <p>
                 </p>`
        },
-    'article-three': {
+    'javascript': {
         title:'JAVASCRIPT | Learn JS',
             heading:'',
             date:'',
@@ -640,7 +640,7 @@ Click me to display Date and Time.</button>
    
    
     },
-    'article-four': {
+    'about-me': {
         title:'ABOUT ME | Suryan',
             heading:'',
             date:'',
@@ -673,7 +673,7 @@ Click me to display Date and Time.</button>
                 
                 
     },
-    'article-five': {
+    'contact-me': {
         title:'CONTACT ME | Suryan',
             heading:'',
             date:'',
@@ -707,7 +707,7 @@ Click me to display Date and Time.</button>
    
     
     },
-    'article-six': {
+    'register': {
         title:'REGISTER | HTML TRICKS',
             heading:'',
             date:'',
@@ -744,7 +744,7 @@ Click me to display Date and Time.</button>
             
            
             
-            <h1hai</h1>
+            <h1>hai</h1>
            
             
             
@@ -784,15 +784,19 @@ function createTemplate(data){
          <div>
              <a href="/">HOME</a>
              <span style="display:inline-block; width: 100;"></span>
-             <a href="/article-one">HTML</a>
+             <a href="/html">HTML</a>
              <span style="display:inline-block; width: 100;"></span>
-             <a href="/article-two">CSS</a>
+             <a href="/css">CSS</a>
              <span style="display:inline-block; width: 100;"></span>
-             <a href="/article-three">JAVASCRIPT</a>
+             <a href="/javascript">JAVASCRIPT</a>
              <span style="display:inline-block; width: 100;"></span>
-             <a href="/article-four">ABOUT ME</a>
+             <a href="/about-me">ABOUT ME</a>
              <span style="display:inline-block; width: 100;"></span>
-             <a href="/article-five">CONTACT ME</a>
+             <a href="/contact-me">CONTACT ME</a>
+             <span style="display:inline-block; width: 100;"></span>
+             <a href="/register">REGISTER</a>
+             <span style="display:inline-block; width: 100;"></span>
+             <a href="/login">LOG IN</a>
          </div>
          <h3>
             ${heading}
