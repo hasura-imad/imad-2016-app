@@ -597,28 +597,21 @@ img {
             <br>
             
             
-            <h3>1.</h3>
-            <h2>Date And Time</h2>
-            
-            <html>
+        <html>
 <body>
 
-<h1>My First JavaScript</h1>
+<iframe height="1500px" width="100%" src="https://modernweb.com/45-useful-javascript-tips-tricks-and-best-practices/" name="iframe_a"></iframe>
 
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
 
-<p id="demo"></p>
+
+<p></p>
 
 </body>
-</html> 
+</html>
 
+<h2>Thanks...</h2>
+            
 
-<p><a href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst"><button>Click here to view Code</button></a></p>
-
-<hr>
-<br>
 
             
             
