@@ -716,7 +716,9 @@ Click me to display Date and Time.</button>
             
            <h1>REGISTER</h1>
            
-           <html>
+           
+
+<html>
 <body>
 
 <p>Click the below button to Register...</p>
@@ -731,10 +733,11 @@ function myFunction() {
     var password = prompt("Please enter a password","")
     var password = prompt("Please enter the password once again","")
     
+     
     if (person != null) {
         document.getElementById("demo").innerHTML =
-        "Hello " + person + " You are now Registered";
-    
+        "Hello " + person + " You are now Registered, and your password is  " + password + "."
+          
   
     
    
@@ -743,6 +746,7 @@ function myFunction() {
 </script>
 
 </body>
+</html>
 
 
             
@@ -774,7 +778,7 @@ function myFunction() {
             
            
             
-            <h1>hai</h1>
+            
            
             
             
