@@ -780,7 +780,37 @@ function myFunction() {
             
             
            
-            
+            <html>
+<body>
+
+<p>Click the below button to Log in...</p>
+
+<button onclick="myFunction()">CLICK HERE TO LOG IN</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var person = prompt("Please enter your name", "");
+    var password = prompt("Please enter your password","")
+    
+    
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + " You are now logged in."
+          
+        
+        
+    
+  
+    
+   
+    }
+}
+</script>
+
+</body>
+</html>
             
             
             
