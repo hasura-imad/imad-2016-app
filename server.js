@@ -708,19 +708,8 @@ Click me to display Date and Time.</button>
     
     }
     
-    
-    'article-six': {
-        title:'Register | HTML TRICKS',
-            heading:'',
-            date:'',
-            content:`
-            
-            
-            
-            
-            
-            
-            
+
+        
             
    
 };
