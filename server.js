@@ -714,9 +714,39 @@ Click me to display Date and Time.</button>
             content:`
             
             
+           <h1>REGISTER</h1>
            
+           <html>
+<body>
+
+<p>Click the below button to Register...</p>
+
+<button onclick="myFunction()">CLICK HERE TO REGISTER</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var person = prompt("Please enter your name", "");
+    var password = prompt("Please enter a password","")
+    var password = prompt("Please enter the password once again","")
+    
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + " You are now Registered";
+    
+  
+    
+   
+    }
+}
+</script>
+
+</body>
+
+
             
-            <h1hai</h1>
+            
            
             
             
