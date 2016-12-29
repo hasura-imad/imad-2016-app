@@ -756,7 +756,7 @@ img {
 
 <!-- www.123contactform.com script begins here -->
 <script type="text/javascript" defer src="//www.123contactform.com/embed/2387061.js" data-role="form"></script>
-<p>Powered by </p><!-- www.123contactform.com script ends here -->
+<p> </p><!-- www.123contactform.com script ends here -->
 
             
             
