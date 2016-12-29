@@ -690,7 +690,7 @@ img {
 				<h3>Find Me Elsewhere</h3>
 				<div class="box">
 					<ul>
-						<li><a href="http://facebook.com/jayaprakashthankappan" target="_blank">Facebook</a></li>
+						<li><a href="http://facebook.com/" target="_blank">Facebook</a></li>
 						<li><a href="http://twitter.com" target="_blank">Twitter</a></li>
 						<li><a href="http://linkedin.com" target="_blank">LinkedIn</a></li>
 						<li><a href="http://tumblr.com" target="_blank">Tumblr</a></li>
