@@ -756,7 +756,7 @@ img {
 
 <!-- www.123contactform.com script begins here -->
 <script type="text/javascript" defer src="//www.123contactform.com/embed/2387061.js" data-role="form"></script>
-<p>Powered by <a class="footerLink13" title="123ContactForm" href="http://www.123contactform.com">123ContactForm</a>&nbsp;|&nbsp;<a style="font-size:small!important;color:#000000!important; text-decoration:underline!important;" title="Looks like phishing? Report it!" href="http://www.123contactform.com/sfnew.php?s=123contactform-52&control119314=http:///contact-form--2387061.html&control190=Report%20abuse" rel="nofollow">Report abuse</a></p><!-- www.123contactform.com script ends here -->
+<p>Powered by </p><!-- www.123contactform.com script ends here -->
 
             
             
