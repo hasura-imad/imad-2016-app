@@ -561,7 +561,19 @@ img {
 
 
 
+<hr>
+<br>
 
+<script src="https://apis.google.com/js/plusone.js"></script>
+<div id="comments"></div>
+<script>
+gapi.comments.render('comments', {
+    href: window.location,
+    width: '624',
+    first_party_property: 'BLOGGER',
+    view_type: 'FILTERED_POSTMOD'
+});
+</script>
 
 
 
@@ -610,7 +622,19 @@ img {
 
 <h2>Thanks...</h2>
             
-
+            <hr>
+            <br>
+            
+<script src="https://apis.google.com/js/plusone.js"></script>
+<div id="comments"></div>
+<script>
+gapi.comments.render('comments', {
+    href: window.location,
+    width: '624',
+    first_party_property: 'BLOGGER',
+    view_type: 'FILTERED_POSTMOD'
+});
+</script>
 
             
             <a href="/#"><button><h5>To The Top</h5></button></a>
@@ -718,8 +742,19 @@ img {
 </body>
             
             
-            
-            
+          <hr>
+          <br>
+          
+    <script src="https://apis.google.com/js/plusone.js"></script>
+<div id="comments"></div>
+<script>
+gapi.comments.render('comments', {
+    href: window.location,
+    width: '624',
+    first_party_property: 'BLOGGER',
+    view_type: 'FILTERED_POSTMOD'
+});
+</script>        
             
             
             
