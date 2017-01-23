@@ -1,0 +1,203 @@
+/* Navbar */
+.navbar {
+	font-weight: bold;
+	font-size: 16px;
+	background: #303030;
+	padding-top: 5px;
+}
+
+.navbar-inverse {
+	font-weight: bold;
+	font-size: 16px;
+	background: #303030;
+}
+
+.navbar-collapse{
+	padding-top: 12px;
+}
+
+.navbar-brand img{
+	height: 55px;
+}
+
+.dropdown-menu{
+    background:#424242;
+    color:white;
+	border-radius: 7px;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    width:100%;
+}
+
+
+/* Container */
+.container{
+    padding-top: 91px;
+}
+
+
+/* Side Nav */
+.sidenav {
+	margin-top:71px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 16;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    transition: 0.1s
+}
+
+.panel-body a{
+    color: #000;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+    background: #3f3f3f;
+}
+
+a.closebtn:hover {
+    background-color: transparent;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.panel-body{
+    padding: 0px;
+}
+
+.panel-body ul{
+    background: #c1c1c1;
+    margin: 0px;
+    list-style: none;
+    padding-left: 10px;
+}
+
+.panel-default{
+    border: 0px;
+}
+
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: #111;
+    margin: 0px;
+    padding: 0px;
+}
+
+.panel-heading{
+    padding: 2px;
+    background: #000;
+}
+
+.panel-group{
+    margin-bottom: 100px;
+}
+
+/* Main Content */
+.row .col-md-12{
+	padding-top: 40px;
+}
+
+.articles{
+	padding-top:71px;
+}
+
+h1{
+	font-weight:bold;
+	font-size:30px;
+}
+
+.maincontent img{
+	width: 230px;
+	border-radius: 50%;
+}
+
+h3{
+	font-weight: bold;
+}
+
+.col-md-5{
+	margin-top: 230px;
+	margin-bottom: 230px;
+}
+
+.form-horizontal{
+	padding: 5px ;
+	color: #000000;
+	background: transparent;
+	border-radius: 10px;
+	border:1px solid #000000;
+}
+
+.form-control{
+	color: #000000;
+	background: transparent;
+}
+
+.btn-default{
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.5);
+	border:0px;
+	width: 80px;
+}
+
+.btn-default:hover{
+	background: #fff;
+	color: #000;
+}
+
+.articlelink{
+    color: white;
+}
+
+.articlelink:hover{
+    color: white;
+}
+
+
+/* Caruosel */
+.carousel-inner .item img{
+    width: 1080px;
+    height: 360px;
+}
+
+.carousel-caption{
+    font-size:150%;
+    right: 0%;
+    left: 0%;
+    padding: 1% 10%;
+    text-align: left;
+    background: #00358c; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #00358c , transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #00358c, transparent; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #00358c, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #00358c , transparent); /* Standard syntax */
+}

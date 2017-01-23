@@ -1,17 +1,329 @@
-<!doctype html>
-<html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
-        </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! I am your webapp.
-        </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="images/logo_blog.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="images/logo_blog.png" sizes="32x32">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home-Blog</title>
+
+	<!--BOOTSTRAP CSS-->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<!--CUSTOM CSS-->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!--JQUERY JAVASCRIPT-->
+	<script src="js/jquery.js"></script>
+
+	<!--BOOTSTRAP JAVASCRIPT-->
+	<script src="js/bootstrap.js"></script>
+	
+	<!--HTML JAVASCRIPT-->
+	<script src="js/app.js"></script>
+</head>
+	
+<body>
+	<!--NAVBAR-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid"><!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="images/logo_blog.png" alt="LOGO" ></a>
+				<!--<a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="LOGO" ></a>-->
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->----
+					<li><a id="home" href="#homeSection">Home</a></li>
+					<li><a id="article" href="#articleSection">My Articles</a></li>
+					<li class="dropdown">
+						<a id="home" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Browse <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><button onclick="window.location.href='sec/trending'"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Trending</button></li>
+							<li><a href="#featuredSection"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    Featured </a></li>
+							<li><a href="#newSection"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    New Articles</a></li>
+							<li><a href="#specialSection"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    This Weeks Special</a></li>
+							<li><a href="#blogSection"><span class="btn-sm glyphicon glyphicon-headphones" aria-hidden="true"></span>    All Blogs</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#peopleSection"><span class="btn-sm glyphicon glyphicon-menu-right" aria-hidden="true"></span>    People</a></li>
+						</ul>
+					</li>
+					<li><a href="#browseSection">Search</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a id="login" href="#loginSection">Login</a></li>
+					<li><a id="signup" href="#signupSection">Sign Up</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!--NAVBAR END-->
+
+    <!--CONTAINER-->
+    <div id="homeSection" class="container">
+    	<div class="row">
+    		<!--SIDE NAVBAR START-->
+    		<div class="col-md-1">
+    			<div id="mySidenav" class="sidenav">
+				  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a href="index.html" class="collapsed" >
+										 <span class="glyphicon glyphicon-home" aria-hidden="true"> Home</span>
+									</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										 <span class="glyphicon glyphicon-headphones" aria-hidden="true"> Entertainment</span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="panel-body">
+									<ul>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Comedy</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Music</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Gaming</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Movies & TV</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Celebrity</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										 <span class="glyphicon glyphicon-picture" aria-hidden="true"> Art</span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								<div class="panel-body">
+									<ul>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Beauty</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Fashon</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Design</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Writing</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Photography</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										 <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"> Living & Leisure</span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+								<div class="panel-body">
+									<ul>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Travel</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Food</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Relationships</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Self</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Lifestyle</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Pets & Animals</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+										 <span class="glyphicon glyphicon-briefcase" aria-hidden="true"> Buisness & Tech</span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+								<div class="panel-body">
+									<ul>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Buisness</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Social Media</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Fiance</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Tech</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Carrier</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Law</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+										 <span class="glyphicon glyphicon-king" aria-hidden="true"> Sports</span>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+								<div class="panel-body">
+									<ul>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Outdoor</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Indoor</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Football</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Basketball</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Hockey</span></a></li>
+										<li><a href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> Other Sports</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a href="contactus.html" class="collapsed" >
+										 <span class="glyphicon glyphicon-phone" aria-hidden="true"> Contact Us</span>
+									</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+				<script>
+					function openNav() {
+				    	document.getElementById("mySidenav").style.width = "270px";
+					}
+					function closeNav() {
+				    	document.getElementById("mySidenav").style.width = "0";
+					}
+				</script>
+    		</div>
+    		<!--SIDE NAVBAR END-->
+
+    		<!--CAROUSEL START-->
+    		<div class="col-md-10 ">
+    			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  	<!-- Indicators -->
+				  	<ol class="carousel-indicators">
+				    	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    	<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    	<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				    	<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				    	<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+				  	</ol>
+				  	<!-- Wrapper for slides -->
+				  	<div class="carousel-inner" role="listbox">
+				    	<div class="item active">
+				      		<img src="images/carousel-art1.jpg"  class="img-responsive" alt="Responsive image">
+			      			<div class="carousel-caption">
+			        			ART
+			      			</div>
+			    		</div>
+			    		<div class="item">
+			      			<img src="images/carousel-art2.jpg" class="img-responsive" alt="Responsive image">
+			      			<div class="carousel-caption">
+			        			MOVIES & TV
+			      			</div>
+			    		</div>
+			    		<div class="item">
+			      			<img src="images/carousel-art3.jpg" class="img-responsive" alt="Responsive image">
+			      			<div class="carousel-caption">
+			        			SPORTS
+			      			</div>
+			    		</div>
+			    		<div class="item">
+			      			<img src="images/carousel-art4.jpg" class="img-responsive" alt="Responsive image">
+			      			<div class="carousel-caption">
+			        			GAMING
+			      			</div>
+			    		</div>
+			    		<div class="item">
+			      			<img src="images/carousel-art5.jpg" class="img-responsive" alt="Responsive image">
+			      			<div class="carousel-caption">
+			        			MUSIC
+			      			</div>
+			    		</div>
+			  		</div>
+		  			<!-- Controls -->
+		  			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    			<span class="sr-only">Previous</span>
+		  			</a>
+		  			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    			<span class="sr-only">Next</span>
+		  			</a>
+				</div>
+			</div>
+			<!--CAROUSEL END-->
+		</div>
+
+		<div class="maincontent">
+			<div class="articles" id="articleSection">
+				<h1>ARTICLES</h1>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-3">
+							<img src="images/article1.jpg" class="img-responsive" alt="Image Article 1" >
+						</div>
+						<div class="col-md-6 " style="margin-top:40px">
+							<a href="article/article-three"><h4>THE CHEAPENING OF CONOR MCGREGOR'S ONCE-CLEVER ACT</h4></a>
+							<p>    There was a time not very long ago when a Conor McGregor press conference was still something engaging. Now, as his popularity has boomed and his face dominates the sides of buildings, he has become a caricature of his worst self: a man seeking attention, devoid of the substance that once made him fun. During Thursday’s press conference for UFC 205, perhaps the biggest fighting show ever, McGregor wore a white fur coat he said was mink, stomped around in red pajama pants and held a blue folding chair high above his head.....</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-3 col-md-offset-3">
+							<img src="images/article2.jpg" class="img-responsive" alt="Image Article 2" >
+						</div>
+						<div class="col-md-6 " style="margin-top:40px">
+							<a href="article/article-two"><h4>THE MANY SELVES OF KATHERINE NORTH BY EMMA GEEN</h4></a>
+							<p>    At nineteen Katherine North is the oldest Phenomenaut at Shencorp, the world's leading Consciousness Projection provider.  Recruited at the tender age of twelve she has spent much of the last seven years hooked up to life support in a lab while her mind inhabits the bodies of other animals.  In that time she has contributed enormously to scientific research on endangered species - her specialism - bringing back data and the lived experience of being an animal into the human world......</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-3">
+							<img src="images/article3.jpg" class="img-responsive" alt="Image Article 3" >
+						</div>
+						<div class="col-md-6 " style="margin-top:40px">
+							<a href="article/article-one"><h4>SHOPPING CASUAL WEAR AT CRAFTSVILLA</h4></a>
+							<p>    If you know me, you know how obsessed I am with palazzos and all things comfy. My search for them led me to Craftsvilla and to be honest I was pleasantly overwhelmed and spoilt for choice.  Since I only wanted to look for something casual, that you can wear every day at home or work, I was happy that there were categories for office wear and casuals, party wear, and festive wear. It makes it really easy to look for what you want exactly, instead of getting lost.....</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-3 col-md-offset-3">
+							<img src="images/article4.jpg" class="img-responsive" alt="Image Article 4" >
+						</div>
+						<div class="col-md-6 " style="margin-top:40px">
+						    <a href="article/article-five"><h4>MAFIA III REVIEW - LOYALTY IS ROYALTY</h4></a>
+							<p>    The Mafia series has had a bit of a patchy history so far, with the first game being beloved and the second getting a tepid response largely thanks to its open world which served as little more than decoration. With some six years since the release of Mafia II we get yet another developer trying to bring series back to into the public eye. The story setup is that a young black man by the name of Lincoln Clay returns from serving in the Vietnam war, and once again finds himself caught up in his families problems involving the various local gangs......</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="login" id="loginSection">				
+			</div>
+		</div>
+	</div>
+    <!--CONTAINER END-->
+    <script type="text/javascript" src="js/main.js">
+    </script>
+</body>
 </html>
