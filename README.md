@@ -1,5 +1,4 @@
 # Personal-Website-webapp
-My Personal Website
 
 This is my personal webapp built while doing the NPTEL Introduction to Modern Application Development course 2016.
 
